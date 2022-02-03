@@ -1,0 +1,129 @@
+openapi: 3.0.0
+info:
+  description: This API receives hardware status reading from Crypto mining rig
+  version: "1.0.0"
+  title: Mining rig API
+  contact:
+    email: dgao12@my.bcit.ca
+tags:
+  - name: hardware status
+    description: monitoring temperature and fan speed during mining
+    
+paths:
+  /status/temperature:
+    post:
+      tags:
+        - temperature
+      summary: reports a mining rig temperature
+      operationId: app.report_temperature
+      description: passing the current temperature to monitoring dashboard
+      responses:
+        '201':
+          description: item recorded
+        '400':
+          description: 'invalid input, object invalid'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TemperatureReading'
+        description: Temperature to add
+      
+  /status/fanspeed:
+    post:
+      tags:
+        - fan speed
+      summary: reports a fan speed
+      operationId: app.report_fan_speed
+      description: passing the current fan speed to monitoring dashboard
+      responses:
+        '201':
+          description: item created
+        '400':
+          description: 'invalid input, object invalid'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FanSpeedReading'
+        description: Fan speed to add
+        
+components:
+  schemas:
+    TemperatureReading:
+      required:
+        - ming_rig_id
+        - ming_card_id
+        - temperature
+        - timestamp
+      properties:
+        ming_rig_id:
+          type: string
+          format: uuid
+          example: d290f1ee-6c54-4b01-90e6-d701748f0851
+        ming_card_id:
+          type: string
+          example: rig1-01
+        temperature:
+          $ref: '#/components/schemas/Temperature'
+        timestamp:
+          type: string
+          format: date-time
+          example: '2016-08-29T09:12:33.001Z'
+      type: object
+
+    FanSpeedReading:
+      required:
+        - ming_rig_id
+        - ming_card_id
+        - fan_speed
+        - timestamp
+      properties:
+        ming_rig_id:
+          type: string
+          format: uuid
+          example: d290f1ee-6c54-4b01-90e6-d701748f0851
+        ming_card_id:
+          type: string
+          example: rig1-01
+        fan_speed:
+          $ref: '#/components/schemas/FanSpeed'
+        timestamp:
+          type: string
+          format: date-time
+          example: '2016-08-29T09:12:33.001Z'
+      type: object
+      
+    Temperature:
+      required:
+        - ming_card_model
+        - core_temperature
+        - shell_temperature
+      properties:
+        ming_card_model:
+          type: string
+          example: RTX2080
+        core_temperature:
+          type: integer
+          example: 70
+        shell_temperature:
+          type: integer
+          example: 60
+      type: object
+
+    FanSpeed:
+      required:
+        - ming_card_model
+        - fan_position
+        - fan_speed
+      properties:
+        ming_card_model:
+          type: string
+          example: RTX2080
+        fan_position:
+          type: string
+          example: middle
+        fan_speed:
+          type: integer
+          example: 2000
+      type: object
