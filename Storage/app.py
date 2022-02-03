@@ -1,5 +1,8 @@
 import connexion
 from connexion import NoContent
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
+from base import Base
 from fan_speed import FanSpeed
 from temperature import Temperature
 import yaml
@@ -7,13 +10,15 @@ import yaml
 with open('app_conf.yml', 'r') as f:
     app_config = yaml.safe_load(f.read())
 
-user = app_config['database']['user']
-password = app_config['database']['password']
-port = app_config['database']['port']
-hostname = app_config['database']['hostname']
-db = app_config['database']['db']
+user = app_config['datastore']['user']
+password = app_config['datastore']['password']
+port = app_config['datastore']['port']
+hostname = app_config['datastore']['hostname']
+db = app_config['datastore']['db']
 
 DB_ENGINE = create_engine (f'mysql+pymysql://{user}:{password}@{hostname}:{port}/{db}')
+Base.metadata.bind = DB_ENGINE
+DB_SESSION = sessionmaker(bind=DB_ENGINE)
 
 with open('app_conf.yml', 'r') as f:
     app_config = yaml.safe_load(f.read())
