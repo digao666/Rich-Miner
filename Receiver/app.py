@@ -5,10 +5,13 @@ import datetime
 from datetime import datetime
 import json
 import os
+import yaml
 
 MAX_EVENTS = 10
 EVENT_FILE = 'event.json'
 
+with open('app_conf.yml', 'r') as f:
+    app_config = yaml.safe_load(f.read())
 
 def write_request(body):
     """ add request body to json """
@@ -45,7 +48,7 @@ def report_temperature(body):
     """ Receives a hardware temperature """
     # write_request(body)
     payload = json.dumps(body)
-    url = 'http://192.168.86.218:8090/status/temperature'
+    url = app_config.eventstore1.url
     r = requests.post(url, data=payload, headers={"Content-Type": "application/json"})
     return NoContent, r.status_code
 
@@ -54,7 +57,7 @@ def report_fan_speed(body):
     """ Receives a fan speed """
     # write_request(body)
     payload = json.dumps(body)
-    url = 'http://192.168.86.218:8090/status/fanspeed'
+    url = app_config.eventstore2.url
     r = requests.post(url, data=payload, headers={"Content-Type": "application/json"})
     return NoContent, r.status_code
 
