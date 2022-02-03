@@ -14,7 +14,8 @@ DB_SESSION = sessionmaker(bind=DB_ENGINE)
 def report_temperature(body):
     """ Receives a hardware temperature """
     session = DB_SESSION()
-    temp = Temperature(body['ming_rig_id'],
+    temp = Temperature(body['id'],
+                       body['ming_rig_id'],
                        body['ming_card_id'],
                        body['timestamp'],
                        body['temperature']['ming_card_model'],
@@ -29,7 +30,8 @@ def report_temperature(body):
 def report_fan_speed(body):
     """ Receives a fan speed """
     session = DB_SESSION()
-    fs = FanSpeed(body['ming_rig_id'],
+    fs = FanSpeed(body['id'],
+                  body['ming_rig_id'],
                   body['ming_card_id'],
                   body['timestamp'],
                   body['fan_speed']['fan_speed'],
