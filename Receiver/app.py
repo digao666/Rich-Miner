@@ -60,16 +60,16 @@ logger = logging.getLogger('basicLogger')
 def report_temperature(body):
     """ Receives a hardware temperature """
     # write_request(body)
-    temperature_id = uuid.uuid1()
-    body['id'] = f'{temperature_id}'
+    trace_id = uuid.uuid1()
+    body['trace_id'] = f'{trace_id}'
     payload = json.dumps(body)
     url = app_config['eventstore1']['url']
-    event_receipt = f'Received event report temperature request with a trace id of {temperature_id}'
+    event_receipt = f'Received event report temperature request with a trace id of {trace_id}'
     logging.info(event_receipt)
 
     r = requests.post(url, data=payload, headers={"Content-Type": "application/json"})
 
-    return_receipt = f'Returned event report temperature response (Id: {temperature_id}) with status {r.status_code}'
+    return_receipt = f'Returned event report temperature response (Id: {trace_id}) with status {r.status_code}'
     logging.info(return_receipt)
 
     return NoContent, r.status_code
@@ -78,18 +78,18 @@ def report_temperature(body):
 def report_fan_speed(body):
     """ Receives a fan speed """
     # write_request(body)
-    fan_speed_id = uuid.uuid1()
-    body['id'] = f'{fan_speed_id}'
+    trace_id = uuid.uuid1()
+    body['trace_id'] = f'{trace_id}'
     payload = json.dumps(body)
     url = app_config['eventstore2']['url']
 
-    event_receipt = f'Received event report fan speed request with a trace id of {fan_speed_id}'
+    event_receipt = f'Received event report fan speed request with a trace id of {trace_id}'
     logging.info(event_receipt)
     print(event_receipt)
 
     r = requests.post(url, data=payload, headers={"Content-Type": "application/json"})
 
-    return_receipt = f'Returned event report fan speed response (Id: {fan_speed_id}) with status {r.status_code}'
+    return_receipt = f'Returned event report fan speed response (Id: {trace_id}) with status {r.status_code}'
     logging.info(return_receipt)
     print(return_receipt)
 

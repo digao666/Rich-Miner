@@ -16,10 +16,12 @@ class Temperature(Base):
     ming_card_model = Column(String(100), nullable=False)
     core_temperature = Column(Integer, nullable=False)
     shell_temperature = Column(Integer, nullable=False)
+    trace_id = Column(String(100), nullable=False)
 
-    def __init__(self, temperature_id, ming_rig_id, ming_card_id, timestamp, ming_card_model, core_temperature, shell_temperature):
+
+    def __init__(self, trace_id, ming_rig_id, ming_card_id, timestamp, ming_card_model, core_temperature, shell_temperature):
         """ Initializes a temperature reading """
-        self.id = temperature_id
+        self.trace_id = trace_id
         self.ming_rig_id = ming_rig_id
         self.ming_card_id = ming_card_id
         self.timestamp = timestamp
@@ -31,7 +33,7 @@ class Temperature(Base):
     def to_dict(self):
         """ Dictionary Representation of a temperature reading """
         dict = {}
-        dict['id'] = self.temperature_id
+        dict['trace_id'] = self.trace_id
         dict['ming_rig_id'] = self.ming_rig_id
         dict['ming_card_id'] = self.ming_card_id
         dict['timestamp'] = self.timestamp

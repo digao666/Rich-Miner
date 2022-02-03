@@ -1,20 +1,28 @@
 import connexion
 from connexion import NoContent
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
-from base import Base
 from fan_speed import FanSpeed
 from temperature import Temperature
+import yaml
 
-DB_ENGINE = create_engine("sqlite:///readings.sqlite")
-Base.metadata.bind = DB_ENGINE
-DB_SESSION = sessionmaker(bind=DB_ENGINE)
+with open('app_conf.yml', 'r') as f:
+    app_config = yaml.safe_load(f.read())
+
+user = app_config['database']['user']
+password = app_config['database']['password']
+port = app_config['database']['port']
+hostname = app_config['database']['hostname']
+db = app_config['database']['db']
+
+DB_ENGINE = create_engine (f'mysql+pymysql://{user}:{password}@{hostname}:{port}/{db}')
+
+with open('app_conf.yml', 'r') as f:
+    app_config = yaml.safe_load(f.read())
 
 
 def report_temperature(body):
     """ Receives a hardware temperature """
     session = DB_SESSION()
-    temp = Temperature(body['id'],
+    temp = Temperature(body['trace_id'],
                        body['ming_rig_id'],
                        body['ming_card_id'],
                        body['timestamp'],
@@ -30,7 +38,7 @@ def report_temperature(body):
 def report_fan_speed(body):
     """ Receives a fan speed """
     session = DB_SESSION()
-    fs = FanSpeed(body['id'],
+    fs = FanSpeed(body['trace_id'],
                   body['ming_rig_id'],
                   body['ming_card_id'],
                   body['timestamp'],
