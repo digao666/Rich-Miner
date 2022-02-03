@@ -5,7 +5,7 @@ conn = sqlite3.connect('readings.sqlite')
 c = conn.cursor()
 c.execute('''
           CREATE TABLE fan_speed
-          (id INTEGER PRIMARY KEY ASC, 
+          (id VARCHAR(250) PRIMARY KEY ASC, 
            ming_rig_id VARCHAR(250) NOT NULL,
            ming_card_id VARCHAR(250) NOT NULL,
            ming_card_model VARCHAR(100) NOT NULL,
@@ -17,7 +17,7 @@ c.execute('''
 
 c.execute('''
           CREATE TABLE temperature
-          (id INTEGER PRIMARY KEY ASC, 
+          (id VARCHAR(250) PRIMARY KEY ASC, 
            ming_rig_id VARCHAR(250) NOT NULL,
            ming_card_id VARCHAR(250) NOT NULL,
            ming_card_model VARCHAR(100) NOT NULL,

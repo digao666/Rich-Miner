@@ -61,10 +61,9 @@ def report_temperature(body):
     """ Receives a hardware temperature """
     # write_request(body)
     temperature_id = uuid.uuid1()
-    body['id'] = temperature_id
+    body['id'] = f'{temperature_id}'
     payload = json.dumps(body)
-    url = app_config.eventstore1.url
-    # payload.append(id = temperature_id)
+    url = app_config['eventstore1']['url']
     event_receipt = f'Received event report temperature request with a trace id of {temperature_id}'
     logging.info(event_receipt)
 
@@ -76,14 +75,13 @@ def report_temperature(body):
     return NoContent, r.status_code
 
 
-
 def report_fan_speed(body):
     """ Receives a fan speed """
     # write_request(body)
     fan_speed_id = uuid.uuid1()
-    body['id'] = fan_speed_id
+    body['id'] = f'{fan_speed_id}'
     payload = json.dumps(body)
-    url = app_config.eventstore2.url
+    url = app_config['eventstore2']['url']
 
     event_receipt = f'Received event report fan speed request with a trace id of {fan_speed_id}'
     logging.info(event_receipt)
