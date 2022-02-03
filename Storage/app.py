@@ -6,9 +6,19 @@ from base import Base
 from fan_speed import FanSpeed
 from temperature import Temperature
 import yaml
+import logging
+import logging.config
 
 with open('app_conf.yml', 'r') as f:
     app_config = yaml.safe_load(f.read())
+
+
+with open('log_conf.yml', 'r') as f:
+    log_config = yaml.safe_load(f.read())
+    logging.config.dictConfig(log_config)
+
+logger = logging.getLogger('storage')
+
 
 user = app_config['datastore']['user']
 password = app_config['datastore']['password']
@@ -19,9 +29,6 @@ db = app_config['datastore']['db']
 DB_ENGINE = create_engine (f'mysql+pymysql://{user}:{password}@{hostname}:{port}/{db}')
 Base.metadata.bind = DB_ENGINE
 DB_SESSION = sessionmaker(bind=DB_ENGINE)
-
-with open('app_conf.yml', 'r') as f:
-    app_config = yaml.safe_load(f.read())
 
 
 def report_temperature(body):
@@ -37,6 +44,8 @@ def report_temperature(body):
     session.add(temp)
     session.commit()
     session.close()
+    trace_id = body['trace_id']
+    logger.debug(f'Stored event temperature request with a trace id of {trace_id}')
     return NoContent, 201
 
 
@@ -53,6 +62,8 @@ def report_fan_speed(body):
     session.add(fs)
     session.commit()
     session.close()
+    trace_id = body['trace_id']
+    logger.debug(f'Stored event fan speed request with a trace id of {trace_id}')
     return NoContent, 201
 
 
