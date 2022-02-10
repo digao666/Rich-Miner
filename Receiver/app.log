@@ -404,3 +404,404 @@
 2022-02-03 15:24:52,729 - receiver - INFO - Returned event report fan speed response (Id: 7c0a5e53-8548-11ec-9aa3-b42e99a07450) with status 201
 2022-02-03 15:24:53,718 - receiver - INFO - Returned event report fan speed response (Id: 7ca30da7-8548-11ec-aa3e-b42e99a07450) with status 201
 2022-02-03 15:24:54,732 - receiver - INFO - Returned event report fan speed response (Id: 7d3c684c-8548-11ec-9edc-b42e99a07450) with status 201
+2022-02-03 15:42:15,876 - receiver - INFO - Received event report temperature request with a trace id of eb061101-854a-11ec-a361-b42e99a07450
+2022-02-03 15:42:16,885 - receiver - INFO - Received event report temperature request with a trace id of eba023db-854a-11ec-9b14-b42e99a07450
+2022-02-03 15:42:17,887 - receiver - INFO - Received event report temperature request with a trace id of ec39116f-854a-11ec-b827-b42e99a07450
+2022-02-03 15:42:17,933 - receiver - INFO - Returned event report temperature response (Id: eb061101-854a-11ec-a361-b42e99a07450) with status 201
+2022-02-03 15:42:17,935 - receiver - INFO - Received event report fan speed request with a trace id of ec4050eb-854a-11ec-92c3-b42e99a07450
+2022-02-03 15:42:18,873 - receiver - INFO - Received event report temperature request with a trace id of eccf857f-854a-11ec-9ab7-b42e99a07450
+2022-02-03 15:42:18,923 - receiver - INFO - Returned event report temperature response (Id: eba023db-854a-11ec-9b14-b42e99a07450) with status 201
+2022-02-03 15:42:18,925 - receiver - INFO - Received event report fan speed request with a trace id of ecd74ffa-854a-11ec-a9ce-b42e99a07450
+2022-02-03 15:42:19,875 - receiver - INFO - Received event report temperature request with a trace id of ed6854ac-854a-11ec-ac47-b42e99a07450
+2022-02-03 15:42:19,924 - receiver - INFO - Returned event report temperature response (Id: ec39116f-854a-11ec-b827-b42e99a07450) with status 201
+2022-02-03 15:42:19,926 - receiver - INFO - Received event report fan speed request with a trace id of ed702fcd-854a-11ec-83be-b42e99a07450
+2022-02-03 15:42:19,971 - receiver - INFO - Returned event report fan speed response (Id: ec4050eb-854a-11ec-92c3-b42e99a07450) with status 201
+2022-02-03 15:42:19,973 - receiver - INFO - Received event report temperature request with a trace id of ed7746cd-854a-11ec-a80a-b42e99a07450
+2022-02-03 15:42:20,875 - receiver - INFO - Received event report temperature request with a trace id of ee00e176-854a-11ec-83eb-b42e99a07450
+2022-02-03 15:42:20,911 - receiver - INFO - Returned event report temperature response (Id: eccf857f-854a-11ec-9ab7-b42e99a07450) with status 201
+2022-02-03 15:42:20,913 - receiver - INFO - Received event report fan speed request with a trace id of ee06acb7-854a-11ec-a5dc-b42e99a07450
+2022-02-03 15:42:20,970 - receiver - INFO - Returned event report fan speed response (Id: ecd74ffa-854a-11ec-a9ce-b42e99a07450) with status 201
+2022-02-03 15:42:20,973 - receiver - INFO - Received event report temperature request with a trace id of ee0fe652-854a-11ec-a00a-b42e99a07450
+2022-02-03 15:42:21,875 - receiver - INFO - Received event report temperature request with a trace id of ee998900-854a-11ec-97e2-b42e99a07450
+2022-02-03 15:42:21,912 - receiver - INFO - Returned event report temperature response (Id: ed6854ac-854a-11ec-ac47-b42e99a07450) with status 201
+2022-02-03 15:42:21,914 - receiver - INFO - Received event report fan speed request with a trace id of ee9f7d86-854a-11ec-8785-b42e99a07450
+2022-02-03 15:42:21,972 - receiver - INFO - Returned event report fan speed response (Id: ed702fcd-854a-11ec-83be-b42e99a07450) with status 201
+2022-02-03 15:42:21,974 - receiver - INFO - Received event report temperature request with a trace id of eea8af28-854a-11ec-b420-b42e99a07450
+2022-02-03 15:42:22,019 - receiver - INFO - Returned event report temperature response (Id: ed7746cd-854a-11ec-a80a-b42e99a07450) with status 201
+2022-02-03 15:42:22,021 - receiver - INFO - Received event report fan speed request with a trace id of eeafbe52-854a-11ec-b473-b42e99a07450
+2022-02-03 15:42:22,875 - receiver - INFO - Received event report temperature request with a trace id of ef3207f5-854a-11ec-845f-b42e99a07450
+2022-02-03 15:42:22,911 - receiver - INFO - Returned event report temperature response (Id: ee00e176-854a-11ec-83eb-b42e99a07450) with status 201
+2022-02-03 15:42:22,914 - receiver - INFO - Received event report fan speed request with a trace id of ef380cb0-854a-11ec-9957-b42e99a07450
+2022-02-03 15:42:22,957 - receiver - INFO - Returned event report fan speed response (Id: ee06acb7-854a-11ec-a5dc-b42e99a07450) with status 201
+2022-02-03 15:42:22,959 - receiver - INFO - Received event report temperature request with a trace id of ef3efeec-854a-11ec-9cc0-b42e99a07450
+2022-02-03 15:42:23,019 - receiver - INFO - Returned event report temperature response (Id: ee0fe652-854a-11ec-a00a-b42e99a07450) with status 201
+2022-02-03 15:42:23,022 - receiver - INFO - Received event report fan speed request with a trace id of ef487b0c-854a-11ec-afe7-b42e99a07450
+2022-02-03 15:42:23,875 - receiver - INFO - Received event report temperature request with a trace id of efcab4b7-854a-11ec-8043-b42e99a07450
+2022-02-03 15:42:23,912 - receiver - INFO - Returned event report temperature response (Id: ee998900-854a-11ec-97e2-b42e99a07450) with status 201
+2022-02-03 15:42:23,914 - receiver - INFO - Received event report fan speed request with a trace id of efd0ab90-854a-11ec-861e-b42e99a07450
+2022-02-03 15:42:23,958 - receiver - INFO - Returned event report fan speed response (Id: ee9f7d86-854a-11ec-8785-b42e99a07450) with status 201
+2022-02-03 15:42:23,960 - receiver - INFO - Received event report temperature request with a trace id of efd7b2e1-854a-11ec-b175-b42e99a07450
+2022-02-03 15:42:24,020 - receiver - INFO - Returned event report temperature response (Id: eea8af28-854a-11ec-b420-b42e99a07450) with status 201
+2022-02-03 15:42:24,023 - receiver - INFO - Received event report fan speed request with a trace id of efe13c50-854a-11ec-8034-b42e99a07450
+2022-02-03 15:42:24,067 - receiver - INFO - Returned event report fan speed response (Id: eeafbe52-854a-11ec-b473-b42e99a07450) with status 201
+2022-02-03 15:42:24,069 - receiver - INFO - Received event report temperature request with a trace id of efe854b5-854a-11ec-91d3-b42e99a07450
+2022-02-03 15:42:24,873 - receiver - INFO - Received event report temperature request with a trace id of f06305ae-854a-11ec-b00b-b42e99a07450
+2022-02-03 15:42:24,918 - receiver - INFO - Returned event report temperature response (Id: ef3207f5-854a-11ec-845f-b42e99a07450) with status 201
+2022-02-03 15:42:24,920 - receiver - INFO - Received event report fan speed request with a trace id of f06a1e1e-854a-11ec-973a-b42e99a07450
+2022-02-03 15:42:24,964 - receiver - INFO - Returned event report fan speed response (Id: ef380cb0-854a-11ec-9957-b42e99a07450) with status 201
+2022-02-03 15:42:24,966 - receiver - INFO - Received event report temperature request with a trace id of f0713694-854a-11ec-a463-b42e99a07450
+2022-02-03 15:42:25,010 - receiver - INFO - Returned event report temperature response (Id: ef3efeec-854a-11ec-9cc0-b42e99a07450) with status 201
+2022-02-03 15:42:25,013 - receiver - INFO - Received event report fan speed request with a trace id of f0784f0e-854a-11ec-b695-b42e99a07450
+2022-02-03 15:42:25,072 - receiver - INFO - Returned event report fan speed response (Id: ef487b0c-854a-11ec-afe7-b42e99a07450) with status 201
+2022-02-03 15:42:25,074 - receiver - INFO - Received event report temperature request with a trace id of f081b23e-854a-11ec-b46f-b42e99a07450
+2022-02-03 15:42:25,922 - receiver - INFO - Returned event report temperature response (Id: efcab4b7-854a-11ec-8043-b42e99a07450) with status 201
+2022-02-03 15:42:25,924 - receiver - INFO - Received event report fan speed request with a trace id of f1035b1d-854a-11ec-9cc9-b42e99a07450
+2022-02-03 15:42:25,969 - receiver - INFO - Returned event report fan speed response (Id: efd0ab90-854a-11ec-861e-b42e99a07450) with status 201
+2022-02-03 15:42:25,971 - receiver - INFO - Received event report temperature request with a trace id of f10a881f-854a-11ec-b12c-b42e99a07450
+2022-02-03 15:42:26,001 - receiver - INFO - Returned event report temperature response (Id: efd7b2e1-854a-11ec-b175-b42e99a07450) with status 201
+2022-02-03 15:42:26,003 - receiver - INFO - Received event report fan speed request with a trace id of f10f569f-854a-11ec-9da6-b42e99a07450
+2022-02-03 15:42:26,077 - receiver - INFO - Returned event report fan speed response (Id: efe13c50-854a-11ec-8034-b42e99a07450) with status 201
+2022-02-03 15:42:26,080 - receiver - INFO - Received event report temperature request with a trace id of f11b2270-854a-11ec-bec6-b42e99a07450
+2022-02-03 15:42:26,123 - receiver - INFO - Returned event report temperature response (Id: efe854b5-854a-11ec-91d3-b42e99a07450) with status 201
+2022-02-03 15:42:26,126 - receiver - INFO - Received event report fan speed request with a trace id of f1220e82-854a-11ec-8719-b42e99a07450
+2022-02-03 15:42:26,911 - receiver - INFO - Returned event report temperature response (Id: f06305ae-854a-11ec-b00b-b42e99a07450) with status 201
+2022-02-03 15:42:26,914 - receiver - INFO - Received event report fan speed request with a trace id of f19a5a91-854a-11ec-990a-b42e99a07450
+2022-02-03 15:42:26,957 - receiver - INFO - Returned event report fan speed response (Id: f06a1e1e-854a-11ec-973a-b42e99a07450) with status 201
+2022-02-03 15:42:26,960 - receiver - INFO - Received event report temperature request with a trace id of f1a15e71-854a-11ec-9801-b42e99a07450
+2022-02-03 15:42:27,004 - receiver - INFO - Returned event report temperature response (Id: f0713694-854a-11ec-a463-b42e99a07450) with status 201
+2022-02-03 15:42:27,006 - receiver - INFO - Received event report fan speed request with a trace id of f1a876da-854a-11ec-aaff-b42e99a07450
+2022-02-03 15:42:27,051 - receiver - INFO - Returned event report fan speed response (Id: f0784f0e-854a-11ec-b695-b42e99a07450) with status 201
+2022-02-03 15:42:27,054 - receiver - INFO - Received event report temperature request with a trace id of f1afc9e3-854a-11ec-8a1d-b42e99a07450
+2022-02-03 15:42:27,113 - receiver - INFO - Returned event report temperature response (Id: f081b23e-854a-11ec-b46f-b42e99a07450) with status 201
+2022-02-03 15:42:27,115 - receiver - INFO - Received event report fan speed request with a trace id of f1b90615-854a-11ec-989d-b42e99a07450
+2022-02-03 15:42:27,976 - receiver - INFO - Returned event report fan speed response (Id: f1035b1d-854a-11ec-9cc9-b42e99a07450) with status 201
+2022-02-03 15:42:27,979 - receiver - INFO - Received event report temperature request with a trace id of f23cf6af-854a-11ec-9602-b42e99a07450
+2022-02-03 15:42:28,023 - receiver - INFO - Returned event report temperature response (Id: f10a881f-854a-11ec-b12c-b42e99a07450) with status 201
+2022-02-03 15:42:28,025 - receiver - INFO - Received event report fan speed request with a trace id of f243fba3-854a-11ec-9a9c-b42e99a07450
+2022-02-03 15:42:28,054 - receiver - INFO - Returned event report fan speed response (Id: f10f569f-854a-11ec-9da6-b42e99a07450) with status 201
+2022-02-03 15:42:28,056 - receiver - INFO - Received event report temperature request with a trace id of f2489c70-854a-11ec-b512-b42e99a07450
+2022-02-03 15:42:28,131 - receiver - INFO - Returned event report temperature response (Id: f11b2270-854a-11ec-bec6-b42e99a07450) with status 201
+2022-02-03 15:42:28,133 - receiver - INFO - Received event report fan speed request with a trace id of f2546134-854a-11ec-b705-b42e99a07450
+2022-02-03 15:42:28,177 - receiver - INFO - Returned event report fan speed response (Id: f1220e82-854a-11ec-8719-b42e99a07450) with status 201
+2022-02-03 15:42:28,179 - receiver - INFO - Received event report temperature request with a trace id of f25b7d05-854a-11ec-b25c-b42e99a07450
+2022-02-03 15:42:28,962 - receiver - INFO - Returned event report fan speed response (Id: f19a5a91-854a-11ec-990a-b42e99a07450) with status 201
+2022-02-03 15:42:28,964 - receiver - INFO - Received event report temperature request with a trace id of f2d34881-854a-11ec-8080-b42e99a07450
+2022-02-03 15:42:29,009 - receiver - INFO - Returned event report temperature response (Id: f1a15e71-854a-11ec-9801-b42e99a07450) with status 201
+2022-02-03 15:42:29,011 - receiver - INFO - Received event report fan speed request with a trace id of f2da5186-854a-11ec-ab82-b42e99a07450
+2022-02-03 15:42:29,039 - receiver - INFO - Returned event report fan speed response (Id: f1a876da-854a-11ec-aaff-b42e99a07450) with status 201
+2022-02-03 15:42:29,042 - receiver - INFO - Received event report temperature request with a trace id of f2df036f-854a-11ec-b66a-b42e99a07450
+2022-02-03 15:42:29,100 - receiver - INFO - Returned event report temperature response (Id: f1afc9e3-854a-11ec-8a1d-b42e99a07450) with status 201
+2022-02-03 15:42:29,102 - receiver - INFO - Received event report fan speed request with a trace id of f2e854f2-854a-11ec-a55e-b42e99a07450
+2022-02-03 15:42:29,164 - receiver - INFO - Returned event report fan speed response (Id: f1b90615-854a-11ec-989d-b42e99a07450) with status 201
+2022-02-03 15:42:29,166 - receiver - INFO - Received event report temperature request with a trace id of f2f21578-854a-11ec-b835-b42e99a07450
+2022-02-03 15:42:30,025 - receiver - INFO - Returned event report temperature response (Id: f23cf6af-854a-11ec-9602-b42e99a07450) with status 201
+2022-02-03 15:42:30,027 - receiver - INFO - Received event report fan speed request with a trace id of f375747e-854a-11ec-9f0b-b42e99a07450
+2022-02-03 15:42:30,071 - receiver - INFO - Returned event report fan speed response (Id: f243fba3-854a-11ec-9a9c-b42e99a07450) with status 201
+2022-02-03 15:42:30,074 - receiver - INFO - Received event report temperature request with a trace id of f37c8af9-854a-11ec-acf6-b42e99a07450
+2022-02-03 15:42:30,101 - receiver - INFO - Returned event report temperature response (Id: f2489c70-854a-11ec-b512-b42e99a07450) with status 201
+2022-02-03 15:42:30,104 - receiver - INFO - Received event report fan speed request with a trace id of f38122e4-854a-11ec-8b6e-b42e99a07450
+2022-02-03 15:42:30,179 - receiver - INFO - Returned event report fan speed response (Id: f2546134-854a-11ec-b705-b42e99a07450) with status 201
+2022-02-03 15:42:30,183 - receiver - INFO - Received event report temperature request with a trace id of f38d3079-854a-11ec-abef-b42e99a07450
+2022-02-03 15:42:30,226 - receiver - INFO - Returned event report temperature response (Id: f25b7d05-854a-11ec-b25c-b42e99a07450) with status 201
+2022-02-03 15:42:30,228 - receiver - INFO - Received event report fan speed request with a trace id of f3941e2e-854a-11ec-bf41-b42e99a07450
+2022-02-03 15:42:31,010 - receiver - INFO - Returned event report temperature response (Id: f2d34881-854a-11ec-8080-b42e99a07450) with status 201
+2022-02-03 15:42:31,012 - receiver - INFO - Received event report fan speed request with a trace id of f40bb32d-854a-11ec-a582-b42e99a07450
+2022-02-03 15:42:31,041 - receiver - INFO - Returned event report fan speed response (Id: f2da5186-854a-11ec-ab82-b42e99a07450) with status 201
+2022-02-03 15:42:31,043 - receiver - INFO - Received event report temperature request with a trace id of f4106251-854a-11ec-8091-b42e99a07450
+2022-02-03 15:42:31,072 - receiver - INFO - Returned event report temperature response (Id: f2df036f-854a-11ec-b66a-b42e99a07450) with status 201
+2022-02-03 15:42:31,074 - receiver - INFO - Received event report fan speed request with a trace id of f41519f7-854a-11ec-812a-b42e99a07450
+2022-02-03 15:42:31,132 - receiver - INFO - Returned event report fan speed response (Id: f2e854f2-854a-11ec-a55e-b42e99a07450) with status 201
+2022-02-03 15:42:31,134 - receiver - INFO - Received event report temperature request with a trace id of f41e651a-854a-11ec-8921-b42e99a07450
+2022-02-03 15:42:31,209 - receiver - INFO - Returned event report temperature response (Id: f2f21578-854a-11ec-b835-b42e99a07450) with status 201
+2022-02-03 15:42:31,211 - receiver - INFO - Received event report fan speed request with a trace id of f42a13e6-854a-11ec-ba79-b42e99a07450
+2022-02-03 15:42:32,072 - receiver - INFO - Returned event report fan speed response (Id: f375747e-854a-11ec-9f0b-b42e99a07450) with status 201
+2022-02-03 15:42:32,074 - receiver - INFO - Received event report temperature request with a trace id of f4adba28-854a-11ec-ac04-b42e99a07450
+2022-02-03 15:42:32,118 - receiver - INFO - Returned event report temperature response (Id: f37c8af9-854a-11ec-acf6-b42e99a07450) with status 201
+2022-02-03 15:42:32,120 - receiver - INFO - Received event report fan speed request with a trace id of f4b4ca00-854a-11ec-8ebe-b42e99a07450
+2022-02-03 15:42:32,151 - receiver - INFO - Returned event report fan speed response (Id: f38122e4-854a-11ec-8b6e-b42e99a07450) with status 201
+2022-02-03 15:42:32,153 - receiver - INFO - Received event report temperature request with a trace id of f4b9bd58-854a-11ec-9419-b42e99a07450
+2022-02-03 15:42:32,226 - receiver - INFO - Returned event report temperature response (Id: f38d3079-854a-11ec-abef-b42e99a07450) with status 201
+2022-02-03 15:42:32,229 - receiver - INFO - Received event report fan speed request with a trace id of f4c57492-854a-11ec-b824-b42e99a07450
+2022-02-03 15:42:32,272 - receiver - INFO - Returned event report fan speed response (Id: f3941e2e-854a-11ec-bf41-b42e99a07450) with status 201
+2022-02-03 15:42:32,275 - receiver - INFO - Received event report temperature request with a trace id of f4cc5c65-854a-11ec-8492-b42e99a07450
+2022-02-03 15:42:33,058 - receiver - INFO - Returned event report fan speed response (Id: f40bb32d-854a-11ec-a582-b42e99a07450) with status 201
+2022-02-03 15:42:33,061 - receiver - INFO - Received event report temperature request with a trace id of f5443650-854a-11ec-91cd-b42e99a07450
+2022-02-03 15:42:33,089 - receiver - INFO - Returned event report temperature response (Id: f4106251-854a-11ec-8091-b42e99a07450) with status 201
+2022-02-03 15:42:33,091 - receiver - INFO - Received event report fan speed request with a trace id of f548df63-854a-11ec-bb00-b42e99a07450
+2022-02-03 15:42:33,125 - receiver - INFO - Returned event report fan speed response (Id: f41519f7-854a-11ec-812a-b42e99a07450) with status 201
+2022-02-03 15:42:33,128 - receiver - INFO - Received event report temperature request with a trace id of f54e8f9e-854a-11ec-a296-b42e99a07450
+2022-02-03 15:42:33,186 - receiver - INFO - Returned event report temperature response (Id: f41e651a-854a-11ec-8921-b42e99a07450) with status 201
+2022-02-03 15:42:33,188 - receiver - INFO - Received event report fan speed request with a trace id of f557cfb1-854a-11ec-8850-b42e99a07450
+2022-02-03 15:42:33,262 - receiver - INFO - Returned event report fan speed response (Id: f42a13e6-854a-11ec-ba79-b42e99a07450) with status 201
+2022-02-03 15:42:33,264 - receiver - INFO - Received event report temperature request with a trace id of f5634786-854a-11ec-ab89-b42e99a07450
+2022-02-03 15:42:34,122 - receiver - INFO - Returned event report temperature response (Id: f4adba28-854a-11ec-ac04-b42e99a07450) with status 201
+2022-02-03 15:42:34,124 - receiver - INFO - Received event report fan speed request with a trace id of f5e687a0-854a-11ec-87f4-b42e99a07450
+2022-02-03 15:42:34,168 - receiver - INFO - Returned event report fan speed response (Id: f4b4ca00-854a-11ec-8ebe-b42e99a07450) with status 201
+2022-02-03 15:42:34,171 - receiver - INFO - Received event report temperature request with a trace id of f5edb110-854a-11ec-ace8-b42e99a07450
+2022-02-03 15:42:34,199 - receiver - INFO - Returned event report temperature response (Id: f4b9bd58-854a-11ec-9419-b42e99a07450) with status 201
+2022-02-03 15:42:34,201 - receiver - INFO - Received event report fan speed request with a trace id of f5f24a43-854a-11ec-9c93-b42e99a07450
+2022-02-03 15:42:34,276 - receiver - INFO - Returned event report fan speed response (Id: f4c57492-854a-11ec-b824-b42e99a07450) with status 201
+2022-02-03 15:42:34,279 - receiver - INFO - Received event report temperature request with a trace id of f5fe18a8-854a-11ec-af4c-b42e99a07450
+2022-02-03 15:42:34,323 - receiver - INFO - Returned event report temperature response (Id: f4cc5c65-854a-11ec-8492-b42e99a07450) with status 201
+2022-02-03 15:42:34,325 - receiver - INFO - Received event report fan speed request with a trace id of f6052d17-854a-11ec-b28d-b42e99a07450
+2022-02-03 15:42:35,092 - receiver - INFO - Returned event report temperature response (Id: f5443650-854a-11ec-91cd-b42e99a07450) with status 201
+2022-02-03 15:42:35,094 - receiver - INFO - Received event report fan speed request with a trace id of f67a9bbb-854a-11ec-a0ce-b42e99a07450
+2022-02-03 15:42:35,123 - receiver - INFO - Returned event report fan speed response (Id: f548df63-854a-11ec-bb00-b42e99a07450) with status 201
+2022-02-03 15:42:35,125 - receiver - INFO - Received event report temperature request with a trace id of f67f3f36-854a-11ec-a650-b42e99a07450
+2022-02-03 15:42:35,168 - receiver - INFO - Returned event report temperature response (Id: f54e8f9e-854a-11ec-a296-b42e99a07450) with status 201
+2022-02-03 15:42:35,170 - receiver - INFO - Received event report fan speed request with a trace id of f6863dba-854a-11ec-8b4f-b42e99a07450
+2022-02-03 15:42:35,229 - receiver - INFO - Returned event report fan speed response (Id: f557cfb1-854a-11ec-8850-b42e99a07450) with status 201
+2022-02-03 15:42:35,232 - receiver - INFO - Received event report temperature request with a trace id of f68f9d16-854a-11ec-834e-b42e99a07450
+2022-02-03 15:42:35,308 - receiver - INFO - Returned event report temperature response (Id: f5634786-854a-11ec-ab89-b42e99a07450) with status 201
+2022-02-03 15:42:35,310 - receiver - INFO - Received event report fan speed request with a trace id of f69b7679-854a-11ec-9ac2-b42e99a07450
+2022-02-03 15:42:36,171 - receiver - INFO - Returned event report fan speed response (Id: f5e687a0-854a-11ec-87f4-b42e99a07450) with status 201
+2022-02-03 15:42:36,174 - receiver - INFO - Received event report temperature request with a trace id of f71f4c7a-854a-11ec-b72f-b42e99a07450
+2022-02-03 15:42:36,217 - receiver - INFO - Returned event report temperature response (Id: f5edb110-854a-11ec-ace8-b42e99a07450) with status 201
+2022-02-03 15:42:36,219 - receiver - INFO - Received event report fan speed request with a trace id of f7264a8a-854a-11ec-86e0-b42e99a07450
+2022-02-03 15:42:36,232 - receiver - INFO - Returned event report fan speed response (Id: f5f24a43-854a-11ec-9c93-b42e99a07450) with status 201
+2022-02-03 15:42:36,234 - receiver - INFO - Received event report temperature request with a trace id of f72873a3-854a-11ec-8645-b42e99a07450
+2022-02-03 15:42:36,323 - receiver - INFO - Returned event report temperature response (Id: f5fe18a8-854a-11ec-af4c-b42e99a07450) with status 201
+2022-02-03 15:42:36,326 - receiver - INFO - Received event report fan speed request with a trace id of f7367ffd-854a-11ec-99ae-b42e99a07450
+2022-02-03 15:42:36,370 - receiver - INFO - Returned event report fan speed response (Id: f6052d17-854a-11ec-b28d-b42e99a07450) with status 201
+2022-02-03 15:42:36,382 - receiver - INFO - Received event report temperature request with a trace id of f73f2a68-854a-11ec-af47-b42e99a07450
+2022-02-03 15:42:37,142 - receiver - INFO - Returned event report fan speed response (Id: f67a9bbb-854a-11ec-a0ce-b42e99a07450) with status 201
+2022-02-03 15:42:37,145 - receiver - INFO - Received event report temperature request with a trace id of f7b37cbb-854a-11ec-bdc9-b42e99a07450
+2022-02-03 15:42:37,173 - receiver - INFO - Returned event report temperature response (Id: f67f3f36-854a-11ec-a650-b42e99a07450) with status 201
+2022-02-03 15:42:37,175 - receiver - INFO - Received event report fan speed request with a trace id of f7b8241d-854a-11ec-91f7-b42e99a07450
+2022-02-03 15:42:37,204 - receiver - INFO - Returned event report fan speed response (Id: f6863dba-854a-11ec-8b4f-b42e99a07450) with status 201
+2022-02-03 15:42:37,206 - receiver - INFO - Received event report temperature request with a trace id of f7bcd087-854a-11ec-84fb-b42e99a07450
+2022-02-03 15:42:37,265 - receiver - INFO - Returned event report temperature response (Id: f68f9d16-854a-11ec-834e-b42e99a07450) with status 201
+2022-02-03 15:42:37,267 - receiver - INFO - Received event report fan speed request with a trace id of f7c62634-854a-11ec-95e9-b42e99a07450
+2022-02-03 15:42:37,358 - receiver - INFO - Returned event report fan speed response (Id: f69b7679-854a-11ec-9ac2-b42e99a07450) with status 201
+2022-02-03 15:42:37,360 - receiver - INFO - Received event report temperature request with a trace id of f7d45ba2-854a-11ec-8bad-b42e99a07450
+2022-02-03 15:42:38,224 - receiver - INFO - Returned event report temperature response (Id: f71f4c7a-854a-11ec-b72f-b42e99a07450) with status 201
+2022-02-03 15:42:38,226 - receiver - INFO - Received event report fan speed request with a trace id of f8586b6e-854a-11ec-a783-b42e99a07450
+2022-02-03 15:42:38,269 - receiver - INFO - Returned event report fan speed response (Id: f7264a8a-854a-11ec-86e0-b42e99a07450) with status 201
+2022-02-03 15:42:38,271 - receiver - INFO - Received event report temperature request with a trace id of f85f5da8-854a-11ec-847d-b42e99a07450
+2022-02-03 15:42:38,285 - receiver - INFO - Returned event report temperature response (Id: f72873a3-854a-11ec-8645-b42e99a07450) with status 201
+2022-02-03 15:42:38,287 - receiver - INFO - Received event report fan speed request with a trace id of f861cd89-854a-11ec-8c7d-b42e99a07450
+2022-02-03 15:42:38,376 - receiver - INFO - Returned event report fan speed response (Id: f7367ffd-854a-11ec-99ae-b42e99a07450) with status 201
+2022-02-03 15:42:38,378 - receiver - INFO - Received event report temperature request with a trace id of f86fbf10-854a-11ec-8859-b42e99a07450
+2022-02-03 15:42:38,423 - receiver - INFO - Returned event report temperature response (Id: f73f2a68-854a-11ec-af47-b42e99a07450) with status 201
+2022-02-03 15:42:38,425 - receiver - INFO - Received event report fan speed request with a trace id of f876d4a7-854a-11ec-a7ba-b42e99a07450
+2022-02-03 15:42:39,193 - receiver - INFO - Returned event report temperature response (Id: f7b37cbb-854a-11ec-bdc9-b42e99a07450) with status 201
+2022-02-03 15:42:39,195 - receiver - INFO - Received event report fan speed request with a trace id of f8ec6037-854a-11ec-893f-b42e99a07450
+2022-02-03 15:42:39,224 - receiver - INFO - Returned event report fan speed response (Id: f7b8241d-854a-11ec-91f7-b42e99a07450) with status 201
+2022-02-03 15:42:39,226 - receiver - INFO - Received event report temperature request with a trace id of f8f11aad-854a-11ec-af3c-b42e99a07450
+2022-02-03 15:42:39,255 - receiver - INFO - Returned event report temperature response (Id: f7bcd087-854a-11ec-84fb-b42e99a07450) with status 201
+2022-02-03 15:42:39,257 - receiver - INFO - Received event report fan speed request with a trace id of f8f5bd57-854a-11ec-ba66-b42e99a07450
+2022-02-03 15:42:39,301 - receiver - INFO - Returned event report fan speed response (Id: f7c62634-854a-11ec-95e9-b42e99a07450) with status 201
+2022-02-03 15:42:39,304 - receiver - INFO - Received event report temperature request with a trace id of f8fcef35-854a-11ec-bf7b-b42e99a07450
+2022-02-03 15:42:39,409 - receiver - INFO - Returned event report temperature response (Id: f7d45ba2-854a-11ec-8bad-b42e99a07450) with status 201
+2022-02-03 15:42:39,411 - receiver - INFO - Received event report fan speed request with a trace id of f90d3ed8-854a-11ec-bcb1-b42e99a07450
+2022-02-03 15:42:40,271 - receiver - INFO - Returned event report fan speed response (Id: f8586b6e-854a-11ec-a783-b42e99a07450) with status 201
+2022-02-03 15:42:40,273 - receiver - INFO - Received event report temperature request with a trace id of f990d021-854a-11ec-9c56-b42e99a07450
+2022-02-03 15:42:40,317 - receiver - INFO - Returned event report temperature response (Id: f85f5da8-854a-11ec-847d-b42e99a07450) with status 201
+2022-02-03 15:42:40,319 - receiver - INFO - Received event report fan speed request with a trace id of f997cfc2-854a-11ec-b4c4-b42e99a07450
+2022-02-03 15:42:40,333 - receiver - INFO - Returned event report fan speed response (Id: f861cd89-854a-11ec-8c7d-b42e99a07450) with status 201
+2022-02-03 15:42:40,335 - receiver - INFO - Received event report temperature request with a trace id of f99a49bb-854a-11ec-bd38-b42e99a07450
+2022-02-03 15:42:40,425 - receiver - INFO - Returned event report temperature response (Id: f86fbf10-854a-11ec-8859-b42e99a07450) with status 201
+2022-02-03 15:42:40,426 - receiver - INFO - Received event report fan speed request with a trace id of f9a83f02-854a-11ec-a5bd-b42e99a07450
+2022-02-03 15:42:40,471 - receiver - INFO - Returned event report fan speed response (Id: f876d4a7-854a-11ec-a7ba-b42e99a07450) with status 201
+2022-02-03 15:42:40,473 - receiver - INFO - Received event report temperature request with a trace id of f9af6059-854a-11ec-a088-b42e99a07450
+2022-02-03 15:42:41,241 - receiver - INFO - Returned event report fan speed response (Id: f8ec6037-854a-11ec-893f-b42e99a07450) with status 201
+2022-02-03 15:42:41,243 - receiver - INFO - Received event report temperature request with a trace id of fa24df31-854a-11ec-aef8-b42e99a07450
+2022-02-03 15:42:41,272 - receiver - INFO - Returned event report temperature response (Id: f8f11aad-854a-11ec-af3c-b42e99a07450) with status 201
+2022-02-03 15:42:41,274 - receiver - INFO - Received event report fan speed request with a trace id of fa29a13e-854a-11ec-87c8-b42e99a07450
+2022-02-03 15:42:41,287 - receiver - INFO - Returned event report fan speed response (Id: f8f5bd57-854a-11ec-ba66-b42e99a07450) with status 201
+2022-02-03 15:42:41,289 - receiver - INFO - Received event report temperature request with a trace id of fa2bdcee-854a-11ec-8bd9-b42e99a07450
+2022-02-03 15:42:41,349 - receiver - INFO - Returned event report temperature response (Id: f8fcef35-854a-11ec-bf7b-b42e99a07450) with status 201
+2022-02-03 15:42:41,352 - receiver - INFO - Received event report fan speed request with a trace id of fa356e71-854a-11ec-ac58-b42e99a07450
+2022-02-03 15:42:41,442 - receiver - INFO - Returned event report fan speed response (Id: f90d3ed8-854a-11ec-bcb1-b42e99a07450) with status 201
+2022-02-03 15:42:41,444 - receiver - INFO - Received event report temperature request with a trace id of fa436ef4-854a-11ec-a79d-b42e99a07450
+2022-02-03 15:42:42,319 - receiver - INFO - Returned event report temperature response (Id: f990d021-854a-11ec-9c56-b42e99a07450) with status 201
+2022-02-03 15:42:42,321 - receiver - INFO - Received event report fan speed request with a trace id of fac9492b-854a-11ec-897a-b42e99a07450
+2022-02-03 15:42:42,364 - receiver - INFO - Returned event report fan speed response (Id: f997cfc2-854a-11ec-b4c4-b42e99a07450) with status 201
+2022-02-03 15:42:42,366 - receiver - INFO - Received event report temperature request with a trace id of fad0394f-854a-11ec-ace7-b42e99a07450
+2022-02-03 15:42:42,380 - receiver - INFO - Returned event report temperature response (Id: f99a49bb-854a-11ec-bd38-b42e99a07450) with status 201
+2022-02-03 15:42:42,382 - receiver - INFO - Received event report fan speed request with a trace id of fad2abde-854a-11ec-af66-b42e99a07450
+2022-02-03 15:42:42,472 - receiver - INFO - Returned event report fan speed response (Id: f9a83f02-854a-11ec-a5bd-b42e99a07450) with status 201
+2022-02-03 15:42:42,474 - receiver - INFO - Received event report temperature request with a trace id of fae0b93c-854a-11ec-9fab-b42e99a07450
+2022-02-03 15:42:42,519 - receiver - INFO - Returned event report temperature response (Id: f9af6059-854a-11ec-a088-b42e99a07450) with status 201
+2022-02-03 15:42:42,521 - receiver - INFO - Received event report fan speed request with a trace id of fae7d730-854a-11ec-87a9-b42e99a07450
+2022-02-03 15:42:43,290 - receiver - INFO - Returned event report temperature response (Id: fa24df31-854a-11ec-aef8-b42e99a07450) with status 201
+2022-02-03 15:42:43,292 - receiver - INFO - Received event report fan speed request with a trace id of fb5d90c7-854a-11ec-8db1-b42e99a07450
+2022-02-03 15:42:43,321 - receiver - INFO - Returned event report fan speed response (Id: fa29a13e-854a-11ec-87c8-b42e99a07450) with status 201
+2022-02-03 15:42:43,322 - receiver - INFO - Received event report temperature request with a trace id of fb62248c-854a-11ec-b2a4-b42e99a07450
+2022-02-03 15:42:43,336 - receiver - INFO - Returned event report temperature response (Id: fa2bdcee-854a-11ec-8bd9-b42e99a07450) with status 201
+2022-02-03 15:42:43,338 - receiver - INFO - Received event report fan speed request with a trace id of fb649590-854a-11ec-918a-b42e99a07450
+2022-02-03 15:42:43,398 - receiver - INFO - Returned event report fan speed response (Id: fa356e71-854a-11ec-ac58-b42e99a07450) with status 201
+2022-02-03 15:42:43,400 - receiver - INFO - Received event report temperature request with a trace id of fb6e0b34-854a-11ec-940b-b42e99a07450
+2022-02-03 15:42:43,491 - receiver - INFO - Returned event report temperature response (Id: fa436ef4-854a-11ec-a79d-b42e99a07450) with status 201
+2022-02-03 15:42:43,493 - receiver - INFO - Received event report fan speed request with a trace id of fb7c287b-854a-11ec-9f84-b42e99a07450
+2022-02-03 15:42:44,371 - receiver - INFO - Returned event report fan speed response (Id: fac9492b-854a-11ec-897a-b42e99a07450) with status 201
+2022-02-03 15:42:44,374 - receiver - INFO - Received event report temperature request with a trace id of fc0272c3-854a-11ec-872d-b42e99a07450
+2022-02-03 15:42:44,418 - receiver - INFO - Returned event report temperature response (Id: fad0394f-854a-11ec-ace7-b42e99a07450) with status 201
+2022-02-03 15:42:44,420 - receiver - INFO - Received event report fan speed request with a trace id of fc098e35-854a-11ec-8dbe-b42e99a07450
+2022-02-03 15:42:44,433 - receiver - INFO - Returned event report fan speed response (Id: fad2abde-854a-11ec-af66-b42e99a07450) with status 201
+2022-02-03 15:42:44,435 - receiver - INFO - Received event report temperature request with a trace id of fc0bd4a0-854a-11ec-b5d0-b42e99a07450
+2022-02-03 15:42:44,510 - receiver - INFO - Returned event report temperature response (Id: fae0b93c-854a-11ec-9fab-b42e99a07450) with status 201
+2022-02-03 15:42:44,512 - receiver - INFO - Received event report fan speed request with a trace id of fc17a2b3-854a-11ec-81a4-b42e99a07450
+2022-02-03 15:42:44,572 - receiver - INFO - Returned event report fan speed response (Id: fae7d730-854a-11ec-87a9-b42e99a07450) with status 201
+2022-02-03 15:42:44,574 - receiver - INFO - Received event report temperature request with a trace id of fc21149c-854a-11ec-81b2-b42e99a07450
+2022-02-03 15:42:45,327 - receiver - INFO - Returned event report fan speed response (Id: fb5d90c7-854a-11ec-8db1-b42e99a07450) with status 201
+2022-02-03 15:42:45,329 - receiver - INFO - Received event report temperature request with a trace id of fc944230-854a-11ec-92b4-b42e99a07450
+2022-02-03 15:42:45,356 - receiver - INFO - Returned event report temperature response (Id: fb62248c-854a-11ec-b2a4-b42e99a07450) with status 201
+2022-02-03 15:42:45,358 - receiver - INFO - Received event report fan speed request with a trace id of fc98cc63-854a-11ec-a477-b42e99a07450
+2022-02-03 15:42:45,372 - receiver - INFO - Returned event report fan speed response (Id: fb649590-854a-11ec-918a-b42e99a07450) with status 201
+2022-02-03 15:42:45,375 - receiver - INFO - Received event report temperature request with a trace id of fc9b50fb-854a-11ec-8875-b42e99a07450
+2022-02-03 15:42:45,450 - receiver - INFO - Returned event report temperature response (Id: fb6e0b34-854a-11ec-940b-b42e99a07450) with status 201
+2022-02-03 15:42:45,452 - receiver - INFO - Received event report fan speed request with a trace id of fca70bb1-854a-11ec-87f3-b42e99a07450
+2022-02-03 15:42:45,527 - receiver - INFO - Returned event report fan speed response (Id: fb7c287b-854a-11ec-9f84-b42e99a07450) with status 201
+2022-02-03 15:42:45,529 - receiver - INFO - Received event report temperature request with a trace id of fcb2d562-854a-11ec-bc11-b42e99a07450
+2022-02-03 15:42:46,420 - receiver - INFO - Returned event report temperature response (Id: fc0272c3-854a-11ec-872d-b42e99a07450) with status 201
+2022-02-03 15:42:46,423 - receiver - INFO - Received event report fan speed request with a trace id of fd3b2de2-854a-11ec-88d0-b42e99a07450
+2022-02-03 15:42:46,467 - receiver - INFO - Returned event report fan speed response (Id: fc098e35-854a-11ec-8dbe-b42e99a07450) with status 201
+2022-02-03 15:42:46,469 - receiver - INFO - Received event report temperature request with a trace id of fd424390-854a-11ec-9b2a-b42e99a07450
+2022-02-03 15:42:46,482 - receiver - INFO - Returned event report temperature response (Id: fc0bd4a0-854a-11ec-b5d0-b42e99a07450) with status 201
+2022-02-03 15:42:46,484 - receiver - INFO - Received event report fan speed request with a trace id of fd4491b9-854a-11ec-b7ea-b42e99a07450
+2022-02-03 15:42:46,559 - receiver - INFO - Returned event report fan speed response (Id: fc17a2b3-854a-11ec-81a4-b42e99a07450) with status 201
+2022-02-03 15:42:46,561 - receiver - INFO - Received event report temperature request with a trace id of fd50517d-854a-11ec-9dc3-b42e99a07450
+2022-02-03 15:42:46,621 - receiver - INFO - Returned event report temperature response (Id: fc21149c-854a-11ec-81b2-b42e99a07450) with status 201
+2022-02-03 15:42:46,623 - receiver - INFO - Received event report fan speed request with a trace id of fd59b474-854a-11ec-a29a-b42e99a07450
+2022-02-03 15:42:47,376 - receiver - INFO - Returned event report temperature response (Id: fc944230-854a-11ec-92b4-b42e99a07450) with status 201
+2022-02-03 15:42:47,378 - receiver - INFO - Received event report fan speed request with a trace id of fdcce86a-854a-11ec-aa2f-b42e99a07450
+2022-02-03 15:42:47,406 - receiver - INFO - Returned event report fan speed response (Id: fc98cc63-854a-11ec-a477-b42e99a07450) with status 201
+2022-02-03 15:42:47,408 - receiver - INFO - Received event report temperature request with a trace id of fdd19347-854a-11ec-82df-b42e99a07450
+2022-02-03 15:42:47,422 - receiver - INFO - Returned event report temperature response (Id: fc9b50fb-854a-11ec-8875-b42e99a07450) with status 201
+2022-02-03 15:42:47,424 - receiver - INFO - Received event report fan speed request with a trace id of fdd3ea26-854a-11ec-b0fa-b42e99a07450
+2022-02-03 15:42:47,498 - receiver - INFO - Returned event report fan speed response (Id: fca70bb1-854a-11ec-87f3-b42e99a07450) with status 201
+2022-02-03 15:42:47,501 - receiver - INFO - Received event report temperature request with a trace id of fddfa118-854a-11ec-8ef7-b42e99a07450
+2022-02-03 15:42:47,576 - receiver - INFO - Returned event report temperature response (Id: fcb2d562-854a-11ec-bc11-b42e99a07450) with status 201
+2022-02-03 15:42:47,578 - receiver - INFO - Received event report fan speed request with a trace id of fdeb8031-854a-11ec-bb75-b42e99a07450
+2022-02-03 15:42:48,468 - receiver - INFO - Returned event report fan speed response (Id: fd3b2de2-854a-11ec-88d0-b42e99a07450) with status 201
+2022-02-03 15:42:48,470 - receiver - INFO - Received event report temperature request with a trace id of fe73a97c-854a-11ec-a0be-b42e99a07450
+2022-02-03 15:42:48,515 - receiver - INFO - Returned event report temperature response (Id: fd424390-854a-11ec-9b2a-b42e99a07450) with status 201
+2022-02-03 15:42:48,517 - receiver - INFO - Received event report fan speed request with a trace id of fe7ad2f0-854a-11ec-a4fe-b42e99a07450
+2022-02-03 15:42:48,518 - receiver - INFO - Returned event report fan speed response (Id: fd4491b9-854a-11ec-b7ea-b42e99a07450) with status 201
+2022-02-03 15:42:48,520 - receiver - INFO - Received event report temperature request with a trace id of fe7b4817-854a-11ec-a550-b42e99a07450
+2022-02-03 15:42:48,591 - receiver - INFO - Returned event report temperature response (Id: fd50517d-854a-11ec-9dc3-b42e99a07450) with status 201
+2022-02-03 15:42:48,593 - receiver - INFO - Received event report fan speed request with a trace id of fe866b8f-854a-11ec-be2a-b42e99a07450
+2022-02-03 15:42:48,669 - receiver - INFO - Returned event report fan speed response (Id: fd59b474-854a-11ec-a29a-b42e99a07450) with status 201
+2022-02-03 15:42:48,671 - receiver - INFO - Received event report temperature request with a trace id of fe9248cb-854a-11ec-81cd-b42e99a07450
+2022-02-03 15:42:49,432 - receiver - INFO - Returned event report fan speed response (Id: fdcce86a-854a-11ec-aa2f-b42e99a07450) with status 201
+2022-02-03 15:42:49,434 - receiver - INFO - Received event report temperature request with a trace id of ff06a119-854a-11ec-9815-b42e99a07450
+2022-02-03 15:42:49,440 - receiver - INFO - Returned event report temperature response (Id: fdd19347-854a-11ec-82df-b42e99a07450) with status 201
+2022-02-03 15:42:49,443 - receiver - INFO - Received event report fan speed request with a trace id of ff08009d-854a-11ec-8ad0-b42e99a07450
+2022-02-03 15:42:49,470 - receiver - INFO - Returned event report fan speed response (Id: fdd3ea26-854a-11ec-b0fa-b42e99a07450) with status 201
+2022-02-03 15:42:49,472 - receiver - INFO - Received event report temperature request with a trace id of ff0c8a38-854a-11ec-a8cc-b42e99a07450
+2022-02-03 15:42:49,547 - receiver - INFO - Returned event report temperature response (Id: fddfa118-854a-11ec-8ef7-b42e99a07450) with status 201
+2022-02-03 15:42:49,549 - receiver - INFO - Received event report fan speed request with a trace id of ff183f53-854a-11ec-bf55-b42e99a07450
+2022-02-03 15:42:49,624 - receiver - INFO - Returned event report fan speed response (Id: fdeb8031-854a-11ec-bb75-b42e99a07450) with status 201
+2022-02-03 15:42:49,626 - receiver - INFO - Received event report temperature request with a trace id of ff23f2af-854a-11ec-9d25-b42e99a07450
+2022-02-03 15:42:50,518 - receiver - INFO - Returned event report temperature response (Id: fe73a97c-854a-11ec-a0be-b42e99a07450) with status 201
+2022-02-03 15:42:50,520 - receiver - INFO - Received event report fan speed request with a trace id of ffac59fa-854a-11ec-8c93-b42e99a07450
+2022-02-03 15:42:50,563 - receiver - INFO - Returned event report fan speed response (Id: fe7ad2f0-854a-11ec-a4fe-b42e99a07450) with status 201
+2022-02-03 15:42:50,565 - receiver - INFO - Returned event report temperature response (Id: fe7b4817-854a-11ec-a550-b42e99a07450) with status 201
+2022-02-03 15:42:50,566 - receiver - INFO - Received event report temperature request with a trace id of ffb362d8-854a-11ec-b375-b42e99a07450
+2022-02-03 15:42:50,568 - receiver - INFO - Received event report fan speed request with a trace id of ffb3b0f6-854a-11ec-b687-b42e99a07450
+2022-02-03 15:42:50,640 - receiver - INFO - Returned event report fan speed response (Id: fe866b8f-854a-11ec-be2a-b42e99a07450) with status 201
+2022-02-03 15:42:50,642 - receiver - INFO - Received event report temperature request with a trace id of ffbf0dd2-854a-11ec-b538-b42e99a07450
+2022-02-03 15:42:50,717 - receiver - INFO - Returned event report temperature response (Id: fe9248cb-854a-11ec-81cd-b42e99a07450) with status 201
+2022-02-03 15:42:50,720 - receiver - INFO - Received event report fan speed request with a trace id of ffcae169-854a-11ec-8e19-b42e99a07450
+2022-02-03 15:42:51,472 - receiver - INFO - Returned event report temperature response (Id: ff06a119-854a-11ec-9815-b42e99a07450) with status 201
+2022-02-03 15:42:51,474 - receiver - INFO - Received event report fan speed request with a trace id of 003df7ab-854b-11ec-9d1f-b42e99a07450
+2022-02-03 15:42:51,488 - receiver - INFO - Returned event report fan speed response (Id: ff08009d-854a-11ec-8ad0-b42e99a07450) with status 201
+2022-02-03 15:42:51,490 - receiver - INFO - Received event report temperature request with a trace id of 00406b38-854b-11ec-91a5-b42e99a07450
+2022-02-03 15:42:51,519 - receiver - INFO - Returned event report temperature response (Id: ff0c8a38-854a-11ec-a8cc-b42e99a07450) with status 201
+2022-02-03 15:42:51,521 - receiver - INFO - Received event report fan speed request with a trace id of 00451935-854b-11ec-9fc9-b42e99a07450
+2022-02-03 15:42:51,596 - receiver - INFO - Returned event report fan speed response (Id: ff183f53-854a-11ec-bf55-b42e99a07450) with status 201
+2022-02-03 15:42:51,599 - receiver - INFO - Received event report temperature request with a trace id of 00511bc3-854b-11ec-b95a-b42e99a07450
+2022-02-03 15:42:51,673 - receiver - INFO - Returned event report temperature response (Id: ff23f2af-854a-11ec-9d25-b42e99a07450) with status 201
+2022-02-03 15:42:51,676 - receiver - INFO - Received event report fan speed request with a trace id of 005cd3c3-854b-11ec-b925-b42e99a07450
+2022-02-03 15:42:52,573 - receiver - INFO - Returned event report fan speed response (Id: ffac59fa-854a-11ec-8c93-b42e99a07450) with status 201
+2022-02-03 15:42:52,575 - receiver - INFO - Received event report temperature request with a trace id of 00e600f2-854b-11ec-a2f0-b42e99a07450
+2022-02-03 15:42:52,620 - receiver - INFO - Returned event report fan speed response (Id: ffb3b0f6-854a-11ec-b687-b42e99a07450) with status 201
+2022-02-03 15:42:52,622 - receiver - INFO - Returned event report temperature response (Id: ffb362d8-854a-11ec-b375-b42e99a07450) with status 201
+2022-02-03 15:42:52,623 - receiver - INFO - Received event report temperature request with a trace id of 00ed4174-854b-11ec-a65c-b42e99a07450
+2022-02-03 15:42:52,625 - receiver - INFO - Received event report fan speed request with a trace id of 00ed8e87-854b-11ec-a2bf-b42e99a07450
+2022-02-03 15:42:52,697 - receiver - INFO - Returned event report temperature response (Id: ffbf0dd2-854a-11ec-b538-b42e99a07450) with status 201
+2022-02-03 15:42:52,699 - receiver - INFO - Received event report fan speed request with a trace id of 00f8d92e-854b-11ec-9d6b-b42e99a07450
+2022-02-03 15:42:52,774 - receiver - INFO - Returned event report fan speed response (Id: ffcae169-854a-11ec-8e19-b42e99a07450) with status 201
+2022-02-03 15:42:52,776 - receiver - INFO - Received event report temperature request with a trace id of 0104a97d-854b-11ec-ba56-b42e99a07450
+2022-02-03 15:42:53,516 - receiver - INFO - Returned event report fan speed response (Id: 003df7ab-854b-11ec-9d1f-b42e99a07450) with status 201
+2022-02-03 15:42:53,518 - receiver - INFO - Received event report temperature request with a trace id of 0175e31c-854b-11ec-9766-b42e99a07450
+2022-02-03 15:42:53,531 - receiver - INFO - Returned event report temperature response (Id: 00406b38-854b-11ec-91a5-b42e99a07450) with status 201
+2022-02-03 15:42:53,533 - receiver - INFO - Received event report fan speed request with a trace id of 017835ee-854b-11ec-8a59-b42e99a07450
+2022-02-03 15:42:53,562 - receiver - INFO - Returned event report fan speed response (Id: 00451935-854b-11ec-9fc9-b42e99a07450) with status 201
+2022-02-03 15:42:53,564 - receiver - INFO - Received event report temperature request with a trace id of 017cdedc-854b-11ec-ae69-b42e99a07450
+2022-02-03 15:42:53,655 - receiver - INFO - Returned event report temperature response (Id: 00511bc3-854b-11ec-b95a-b42e99a07450) with status 201
+2022-02-03 15:42:53,657 - receiver - INFO - Received event report fan speed request with a trace id of 018b1c91-854b-11ec-a607-b42e99a07450
+2022-02-03 15:42:53,716 - receiver - INFO - Returned event report fan speed response (Id: 005cd3c3-854b-11ec-b925-b42e99a07450) with status 201
+2022-02-03 15:42:53,719 - receiver - INFO - Received event report temperature request with a trace id of 01947f8d-854b-11ec-93f3-b42e99a07450
+2022-02-03 15:42:54,615 - receiver - INFO - Returned event report temperature response (Id: 00e600f2-854b-11ec-a2f0-b42e99a07450) with status 201
+2022-02-03 15:42:54,617 - receiver - INFO - Received event report fan speed request with a trace id of 021d8239-854b-11ec-90b4-b42e99a07450
+2022-02-03 15:42:54,678 - receiver - INFO - Returned event report fan speed response (Id: 00ed8e87-854b-11ec-a2bf-b42e99a07450) with status 201
+2022-02-03 15:42:54,679 - receiver - INFO - Returned event report temperature response (Id: 00ed4174-854b-11ec-a65c-b42e99a07450) with status 201
+2022-02-03 15:42:54,681 - receiver - INFO - Received event report temperature request with a trace id of 02274511-854b-11ec-b7ad-b42e99a07450
+2022-02-03 15:42:54,682 - receiver - INFO - Received event report fan speed request with a trace id of 02276c24-854b-11ec-a573-b42e99a07450
+2022-02-03 15:42:54,738 - receiver - INFO - Returned event report fan speed response (Id: 00f8d92e-854b-11ec-9d6b-b42e99a07450) with status 201
+2022-02-03 15:42:54,740 - receiver - INFO - Received event report temperature request with a trace id of 02305a34-854b-11ec-b994-b42e99a07450
+2022-02-03 15:42:54,815 - receiver - INFO - Returned event report temperature response (Id: 0104a97d-854b-11ec-ba56-b42e99a07450) with status 201
+2022-02-03 15:42:54,818 - receiver - INFO - Received event report fan speed request with a trace id of 023c2d9f-854b-11ec-a540-b42e99a07450
+2022-02-03 15:42:55,557 - receiver - INFO - Returned event report temperature response (Id: 0175e31c-854b-11ec-9766-b42e99a07450) with status 201
+2022-02-03 15:42:55,559 - receiver - INFO - Received event report fan speed request with a trace id of 02ad3a62-854b-11ec-9aab-b42e99a07450
+2022-02-03 15:42:55,571 - receiver - INFO - Returned event report fan speed response (Id: 017835ee-854b-11ec-8a59-b42e99a07450) with status 201
+2022-02-03 15:42:55,574 - receiver - INFO - Received event report temperature request with a trace id of 02af90e4-854b-11ec-8de6-b42e99a07450
+2022-02-03 15:42:55,603 - receiver - INFO - Returned event report temperature response (Id: 017cdedc-854b-11ec-ae69-b42e99a07450) with status 201
+2022-02-03 15:42:55,605 - receiver - INFO - Received event report fan speed request with a trace id of 02b4557a-854b-11ec-b673-b42e99a07450
+2022-02-03 15:42:55,696 - receiver - INFO - Returned event report fan speed response (Id: 018b1c91-854b-11ec-a607-b42e99a07450) with status 201
+2022-02-03 15:42:55,698 - receiver - INFO - Received event report temperature request with a trace id of 02c28262-854b-11ec-bf9b-b42e99a07450
+2022-02-03 15:42:55,758 - receiver - INFO - Returned event report temperature response (Id: 01947f8d-854b-11ec-93f3-b42e99a07450) with status 201
+2022-02-03 15:42:55,761 - receiver - INFO - Received event report fan speed request with a trace id of 02cc0cd1-854b-11ec-8217-b42e99a07450
+2022-02-03 15:42:56,670 - receiver - INFO - Returned event report fan speed response (Id: 021d8239-854b-11ec-90b4-b42e99a07450) with status 201
+2022-02-03 15:42:56,673 - receiver - INFO - Received event report temperature request with a trace id of 0357424c-854b-11ec-a1d3-b42e99a07450
+2022-02-03 15:42:56,733 - receiver - INFO - Returned event report fan speed response (Id: 02276c24-854b-11ec-a573-b42e99a07450) with status 201
+2022-02-03 15:42:56,735 - receiver - INFO - Received event report temperature request with a trace id of 0360ca95-854b-11ec-9f1c-b42e99a07450
+2022-02-03 15:42:56,736 - receiver - INFO - Returned event report temperature response (Id: 02274511-854b-11ec-b7ad-b42e99a07450) with status 201
+2022-02-03 15:42:56,738 - receiver - INFO - Received event report fan speed request with a trace id of 03613fc8-854b-11ec-bef2-b42e99a07450
+2022-02-03 15:42:56,794 - receiver - INFO - Returned event report temperature response (Id: 02305a34-854b-11ec-b994-b42e99a07450) with status 201
+2022-02-03 15:42:56,797 - receiver - INFO - Received event report fan speed request with a trace id of 036a201b-854b-11ec-bf5d-b42e99a07450
+2022-02-03 15:42:56,871 - receiver - INFO - Returned event report fan speed response (Id: 023c2d9f-854b-11ec-a540-b42e99a07450) with status 201
+2022-02-03 15:42:57,594 - receiver - INFO - Returned event report fan speed response (Id: 02ad3a62-854b-11ec-9aab-b42e99a07450) with status 201
+2022-02-03 15:42:57,596 - receiver - INFO - Received event report temperature request with a trace id of 03e411fc-854b-11ec-8845-b42e99a07450
+2022-02-03 15:42:57,609 - receiver - INFO - Returned event report temperature response (Id: 02af90e4-854b-11ec-8de6-b42e99a07450) with status 201
+2022-02-03 15:42:57,611 - receiver - INFO - Received event report fan speed request with a trace id of 03e67105-854b-11ec-adc1-b42e99a07450
+2022-02-03 15:42:57,640 - receiver - INFO - Returned event report fan speed response (Id: 02b4557a-854b-11ec-b673-b42e99a07450) with status 201
+2022-02-03 15:42:57,642 - receiver - INFO - Received event report temperature request with a trace id of 03eb285e-854b-11ec-a63d-b42e99a07450
+2022-02-03 15:42:57,732 - receiver - INFO - Returned event report temperature response (Id: 02c28262-854b-11ec-bf9b-b42e99a07450) with status 201
+2022-02-03 15:42:57,734 - receiver - INFO - Received event report fan speed request with a trace id of 03f91ca4-854b-11ec-b622-b42e99a07450
+2022-02-03 15:42:57,808 - receiver - INFO - Returned event report fan speed response (Id: 02cc0cd1-854b-11ec-8217-b42e99a07450) with status 201
+2022-02-03 15:42:58,718 - receiver - INFO - Returned event report temperature response (Id: 0357424c-854b-11ec-a1d3-b42e99a07450) with status 201
+2022-02-03 15:42:58,720 - receiver - INFO - Received event report fan speed request with a trace id of 048f91bb-854b-11ec-8695-b42e99a07450
+2022-02-03 15:42:58,798 - receiver - INFO - Returned event report fan speed response (Id: 03613fc8-854b-11ec-bef2-b42e99a07450) with status 201
+2022-02-03 15:42:58,800 - receiver - INFO - Returned event report temperature response (Id: 0360ca95-854b-11ec-9f1c-b42e99a07450) with status 201
+2022-02-03 15:42:58,800 - receiver - INFO - Received event report temperature request with a trace id of 049bda3f-854b-11ec-a19c-b42e99a07450
+2022-02-03 15:42:58,803 - receiver - INFO - Received event report fan speed request with a trace id of 049c3bea-854b-11ec-bf36-b42e99a07450
+2022-02-03 15:42:58,842 - receiver - INFO - Returned event report fan speed response (Id: 036a201b-854b-11ec-bf5d-b42e99a07450) with status 201
+2022-02-03 15:42:59,643 - receiver - INFO - Returned event report temperature response (Id: 03e411fc-854b-11ec-8845-b42e99a07450) with status 201
+2022-02-03 15:42:59,645 - receiver - INFO - Received event report fan speed request with a trace id of 051cbadf-854b-11ec-86bb-b42e99a07450
+2022-02-03 15:42:59,658 - receiver - INFO - Returned event report fan speed response (Id: 03e67105-854b-11ec-adc1-b42e99a07450) with status 201
+2022-02-03 15:42:59,660 - receiver - INFO - Received event report temperature request with a trace id of 051f04e0-854b-11ec-96fa-b42e99a07450
+2022-02-03 15:42:59,689 - receiver - INFO - Returned event report temperature response (Id: 03eb285e-854b-11ec-a63d-b42e99a07450) with status 201
+2022-02-03 15:42:59,691 - receiver - INFO - Received event report fan speed request with a trace id of 0523c0f3-854b-11ec-86ad-b42e99a07450
+2022-02-03 15:42:59,783 - receiver - INFO - Returned event report fan speed response (Id: 03f91ca4-854b-11ec-b622-b42e99a07450) with status 201
+2022-02-03 15:43:00,766 - receiver - INFO - Returned event report fan speed response (Id: 048f91bb-854b-11ec-8695-b42e99a07450) with status 201
+2022-02-03 15:43:00,768 - receiver - INFO - Received event report temperature request with a trace id of 05c82a76-854b-11ec-82cd-b42e99a07450
+2022-02-03 15:43:00,843 - receiver - INFO - Returned event report fan speed response (Id: 049c3bea-854b-11ec-bf36-b42e99a07450) with status 201
+2022-02-03 15:43:00,845 - receiver - INFO - Returned event report temperature response (Id: 049bda3f-854b-11ec-a19c-b42e99a07450) with status 201
+2022-02-03 15:43:00,847 - receiver - INFO - Received event report fan speed request with a trace id of 05d43d80-854b-11ec-ae08-b42e99a07450
+2022-02-03 15:43:01,691 - receiver - INFO - Returned event report fan speed response (Id: 051cbadf-854b-11ec-86bb-b42e99a07450) with status 201
+2022-02-03 15:43:01,693 - receiver - INFO - Received event report temperature request with a trace id of 06554571-854b-11ec-ae65-b42e99a07450
+2022-02-03 15:43:01,706 - receiver - INFO - Returned event report temperature response (Id: 051f04e0-854b-11ec-96fa-b42e99a07450) with status 201
+2022-02-03 15:43:01,708 - receiver - INFO - Received event report fan speed request with a trace id of 065789e3-854b-11ec-b73c-b42e99a07450
+2022-02-03 15:43:01,737 - receiver - INFO - Returned event report fan speed response (Id: 0523c0f3-854b-11ec-86ad-b42e99a07450) with status 201
+2022-02-03 15:43:02,814 - receiver - INFO - Returned event report temperature response (Id: 05c82a76-854b-11ec-82cd-b42e99a07450) with status 201
+2022-02-03 15:43:02,816 - receiver - INFO - Received event report fan speed request with a trace id of 0700a1a3-854b-11ec-8e1b-b42e99a07450
+2022-02-03 15:43:02,891 - receiver - INFO - Returned event report fan speed response (Id: 05d43d80-854b-11ec-ae08-b42e99a07450) with status 201
+2022-02-03 15:43:03,739 - receiver - INFO - Returned event report temperature response (Id: 06554571-854b-11ec-ae65-b42e99a07450) with status 201
+2022-02-03 15:43:03,742 - receiver - INFO - Received event report fan speed request with a trace id of 078de00f-854b-11ec-85bc-b42e99a07450
+2022-02-03 15:43:03,754 - receiver - INFO - Returned event report fan speed response (Id: 065789e3-854b-11ec-b73c-b42e99a07450) with status 201
+2022-02-03 15:43:04,862 - receiver - INFO - Returned event report fan speed response (Id: 0700a1a3-854b-11ec-8e1b-b42e99a07450) with status 201
+2022-02-03 15:43:05,789 - receiver - INFO - Returned event report fan speed response (Id: 078de00f-854b-11ec-85bc-b42e99a07450) with status 201
+2022-02-10 10:58:04,933 - receiver - INFO - Received event report fan speed request with a trace id of 60c2e353-8aa3-11ec-a644-3cf011f8a2c7
