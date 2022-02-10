@@ -28,6 +28,39 @@ paths:
             schema:
               $ref: '#/components/schemas/TemperatureReading'
         description: Temperature to add
+    get:
+      tags:
+        - temperature
+      summary: get a mining rig temperature
+      operationId: app.get_temperature
+      description: get the current temperature added after a timestamp
+      parameters:
+        - name: timestamp
+          in: query
+          description: Limits the number of items on a page
+          schema:
+            type: string
+            format: date-time
+            example: 2016-08-29T09:12:33.001Z
+      responses:
+        '200':
+          description: Successfully returned a list of temperature events
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                $ref: '#/components/schemas/TemperatureReading'
+        '400':
+          description: Invalid request
+          content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                message:
+                  type: string
+
       
   /status/fanspeed:
     post:
@@ -47,7 +80,38 @@ paths:
             schema:
               $ref: '#/components/schemas/FanSpeedReading'
         description: Fan speed to add
-        
+  get:
+    tags:
+      - fanspeed
+    summary: get a mining rig fanspeed
+    operationId: app.get_fan_speed
+    description: get the current fan speed added after a timestamp
+    parameters:
+      - name: timestamp
+        in: query
+        description: Limits the number of items on a page
+        schema:
+          type: string
+          format: date-time
+          example: 2016-08-29T09:12:33.001Z
+    responses:
+      '200':
+        description: Successfully returned a list of fan speed
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+              $ref: '#/components/schemas/FanSpeedReading'
+      '400':
+        description: Invalid request
+        content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              message:
+                type: string
 components:
   schemas:
     TemperatureReading:

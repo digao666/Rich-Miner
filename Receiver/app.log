@@ -805,3 +805,4 @@
 2022-02-03 15:43:04,862 - receiver - INFO - Returned event report fan speed response (Id: 0700a1a3-854b-11ec-8e1b-b42e99a07450) with status 201
 2022-02-03 15:43:05,789 - receiver - INFO - Returned event report fan speed response (Id: 078de00f-854b-11ec-85bc-b42e99a07450) with status 201
 2022-02-10 10:58:04,933 - receiver - INFO - Received event report fan speed request with a trace id of 60c2e353-8aa3-11ec-a644-3cf011f8a2c7
+2022-02-10 10:58:07,017 - receiver - INFO - Returned event report fan speed response (Id: 60c2e353-8aa3-11ec-a644-3cf011f8a2c7) with status 201
