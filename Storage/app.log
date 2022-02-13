@@ -1,404 +1,1080 @@
-2022-02-03 15:21:22,975 - storage - DEBUG - Stored event fan speed request with a trace id of ff042817-8547-11ec-b3e4-b42e99a07450
-2022-02-03 15:23:48,384 - storage - DEBUG - Stored event temperature request with a trace id of 55affda6-8548-11ec-ae96-b42e99a07450
-2022-02-03 15:23:50,427 - storage - DEBUG - Stored event fan speed request with a trace id of 56e99870-8548-11ec-9f67-b42e99a07450
-2022-02-03 15:24:06,855 - storage - DEBUG - Stored event temperature request with a trace id of 60b19ff3-8548-11ec-836d-b42e99a07450
-2022-02-03 15:24:07,841 - storage - DEBUG - Stored event temperature request with a trace id of 614a6cb7-8548-11ec-b20c-b42e99a07450
-2022-02-03 15:24:08,843 - storage - DEBUG - Stored event temperature request with a trace id of 61e2d248-8548-11ec-ab32-b42e99a07450
-2022-02-03 15:24:08,904 - storage - DEBUG - Stored event fan speed request with a trace id of 61eb5d9e-8548-11ec-9fb8-b42e99a07450
-2022-02-03 15:24:09,842 - storage - DEBUG - Stored event temperature request with a trace id of 627b209d-8548-11ec-8690-b42e99a07450
-2022-02-03 15:24:09,888 - storage - DEBUG - Stored event fan speed request with a trace id of 6281b1ff-8548-11ec-9851-b42e99a07450
-2022-02-03 15:24:10,844 - storage - DEBUG - Stored event temperature request with a trace id of 6313e9ac-8548-11ec-a62d-b42e99a07450
-2022-02-03 15:24:10,890 - storage - DEBUG - Stored event fan speed request with a trace id of 631a8dd9-8548-11ec-a991-b42e99a07450
-2022-02-03 15:24:10,952 - storage - DEBUG - Stored event temperature request with a trace id of 6323c51b-8548-11ec-b81c-b42e99a07450
-2022-02-03 15:24:11,846 - storage - DEBUG - Stored event temperature request with a trace id of 63ac5066-8548-11ec-8e41-b42e99a07450
-2022-02-03 15:24:11,892 - storage - DEBUG - Stored event fan speed request with a trace id of 63b300cc-8548-11ec-8d52-b42e99a07450
-2022-02-03 15:24:11,938 - storage - DEBUG - Stored event temperature request with a trace id of 63ba1f46-8548-11ec-a73b-b42e99a07450
-2022-02-03 15:24:12,846 - storage - DEBUG - Stored event temperature request with a trace id of 6445325b-8548-11ec-8cc7-b42e99a07450
-2022-02-03 15:24:12,892 - storage - DEBUG - Stored event fan speed request with a trace id of 644bdd22-8548-11ec-9ac3-b42e99a07450
-2022-02-03 15:24:12,922 - storage - DEBUG - Stored event temperature request with a trace id of 6452e365-8548-11ec-90b1-b42e99a07450
-2022-02-03 15:24:12,984 - storage - DEBUG - Stored event fan speed request with a trace id of 645c4c15-8548-11ec-8ce4-b42e99a07450
-2022-02-03 15:24:13,847 - storage - DEBUG - Stored event temperature request with a trace id of 64ddc132-8548-11ec-8fb0-b42e99a07450
-2022-02-03 15:24:13,894 - storage - DEBUG - Stored event fan speed request with a trace id of 64e4b1f9-8548-11ec-9008-b42e99a07450
-2022-02-03 15:24:13,940 - storage - DEBUG - Stored event temperature request with a trace id of 64ebdc7a-8548-11ec-9242-b42e99a07450
-2022-02-03 15:24:13,986 - storage - DEBUG - Stored event fan speed request with a trace id of 64f2cf22-8548-11ec-a710-b42e99a07450
-2022-02-03 15:24:14,846 - storage - DEBUG - Stored event temperature request with a trace id of 65762b93-8548-11ec-afb7-b42e99a07450
-2022-02-03 15:24:14,892 - storage - DEBUG - Stored event fan speed request with a trace id of 657d63a6-8548-11ec-8c24-b42e99a07450
-2022-02-03 15:24:14,938 - storage - DEBUG - Stored event temperature request with a trace id of 6584650d-8548-11ec-8b46-b42e99a07450
-2022-02-03 15:24:14,969 - storage - DEBUG - Stored event fan speed request with a trace id of 658929ab-8548-11ec-9582-b42e99a07450
-2022-02-03 15:24:15,031 - storage - DEBUG - Stored event temperature request with a trace id of 6592777a-8548-11ec-8cd4-b42e99a07450
-2022-02-03 15:24:15,846 - storage - DEBUG - Stored event temperature request with a trace id of 660ed85e-8548-11ec-a774-b42e99a07450
-2022-02-03 15:24:15,892 - storage - DEBUG - Stored event fan speed request with a trace id of 6616240a-8548-11ec-84cb-b42e99a07450
-2022-02-03 15:24:15,938 - storage - DEBUG - Stored event temperature request with a trace id of 661d4c6a-8548-11ec-9bce-b42e99a07450
-2022-02-03 15:24:15,984 - storage - DEBUG - Stored event fan speed request with a trace id of 66245a3d-8548-11ec-b2a9-b42e99a07450
-2022-02-03 15:24:16,030 - storage - DEBUG - Stored event temperature request with a trace id of 662b5e53-8548-11ec-bd3b-b42e99a07450
-2022-02-03 15:24:16,893 - storage - DEBUG - Stored event fan speed request with a trace id of 66ae84ab-8548-11ec-8601-b42e99a07450
-2022-02-03 15:24:16,939 - storage - DEBUG - Stored event temperature request with a trace id of 66b58fff-8548-11ec-a0b1-b42e99a07450
-2022-02-03 15:24:16,984 - storage - DEBUG - Stored event fan speed request with a trace id of 66bc858d-8548-11ec-bccd-b42e99a07450
-2022-02-03 15:24:17,015 - storage - DEBUG - Stored event temperature request with a trace id of 66c15eec-8548-11ec-8327-b42e99a07450
-2022-02-03 15:24:17,077 - storage - DEBUG - Stored event fan speed request with a trace id of 66caa9e1-8548-11ec-993c-b42e99a07450
-2022-02-03 15:24:17,891 - storage - DEBUG - Stored event fan speed request with a trace id of 67471aa0-8548-11ec-9db1-b42e99a07450
-2022-02-03 15:24:17,937 - storage - DEBUG - Stored event temperature request with a trace id of 674e1708-8548-11ec-a73e-b42e99a07450
-2022-02-03 15:24:17,991 - storage - DEBUG - Stored event fan speed request with a trace id of 67553567-8548-11ec-bac0-b42e99a07450
-2022-02-03 15:24:18,031 - storage - DEBUG - Stored event temperature request with a trace id of 675c2eeb-8548-11ec-aa85-b42e99a07450
-2022-02-03 15:24:18,077 - storage - DEBUG - Stored event fan speed request with a trace id of 676334ba-8548-11ec-9276-b42e99a07450
-2022-02-03 15:24:18,940 - storage - DEBUG - Stored event temperature request with a trace id of 67e6e03d-8548-11ec-8f27-b42e99a07450
-2022-02-03 15:24:18,985 - storage - DEBUG - Stored event fan speed request with a trace id of 67edbcff-8548-11ec-9967-b42e99a07450
-2022-02-03 15:24:19,033 - storage - DEBUG - Stored event temperature request with a trace id of 67f4f73a-8548-11ec-a523-b42e99a07450
-2022-02-03 15:24:19,063 - storage - DEBUG - Stored event fan speed request with a trace id of 67f98ac5-8548-11ec-a31d-b42e99a07450
-2022-02-03 15:24:19,124 - storage - DEBUG - Stored event temperature request with a trace id of 6802e05b-8548-11ec-9e65-b42e99a07450
-2022-02-03 15:24:19,941 - storage - DEBUG - Stored event temperature request with a trace id of 687f42e1-8548-11ec-9a98-b42e99a07450
-2022-02-03 15:24:19,987 - storage - DEBUG - Stored event fan speed request with a trace id of 68865dea-8548-11ec-bd4d-b42e99a07450
-2022-02-03 15:24:20,033 - storage - DEBUG - Stored event temperature request with a trace id of 688e9b2f-8548-11ec-8553-b42e99a07450
-2022-02-03 15:24:20,081 - storage - DEBUG - Stored event fan speed request with a trace id of 68948e9e-8548-11ec-b282-b42e99a07450
-2022-02-03 15:24:20,125 - storage - DEBUG - Stored event temperature request with a trace id of 689b7feb-8548-11ec-9aa5-b42e99a07450
-2022-02-03 15:24:20,988 - storage - DEBUG - Stored event fan speed request with a trace id of 691f313c-8548-11ec-88f3-b42e99a07450
-2022-02-03 15:24:21,034 - storage - DEBUG - Stored event temperature request with a trace id of 69262b95-8548-11ec-bb08-b42e99a07450
-2022-02-03 15:24:21,080 - storage - DEBUG - Stored event fan speed request with a trace id of 692d60f9-8548-11ec-bfd3-b42e99a07450
-2022-02-03 15:24:21,111 - storage - DEBUG - Stored event temperature request with a trace id of 6931feaa-8548-11ec-9f9e-b42e99a07450
-2022-02-03 15:24:21,173 - storage - DEBUG - Stored event fan speed request with a trace id of 693b4b07-8548-11ec-90f8-b42e99a07450
-2022-02-03 15:24:21,989 - storage - DEBUG - Stored event fan speed request with a trace id of 69b7e6e8-8548-11ec-809c-b42e99a07450
-2022-02-03 15:24:22,035 - storage - DEBUG - Stored event temperature request with a trace id of 69bf0038-8548-11ec-9e9e-b42e99a07450
-2022-02-03 15:24:22,081 - storage - DEBUG - Stored event fan speed request with a trace id of 69c5fe8d-8548-11ec-95cb-b42e99a07450
-2022-02-03 15:24:22,128 - storage - DEBUG - Stored event temperature request with a trace id of 69cd3c20-8548-11ec-aa98-b42e99a07450
-2022-02-03 15:24:22,173 - storage - DEBUG - Stored event fan speed request with a trace id of 69d41584-8548-11ec-8ec8-b42e99a07450
-2022-02-03 15:24:23,035 - storage - DEBUG - Stored event temperature request with a trace id of 6a57bfae-8548-11ec-936e-b42e99a07450
-2022-02-03 15:24:23,082 - storage - DEBUG - Stored event fan speed request with a trace id of 6a5ee141-8548-11ec-b135-b42e99a07450
-2022-02-03 15:24:23,129 - storage - DEBUG - Stored event temperature request with a trace id of 6a65ce0d-8548-11ec-8c94-b42e99a07450
-2022-02-03 15:24:23,159 - storage - DEBUG - Stored event fan speed request with a trace id of 6a6a6ebb-8548-11ec-aeb0-b42e99a07450
-2022-02-03 15:24:23,221 - storage - DEBUG - Stored event temperature request with a trace id of 6a73f11f-8548-11ec-b14a-b42e99a07450
-2022-02-03 15:24:24,036 - storage - DEBUG - Stored event temperature request with a trace id of 6af07cbe-8548-11ec-b33c-b42e99a07450
-2022-02-03 15:24:24,082 - storage - DEBUG - Stored event fan speed request with a trace id of 6af77577-8548-11ec-a88b-b42e99a07450
-2022-02-03 15:24:24,129 - storage - DEBUG - Stored event temperature request with a trace id of 6afe8063-8548-11ec-9d98-b42e99a07450
-2022-02-03 15:24:24,159 - storage - DEBUG - Stored event fan speed request with a trace id of 6b05b34b-8548-11ec-96c2-b42e99a07450
-2022-02-03 15:24:24,221 - storage - DEBUG - Stored event temperature request with a trace id of 6b0ca90c-8548-11ec-b289-b42e99a07450
-2022-02-03 15:24:25,082 - storage - DEBUG - Stored event fan speed request with a trace id of 6b901df3-8548-11ec-870f-b42e99a07450
-2022-02-03 15:24:25,128 - storage - DEBUG - Stored event temperature request with a trace id of 6b9768e1-8548-11ec-b824-b42e99a07450
-2022-02-03 15:24:25,174 - storage - DEBUG - Stored event fan speed request with a trace id of 6b9e6ab0-8548-11ec-ab14-b42e99a07450
-2022-02-03 15:24:25,204 - storage - DEBUG - Stored event temperature request with a trace id of 6ba30935-8548-11ec-8c8b-b42e99a07450
-2022-02-03 15:24:25,266 - storage - DEBUG - Stored event fan speed request with a trace id of 6bac60aa-8548-11ec-a7ea-b42e99a07450
-2022-02-03 15:24:26,081 - storage - DEBUG - Stored event fan speed request with a trace id of 6c28d0d6-8548-11ec-ae70-b42e99a07450
-2022-02-03 15:24:26,127 - storage - DEBUG - Stored event temperature request with a trace id of 6c2fda2f-8548-11ec-8258-b42e99a07450
-2022-02-03 15:24:26,173 - storage - DEBUG - Stored event fan speed request with a trace id of 6c36de69-8548-11ec-8c52-b42e99a07450
-2022-02-03 15:24:26,204 - storage - DEBUG - Stored event temperature request with a trace id of 6c3b9e2a-8548-11ec-bf43-b42e99a07450
-2022-02-03 15:24:26,266 - storage - DEBUG - Stored event fan speed request with a trace id of 6c44f3a6-8548-11ec-a1d7-b42e99a07450
-2022-02-03 15:24:27,128 - storage - DEBUG - Stored event temperature request with a trace id of 6cc86dfd-8548-11ec-963b-b42e99a07450
-2022-02-03 15:24:27,173 - storage - DEBUG - Stored event fan speed request with a trace id of 6ccf5b56-8548-11ec-b38e-b42e99a07450
-2022-02-03 15:24:27,220 - storage - DEBUG - Stored event temperature request with a trace id of 6cd6773f-8548-11ec-919e-b42e99a07450
-2022-02-03 15:24:27,252 - storage - DEBUG - Stored event fan speed request with a trace id of 6cdb174a-8548-11ec-bff1-b42e99a07450
-2022-02-03 15:24:27,314 - storage - DEBUG - Stored event temperature request with a trace id of 6ce48549-8548-11ec-a88d-b42e99a07450
-2022-02-03 15:24:28,133 - storage - DEBUG - Stored event temperature request with a trace id of 6d60e406-8548-11ec-b89f-b42e99a07450
-2022-02-03 15:24:28,179 - storage - DEBUG - Stored event fan speed request with a trace id of 6d67ea19-8548-11ec-8719-b42e99a07450
-2022-02-03 15:24:28,225 - storage - DEBUG - Stored event temperature request with a trace id of 6d6ef9dc-8548-11ec-aeea-b42e99a07450
-2022-02-03 15:24:28,256 - storage - DEBUG - Stored event fan speed request with a trace id of 6d739768-8548-11ec-b41e-b42e99a07450
-2022-02-03 15:24:28,318 - storage - DEBUG - Stored event temperature request with a trace id of 6d7d0344-8548-11ec-b569-b42e99a07450
-2022-02-03 15:24:29,168 - storage - DEBUG - Stored event fan speed request with a trace id of 6e008ca7-8548-11ec-b77b-b42e99a07450
-2022-02-03 15:24:29,214 - storage - DEBUG - Stored event temperature request with a trace id of 6e07a4d9-8548-11ec-8f73-b42e99a07450
-2022-02-03 15:24:29,259 - storage - DEBUG - Stored event fan speed request with a trace id of 6e0eaccb-8548-11ec-b22e-b42e99a07450
-2022-02-03 15:24:29,290 - storage - DEBUG - Stored event temperature request with a trace id of 6e138ecd-8548-11ec-9f59-b42e99a07450
-2022-02-03 15:24:29,351 - storage - DEBUG - Stored event fan speed request with a trace id of 6e1cf134-8548-11ec-b212-b42e99a07450
-2022-02-03 15:24:30,168 - storage - DEBUG - Stored event fan speed request with a trace id of 6e99ec22-8548-11ec-b3e2-b42e99a07450
-2022-02-03 15:24:30,214 - storage - DEBUG - Stored event temperature request with a trace id of 6ea10e9f-8548-11ec-bd2a-b42e99a07450
-2022-02-03 15:24:30,276 - storage - DEBUG - Stored event fan speed request with a trace id of 6ea81d80-8548-11ec-b6ee-b42e99a07450
-2022-02-03 15:24:30,307 - storage - DEBUG - Stored event temperature request with a trace id of 6eacc4ed-8548-11ec-904e-b42e99a07450
-2022-02-03 15:24:30,368 - storage - DEBUG - Stored event fan speed request with a trace id of 6eb63bf8-8548-11ec-976c-b42e99a07450
-2022-02-03 15:24:31,215 - storage - DEBUG - Stored event temperature request with a trace id of 6f37de2f-8548-11ec-887b-b42e99a07450
-2022-02-03 15:24:31,261 - storage - DEBUG - Stored event fan speed request with a trace id of 6f3ed471-8548-11ec-a866-b42e99a07450
-2022-02-03 15:24:31,307 - storage - DEBUG - Stored event temperature request with a trace id of 6f45b5df-8548-11ec-980a-b42e99a07450
-2022-02-03 15:24:31,338 - storage - DEBUG - Stored event fan speed request with a trace id of 6f4a7add-8548-11ec-bd5e-b42e99a07450
-2022-02-03 15:24:31,399 - storage - DEBUG - Stored event temperature request with a trace id of 6f53d374-8548-11ec-82a9-b42e99a07450
-2022-02-03 15:24:32,217 - storage - DEBUG - Stored event temperature request with a trace id of 6fd0769f-8548-11ec-addd-b42e99a07450
-2022-02-03 15:24:32,263 - storage - DEBUG - Stored event fan speed request with a trace id of 6fd77a88-8548-11ec-8fdd-b42e99a07450
-2022-02-03 15:24:32,325 - storage - DEBUG - Stored event temperature request with a trace id of 6fe0ef6c-8548-11ec-b332-b42e99a07450
-2022-02-03 15:24:32,355 - storage - DEBUG - Stored event fan speed request with a trace id of 6fe5ab23-8548-11ec-b4ab-b42e99a07450
-2022-02-03 15:24:32,417 - storage - DEBUG - Stored event temperature request with a trace id of 6fef08ee-8548-11ec-a8cc-b42e99a07450
-2022-02-03 15:24:33,246 - storage - DEBUG - Stored event fan speed request with a trace id of 7070433c-8548-11ec-848e-b42e99a07450
-2022-02-03 15:24:33,307 - storage - DEBUG - Stored event temperature request with a trace id of 70774fff-8548-11ec-b28e-b42e99a07450
-2022-02-03 15:24:33,354 - storage - DEBUG - Stored event fan speed request with a trace id of 707e51c5-8548-11ec-ad4d-b42e99a07450
-2022-02-03 15:24:33,384 - storage - DEBUG - Stored event temperature request with a trace id of 708301ce-8548-11ec-9f98-b42e99a07450
-2022-02-03 15:24:33,445 - storage - DEBUG - Stored event fan speed request with a trace id of 708c5dc3-8548-11ec-8531-b42e99a07450
-2022-02-03 15:24:34,263 - storage - DEBUG - Stored event fan speed request with a trace id of 710929a3-8548-11ec-b080-b42e99a07450
-2022-02-03 15:24:34,309 - storage - DEBUG - Stored event temperature request with a trace id of 7110204e-8548-11ec-a9d8-b42e99a07450
-2022-02-03 15:24:34,371 - storage - DEBUG - Stored event fan speed request with a trace id of 71198ae8-8548-11ec-9018-b42e99a07450
-2022-02-03 15:24:34,402 - storage - DEBUG - Stored event temperature request with a trace id of 711e529b-8548-11ec-ba8c-b42e99a07450
-2022-02-03 15:24:34,464 - storage - DEBUG - Stored event fan speed request with a trace id of 7127ae6d-8548-11ec-81bf-b42e99a07450
-2022-02-03 15:24:35,296 - storage - DEBUG - Stored event temperature request with a trace id of 71a62c49-8548-11ec-be6c-b42e99a07450
-2022-02-03 15:24:35,357 - storage - DEBUG - Stored event fan speed request with a trace id of 71af80ee-8548-11ec-9e05-b42e99a07450
-2022-02-03 15:24:35,403 - storage - DEBUG - Stored event temperature request with a trace id of 71b68e27-8548-11ec-be50-b42e99a07450
-2022-02-03 15:24:35,434 - storage - DEBUG - Stored event fan speed request with a trace id of 71bb3b81-8548-11ec-9611-b42e99a07450
-2022-02-03 15:24:35,480 - storage - DEBUG - Stored event temperature request with a trace id of 71c487d7-8548-11ec-9ef3-b42e99a07450
-2022-02-03 15:24:36,309 - storage - DEBUG - Stored event temperature request with a trace id of 72419b3d-8548-11ec-ba1e-b42e99a07450
-2022-02-03 15:24:36,355 - storage - DEBUG - Stored event fan speed request with a trace id of 72487904-8548-11ec-bbef-b42e99a07450
-2022-02-03 15:24:36,418 - storage - DEBUG - Stored event temperature request with a trace id of 7251db60-8548-11ec-a463-b42e99a07450
-2022-02-03 15:24:36,447 - storage - DEBUG - Stored event fan speed request with a trace id of 725682ca-8548-11ec-a269-b42e99a07450
-2022-02-03 15:24:36,509 - storage - DEBUG - Stored event temperature request with a trace id of 72600057-8548-11ec-ab89-b42e99a07450
-2022-02-03 15:24:37,339 - storage - DEBUG - Stored event fan speed request with a trace id of 72def4de-8548-11ec-b80e-b42e99a07450
-2022-02-03 15:24:37,401 - storage - DEBUG - Stored event temperature request with a trace id of 72e82e02-8548-11ec-9e8c-b42e99a07450
-2022-02-03 15:24:37,447 - storage - DEBUG - Stored event fan speed request with a trace id of 72ef3924-8548-11ec-ac2a-b42e99a07450
-2022-02-03 15:24:37,478 - storage - DEBUG - Stored event temperature request with a trace id of 72f3fb15-8548-11ec-8887-b42e99a07450
-2022-02-03 15:24:37,525 - storage - DEBUG - Stored event fan speed request with a trace id of 72fb0373-8548-11ec-95db-b42e99a07450
-2022-02-03 15:24:38,355 - storage - DEBUG - Stored event fan speed request with a trace id of 73799a94-8548-11ec-adb9-b42e99a07450
-2022-02-03 15:24:38,401 - storage - DEBUG - Stored event temperature request with a trace id of 7380881f-8548-11ec-83b5-b42e99a07450
-2022-02-03 15:24:38,462 - storage - DEBUG - Stored event fan speed request with a trace id of 738a31e2-8548-11ec-95c5-b42e99a07450
-2022-02-03 15:24:38,493 - storage - DEBUG - Stored event temperature request with a trace id of 738e96a6-8548-11ec-865a-b42e99a07450
-2022-02-03 15:24:38,555 - storage - DEBUG - Stored event fan speed request with a trace id of 73980ea6-8548-11ec-9280-b42e99a07450
-2022-02-03 15:24:39,387 - storage - DEBUG - Stored event temperature request with a trace id of 7416bb03-8548-11ec-8389-b42e99a07450
-2022-02-03 15:24:39,448 - storage - DEBUG - Stored event fan speed request with a trace id of 74202f5d-8548-11ec-bde0-b42e99a07450
-2022-02-03 15:24:39,494 - storage - DEBUG - Stored event temperature request with a trace id of 74272d19-8548-11ec-9ca1-b42e99a07450
-2022-02-03 15:24:39,525 - storage - DEBUG - Stored event fan speed request with a trace id of 742be85a-8548-11ec-97c5-b42e99a07450
-2022-02-03 15:24:39,572 - storage - DEBUG - Stored event temperature request with a trace id of 74331104-8548-11ec-a959-b42e99a07450
-2022-02-03 15:24:40,405 - storage - DEBUG - Stored event temperature request with a trace id of 74b1b12b-8548-11ec-8ca2-b42e99a07450
-2022-02-03 15:24:40,452 - storage - DEBUG - Stored event fan speed request with a trace id of 74b8c8ef-8548-11ec-86ae-b42e99a07450
-2022-02-03 15:24:40,513 - storage - DEBUG - Stored event temperature request with a trace id of 74c209f9-8548-11ec-9bae-b42e99a07450
-2022-02-03 15:24:40,544 - storage - DEBUG - Stored event fan speed request with a trace id of 74c6c96b-8548-11ec-a53d-b42e99a07450
-2022-02-03 15:24:40,606 - storage - DEBUG - Stored event temperature request with a trace id of 74d03039-8548-11ec-a40e-b42e99a07450
-2022-02-03 15:24:41,442 - storage - DEBUG - Stored event fan speed request with a trace id of 754f077f-8548-11ec-a6e2-b42e99a07450
-2022-02-03 15:24:41,488 - storage - DEBUG - Stored event temperature request with a trace id of 75588849-8548-11ec-8a79-b42e99a07450
-2022-02-03 15:24:41,534 - storage - DEBUG - Stored event fan speed request with a trace id of 755f7519-8548-11ec-b4eb-b42e99a07450
-2022-02-03 15:24:41,580 - storage - DEBUG - Stored event temperature request with a trace id of 756453b4-8548-11ec-8656-b42e99a07450
-2022-02-03 15:24:41,612 - storage - DEBUG - Stored event fan speed request with a trace id of 756b6d1f-8548-11ec-b1b5-b42e99a07450
-2022-02-03 15:24:42,442 - storage - DEBUG - Stored event fan speed request with a trace id of 75ea81db-8548-11ec-94b1-b42e99a07450
-2022-02-03 15:24:42,488 - storage - DEBUG - Stored event temperature request with a trace id of 75f1b9df-8548-11ec-8134-b42e99a07450
-2022-02-03 15:24:42,550 - storage - DEBUG - Stored event fan speed request with a trace id of 75fb0609-8548-11ec-b50f-b42e99a07450
-2022-02-03 15:24:42,581 - storage - DEBUG - Stored event temperature request with a trace id of 75ffcf6b-8548-11ec-9c95-b42e99a07450
-2022-02-03 15:24:42,643 - storage - DEBUG - Stored event fan speed request with a trace id of 760947cc-8548-11ec-a486-b42e99a07450
-2022-02-03 15:24:43,490 - storage - DEBUG - Stored event temperature request with a trace id of 7688b8ef-8548-11ec-8652-b42e99a07450
-2022-02-03 15:24:43,535 - storage - DEBUG - Stored event fan speed request with a trace id of 768fc0be-8548-11ec-b617-b42e99a07450
-2022-02-03 15:24:43,582 - storage - DEBUG - Stored event temperature request with a trace id of 7696c57d-8548-11ec-9ad9-b42e99a07450
-2022-02-03 15:24:43,628 - storage - DEBUG - Stored event fan speed request with a trace id of 769db9e8-8548-11ec-a4e5-b42e99a07450
-2022-02-03 15:24:43,658 - storage - DEBUG - Stored event temperature request with a trace id of 76a2a6f2-8548-11ec-a632-b42e99a07450
-2022-02-03 15:24:44,492 - storage - DEBUG - Stored event temperature request with a trace id of 77215f96-8548-11ec-883b-b42e99a07450
-2022-02-03 15:24:44,538 - storage - DEBUG - Stored event fan speed request with a trace id of 772861c8-8548-11ec-8974-b42e99a07450
-2022-02-03 15:24:44,599 - storage - DEBUG - Stored event temperature request with a trace id of 7731da23-8548-11ec-b2a7-b42e99a07450
-2022-02-03 15:24:44,630 - storage - DEBUG - Stored event fan speed request with a trace id of 77368fd4-8548-11ec-b106-b42e99a07450
-2022-02-03 15:24:44,691 - storage - DEBUG - Stored event temperature request with a trace id of 773ff22a-8548-11ec-b933-b42e99a07450
-2022-02-03 15:24:45,538 - storage - DEBUG - Stored event fan speed request with a trace id of 77c13802-8548-11ec-bc35-b42e99a07450
-2022-02-03 15:24:45,569 - storage - DEBUG - Stored event temperature request with a trace id of 77c81d01-8548-11ec-85a1-b42e99a07450
-2022-02-03 15:24:45,615 - storage - DEBUG - Stored event fan speed request with a trace id of 77cf3c93-8548-11ec-81dd-b42e99a07450
-2022-02-03 15:24:45,677 - storage - DEBUG - Stored event temperature request with a trace id of 77d67b09-8548-11ec-9f6f-b42e99a07450
-2022-02-03 15:24:45,692 - storage - DEBUG - Stored event fan speed request with a trace id of 77daeaf2-8548-11ec-8b5d-b42e99a07450
-2022-02-03 15:24:46,540 - storage - DEBUG - Stored event fan speed request with a trace id of 785a32f1-8548-11ec-abcb-b42e99a07450
-2022-02-03 15:24:46,586 - storage - DEBUG - Stored event temperature request with a trace id of 786133b2-8548-11ec-9ee0-b42e99a07450
-2022-02-03 15:24:46,651 - storage - DEBUG - Stored event fan speed request with a trace id of 786a8862-8548-11ec-a675-b42e99a07450
-2022-02-03 15:24:46,678 - storage - DEBUG - Stored event temperature request with a trace id of 786f3120-8548-11ec-84a9-b42e99a07450
-2022-02-03 15:24:46,740 - storage - DEBUG - Stored event fan speed request with a trace id of 78787ecf-8548-11ec-904a-b42e99a07450
-2022-02-03 15:24:47,586 - storage - DEBUG - Stored event temperature request with a trace id of 78f9c363-8548-11ec-b456-b42e99a07450
-2022-02-03 15:24:47,616 - storage - DEBUG - Stored event fan speed request with a trace id of 78fe6bda-8548-11ec-bc1f-b42e99a07450
-2022-02-03 15:24:47,663 - storage - DEBUG - Stored event temperature request with a trace id of 79056d0a-8548-11ec-8f6e-b42e99a07450
-2022-02-03 15:24:47,724 - storage - DEBUG - Stored event fan speed request with a trace id of 790ef60e-8548-11ec-a271-b42e99a07450
-2022-02-03 15:24:48,588 - storage - DEBUG - Stored event temperature request with a trace id of 79929f68-8548-11ec-9ba1-b42e99a07450
-2022-02-03 15:24:48,634 - storage - DEBUG - Stored event fan speed request with a trace id of 7999ab98-8548-11ec-8b6c-b42e99a07450
-2022-02-03 15:24:48,695 - storage - DEBUG - Stored event temperature request with a trace id of 79a39ad7-8548-11ec-983a-b42e99a07450
-2022-02-03 15:24:48,726 - storage - DEBUG - Stored event fan speed request with a trace id of 79a7c6a9-8548-11ec-9219-b42e99a07450
-2022-02-03 15:24:49,633 - storage - DEBUG - Stored event fan speed request with a trace id of 7a323248-8548-11ec-91b1-b42e99a07450
-2022-02-03 15:24:49,664 - storage - DEBUG - Stored event temperature request with a trace id of 7a372557-8548-11ec-9c24-b42e99a07450
-2022-02-03 15:24:49,709 - storage - DEBUG - Stored event fan speed request with a trace id of 7a3dee7d-8548-11ec-b6ee-b42e99a07450
-2022-02-03 15:24:50,635 - storage - DEBUG - Stored event fan speed request with a trace id of 7acb29f9-8548-11ec-91e5-b42e99a07450
-2022-02-03 15:24:50,680 - storage - DEBUG - Stored event temperature request with a trace id of 7ad23906-8548-11ec-9b37-b42e99a07450
-2022-02-03 15:24:50,743 - storage - DEBUG - Stored event fan speed request with a trace id of 7adb9b6d-8548-11ec-b53c-b42e99a07450
-2022-02-03 15:24:51,681 - storage - DEBUG - Stored event temperature request with a trace id of 7b6aae0e-8548-11ec-ad75-b42e99a07450
-2022-02-03 15:24:51,711 - storage - DEBUG - Stored event fan speed request with a trace id of 7b6f92c0-8548-11ec-84de-b42e99a07450
-2022-02-03 15:24:52,686 - storage - DEBUG - Stored event temperature request with a trace id of 7c03808b-8548-11ec-9e61-b42e99a07450
-2022-02-03 15:24:52,729 - storage - DEBUG - Stored event fan speed request with a trace id of 7c0a5e53-8548-11ec-9aa3-b42e99a07450
-2022-02-03 15:24:53,717 - storage - DEBUG - Stored event fan speed request with a trace id of 7ca30da7-8548-11ec-aa3e-b42e99a07450
-2022-02-03 15:24:54,731 - storage - DEBUG - Stored event fan speed request with a trace id of 7d3c684c-8548-11ec-9edc-b42e99a07450
-2022-02-03 15:42:17,932 - storage - DEBUG - Stored event temperature request with a trace id of eb061101-854a-11ec-a361-b42e99a07450
-2022-02-03 15:42:18,922 - storage - DEBUG - Stored event temperature request with a trace id of eba023db-854a-11ec-9b14-b42e99a07450
-2022-02-03 15:42:19,923 - storage - DEBUG - Stored event temperature request with a trace id of ec39116f-854a-11ec-b827-b42e99a07450
-2022-02-03 15:42:19,969 - storage - DEBUG - Stored event fan speed request with a trace id of ec4050eb-854a-11ec-92c3-b42e99a07450
-2022-02-03 15:42:20,910 - storage - DEBUG - Stored event temperature request with a trace id of eccf857f-854a-11ec-9ab7-b42e99a07450
-2022-02-03 15:42:20,970 - storage - DEBUG - Stored event fan speed request with a trace id of ecd74ffa-854a-11ec-a9ce-b42e99a07450
-2022-02-03 15:42:21,911 - storage - DEBUG - Stored event temperature request with a trace id of ed6854ac-854a-11ec-ac47-b42e99a07450
-2022-02-03 15:42:21,971 - storage - DEBUG - Stored event fan speed request with a trace id of ed702fcd-854a-11ec-83be-b42e99a07450
-2022-02-03 15:42:22,018 - storage - DEBUG - Stored event temperature request with a trace id of ed7746cd-854a-11ec-a80a-b42e99a07450
-2022-02-03 15:42:22,910 - storage - DEBUG - Stored event temperature request with a trace id of ee00e176-854a-11ec-83eb-b42e99a07450
-2022-02-03 15:42:22,956 - storage - DEBUG - Stored event fan speed request with a trace id of ee06acb7-854a-11ec-a5dc-b42e99a07450
-2022-02-03 15:42:23,018 - storage - DEBUG - Stored event temperature request with a trace id of ee0fe652-854a-11ec-a00a-b42e99a07450
-2022-02-03 15:42:23,911 - storage - DEBUG - Stored event temperature request with a trace id of ee998900-854a-11ec-97e2-b42e99a07450
-2022-02-03 15:42:23,957 - storage - DEBUG - Stored event fan speed request with a trace id of ee9f7d86-854a-11ec-8785-b42e99a07450
-2022-02-03 15:42:24,019 - storage - DEBUG - Stored event temperature request with a trace id of eea8af28-854a-11ec-b420-b42e99a07450
-2022-02-03 15:42:24,066 - storage - DEBUG - Stored event fan speed request with a trace id of eeafbe52-854a-11ec-b473-b42e99a07450
-2022-02-03 15:42:24,917 - storage - DEBUG - Stored event temperature request with a trace id of ef3207f5-854a-11ec-845f-b42e99a07450
-2022-02-03 15:42:24,963 - storage - DEBUG - Stored event fan speed request with a trace id of ef380cb0-854a-11ec-9957-b42e99a07450
-2022-02-03 15:42:25,009 - storage - DEBUG - Stored event temperature request with a trace id of ef3efeec-854a-11ec-9cc0-b42e99a07450
-2022-02-03 15:42:25,071 - storage - DEBUG - Stored event fan speed request with a trace id of ef487b0c-854a-11ec-afe7-b42e99a07450
-2022-02-03 15:42:25,921 - storage - DEBUG - Stored event temperature request with a trace id of efcab4b7-854a-11ec-8043-b42e99a07450
-2022-02-03 15:42:25,968 - storage - DEBUG - Stored event fan speed request with a trace id of efd0ab90-854a-11ec-861e-b42e99a07450
-2022-02-03 15:42:26,000 - storage - DEBUG - Stored event temperature request with a trace id of efd7b2e1-854a-11ec-b175-b42e99a07450
-2022-02-03 15:42:26,076 - storage - DEBUG - Stored event fan speed request with a trace id of efe13c50-854a-11ec-8034-b42e99a07450
-2022-02-03 15:42:26,122 - storage - DEBUG - Stored event temperature request with a trace id of efe854b5-854a-11ec-91d3-b42e99a07450
-2022-02-03 15:42:26,910 - storage - DEBUG - Stored event temperature request with a trace id of f06305ae-854a-11ec-b00b-b42e99a07450
-2022-02-03 15:42:26,957 - storage - DEBUG - Stored event fan speed request with a trace id of f06a1e1e-854a-11ec-973a-b42e99a07450
-2022-02-03 15:42:27,003 - storage - DEBUG - Stored event temperature request with a trace id of f0713694-854a-11ec-a463-b42e99a07450
-2022-02-03 15:42:27,050 - storage - DEBUG - Stored event fan speed request with a trace id of f0784f0e-854a-11ec-b695-b42e99a07450
-2022-02-03 15:42:27,112 - storage - DEBUG - Stored event temperature request with a trace id of f081b23e-854a-11ec-b46f-b42e99a07450
-2022-02-03 15:42:27,975 - storage - DEBUG - Stored event fan speed request with a trace id of f1035b1d-854a-11ec-9cc9-b42e99a07450
-2022-02-03 15:42:28,022 - storage - DEBUG - Stored event temperature request with a trace id of f10a881f-854a-11ec-b12c-b42e99a07450
-2022-02-03 15:42:28,053 - storage - DEBUG - Stored event fan speed request with a trace id of f10f569f-854a-11ec-9da6-b42e99a07450
-2022-02-03 15:42:28,130 - storage - DEBUG - Stored event temperature request with a trace id of f11b2270-854a-11ec-bec6-b42e99a07450
-2022-02-03 15:42:28,176 - storage - DEBUG - Stored event fan speed request with a trace id of f1220e82-854a-11ec-8719-b42e99a07450
-2022-02-03 15:42:28,961 - storage - DEBUG - Stored event fan speed request with a trace id of f19a5a91-854a-11ec-990a-b42e99a07450
-2022-02-03 15:42:29,008 - storage - DEBUG - Stored event temperature request with a trace id of f1a15e71-854a-11ec-9801-b42e99a07450
-2022-02-03 15:42:29,038 - storage - DEBUG - Stored event fan speed request with a trace id of f1a876da-854a-11ec-aaff-b42e99a07450
-2022-02-03 15:42:29,099 - storage - DEBUG - Stored event temperature request with a trace id of f1afc9e3-854a-11ec-8a1d-b42e99a07450
-2022-02-03 15:42:29,163 - storage - DEBUG - Stored event fan speed request with a trace id of f1b90615-854a-11ec-989d-b42e99a07450
-2022-02-03 15:42:30,024 - storage - DEBUG - Stored event temperature request with a trace id of f23cf6af-854a-11ec-9602-b42e99a07450
-2022-02-03 15:42:30,070 - storage - DEBUG - Stored event fan speed request with a trace id of f243fba3-854a-11ec-9a9c-b42e99a07450
-2022-02-03 15:42:30,101 - storage - DEBUG - Stored event temperature request with a trace id of f2489c70-854a-11ec-b512-b42e99a07450
-2022-02-03 15:42:30,178 - storage - DEBUG - Stored event fan speed request with a trace id of f2546134-854a-11ec-b705-b42e99a07450
-2022-02-03 15:42:30,225 - storage - DEBUG - Stored event temperature request with a trace id of f25b7d05-854a-11ec-b25c-b42e99a07450
-2022-02-03 15:42:31,009 - storage - DEBUG - Stored event temperature request with a trace id of f2d34881-854a-11ec-8080-b42e99a07450
-2022-02-03 15:42:31,040 - storage - DEBUG - Stored event fan speed request with a trace id of f2da5186-854a-11ec-ab82-b42e99a07450
-2022-02-03 15:42:31,071 - storage - DEBUG - Stored event temperature request with a trace id of f2df036f-854a-11ec-b66a-b42e99a07450
-2022-02-03 15:42:31,131 - storage - DEBUG - Stored event fan speed request with a trace id of f2e854f2-854a-11ec-a55e-b42e99a07450
-2022-02-03 15:42:31,208 - storage - DEBUG - Stored event temperature request with a trace id of f2f21578-854a-11ec-b835-b42e99a07450
-2022-02-03 15:42:32,071 - storage - DEBUG - Stored event fan speed request with a trace id of f375747e-854a-11ec-9f0b-b42e99a07450
-2022-02-03 15:42:32,117 - storage - DEBUG - Stored event temperature request with a trace id of f37c8af9-854a-11ec-acf6-b42e99a07450
-2022-02-03 15:42:32,150 - storage - DEBUG - Stored event fan speed request with a trace id of f38122e4-854a-11ec-8b6e-b42e99a07450
-2022-02-03 15:42:32,225 - storage - DEBUG - Stored event temperature request with a trace id of f38d3079-854a-11ec-abef-b42e99a07450
-2022-02-03 15:42:32,271 - storage - DEBUG - Stored event fan speed request with a trace id of f3941e2e-854a-11ec-bf41-b42e99a07450
-2022-02-03 15:42:33,057 - storage - DEBUG - Stored event fan speed request with a trace id of f40bb32d-854a-11ec-a582-b42e99a07450
-2022-02-03 15:42:33,088 - storage - DEBUG - Stored event temperature request with a trace id of f4106251-854a-11ec-8091-b42e99a07450
-2022-02-03 15:42:33,124 - storage - DEBUG - Stored event fan speed request with a trace id of f41519f7-854a-11ec-812a-b42e99a07450
-2022-02-03 15:42:33,185 - storage - DEBUG - Stored event temperature request with a trace id of f41e651a-854a-11ec-8921-b42e99a07450
-2022-02-03 15:42:33,260 - storage - DEBUG - Stored event fan speed request with a trace id of f42a13e6-854a-11ec-ba79-b42e99a07450
-2022-02-03 15:42:34,121 - storage - DEBUG - Stored event temperature request with a trace id of f4adba28-854a-11ec-ac04-b42e99a07450
-2022-02-03 15:42:34,168 - storage - DEBUG - Stored event fan speed request with a trace id of f4b4ca00-854a-11ec-8ebe-b42e99a07450
-2022-02-03 15:42:34,198 - storage - DEBUG - Stored event temperature request with a trace id of f4b9bd58-854a-11ec-9419-b42e99a07450
-2022-02-03 15:42:34,275 - storage - DEBUG - Stored event fan speed request with a trace id of f4c57492-854a-11ec-b824-b42e99a07450
-2022-02-03 15:42:34,322 - storage - DEBUG - Stored event temperature request with a trace id of f4cc5c65-854a-11ec-8492-b42e99a07450
-2022-02-03 15:42:35,091 - storage - DEBUG - Stored event temperature request with a trace id of f5443650-854a-11ec-91cd-b42e99a07450
-2022-02-03 15:42:35,122 - storage - DEBUG - Stored event fan speed request with a trace id of f548df63-854a-11ec-bb00-b42e99a07450
-2022-02-03 15:42:35,167 - storage - DEBUG - Stored event temperature request with a trace id of f54e8f9e-854a-11ec-a296-b42e99a07450
-2022-02-03 15:42:35,228 - storage - DEBUG - Stored event fan speed request with a trace id of f557cfb1-854a-11ec-8850-b42e99a07450
-2022-02-03 15:42:35,306 - storage - DEBUG - Stored event temperature request with a trace id of f5634786-854a-11ec-ab89-b42e99a07450
-2022-02-03 15:42:36,170 - storage - DEBUG - Stored event fan speed request with a trace id of f5e687a0-854a-11ec-87f4-b42e99a07450
-2022-02-03 15:42:36,215 - storage - DEBUG - Stored event temperature request with a trace id of f5edb110-854a-11ec-ace8-b42e99a07450
-2022-02-03 15:42:36,231 - storage - DEBUG - Stored event fan speed request with a trace id of f5f24a43-854a-11ec-9c93-b42e99a07450
-2022-02-03 15:42:36,323 - storage - DEBUG - Stored event temperature request with a trace id of f5fe18a8-854a-11ec-af4c-b42e99a07450
-2022-02-03 15:42:36,369 - storage - DEBUG - Stored event fan speed request with a trace id of f6052d17-854a-11ec-b28d-b42e99a07450
-2022-02-03 15:42:37,141 - storage - DEBUG - Stored event fan speed request with a trace id of f67a9bbb-854a-11ec-a0ce-b42e99a07450
-2022-02-03 15:42:37,172 - storage - DEBUG - Stored event temperature request with a trace id of f67f3f36-854a-11ec-a650-b42e99a07450
-2022-02-03 15:42:37,203 - storage - DEBUG - Stored event fan speed request with a trace id of f6863dba-854a-11ec-8b4f-b42e99a07450
-2022-02-03 15:42:37,264 - storage - DEBUG - Stored event temperature request with a trace id of f68f9d16-854a-11ec-834e-b42e99a07450
-2022-02-03 15:42:37,357 - storage - DEBUG - Stored event fan speed request with a trace id of f69b7679-854a-11ec-9ac2-b42e99a07450
-2022-02-03 15:42:38,223 - storage - DEBUG - Stored event temperature request with a trace id of f71f4c7a-854a-11ec-b72f-b42e99a07450
-2022-02-03 15:42:38,268 - storage - DEBUG - Stored event fan speed request with a trace id of f7264a8a-854a-11ec-86e0-b42e99a07450
-2022-02-03 15:42:38,284 - storage - DEBUG - Stored event temperature request with a trace id of f72873a3-854a-11ec-8645-b42e99a07450
-2022-02-03 15:42:38,375 - storage - DEBUG - Stored event fan speed request with a trace id of f7367ffd-854a-11ec-99ae-b42e99a07450
-2022-02-03 15:42:38,422 - storage - DEBUG - Stored event temperature request with a trace id of f73f2a68-854a-11ec-af47-b42e99a07450
-2022-02-03 15:42:39,192 - storage - DEBUG - Stored event temperature request with a trace id of f7b37cbb-854a-11ec-bdc9-b42e99a07450
-2022-02-03 15:42:39,223 - storage - DEBUG - Stored event fan speed request with a trace id of f7b8241d-854a-11ec-91f7-b42e99a07450
-2022-02-03 15:42:39,254 - storage - DEBUG - Stored event temperature request with a trace id of f7bcd087-854a-11ec-84fb-b42e99a07450
-2022-02-03 15:42:39,300 - storage - DEBUG - Stored event fan speed request with a trace id of f7c62634-854a-11ec-95e9-b42e99a07450
-2022-02-03 15:42:39,408 - storage - DEBUG - Stored event temperature request with a trace id of f7d45ba2-854a-11ec-8bad-b42e99a07450
-2022-02-03 15:42:40,270 - storage - DEBUG - Stored event fan speed request with a trace id of f8586b6e-854a-11ec-a783-b42e99a07450
-2022-02-03 15:42:40,316 - storage - DEBUG - Stored event temperature request with a trace id of f85f5da8-854a-11ec-847d-b42e99a07450
-2022-02-03 15:42:40,332 - storage - DEBUG - Stored event fan speed request with a trace id of f861cd89-854a-11ec-8c7d-b42e99a07450
-2022-02-03 15:42:40,424 - storage - DEBUG - Stored event temperature request with a trace id of f86fbf10-854a-11ec-8859-b42e99a07450
-2022-02-03 15:42:40,470 - storage - DEBUG - Stored event fan speed request with a trace id of f876d4a7-854a-11ec-a7ba-b42e99a07450
-2022-02-03 15:42:41,240 - storage - DEBUG - Stored event fan speed request with a trace id of f8ec6037-854a-11ec-893f-b42e99a07450
-2022-02-03 15:42:41,271 - storage - DEBUG - Stored event temperature request with a trace id of f8f11aad-854a-11ec-af3c-b42e99a07450
-2022-02-03 15:42:41,286 - storage - DEBUG - Stored event fan speed request with a trace id of f8f5bd57-854a-11ec-ba66-b42e99a07450
-2022-02-03 15:42:41,348 - storage - DEBUG - Stored event temperature request with a trace id of f8fcef35-854a-11ec-bf7b-b42e99a07450
-2022-02-03 15:42:41,441 - storage - DEBUG - Stored event fan speed request with a trace id of f90d3ed8-854a-11ec-bcb1-b42e99a07450
-2022-02-03 15:42:42,318 - storage - DEBUG - Stored event temperature request with a trace id of f990d021-854a-11ec-9c56-b42e99a07450
-2022-02-03 15:42:42,363 - storage - DEBUG - Stored event fan speed request with a trace id of f997cfc2-854a-11ec-b4c4-b42e99a07450
-2022-02-03 15:42:42,379 - storage - DEBUG - Stored event temperature request with a trace id of f99a49bb-854a-11ec-bd38-b42e99a07450
-2022-02-03 15:42:42,471 - storage - DEBUG - Stored event fan speed request with a trace id of f9a83f02-854a-11ec-a5bd-b42e99a07450
-2022-02-03 15:42:42,518 - storage - DEBUG - Stored event temperature request with a trace id of f9af6059-854a-11ec-a088-b42e99a07450
-2022-02-03 15:42:43,289 - storage - DEBUG - Stored event temperature request with a trace id of fa24df31-854a-11ec-aef8-b42e99a07450
-2022-02-03 15:42:43,320 - storage - DEBUG - Stored event fan speed request with a trace id of fa29a13e-854a-11ec-87c8-b42e99a07450
-2022-02-03 15:42:43,335 - storage - DEBUG - Stored event temperature request with a trace id of fa2bdcee-854a-11ec-8bd9-b42e99a07450
-2022-02-03 15:42:43,397 - storage - DEBUG - Stored event fan speed request with a trace id of fa356e71-854a-11ec-ac58-b42e99a07450
-2022-02-03 15:42:43,490 - storage - DEBUG - Stored event temperature request with a trace id of fa436ef4-854a-11ec-a79d-b42e99a07450
-2022-02-03 15:42:44,370 - storage - DEBUG - Stored event fan speed request with a trace id of fac9492b-854a-11ec-897a-b42e99a07450
-2022-02-03 15:42:44,417 - storage - DEBUG - Stored event temperature request with a trace id of fad0394f-854a-11ec-ace7-b42e99a07450
-2022-02-03 15:42:44,432 - storage - DEBUG - Stored event fan speed request with a trace id of fad2abde-854a-11ec-af66-b42e99a07450
-2022-02-03 15:42:44,509 - storage - DEBUG - Stored event temperature request with a trace id of fae0b93c-854a-11ec-9fab-b42e99a07450
-2022-02-03 15:42:44,571 - storage - DEBUG - Stored event fan speed request with a trace id of fae7d730-854a-11ec-87a9-b42e99a07450
-2022-02-03 15:42:45,326 - storage - DEBUG - Stored event fan speed request with a trace id of fb5d90c7-854a-11ec-8db1-b42e99a07450
-2022-02-03 15:42:45,355 - storage - DEBUG - Stored event temperature request with a trace id of fb62248c-854a-11ec-b2a4-b42e99a07450
-2022-02-03 15:42:45,371 - storage - DEBUG - Stored event fan speed request with a trace id of fb649590-854a-11ec-918a-b42e99a07450
-2022-02-03 15:42:45,449 - storage - DEBUG - Stored event temperature request with a trace id of fb6e0b34-854a-11ec-940b-b42e99a07450
-2022-02-03 15:42:45,526 - storage - DEBUG - Stored event fan speed request with a trace id of fb7c287b-854a-11ec-9f84-b42e99a07450
-2022-02-03 15:42:46,420 - storage - DEBUG - Stored event temperature request with a trace id of fc0272c3-854a-11ec-872d-b42e99a07450
-2022-02-03 15:42:46,466 - storage - DEBUG - Stored event fan speed request with a trace id of fc098e35-854a-11ec-8dbe-b42e99a07450
-2022-02-03 15:42:46,481 - storage - DEBUG - Stored event temperature request with a trace id of fc0bd4a0-854a-11ec-b5d0-b42e99a07450
-2022-02-03 15:42:46,558 - storage - DEBUG - Stored event fan speed request with a trace id of fc17a2b3-854a-11ec-81a4-b42e99a07450
-2022-02-03 15:42:46,620 - storage - DEBUG - Stored event temperature request with a trace id of fc21149c-854a-11ec-81b2-b42e99a07450
-2022-02-03 15:42:47,375 - storage - DEBUG - Stored event temperature request with a trace id of fc944230-854a-11ec-92b4-b42e99a07450
-2022-02-03 15:42:47,405 - storage - DEBUG - Stored event fan speed request with a trace id of fc98cc63-854a-11ec-a477-b42e99a07450
-2022-02-03 15:42:47,421 - storage - DEBUG - Stored event temperature request with a trace id of fc9b50fb-854a-11ec-8875-b42e99a07450
-2022-02-03 15:42:47,498 - storage - DEBUG - Stored event fan speed request with a trace id of fca70bb1-854a-11ec-87f3-b42e99a07450
-2022-02-03 15:42:47,575 - storage - DEBUG - Stored event temperature request with a trace id of fcb2d562-854a-11ec-bc11-b42e99a07450
-2022-02-03 15:42:48,467 - storage - DEBUG - Stored event fan speed request with a trace id of fd3b2de2-854a-11ec-88d0-b42e99a07450
-2022-02-03 15:42:48,514 - storage - DEBUG - Stored event temperature request with a trace id of fd424390-854a-11ec-9b2a-b42e99a07450
-2022-02-03 15:42:48,517 - storage - DEBUG - Stored event fan speed request with a trace id of fd4491b9-854a-11ec-b7ea-b42e99a07450
-2022-02-03 15:42:48,590 - storage - DEBUG - Stored event temperature request with a trace id of fd50517d-854a-11ec-9dc3-b42e99a07450
-2022-02-03 15:42:48,668 - storage - DEBUG - Stored event fan speed request with a trace id of fd59b474-854a-11ec-a29a-b42e99a07450
-2022-02-03 15:42:49,431 - storage - DEBUG - Stored event fan speed request with a trace id of fdcce86a-854a-11ec-aa2f-b42e99a07450
-2022-02-03 15:42:49,439 - storage - DEBUG - Stored event temperature request with a trace id of fdd19347-854a-11ec-82df-b42e99a07450
-2022-02-03 15:42:49,469 - storage - DEBUG - Stored event fan speed request with a trace id of fdd3ea26-854a-11ec-b0fa-b42e99a07450
-2022-02-03 15:42:49,547 - storage - DEBUG - Stored event temperature request with a trace id of fddfa118-854a-11ec-8ef7-b42e99a07450
-2022-02-03 15:42:49,623 - storage - DEBUG - Stored event fan speed request with a trace id of fdeb8031-854a-11ec-bb75-b42e99a07450
-2022-02-03 15:42:50,517 - storage - DEBUG - Stored event temperature request with a trace id of fe73a97c-854a-11ec-a0be-b42e99a07450
-2022-02-03 15:42:50,562 - storage - DEBUG - Stored event fan speed request with a trace id of fe7ad2f0-854a-11ec-a4fe-b42e99a07450
-2022-02-03 15:42:50,564 - storage - DEBUG - Stored event temperature request with a trace id of fe7b4817-854a-11ec-a550-b42e99a07450
-2022-02-03 15:42:50,639 - storage - DEBUG - Stored event fan speed request with a trace id of fe866b8f-854a-11ec-be2a-b42e99a07450
-2022-02-03 15:42:50,716 - storage - DEBUG - Stored event temperature request with a trace id of fe9248cb-854a-11ec-81cd-b42e99a07450
-2022-02-03 15:42:51,472 - storage - DEBUG - Stored event temperature request with a trace id of ff06a119-854a-11ec-9815-b42e99a07450
-2022-02-03 15:42:51,487 - storage - DEBUG - Stored event fan speed request with a trace id of ff08009d-854a-11ec-8ad0-b42e99a07450
-2022-02-03 15:42:51,518 - storage - DEBUG - Stored event temperature request with a trace id of ff0c8a38-854a-11ec-a8cc-b42e99a07450
-2022-02-03 15:42:51,595 - storage - DEBUG - Stored event fan speed request with a trace id of ff183f53-854a-11ec-bf55-b42e99a07450
-2022-02-03 15:42:51,672 - storage - DEBUG - Stored event temperature request with a trace id of ff23f2af-854a-11ec-9d25-b42e99a07450
-2022-02-03 15:42:52,572 - storage - DEBUG - Stored event fan speed request with a trace id of ffac59fa-854a-11ec-8c93-b42e99a07450
-2022-02-03 15:42:52,619 - storage - DEBUG - Stored event fan speed request with a trace id of ffb3b0f6-854a-11ec-b687-b42e99a07450
-2022-02-03 15:42:52,621 - storage - DEBUG - Stored event temperature request with a trace id of ffb362d8-854a-11ec-b375-b42e99a07450
-2022-02-03 15:42:52,696 - storage - DEBUG - Stored event temperature request with a trace id of ffbf0dd2-854a-11ec-b538-b42e99a07450
-2022-02-03 15:42:52,773 - storage - DEBUG - Stored event fan speed request with a trace id of ffcae169-854a-11ec-8e19-b42e99a07450
-2022-02-03 15:42:53,515 - storage - DEBUG - Stored event fan speed request with a trace id of 003df7ab-854b-11ec-9d1f-b42e99a07450
-2022-02-03 15:42:53,530 - storage - DEBUG - Stored event temperature request with a trace id of 00406b38-854b-11ec-91a5-b42e99a07450
-2022-02-03 15:42:53,561 - storage - DEBUG - Stored event fan speed request with a trace id of 00451935-854b-11ec-9fc9-b42e99a07450
-2022-02-03 15:42:53,654 - storage - DEBUG - Stored event temperature request with a trace id of 00511bc3-854b-11ec-b95a-b42e99a07450
-2022-02-03 15:42:53,715 - storage - DEBUG - Stored event fan speed request with a trace id of 005cd3c3-854b-11ec-b925-b42e99a07450
-2022-02-03 15:42:54,614 - storage - DEBUG - Stored event temperature request with a trace id of 00e600f2-854b-11ec-a2f0-b42e99a07450
-2022-02-03 15:42:54,677 - storage - DEBUG - Stored event fan speed request with a trace id of 00ed8e87-854b-11ec-a2bf-b42e99a07450
-2022-02-03 15:42:54,679 - storage - DEBUG - Stored event temperature request with a trace id of 00ed4174-854b-11ec-a65c-b42e99a07450
-2022-02-03 15:42:54,737 - storage - DEBUG - Stored event fan speed request with a trace id of 00f8d92e-854b-11ec-9d6b-b42e99a07450
-2022-02-03 15:42:54,815 - storage - DEBUG - Stored event temperature request with a trace id of 0104a97d-854b-11ec-ba56-b42e99a07450
-2022-02-03 15:42:55,556 - storage - DEBUG - Stored event temperature request with a trace id of 0175e31c-854b-11ec-9766-b42e99a07450
-2022-02-03 15:42:55,571 - storage - DEBUG - Stored event fan speed request with a trace id of 017835ee-854b-11ec-8a59-b42e99a07450
-2022-02-03 15:42:55,603 - storage - DEBUG - Stored event temperature request with a trace id of 017cdedc-854b-11ec-ae69-b42e99a07450
-2022-02-03 15:42:55,695 - storage - DEBUG - Stored event fan speed request with a trace id of 018b1c91-854b-11ec-a607-b42e99a07450
-2022-02-03 15:42:55,757 - storage - DEBUG - Stored event temperature request with a trace id of 01947f8d-854b-11ec-93f3-b42e99a07450
-2022-02-03 15:42:56,669 - storage - DEBUG - Stored event fan speed request with a trace id of 021d8239-854b-11ec-90b4-b42e99a07450
-2022-02-03 15:42:56,732 - storage - DEBUG - Stored event fan speed request with a trace id of 02276c24-854b-11ec-a573-b42e99a07450
-2022-02-03 15:42:56,734 - storage - DEBUG - Stored event temperature request with a trace id of 02274511-854b-11ec-b7ad-b42e99a07450
-2022-02-03 15:42:56,793 - storage - DEBUG - Stored event temperature request with a trace id of 02305a34-854b-11ec-b994-b42e99a07450
-2022-02-03 15:42:56,870 - storage - DEBUG - Stored event fan speed request with a trace id of 023c2d9f-854b-11ec-a540-b42e99a07450
-2022-02-03 15:42:57,593 - storage - DEBUG - Stored event fan speed request with a trace id of 02ad3a62-854b-11ec-9aab-b42e99a07450
-2022-02-03 15:42:57,608 - storage - DEBUG - Stored event temperature request with a trace id of 02af90e4-854b-11ec-8de6-b42e99a07450
-2022-02-03 15:42:57,639 - storage - DEBUG - Stored event fan speed request with a trace id of 02b4557a-854b-11ec-b673-b42e99a07450
-2022-02-03 15:42:57,731 - storage - DEBUG - Stored event temperature request with a trace id of 02c28262-854b-11ec-bf9b-b42e99a07450
-2022-02-03 15:42:57,807 - storage - DEBUG - Stored event fan speed request with a trace id of 02cc0cd1-854b-11ec-8217-b42e99a07450
-2022-02-03 15:42:58,717 - storage - DEBUG - Stored event temperature request with a trace id of 0357424c-854b-11ec-a1d3-b42e99a07450
-2022-02-03 15:42:58,797 - storage - DEBUG - Stored event fan speed request with a trace id of 03613fc8-854b-11ec-bef2-b42e99a07450
-2022-02-03 15:42:58,799 - storage - DEBUG - Stored event temperature request with a trace id of 0360ca95-854b-11ec-9f1c-b42e99a07450
-2022-02-03 15:42:58,841 - storage - DEBUG - Stored event fan speed request with a trace id of 036a201b-854b-11ec-bf5d-b42e99a07450
-2022-02-03 15:42:59,642 - storage - DEBUG - Stored event temperature request with a trace id of 03e411fc-854b-11ec-8845-b42e99a07450
-2022-02-03 15:42:59,657 - storage - DEBUG - Stored event fan speed request with a trace id of 03e67105-854b-11ec-adc1-b42e99a07450
-2022-02-03 15:42:59,688 - storage - DEBUG - Stored event temperature request with a trace id of 03eb285e-854b-11ec-a63d-b42e99a07450
-2022-02-03 15:42:59,781 - storage - DEBUG - Stored event fan speed request with a trace id of 03f91ca4-854b-11ec-b622-b42e99a07450
-2022-02-03 15:43:00,765 - storage - DEBUG - Stored event fan speed request with a trace id of 048f91bb-854b-11ec-8695-b42e99a07450
-2022-02-03 15:43:00,843 - storage - DEBUG - Stored event fan speed request with a trace id of 049c3bea-854b-11ec-bf36-b42e99a07450
-2022-02-03 15:43:00,845 - storage - DEBUG - Stored event temperature request with a trace id of 049bda3f-854b-11ec-a19c-b42e99a07450
-2022-02-03 15:43:01,690 - storage - DEBUG - Stored event fan speed request with a trace id of 051cbadf-854b-11ec-86bb-b42e99a07450
-2022-02-03 15:43:01,705 - storage - DEBUG - Stored event temperature request with a trace id of 051f04e0-854b-11ec-96fa-b42e99a07450
-2022-02-03 15:43:01,736 - storage - DEBUG - Stored event fan speed request with a trace id of 0523c0f3-854b-11ec-86ad-b42e99a07450
-2022-02-03 15:43:02,813 - storage - DEBUG - Stored event temperature request with a trace id of 05c82a76-854b-11ec-82cd-b42e99a07450
-2022-02-03 15:43:02,890 - storage - DEBUG - Stored event fan speed request with a trace id of 05d43d80-854b-11ec-ae08-b42e99a07450
-2022-02-03 15:43:03,738 - storage - DEBUG - Stored event temperature request with a trace id of 06554571-854b-11ec-ae65-b42e99a07450
-2022-02-03 15:43:03,753 - storage - DEBUG - Stored event fan speed request with a trace id of 065789e3-854b-11ec-b73c-b42e99a07450
-2022-02-03 15:43:04,861 - storage - DEBUG - Stored event fan speed request with a trace id of 0700a1a3-854b-11ec-8e1b-b42e99a07450
-2022-02-03 15:43:05,788 - storage - DEBUG - Stored event fan speed request with a trace id of 078de00f-854b-11ec-85bc-b42e99a07450
-2022-02-10 10:58:07,016 - storage - DEBUG - Stored event fan speed request with a trace id of 60c2e353-8aa3-11ec-a644-3cf011f8a2c7
+2022-02-12 14:52:43,134 - storage - DEBUG - Stored event temperature request with a trace id of 7b9e8881-8c56-11ec-8186-3cf011f8a2c7
+2022-02-12 14:52:44,119 - storage - DEBUG - Stored event temperature request with a trace id of 7c370b6a-8c56-11ec-bbe0-3cf011f8a2c7
+2022-02-12 14:52:45,110 - storage - DEBUG - Stored event temperature request with a trace id of 7ccf53ca-8c56-11ec-89b4-3cf011f8a2c7
+2022-02-12 14:52:45,188 - storage - DEBUG - Stored event fan speed request with a trace id of 7cd9ee9b-8c56-11ec-9721-3cf011f8a2c7
+2022-02-12 14:52:46,118 - storage - DEBUG - Stored event temperature request with a trace id of 7d6824d7-8c56-11ec-880d-3cf011f8a2c7
+2022-02-12 14:52:46,164 - storage - DEBUG - Stored event fan speed request with a trace id of 7d703b2e-8c56-11ec-b708-3cf011f8a2c7
+2022-02-12 14:52:47,110 - storage - DEBUG - Stored event temperature request with a trace id of 7e00944e-8c56-11ec-8e89-3cf011f8a2c7
+2022-02-12 14:52:47,156 - storage - DEBUG - Stored event fan speed request with a trace id of 7e0785a6-8c56-11ec-8e8b-3cf011f8a2c7
+2022-02-12 14:52:48,117 - storage - DEBUG - Stored event temperature request with a trace id of 7e992ade-8c56-11ec-ad67-3cf011f8a2c7
+2022-02-12 14:52:48,164 - storage - DEBUG - Stored event fan speed request with a trace id of 7ea12d8f-8c56-11ec-9fac-3cf011f8a2c7
+2022-02-12 14:52:49,110 - storage - DEBUG - Stored event temperature request with a trace id of 7f319a3f-8c56-11ec-bafa-3cf011f8a2c7
+2022-02-12 14:52:49,159 - storage - DEBUG - Stored event fan speed request with a trace id of 7f38b2a5-8c56-11ec-a635-3cf011f8a2c7
+2022-02-12 14:52:50,117 - storage - DEBUG - Stored event temperature request with a trace id of 7fca30b4-8c56-11ec-9db6-3cf011f8a2c7
+2022-02-12 14:52:50,164 - storage - DEBUG - Stored event fan speed request with a trace id of 7fd24709-8c56-11ec-b9f4-3cf011f8a2c7
+2022-02-12 14:52:51,124 - storage - DEBUG - Stored event temperature request with a trace id of 8062c73d-8c56-11ec-a1a4-3cf011f8a2c7
+2022-02-12 14:52:51,171 - storage - DEBUG - Stored event fan speed request with a trace id of 806a06d2-8c56-11ec-8b0f-3cf011f8a2c7
+2022-02-12 14:52:52,116 - storage - DEBUG - Stored event temperature request with a trace id of 80fb84d5-8c56-11ec-b53b-3cf011f8a2c7
+2022-02-12 14:52:52,164 - storage - DEBUG - Stored event fan speed request with a trace id of 8103aea5-8c56-11ec-bcd4-3cf011f8a2c7
+2022-02-12 14:52:53,170 - storage - DEBUG - Stored event fan speed request with a trace id of 819d2f81-8c56-11ec-8d20-3cf011f8a2c7
+2022-02-12 14:52:54,163 - storage - DEBUG - Stored event fan speed request with a trace id of 82348d81-8c56-11ec-aba8-3cf011f8a2c7
+2022-02-12 14:57:00,767 - storage - INFO - Query for Temperature readings after 2022-02-12T14:56:58Z returns 60 results
+2022-02-12 14:57:02,903 - storage - INFO - Query for fan speed readings after 2022-02-12T14:56:58Z returns 70 results
+2022-02-12 14:57:05,755 - storage - INFO - Query for Temperature readings after 2022-02-12T14:57:03Z returns 60 results
+2022-02-12 14:57:07,876 - storage - INFO - Query for fan speed readings after 2022-02-12T14:57:03Z returns 70 results
+2022-02-12 14:57:10,761 - storage - INFO - Query for Temperature readings after 2022-02-12T14:57:08Z returns 60 results
+2022-02-12 14:57:12,888 - storage - INFO - Query for fan speed readings after 2022-02-12T14:57:08Z returns 70 results
+2022-02-12 14:57:15,753 - storage - INFO - Query for Temperature readings after 2022-02-12T14:57:13Z returns 60 results
+2022-02-12 14:57:17,877 - storage - INFO - Query for fan speed readings after 2022-02-12T14:57:13Z returns 70 results
+2022-02-12 14:57:20,758 - storage - INFO - Query for Temperature readings after 2022-02-12T14:57:18Z returns 60 results
+2022-02-12 14:57:22,899 - storage - INFO - Query for fan speed readings after 2022-02-12T14:57:18Z returns 70 results
+2022-02-12 14:57:25,749 - storage - INFO - Query for Temperature readings after 2022-02-12T14:57:23Z returns 60 results
+2022-02-12 14:57:27,874 - storage - INFO - Query for fan speed readings after 2022-02-12T14:57:23Z returns 70 results
+2022-02-12 14:57:30,756 - storage - INFO - Query for Temperature readings after 2022-02-12T14:57:28Z returns 60 results
+2022-02-12 14:57:32,880 - storage - INFO - Query for fan speed readings after 2022-02-12T14:57:28Z returns 70 results
+2022-02-12 14:57:35,747 - storage - INFO - Query for Temperature readings after 2022-02-12T14:57:33Z returns 60 results
+2022-02-12 14:57:37,873 - storage - INFO - Query for fan speed readings after 2022-02-12T14:57:33Z returns 70 results
+2022-02-12 14:57:40,753 - storage - INFO - Query for Temperature readings after 2022-02-12T14:57:38Z returns 60 results
+2022-02-12 14:57:42,893 - storage - INFO - Query for fan speed readings after 2022-02-12T14:57:38Z returns 70 results
+2022-02-12 14:57:45,760 - storage - INFO - Query for Temperature readings after 2022-02-12T14:57:43Z returns 60 results
+2022-02-12 14:57:47,884 - storage - INFO - Query for fan speed readings after 2022-02-12T14:57:43Z returns 70 results
+2022-02-12 14:57:50,766 - storage - INFO - Query for Temperature readings after 2022-02-12T14:57:48Z returns 60 results
+2022-02-12 14:57:52,889 - storage - INFO - Query for fan speed readings after 2022-02-12T14:57:48Z returns 70 results
+2022-02-12 14:57:55,760 - storage - INFO - Query for Temperature readings after 2022-02-12T14:57:53Z returns 60 results
+2022-02-12 14:57:57,881 - storage - INFO - Query for fan speed readings after 2022-02-12T14:57:53Z returns 70 results
+2022-02-12 14:58:00,749 - storage - INFO - Query for Temperature readings after 2022-02-12T14:57:58Z returns 60 results
+2022-02-12 14:58:02,878 - storage - INFO - Query for fan speed readings after 2022-02-12T14:57:58Z returns 70 results
+2022-02-12 14:58:05,755 - storage - INFO - Query for Temperature readings after 2022-02-12T14:58:03Z returns 60 results
+2022-02-12 14:58:07,877 - storage - INFO - Query for fan speed readings after 2022-02-12T14:58:03Z returns 70 results
+2022-02-12 14:58:10,761 - storage - INFO - Query for Temperature readings after 2022-02-12T14:58:08Z returns 60 results
+2022-02-12 14:58:12,883 - storage - INFO - Query for fan speed readings after 2022-02-12T14:58:08Z returns 70 results
+2022-02-12 14:58:15,752 - storage - INFO - Query for Temperature readings after 2022-02-12T14:58:13Z returns 60 results
+2022-02-12 14:58:17,876 - storage - INFO - Query for fan speed readings after 2022-02-12T14:58:13Z returns 70 results
+2022-02-12 14:58:20,759 - storage - INFO - Query for Temperature readings after 2022-02-12T14:58:18Z returns 60 results
+2022-02-12 14:58:22,897 - storage - INFO - Query for fan speed readings after 2022-02-12T14:58:18Z returns 70 results
+2022-02-12 14:58:25,765 - storage - INFO - Query for Temperature readings after 2022-02-12T14:58:23Z returns 60 results
+2022-02-12 14:58:27,890 - storage - INFO - Query for fan speed readings after 2022-02-12T14:58:23Z returns 70 results
+2022-02-12 14:58:30,756 - storage - INFO - Query for Temperature readings after 2022-02-12T14:58:28Z returns 60 results
+2022-02-12 14:58:32,891 - storage - INFO - Query for fan speed readings after 2022-02-12T14:58:28Z returns 70 results
+2022-02-12 14:58:35,747 - storage - INFO - Query for Temperature readings after 2022-02-12T14:58:33Z returns 60 results
+2022-02-12 14:58:37,871 - storage - INFO - Query for fan speed readings after 2022-02-12T14:58:33Z returns 70 results
+2022-02-12 14:58:55,757 - storage - INFO - Query for Temperature readings after 2022-02-12T14:58:53Z returns 60 results
+2022-02-12 14:58:57,904 - storage - INFO - Query for fan speed readings after 2022-02-12T14:58:53Z returns 70 results
+2022-02-12 14:59:00,749 - storage - INFO - Query for Temperature readings after 2022-02-12T14:58:58Z returns 60 results
+2022-02-12 14:59:02,871 - storage - INFO - Query for fan speed readings after 2022-02-12T14:58:58Z returns 70 results
+2022-02-12 14:59:05,755 - storage - INFO - Query for Temperature readings after 2022-02-12T14:59:03Z returns 60 results
+2022-02-12 14:59:07,879 - storage - INFO - Query for fan speed readings after 2022-02-12T14:59:03Z returns 70 results
+2022-02-12 14:59:10,762 - storage - INFO - Query for Temperature readings after 2022-02-12T14:59:08Z returns 60 results
+2022-02-12 14:59:12,894 - storage - INFO - Query for fan speed readings after 2022-02-12T14:59:08Z returns 70 results
+2022-02-12 14:59:15,756 - storage - INFO - Query for Temperature readings after 2022-02-12T14:59:13Z returns 60 results
+2022-02-12 14:59:17,897 - storage - INFO - Query for fan speed readings after 2022-02-12T14:59:13Z returns 70 results
+2022-02-12 14:59:20,766 - storage - INFO - Query for Temperature readings after 2022-02-12T14:59:18Z returns 60 results
+2022-02-12 14:59:22,884 - storage - INFO - Query for fan speed readings after 2022-02-12T14:59:18Z returns 70 results
+2022-02-12 14:59:25,758 - storage - INFO - Query for Temperature readings after 2022-02-12T14:59:23Z returns 60 results
+2022-02-12 14:59:27,872 - storage - INFO - Query for fan speed readings after 2022-02-12T14:59:23Z returns 70 results
+2022-02-12 15:01:53,736 - storage - INFO - Query for Temperature readings after 2022-02-12T15:01:51Z returns 60 results
+2022-02-12 15:01:55,864 - storage - INFO - Query for fan speed readings after 2022-02-12T15:01:51Z returns 70 results
+2022-02-12 15:02:06,064 - storage - INFO - Query for fan speed readings after 2022-02-12T15:01:51Z returns 70 results
+2022-02-12 15:03:58,713 - storage - DEBUG - Stored event temperature request with a trace id of 0e4b799f-8c58-11ec-bc64-3cf011f8a2c7
+2022-02-12 15:03:59,696 - storage - DEBUG - Stored event temperature request with a trace id of 0ee3fc94-8c58-11ec-a138-3cf011f8a2c7
+2022-02-12 15:04:00,705 - storage - DEBUG - Stored event temperature request with a trace id of 0f7db80e-8c58-11ec-8d6e-3cf011f8a2c7
+2022-02-12 15:04:00,769 - storage - DEBUG - Stored event fan speed request with a trace id of 0f872dfd-8c58-11ec-8361-3cf011f8a2c7
+2022-02-12 15:04:01,695 - storage - DEBUG - Stored event temperature request with a trace id of 1015161a-8c58-11ec-843d-3cf011f8a2c7
+2022-02-12 15:04:01,742 - storage - DEBUG - Stored event fan speed request with a trace id of 101d2c5a-8c58-11ec-b984-3cf011f8a2c7
+2022-02-12 15:04:02,703 - storage - DEBUG - Stored event temperature request with a trace id of 10adc026-8c58-11ec-80ef-3cf011f8a2c7
+2022-02-12 15:04:02,750 - storage - DEBUG - Stored event fan speed request with a trace id of 10b74984-8c58-11ec-8a1a-3cf011f8a2c7
+2022-02-12 15:04:03,695 - storage - DEBUG - Stored event temperature request with a trace id of 11461c05-8c58-11ec-acac-3cf011f8a2c7
+2022-02-12 15:04:03,741 - storage - DEBUG - Stored event fan speed request with a trace id of 114e1ebc-8c58-11ec-b96b-3cf011f8a2c7
+2022-02-12 15:04:04,686 - storage - DEBUG - Stored event temperature request with a trace id of 11de8b61-8c58-11ec-8b1f-3cf011f8a2c7
+2022-02-12 15:04:04,749 - storage - DEBUG - Stored event fan speed request with a trace id of 11e7edd2-8c58-11ec-8093-3cf011f8a2c7
+2022-02-12 15:04:05,694 - storage - DEBUG - Stored event temperature request with a trace id of 127721f6-8c58-11ec-9536-3cf011f8a2c7
+2022-02-12 15:04:05,752 - storage - DEBUG - Stored event fan speed request with a trace id of 127f4bd5-8c58-11ec-9876-3cf011f8a2c7
+2022-02-12 15:04:06,702 - storage - DEBUG - Stored event temperature request with a trace id of 130ff318-8c58-11ec-acdf-3cf011f8a2c7
+2022-02-12 15:04:06,732 - storage - DEBUG - Stored event fan speed request with a trace id of 131682ab-8c58-11ec-9bdc-3cf011f8a2c7
+2022-02-12 15:04:07,694 - storage - DEBUG - Stored event temperature request with a trace id of 13a88988-8c58-11ec-863a-3cf011f8a2c7
+2022-02-12 15:04:07,740 - storage - DEBUG - Stored event fan speed request with a trace id of 13b051d0-8c58-11ec-b9c9-3cf011f8a2c7
+2022-02-12 15:04:08,748 - storage - DEBUG - Stored event fan speed request with a trace id of 144a2ec3-8c58-11ec-8f30-3cf011f8a2c7
+2022-02-12 15:04:09,739 - storage - DEBUG - Stored event fan speed request with a trace id of 14e18cbb-8c58-11ec-9204-3cf011f8a2c7
+2022-02-12 15:04:48,289 - storage - INFO - Query for Temperature readings after 2022-02-12T15:04:46Z returns 10 results
+2022-02-12 15:04:50,349 - storage - INFO - Query for fan speed readings after 2022-02-12T15:04:46Z returns 10 results
+2022-02-12 15:04:53,276 - storage - INFO - Query for Temperature readings after 2022-02-12T15:04:51Z returns 10 results
+2022-02-12 15:04:55,325 - storage - INFO - Query for fan speed readings after 2022-02-12T15:04:51Z returns 10 results
+2022-02-12 15:05:13,981 - storage - INFO - Query for fan speed readings after 2022-02-12T15:04:46Z returns 10 results
+2022-02-12 15:24:16,377 - storage - DEBUG - Stored event temperature request with a trace id of e41588cd-8c5a-11ec-b19f-3cf011f8a2c7
+2022-02-12 15:24:17,376 - storage - DEBUG - Stored event temperature request with a trace id of e4af443f-8c5a-11ec-81d6-3cf011f8a2c7
+2022-02-12 15:24:18,367 - storage - DEBUG - Stored event temperature request with a trace id of e5468ebc-8c5a-11ec-8a36-3cf011f8a2c7
+2022-02-12 15:24:19,374 - storage - DEBUG - Stored event temperature request with a trace id of e5e05db3-8c5a-11ec-802a-3cf011f8a2c7
+2022-02-12 15:24:20,367 - storage - DEBUG - Stored event temperature request with a trace id of e677a841-8c5a-11ec-8fff-3cf011f8a2c7
+2022-02-12 15:24:21,374 - storage - DEBUG - Stored event temperature request with a trace id of e7102b2d-8c5a-11ec-9883-3cf011f8a2c7
+2022-02-12 15:24:22,368 - storage - DEBUG - Stored event temperature request with a trace id of e7a8d532-8c5a-11ec-a0a6-3cf011f8a2c7
+2022-02-12 15:24:23,373 - storage - DEBUG - Stored event temperature request with a trace id of e84192c7-8c5a-11ec-b3a1-3cf011f8a2c7
+2022-02-12 15:24:24,366 - storage - DEBUG - Stored event temperature request with a trace id of e8da0255-8c5a-11ec-91c6-3cf011f8a2c7
+2022-02-12 15:24:25,373 - storage - DEBUG - Stored event temperature request with a trace id of e972ac3c-8c5a-11ec-b875-3cf011f8a2c7
+2022-02-12 15:30:27,672 - storage - DEBUG - Stored event temperature request with a trace id of c164b6e9-8c5b-11ec-a614-3cf011f8a2c7
+2022-02-12 15:30:28,673 - storage - DEBUG - Stored event temperature request with a trace id of c1feacf6-8c5b-11ec-b311-3cf011f8a2c7
+2022-02-12 15:30:29,665 - storage - DEBUG - Stored event temperature request with a trace id of c295a965-8c5b-11ec-b3f7-3cf011f8a2c7
+2022-02-12 15:30:30,657 - storage - DEBUG - Stored event temperature request with a trace id of c32e2d77-8c5b-11ec-8426-3cf011f8a2c7
+2022-02-12 15:30:31,664 - storage - DEBUG - Stored event temperature request with a trace id of c3c69432-8c5b-11ec-8e07-3cf011f8a2c7
+2022-02-12 15:30:32,656 - storage - DEBUG - Stored event temperature request with a trace id of c45f2aaf-8c5b-11ec-811b-3cf011f8a2c7
+2022-02-12 15:30:33,664 - storage - DEBUG - Stored event temperature request with a trace id of c4f7c232-8c5b-11ec-af8e-3cf011f8a2c7
+2022-02-12 15:30:34,656 - storage - DEBUG - Stored event temperature request with a trace id of c59059b5-8c5b-11ec-8a97-3cf011f8a2c7
+2022-02-12 15:30:35,664 - storage - DEBUG - Stored event temperature request with a trace id of c628f04a-8c5b-11ec-a823-3cf011f8a2c7
+2022-02-12 15:30:36,658 - storage - DEBUG - Stored event temperature request with a trace id of c6c176fc-8c5b-11ec-b22e-3cf011f8a2c7
+2022-02-12 15:34:38,815 - storage - DEBUG - Stored event temperature request with a trace id of 571591a2-8c5c-11ec-8046-3cf011f8a2c7
+2022-02-12 15:34:39,816 - storage - DEBUG - Stored event temperature request with a trace id of 57b01065-8c5c-11ec-9ce5-3cf011f8a2c7
+2022-02-12 15:34:40,807 - storage - DEBUG - Stored event temperature request with a trace id of 58467068-8c5c-11ec-a011-3cf011f8a2c7
+2022-02-12 15:34:41,799 - storage - DEBUG - Stored event temperature request with a trace id of 58def384-8c5c-11ec-a657-3cf011f8a2c7
+2022-02-12 15:34:42,807 - storage - DEBUG - Stored event temperature request with a trace id of 59778a0d-8c5c-11ec-a05a-3cf011f8a2c7
+2022-02-12 15:34:43,799 - storage - DEBUG - Stored event temperature request with a trace id of 5a104782-8c5c-11ec-be7e-3cf011f8a2c7
+2022-02-12 15:34:44,807 - storage - DEBUG - Stored event temperature request with a trace id of 5aa8ca78-8c5c-11ec-9953-3cf011f8a2c7
+2022-02-12 15:34:45,799 - storage - DEBUG - Stored event temperature request with a trace id of 5b414d6b-8c5c-11ec-ab82-3cf011f8a2c7
+2022-02-12 15:34:46,805 - storage - DEBUG - Stored event temperature request with a trace id of 5bd9f76d-8c5c-11ec-9dd0-3cf011f8a2c7
+2022-02-12 15:34:47,798 - storage - DEBUG - Stored event temperature request with a trace id of 5c7266e0-8c5c-11ec-8f36-3cf011f8a2c7
+2022-02-12 15:41:22,429 - storage - DEBUG - Stored event fan speed request with a trace id of 47a52f0e-8c5d-11ec-919b-3cf011f8a2c7
+2022-02-12 15:41:42,698 - storage - DEBUG - Stored event temperature request with a trace id of 53bf3c18-8c5d-11ec-a169-3cf011f8a2c7
+2022-02-12 15:42:22,392 - storage - DEBUG - Stored event temperature request with a trace id of 6b67e9ba-8c5d-11ec-b7a5-3cf011f8a2c7
+2022-02-12 15:42:23,399 - storage - DEBUG - Stored event temperature request with a trace id of 6c00457f-8c5d-11ec-bfea-3cf011f8a2c7
+2022-02-12 15:42:24,392 - storage - DEBUG - Stored event temperature request with a trace id of 6c992a34-8c5d-11ec-8398-3cf011f8a2c7
+2022-02-12 15:42:25,399 - storage - DEBUG - Stored event temperature request with a trace id of 6d31a8ee-8c5d-11ec-8467-3cf011f8a2c7
+2022-02-12 15:42:26,391 - storage - DEBUG - Stored event temperature request with a trace id of 6dca2bd2-8c5d-11ec-82d3-3cf011f8a2c7
+2022-02-12 15:42:27,398 - storage - DEBUG - Stored event temperature request with a trace id of 6e62c26b-8c5d-11ec-922c-3cf011f8a2c7
+2022-02-12 15:42:28,391 - storage - DEBUG - Stored event temperature request with a trace id of 6efb58e7-8c5d-11ec-b27f-3cf011f8a2c7
+2022-02-12 15:42:29,398 - storage - DEBUG - Stored event temperature request with a trace id of 6f941672-8c5d-11ec-8e62-3cf011f8a2c7
+2022-02-12 15:42:30,390 - storage - DEBUG - Stored event temperature request with a trace id of 702c725f-8c5d-11ec-baba-3cf011f8a2c7
+2022-02-12 15:42:31,402 - storage - DEBUG - Stored event temperature request with a trace id of 70c52ff2-8c5d-11ec-b96e-3cf011f8a2c7
+2022-02-12 15:43:05,528 - storage - DEBUG - Stored event temperature request with a trace id of 851c6d2c-8c5d-11ec-b5a0-3cf011f8a2c7
+2022-02-12 15:43:06,519 - storage - DEBUG - Stored event temperature request with a trace id of 85b4f033-8c5d-11ec-a3e8-3cf011f8a2c7
+2022-02-12 15:43:07,513 - storage - DEBUG - Stored event temperature request with a trace id of 864d5f98-8c5d-11ec-8d66-3cf011f8a2c7
+2022-02-12 15:43:08,520 - storage - DEBUG - Stored event temperature request with a trace id of 86e5f618-8c5d-11ec-9ee6-3cf011f8a2c7
+2022-02-12 15:43:09,526 - storage - DEBUG - Stored event temperature request with a trace id of 877eb3a3-8c5d-11ec-9077-3cf011f8a2c7
+2022-02-12 15:43:10,520 - storage - DEBUG - Stored event temperature request with a trace id of 88172370-8c5d-11ec-870a-3cf011f8a2c7
+2022-02-12 15:43:11,527 - storage - DEBUG - Stored event temperature request with a trace id of 88afe100-8c5d-11ec-8a3e-3cf011f8a2c7
+2022-02-12 15:43:12,519 - storage - DEBUG - Stored event temperature request with a trace id of 894877c7-8c5d-11ec-8b78-3cf011f8a2c7
+2022-02-12 15:43:13,526 - storage - DEBUG - Stored event temperature request with a trace id of 89e1e4df-8c5d-11ec-bd75-3cf011f8a2c7
+2022-02-12 15:43:14,518 - storage - DEBUG - Stored event temperature request with a trace id of 8a797d99-8c5d-11ec-841f-3cf011f8a2c7
+2022-02-12 15:44:27,104 - storage - DEBUG - Stored event temperature request with a trace id of b5bdc82d-8c5d-11ec-b1fb-3cf011f8a2c7
+2022-02-12 15:44:28,110 - storage - DEBUG - Stored event temperature request with a trace id of b6561094-8c5d-11ec-b389-3cf011f8a2c7
+2022-02-12 15:44:29,104 - storage - DEBUG - Stored event temperature request with a trace id of b6eea726-8c5d-11ec-a707-3cf011f8a2c7
+2022-02-12 15:44:30,114 - storage - DEBUG - Stored event temperature request with a trace id of b7873d93-8c5d-11ec-b89c-3cf011f8a2c7
+2022-02-12 15:44:31,103 - storage - DEBUG - Stored event temperature request with a trace id of b81fc099-8c5d-11ec-b617-3cf011f8a2c7
+2022-02-12 15:44:32,110 - storage - DEBUG - Stored event temperature request with a trace id of b8b87e1f-8c5d-11ec-b68d-3cf011f8a2c7
+2022-02-12 15:44:33,117 - storage - DEBUG - Stored event temperature request with a trace id of b9513bb5-8c5d-11ec-a543-3cf011f8a2c7
+2022-02-12 15:44:34,110 - storage - DEBUG - Stored event temperature request with a trace id of b9e9bea4-8c5d-11ec-bbf6-3cf011f8a2c7
+2022-02-12 15:44:35,107 - storage - DEBUG - Stored event temperature request with a trace id of ba821a91-8c5d-11ec-8ebb-3cf011f8a2c7
+2022-02-12 15:44:36,109 - storage - DEBUG - Stored event temperature request with a trace id of bb1a9da6-8c5d-11ec-8868-3cf011f8a2c7
+2022-02-12 15:45:40,299 - storage - DEBUG - Stored event temperature request with a trace id of e15d571b-8c5d-11ec-bef6-3cf011f8a2c7
+2022-02-12 15:45:41,280 - storage - DEBUG - Stored event temperature request with a trace id of e1f51d8d-8c5d-11ec-8bfd-3cf011f8a2c7
+2022-02-12 15:45:42,279 - storage - DEBUG - Stored event temperature request with a trace id of e28dc0a6-8c5d-11ec-ba55-3cf011f8a2c7
+2022-02-12 15:45:43,279 - storage - DEBUG - Stored event temperature request with a trace id of e326d379-8c5d-11ec-b075-3cf011f8a2c7
+2022-02-12 15:45:44,279 - storage - DEBUG - Stored event temperature request with a trace id of e3beb614-8c5d-11ec-bdd3-3cf011f8a2c7
+2022-02-12 15:45:45,281 - storage - DEBUG - Stored event temperature request with a trace id of e457884b-8c5d-11ec-a7fb-3cf011f8a2c7
+2022-02-12 15:45:46,285 - storage - DEBUG - Stored event temperature request with a trace id of e4f09457-8c5d-11ec-8eae-3cf011f8a2c7
+2022-02-12 15:48:04,135 - storage - DEBUG - Stored event fan speed request with a trace id of 3719d888-8c5e-11ec-ba59-3cf011f8a2c7
+2022-02-12 15:48:40,811 - storage - DEBUG - Stored event temperature request with a trace id of 4cf59f39-8c5e-11ec-854e-3cf011f8a2c7
+2022-02-12 15:56:57,033 - storage - DEBUG - Stored event temperature request with a trace id of 74baf2c8-8c5f-11ec-9210-3cf011f8a2c7
+2022-02-12 16:08:13,682 - storage - DEBUG - Stored event temperature request with a trace id of 080c91ad-8c61-11ec-9412-3cf011f8a2c7
+2022-02-12 16:08:59,031 - storage - DEBUG - Stored event temperature request with a trace id of 2313790e-8c61-11ec-9fb6-3cf011f8a2c7
+2022-02-12 16:09:21,662 - storage - DEBUG - Stored event temperature request with a trace id of 30910c68-8c61-11ec-b2d5-3cf011f8a2c7
+2022-02-12 16:11:43,039 - storage - DEBUG - Stored event fan speed request with a trace id of 84d59ac7-8c61-11ec-841e-3cf011f8a2c7
+2022-02-12 16:13:18,295 - storage - DEBUG - Stored event fan speed request with a trace id of bd9d2d1f-8c61-11ec-bf7c-3cf011f8a2c7
+2022-02-12 16:14:13,381 - storage - DEBUG - Stored event temperature request with a trace id of de728f1f-8c61-11ec-a384-3cf011f8a2c7
+2022-02-12 16:14:15,426 - storage - DEBUG - Stored event fan speed request with a trace id of dfaa663f-8c61-11ec-8d53-3cf011f8a2c7
+2022-02-12 16:14:50,604 - storage - INFO - Query for Temperature readings after 2022-02-12T16:14:48Z returns 74 results
+2022-02-12 16:14:52,692 - storage - INFO - Query for fan speed readings after 2022-02-12T16:14:48Z returns 74 results
+2022-02-12 16:14:55,594 - storage - INFO - Query for Temperature readings after 2022-02-12T16:14:53Z returns 74 results
+2022-02-12 16:14:57,667 - storage - INFO - Query for fan speed readings after 2022-02-12T16:14:53Z returns 74 results
+2022-02-12 16:15:00,583 - storage - INFO - Query for Temperature readings after 2022-02-12T16:14:58Z returns 74 results
+2022-02-12 16:15:02,659 - storage - INFO - Query for fan speed readings after 2022-02-12T16:14:58Z returns 74 results
+2022-02-12 16:15:05,591 - storage - INFO - Query for Temperature readings after 2022-02-12T16:15:03Z returns 74 results
+2022-02-12 16:15:07,663 - storage - INFO - Query for fan speed readings after 2022-02-12T16:15:03Z returns 74 results
+2022-02-12 16:15:10,595 - storage - INFO - Query for Temperature readings after 2022-02-12T16:15:08Z returns 74 results
+2022-02-12 16:15:12,660 - storage - INFO - Query for fan speed readings after 2022-02-12T16:15:08Z returns 74 results
+2022-02-12 16:15:15,587 - storage - INFO - Query for Temperature readings after 2022-02-12T16:15:13Z returns 74 results
+2022-02-12 16:15:17,651 - storage - INFO - Query for fan speed readings after 2022-02-12T16:15:13Z returns 74 results
+2022-02-12 16:15:20,586 - storage - INFO - Query for Temperature readings after 2022-02-12T16:15:18Z returns 74 results
+2022-02-12 16:15:22,670 - storage - INFO - Query for fan speed readings after 2022-02-12T16:15:18Z returns 74 results
+2022-02-12 16:16:23,427 - storage - INFO - Query for Temperature readings after 2022-02-12T16:15:23Z returns 74 results
+2022-02-12 16:18:11,849 - storage - INFO - Query for Temperature readings after 2022-02-12T16:18:09Z returns 74 results
+2022-02-12 16:18:13,910 - storage - INFO - Query for fan speed readings after 2022-02-12T16:18:09Z returns 74 results
+2022-02-12 16:18:16,829 - storage - INFO - Query for Temperature readings after 2022-02-12T16:18:14Z returns 74 results
+2022-02-12 16:18:18,888 - storage - INFO - Query for fan speed readings after 2022-02-12T16:18:14Z returns 74 results
+2022-02-12 16:18:21,815 - storage - INFO - Query for Temperature readings after 2022-02-12T16:18:19Z returns 74 results
+2022-02-12 16:18:23,885 - storage - INFO - Query for fan speed readings after 2022-02-12T16:18:19Z returns 74 results
+2022-02-12 16:18:26,832 - storage - INFO - Query for Temperature readings after 2022-02-12T16:18:24Z returns 74 results
+2022-02-12 16:18:28,911 - storage - INFO - Query for fan speed readings after 2022-02-12T16:18:24Z returns 74 results
+2022-02-12 16:18:31,827 - storage - INFO - Query for Temperature readings after 2022-02-12T16:18:29Z returns 74 results
+2022-02-12 16:18:32,016 - storage - INFO - Query for Temperature readings after 2022-02-12T16:15:23Z returns 74 results
+2022-02-12 16:18:33,899 - storage - INFO - Query for fan speed readings after 2022-02-12T16:18:29Z returns 74 results
+2022-02-12 16:18:36,829 - storage - INFO - Query for Temperature readings after 2022-02-12T16:18:34Z returns 74 results
+2022-02-12 16:18:38,907 - storage - INFO - Query for fan speed readings after 2022-02-12T16:18:34Z returns 74 results
+2022-02-12 16:18:41,822 - storage - INFO - Query for Temperature readings after 2022-02-12T16:18:39Z returns 74 results
+2022-02-12 16:18:43,903 - storage - INFO - Query for fan speed readings after 2022-02-12T16:18:39Z returns 74 results
+2022-02-12 16:18:46,824 - storage - INFO - Query for Temperature readings after 2022-02-12T16:18:44Z returns 74 results
+2022-02-12 16:18:48,889 - storage - INFO - Query for fan speed readings after 2022-02-12T16:18:44Z returns 74 results
+2022-02-12 16:18:51,825 - storage - INFO - Query for Temperature readings after 2022-02-12T16:18:49Z returns 74 results
+2022-02-12 16:18:53,899 - storage - INFO - Query for fan speed readings after 2022-02-12T16:18:49Z returns 74 results
+2022-02-12 16:18:56,831 - storage - INFO - Query for Temperature readings after 2022-02-12T16:18:54Z returns 74 results
+2022-02-12 16:18:58,905 - storage - INFO - Query for fan speed readings after 2022-02-12T16:18:54Z returns 74 results
+2022-02-12 16:19:01,823 - storage - INFO - Query for Temperature readings after 2022-02-12T16:18:59Z returns 74 results
+2022-02-12 16:19:03,896 - storage - INFO - Query for fan speed readings after 2022-02-12T16:18:59Z returns 74 results
+2022-02-12 16:19:06,829 - storage - INFO - Query for Temperature readings after 2022-02-12T16:19:04Z returns 74 results
+2022-02-12 16:19:08,897 - storage - INFO - Query for fan speed readings after 2022-02-12T16:19:04Z returns 74 results
+2022-02-12 16:19:11,825 - storage - INFO - Query for Temperature readings after 2022-02-12T16:19:09Z returns 74 results
+2022-02-12 16:19:13,891 - storage - INFO - Query for fan speed readings after 2022-02-12T16:19:09Z returns 74 results
+2022-02-12 16:19:16,822 - storage - INFO - Query for Temperature readings after 2022-02-12T16:19:14Z returns 74 results
+2022-02-12 16:19:18,889 - storage - INFO - Query for fan speed readings after 2022-02-12T16:19:14Z returns 74 results
+2022-02-12 16:19:21,815 - storage - INFO - Query for Temperature readings after 2022-02-12T16:19:19Z returns 74 results
+2022-02-12 16:19:23,880 - storage - INFO - Query for fan speed readings after 2022-02-12T16:19:19Z returns 74 results
+2022-02-12 16:19:26,824 - storage - INFO - Query for Temperature readings after 2022-02-12T16:19:24Z returns 74 results
+2022-02-12 16:19:28,889 - storage - INFO - Query for fan speed readings after 2022-02-12T16:19:24Z returns 74 results
+2022-02-12 16:19:31,814 - storage - INFO - Query for Temperature readings after 2022-02-12T16:19:29Z returns 74 results
+2022-02-12 16:19:33,882 - storage - INFO - Query for fan speed readings after 2022-02-12T16:19:29Z returns 74 results
+2022-02-12 16:19:36,824 - storage - INFO - Query for Temperature readings after 2022-02-12T16:19:34Z returns 74 results
+2022-02-12 16:19:38,891 - storage - INFO - Query for fan speed readings after 2022-02-12T16:19:34Z returns 74 results
+2022-02-12 16:19:41,821 - storage - INFO - Query for Temperature readings after 2022-02-12T16:19:39Z returns 74 results
+2022-02-12 16:19:43,887 - storage - INFO - Query for fan speed readings after 2022-02-12T16:19:39Z returns 74 results
+2022-02-12 16:19:46,831 - storage - INFO - Query for Temperature readings after 2022-02-12T16:19:44Z returns 74 results
+2022-02-12 16:19:48,900 - storage - INFO - Query for fan speed readings after 2022-02-12T16:19:44Z returns 74 results
+2022-02-12 16:19:51,816 - storage - INFO - Query for Temperature readings after 2022-02-12T16:19:49Z returns 74 results
+2022-02-12 16:19:53,885 - storage - INFO - Query for fan speed readings after 2022-02-12T16:19:49Z returns 74 results
+2022-02-12 16:19:56,833 - storage - INFO - Query for Temperature readings after 2022-02-12T16:19:54Z returns 74 results
+2022-02-12 16:19:58,900 - storage - INFO - Query for fan speed readings after 2022-02-12T16:19:54Z returns 74 results
+2022-02-12 16:20:01,832 - storage - INFO - Query for Temperature readings after 2022-02-12T16:19:59Z returns 74 results
+2022-02-12 16:20:03,903 - storage - INFO - Query for fan speed readings after 2022-02-12T16:19:59Z returns 74 results
+2022-02-12 16:20:06,818 - storage - INFO - Query for Temperature readings after 2022-02-12T16:20:04Z returns 74 results
+2022-02-12 16:20:08,886 - storage - INFO - Query for fan speed readings after 2022-02-12T16:20:04Z returns 74 results
+2022-02-12 16:20:11,821 - storage - INFO - Query for Temperature readings after 2022-02-12T16:20:09Z returns 74 results
+2022-02-12 16:20:13,890 - storage - INFO - Query for fan speed readings after 2022-02-12T16:20:09Z returns 74 results
+2022-02-12 16:20:16,819 - storage - INFO - Query for Temperature readings after 2022-02-12T16:20:14Z returns 74 results
+2022-02-12 16:20:18,886 - storage - INFO - Query for fan speed readings after 2022-02-12T16:20:14Z returns 74 results
+2022-02-12 16:20:21,821 - storage - INFO - Query for Temperature readings after 2022-02-12T16:20:19Z returns 74 results
+2022-02-12 16:20:23,889 - storage - INFO - Query for fan speed readings after 2022-02-12T16:20:19Z returns 74 results
+2022-02-12 16:20:26,822 - storage - INFO - Query for Temperature readings after 2022-02-12T16:20:24Z returns 74 results
+2022-02-12 16:20:28,898 - storage - INFO - Query for fan speed readings after 2022-02-12T16:20:24Z returns 74 results
+2022-02-12 16:20:31,832 - storage - INFO - Query for Temperature readings after 2022-02-12T16:20:29Z returns 74 results
+2022-02-12 16:20:33,906 - storage - INFO - Query for fan speed readings after 2022-02-12T16:20:29Z returns 74 results
+2022-02-12 16:20:36,822 - storage - INFO - Query for Temperature readings after 2022-02-12T16:20:34Z returns 74 results
+2022-02-12 16:20:38,895 - storage - INFO - Query for fan speed readings after 2022-02-12T16:20:34Z returns 74 results
+2022-02-12 16:20:41,826 - storage - INFO - Query for Temperature readings after 2022-02-12T16:20:39Z returns 74 results
+2022-02-12 16:20:43,903 - storage - INFO - Query for fan speed readings after 2022-02-12T16:20:39Z returns 74 results
+2022-02-12 16:20:46,835 - storage - INFO - Query for Temperature readings after 2022-02-12T16:20:44Z returns 74 results
+2022-02-12 16:20:48,907 - storage - INFO - Query for fan speed readings after 2022-02-12T16:20:44Z returns 74 results
+2022-02-12 16:20:57,372 - storage - INFO - Query for Temperature readings after 2022-02-12T16:20:55Z returns 74 results
+2022-02-12 16:20:59,448 - storage - INFO - Query for fan speed readings after 2022-02-12T16:20:55Z returns 74 results
+2022-02-12 16:21:02,361 - storage - INFO - Query for Temperature readings after 2022-02-12T16:21:00Z returns 74 results
+2022-02-12 16:21:04,428 - storage - INFO - Query for fan speed readings after 2022-02-12T16:21:00Z returns 74 results
+2022-02-12 16:21:07,358 - storage - INFO - Query for Temperature readings after 2022-02-12T16:21:05Z returns 74 results
+2022-02-12 16:21:09,425 - storage - INFO - Query for fan speed readings after 2022-02-12T16:21:05Z returns 74 results
+2022-02-12 16:21:12,351 - storage - INFO - Query for Temperature readings after 2022-02-12T16:21:10Z returns 74 results
+2022-02-12 16:21:14,417 - storage - INFO - Query for fan speed readings after 2022-02-12T16:21:10Z returns 74 results
+2022-02-12 16:21:17,363 - storage - INFO - Query for Temperature readings after 2022-02-12T16:21:15Z returns 74 results
+2022-02-12 16:21:19,427 - storage - INFO - Query for fan speed readings after 2022-02-12T16:21:15Z returns 74 results
+2022-02-12 16:21:22,361 - storage - INFO - Query for Temperature readings after 2022-02-12T16:21:20Z returns 74 results
+2022-02-12 16:21:24,438 - storage - INFO - Query for fan speed readings after 2022-02-12T16:21:20Z returns 74 results
+2022-02-12 16:21:27,352 - storage - INFO - Query for Temperature readings after 2022-02-12T16:21:25Z returns 74 results
+2022-02-12 16:21:29,435 - storage - INFO - Query for fan speed readings after 2022-02-12T16:21:25Z returns 74 results
+2022-02-12 16:21:32,354 - storage - INFO - Query for Temperature readings after 2022-02-12T16:21:30Z returns 74 results
+2022-02-12 16:21:34,420 - storage - INFO - Query for fan speed readings after 2022-02-12T16:21:30Z returns 74 results
+2022-02-12 16:21:37,351 - storage - INFO - Query for Temperature readings after 2022-02-12T16:21:35Z returns 74 results
+2022-02-12 16:21:39,416 - storage - INFO - Query for fan speed readings after 2022-02-12T16:21:35Z returns 74 results
+2022-02-12 16:22:24,091 - storage - INFO - Query for Temperature readings after 2022-02-12T16:22:22Z returns 74 results
+2022-02-12 16:22:26,153 - storage - INFO - Query for fan speed readings after 2022-02-12T16:22:22Z returns 74 results
+2022-02-12 16:22:29,066 - storage - INFO - Query for Temperature readings after 2022-02-12T16:22:27Z returns 74 results
+2022-02-12 16:24:10,401 - storage - INFO - Query for Temperature readings after 2022-02-12T16:24:08Z returns 74 results
+2022-02-12 16:24:12,469 - storage - INFO - Query for fan speed readings after 2022-02-12T16:24:08Z returns 5 results
+2022-02-12 16:24:15,410 - storage - INFO - Query for Temperature readings after 2022-02-12T16:24:13Z returns 74 results
+2022-02-12 16:24:17,477 - storage - INFO - Query for fan speed readings after 2022-02-12T16:24:13Z returns 5 results
+2022-02-12 16:24:20,413 - storage - INFO - Query for Temperature readings after 2022-02-12T16:24:18Z returns 74 results
+2022-02-12 16:24:22,475 - storage - INFO - Query for fan speed readings after 2022-02-12T16:24:18Z returns 5 results
+2022-02-12 16:26:11,518 - storage - INFO - Query for fan speed readings after 2022-02-12T16:15:23Z returns 5 results
+2022-02-12 16:36:08,986 - storage - INFO - Query for Temperature readings after 2022-02-12T16:36:06Z returns 74 results
+2022-02-12 16:36:11,075 - storage - INFO - Query for fan speed readings after 2022-02-12T16:36:06Z returns 5 results
+2022-02-12 16:36:13,996 - storage - INFO - Query for Temperature readings after 2022-02-12T16:36:11Z returns 74 results
+2022-02-12 16:36:16,056 - storage - INFO - Query for fan speed readings after 2022-02-12T16:36:11Z returns 5 results
+2022-02-12 16:36:18,989 - storage - INFO - Query for Temperature readings after 2022-02-12T16:36:16Z returns 74 results
+2022-02-12 16:36:21,049 - storage - INFO - Query for fan speed readings after 2022-02-12T16:36:16Z returns 5 results
+2022-02-12 16:36:23,977 - storage - INFO - Query for Temperature readings after 2022-02-12T16:36:21Z returns 74 results
+2022-02-12 16:36:26,039 - storage - INFO - Query for fan speed readings after 2022-02-12T16:36:21Z returns 5 results
+2022-02-12 16:36:28,989 - storage - INFO - Query for Temperature readings after 2022-02-12T16:36:26Z returns 74 results
+2022-02-12 16:36:31,052 - storage - INFO - Query for fan speed readings after 2022-02-12T16:36:26Z returns 5 results
+2022-02-12 16:41:33,363 - storage - INFO - Query for Temperature readings after 2022-02-12T16:41:31Z returns 74 results
+2022-02-12 16:41:35,420 - storage - INFO - Query for fan speed readings after 2022-02-12T16:41:31Z returns 5 results
+2022-02-12 16:41:38,354 - storage - INFO - Query for Temperature readings after 2022-02-12T16:41:36Z returns 74 results
+2022-02-12 16:41:40,419 - storage - INFO - Query for fan speed readings after 2022-02-12T16:41:36Z returns 5 results
+2022-02-12 16:49:57,210 - storage - INFO - Query for fan speed readings after 2022-02-12T16:15:23Z returns 5 results
+2022-02-12 16:50:29,967 - storage - INFO - Query for fan speed readings after 2022-02-12T16:15:23Z returns 5 results
+2022-02-12 16:50:44,629 - storage - INFO - Query for fan speed readings after 2022-02-12T16:15:23Z returns 5 results
+2022-02-12 16:51:09,762 - storage - INFO - Query for fan speed readings after 2022-02-12T16:15:23Z returns 5 results
+2022-02-12 16:51:10,531 - storage - INFO - Query for fan speed readings after 2022-02-12T16:15:23Z returns 5 results
+2022-02-12 16:51:11,146 - storage - INFO - Query for fan speed readings after 2022-02-12T16:15:23Z returns 5 results
+2022-02-12 16:51:16,716 - storage - INFO - Query for fan speed readings after 2022-02-12T16:15:23Z returns 5 results
+2022-02-12 16:51:17,637 - storage - INFO - Query for fan speed readings after 2022-02-12T16:15:23Z returns 5 results
+2022-02-12 16:51:25,524 - storage - INFO - Query for fan speed readings after 2022-02-12T16:15:23Z returns 5 results
+2022-02-12 16:51:26,113 - storage - INFO - Query for fan speed readings after 2022-02-12T16:15:23Z returns 5 results
+2022-02-12 16:51:37,927 - storage - INFO - Query for fan speed readings after 2022-02-12T16:15:23Z returns 5 results
+2022-02-12 16:51:49,024 - storage - INFO - Query for fan speed readings after 2022-02-12T16:15:23Z returns 5 results
+2022-02-12 16:52:23,265 - storage - INFO - Query for fan speed readings after 2022-02-12T16:15:23Z returns 5 results
+2022-02-12 16:52:47,305 - storage - INFO - Query for Temperature readings after 2022-02-12T16:15:23Z returns 74 results
+2022-02-12 17:04:21,006 - storage - INFO - Query for Temperature readings after 2022-02-12T17:04:18Z returns 74 results
+2022-02-12 17:04:23,058 - storage - INFO - Query for fan speed readings after 2022-02-12T17:04:18Z returns 5 results
+2022-02-12 17:04:25,988 - storage - INFO - Query for Temperature readings after 2022-02-12T17:04:23Z returns 74 results
+2022-02-12 17:04:28,056 - storage - INFO - Query for fan speed readings after 2022-02-12T17:04:23Z returns 5 results
+2022-02-12 17:04:47,533 - storage - INFO - Query for Temperature readings after 2022-02-12T17:04:43Z returns 74 results
+2022-02-12 17:04:49,588 - storage - INFO - Query for fan speed readings after 2022-02-12T17:04:43Z returns 5 results
+2022-02-12 17:04:57,908 - storage - INFO - Query for Temperature readings after 2022-02-12T16:15:23Z returns 74 results
+2022-02-12 17:11:56,821 - storage - INFO - Query for Temperature readings after 2022-02-12T16:15:23Z returns 74 results
+2022-02-12 17:17:33,487 - storage - INFO - Query for Temperature readings after 2022-02-12T17:17:31Z returns 74 results
+2022-02-12 17:17:38,480 - storage - INFO - Query for Temperature readings after 2022-02-12T17:17:36Z returns 74 results
+2022-02-12 17:17:43,468 - storage - INFO - Query for Temperature readings after 2022-02-12T17:17:41Z returns 74 results
+2022-02-12 17:17:48,471 - storage - INFO - Query for Temperature readings after 2022-02-12T17:17:46Z returns 74 results
+2022-02-12 17:17:53,472 - storage - INFO - Query for Temperature readings after 2022-02-12T17:17:51Z returns 74 results
+2022-02-12 17:17:58,474 - storage - INFO - Query for Temperature readings after 2022-02-12T17:17:56Z returns 74 results
+2022-02-12 17:18:03,460 - storage - INFO - Query for Temperature readings after 2022-02-12T17:18:01Z returns 74 results
+2022-02-12 17:18:08,473 - storage - INFO - Query for Temperature readings after 2022-02-12T17:18:06Z returns 74 results
+2022-02-12 17:19:27,722 - storage - INFO - Query for Temperature readings after 2022-02-12T17:19:25Z returns 74 results
+2022-02-12 17:19:29,776 - storage - INFO - Query for fan speed readings after 2022-02-12T17:19:25Z returns 5 results
+2022-02-12 17:19:32,707 - storage - INFO - Query for Temperature readings after 2022-02-12T17:19:30Z returns 74 results
+2022-02-12 17:19:34,766 - storage - INFO - Query for fan speed readings after 2022-02-12T17:19:30Z returns 5 results
+2022-02-12 17:19:37,713 - storage - INFO - Query for Temperature readings after 2022-02-12T17:19:35Z returns 74 results
+2022-02-12 17:19:39,780 - storage - INFO - Query for fan speed readings after 2022-02-12T17:19:35Z returns 5 results
+2022-02-12 17:19:59,148 - storage - INFO - Query for Temperature readings after 2022-02-12T17:19:57Z returns 74 results
+2022-02-12 17:20:01,226 - storage - INFO - Query for fan speed readings after 2022-02-12T17:19:57Z returns 5 results
+2022-02-12 17:20:04,124 - storage - INFO - Query for Temperature readings after 2022-02-12T17:20:02Z returns 74 results
+2022-02-12 17:20:06,204 - storage - INFO - Query for fan speed readings after 2022-02-12T17:20:02Z returns 5 results
+2022-02-12 17:20:09,118 - storage - INFO - Query for Temperature readings after 2022-02-12T17:20:07Z returns 74 results
+2022-02-12 17:20:11,177 - storage - INFO - Query for fan speed readings after 2022-02-12T17:20:07Z returns 5 results
+2022-02-12 17:20:14,126 - storage - INFO - Query for Temperature readings after 2022-02-12T17:20:12Z returns 74 results
+2022-02-12 17:20:16,202 - storage - INFO - Query for fan speed readings after 2022-02-12T17:20:12Z returns 5 results
+2022-02-12 17:20:19,121 - storage - INFO - Query for Temperature readings after 2022-02-12T17:20:17Z returns 74 results
+2022-02-12 17:20:21,200 - storage - INFO - Query for fan speed readings after 2022-02-12T17:20:17Z returns 5 results
+2022-02-12 17:20:24,120 - storage - INFO - Query for Temperature readings after 2022-02-12T17:20:22Z returns 74 results
+2022-02-12 17:20:26,203 - storage - INFO - Query for fan speed readings after 2022-02-12T17:20:22Z returns 5 results
+2022-02-12 17:20:29,118 - storage - INFO - Query for Temperature readings after 2022-02-12T17:20:27Z returns 74 results
+2022-02-12 17:20:31,199 - storage - INFO - Query for fan speed readings after 2022-02-12T17:20:27Z returns 5 results
+2022-02-12 17:20:34,128 - storage - INFO - Query for Temperature readings after 2022-02-12T17:20:32Z returns 74 results
+2022-02-12 17:20:36,211 - storage - INFO - Query for fan speed readings after 2022-02-12T17:20:32Z returns 5 results
+2022-02-12 17:20:39,115 - storage - INFO - Query for Temperature readings after 2022-02-12T17:20:37Z returns 74 results
+2022-02-12 17:20:41,188 - storage - INFO - Query for fan speed readings after 2022-02-12T17:20:37Z returns 5 results
+2022-02-12 17:20:44,122 - storage - INFO - Query for Temperature readings after 2022-02-12T17:20:42Z returns 74 results
+2022-02-12 17:20:46,208 - storage - INFO - Query for fan speed readings after 2022-02-12T17:20:42Z returns 5 results
+2022-02-12 17:20:49,128 - storage - INFO - Query for Temperature readings after 2022-02-12T17:20:47Z returns 74 results
+2022-02-12 17:20:51,203 - storage - INFO - Query for fan speed readings after 2022-02-12T17:20:47Z returns 5 results
+2022-02-12 17:20:54,121 - storage - INFO - Query for Temperature readings after 2022-02-12T17:20:52Z returns 74 results
+2022-02-12 17:20:56,204 - storage - INFO - Query for fan speed readings after 2022-02-12T17:20:52Z returns 5 results
+2022-02-12 17:20:59,126 - storage - INFO - Query for Temperature readings after 2022-02-12T17:20:57Z returns 74 results
+2022-02-12 17:21:01,190 - storage - INFO - Query for fan speed readings after 2022-02-12T17:20:57Z returns 5 results
+2022-02-12 17:21:04,127 - storage - INFO - Query for Temperature readings after 2022-02-12T17:21:02Z returns 74 results
+2022-02-12 17:21:06,205 - storage - INFO - Query for fan speed readings after 2022-02-12T17:21:02Z returns 5 results
+2022-02-12 17:21:09,131 - storage - INFO - Query for Temperature readings after 2022-02-12T17:21:07Z returns 74 results
+2022-02-12 17:21:11,208 - storage - INFO - Query for fan speed readings after 2022-02-12T17:21:07Z returns 5 results
+2022-02-12 17:21:14,126 - storage - INFO - Query for Temperature readings after 2022-02-12T17:21:12Z returns 74 results
+2022-02-12 17:21:16,209 - storage - INFO - Query for fan speed readings after 2022-02-12T17:21:12Z returns 5 results
+2022-02-12 17:21:19,126 - storage - INFO - Query for Temperature readings after 2022-02-12T17:21:17Z returns 74 results
+2022-02-12 17:21:21,187 - storage - INFO - Query for fan speed readings after 2022-02-12T17:21:17Z returns 5 results
+2022-02-12 17:21:24,121 - storage - INFO - Query for Temperature readings after 2022-02-12T17:21:22Z returns 74 results
+2022-02-12 17:21:26,205 - storage - INFO - Query for fan speed readings after 2022-02-12T17:21:22Z returns 5 results
+2022-02-12 17:21:29,124 - storage - INFO - Query for Temperature readings after 2022-02-12T17:21:27Z returns 74 results
+2022-02-12 17:21:31,204 - storage - INFO - Query for fan speed readings after 2022-02-12T17:21:27Z returns 5 results
+2022-02-12 17:21:34,119 - storage - INFO - Query for Temperature readings after 2022-02-12T17:21:32Z returns 74 results
+2022-02-12 17:21:36,201 - storage - INFO - Query for fan speed readings after 2022-02-12T17:21:32Z returns 5 results
+2022-02-12 17:21:39,132 - storage - INFO - Query for Temperature readings after 2022-02-12T17:21:37Z returns 74 results
+2022-02-12 17:21:41,211 - storage - INFO - Query for fan speed readings after 2022-02-12T17:21:37Z returns 5 results
+2022-02-12 17:21:44,115 - storage - INFO - Query for Temperature readings after 2022-02-12T17:21:42Z returns 74 results
+2022-02-12 17:21:46,192 - storage - INFO - Query for fan speed readings after 2022-02-12T17:21:42Z returns 5 results
+2022-02-12 17:21:49,124 - storage - INFO - Query for Temperature readings after 2022-02-12T17:21:47Z returns 74 results
+2022-02-12 17:21:51,199 - storage - INFO - Query for fan speed readings after 2022-02-12T17:21:47Z returns 5 results
+2022-02-12 17:21:54,121 - storage - INFO - Query for Temperature readings after 2022-02-12T17:21:52Z returns 74 results
+2022-02-12 17:21:56,189 - storage - INFO - Query for fan speed readings after 2022-02-12T17:21:52Z returns 5 results
+2022-02-12 17:21:59,128 - storage - INFO - Query for Temperature readings after 2022-02-12T17:21:57Z returns 74 results
+2022-02-12 17:22:01,218 - storage - INFO - Query for fan speed readings after 2022-02-12T17:21:57Z returns 5 results
+2022-02-12 17:22:04,112 - storage - INFO - Query for Temperature readings after 2022-02-12T17:22:02Z returns 74 results
+2022-02-12 17:22:06,197 - storage - INFO - Query for fan speed readings after 2022-02-12T17:22:02Z returns 5 results
+2022-02-12 17:22:09,113 - storage - INFO - Query for Temperature readings after 2022-02-12T17:22:07Z returns 74 results
+2022-02-12 17:22:11,195 - storage - INFO - Query for fan speed readings after 2022-02-12T17:22:07Z returns 5 results
+2022-02-12 17:22:14,117 - storage - INFO - Query for Temperature readings after 2022-02-12T17:22:12Z returns 74 results
+2022-02-12 17:22:16,197 - storage - INFO - Query for fan speed readings after 2022-02-12T17:22:12Z returns 5 results
+2022-02-12 17:22:19,114 - storage - INFO - Query for Temperature readings after 2022-02-12T17:22:17Z returns 74 results
+2022-02-12 17:22:21,197 - storage - INFO - Query for fan speed readings after 2022-02-12T17:22:17Z returns 5 results
+2022-02-12 17:22:24,121 - storage - INFO - Query for Temperature readings after 2022-02-12T17:22:22Z returns 74 results
+2022-02-12 17:22:26,198 - storage - INFO - Query for fan speed readings after 2022-02-12T17:22:22Z returns 5 results
+2022-02-12 17:22:29,118 - storage - INFO - Query for Temperature readings after 2022-02-12T17:22:27Z returns 74 results
+2022-02-12 17:22:31,194 - storage - INFO - Query for fan speed readings after 2022-02-12T17:22:27Z returns 5 results
+2022-02-12 17:22:34,129 - storage - INFO - Query for Temperature readings after 2022-02-12T17:22:32Z returns 74 results
+2022-02-12 17:22:36,210 - storage - INFO - Query for fan speed readings after 2022-02-12T17:22:32Z returns 5 results
+2022-02-12 17:22:39,128 - storage - INFO - Query for Temperature readings after 2022-02-12T17:22:37Z returns 74 results
+2022-02-12 17:22:41,208 - storage - INFO - Query for fan speed readings after 2022-02-12T17:22:37Z returns 5 results
+2022-02-12 17:22:44,119 - storage - INFO - Query for Temperature readings after 2022-02-12T17:22:42Z returns 74 results
+2022-02-12 17:22:46,196 - storage - INFO - Query for fan speed readings after 2022-02-12T17:22:42Z returns 5 results
+2022-02-12 17:22:49,112 - storage - INFO - Query for Temperature readings after 2022-02-12T17:22:47Z returns 74 results
+2022-02-12 17:22:51,194 - storage - INFO - Query for fan speed readings after 2022-02-12T17:22:47Z returns 5 results
+2022-02-12 17:22:54,128 - storage - INFO - Query for Temperature readings after 2022-02-12T17:22:52Z returns 74 results
+2022-02-12 17:22:56,201 - storage - INFO - Query for fan speed readings after 2022-02-12T17:22:52Z returns 5 results
+2022-02-12 17:22:59,125 - storage - INFO - Query for Temperature readings after 2022-02-12T17:22:57Z returns 74 results
+2022-02-12 17:23:01,200 - storage - INFO - Query for fan speed readings after 2022-02-12T17:22:57Z returns 5 results
+2022-02-12 17:23:04,121 - storage - INFO - Query for Temperature readings after 2022-02-12T17:23:02Z returns 74 results
+2022-02-12 17:23:06,199 - storage - INFO - Query for fan speed readings after 2022-02-12T17:23:02Z returns 5 results
+2022-02-12 17:23:09,114 - storage - INFO - Query for Temperature readings after 2022-02-12T17:23:07Z returns 74 results
+2022-02-12 17:23:11,190 - storage - INFO - Query for fan speed readings after 2022-02-12T17:23:07Z returns 5 results
+2022-02-12 17:23:14,127 - storage - INFO - Query for Temperature readings after 2022-02-12T17:23:12Z returns 74 results
+2022-02-12 17:23:16,203 - storage - INFO - Query for fan speed readings after 2022-02-12T17:23:12Z returns 5 results
+2022-02-12 17:23:19,121 - storage - INFO - Query for Temperature readings after 2022-02-12T17:23:17Z returns 74 results
+2022-02-12 17:23:21,205 - storage - INFO - Query for fan speed readings after 2022-02-12T17:23:17Z returns 5 results
+2022-02-12 17:23:24,123 - storage - INFO - Query for Temperature readings after 2022-02-12T17:23:22Z returns 74 results
+2022-02-12 17:23:26,201 - storage - INFO - Query for fan speed readings after 2022-02-12T17:23:22Z returns 5 results
+2022-02-12 17:23:29,125 - storage - INFO - Query for Temperature readings after 2022-02-12T17:23:27Z returns 74 results
+2022-02-12 17:23:31,212 - storage - INFO - Query for fan speed readings after 2022-02-12T17:23:27Z returns 5 results
+2022-02-12 17:23:34,114 - storage - INFO - Query for Temperature readings after 2022-02-12T17:23:32Z returns 74 results
+2022-02-12 17:23:36,197 - storage - INFO - Query for fan speed readings after 2022-02-12T17:23:32Z returns 5 results
+2022-02-12 17:23:39,117 - storage - INFO - Query for Temperature readings after 2022-02-12T17:23:37Z returns 74 results
+2022-02-12 17:23:41,200 - storage - INFO - Query for fan speed readings after 2022-02-12T17:23:37Z returns 5 results
+2022-02-12 17:23:44,117 - storage - INFO - Query for Temperature readings after 2022-02-12T17:23:42Z returns 74 results
+2022-02-12 17:23:46,205 - storage - INFO - Query for fan speed readings after 2022-02-12T17:23:42Z returns 5 results
+2022-02-12 17:23:49,132 - storage - INFO - Query for Temperature readings after 2022-02-12T17:23:47Z returns 74 results
+2022-02-12 17:23:51,215 - storage - INFO - Query for fan speed readings after 2022-02-12T17:23:47Z returns 5 results
+2022-02-12 17:23:54,123 - storage - INFO - Query for Temperature readings after 2022-02-12T17:23:52Z returns 74 results
+2022-02-12 17:23:56,205 - storage - INFO - Query for fan speed readings after 2022-02-12T17:23:52Z returns 5 results
+2022-02-12 17:23:59,124 - storage - INFO - Query for Temperature readings after 2022-02-12T17:23:57Z returns 74 results
+2022-02-12 17:24:01,207 - storage - INFO - Query for fan speed readings after 2022-02-12T17:23:57Z returns 5 results
+2022-02-12 17:24:04,133 - storage - INFO - Query for Temperature readings after 2022-02-12T17:24:02Z returns 74 results
+2022-02-12 17:24:06,208 - storage - INFO - Query for fan speed readings after 2022-02-12T17:24:02Z returns 5 results
+2022-02-12 17:24:09,126 - storage - INFO - Query for Temperature readings after 2022-02-12T17:24:07Z returns 74 results
+2022-02-12 17:24:11,207 - storage - INFO - Query for fan speed readings after 2022-02-12T17:24:07Z returns 5 results
+2022-02-12 17:24:14,127 - storage - INFO - Query for Temperature readings after 2022-02-12T17:24:12Z returns 74 results
+2022-02-12 17:24:16,209 - storage - INFO - Query for fan speed readings after 2022-02-12T17:24:12Z returns 5 results
+2022-02-12 17:24:19,126 - storage - INFO - Query for Temperature readings after 2022-02-12T17:24:17Z returns 74 results
+2022-02-12 17:24:21,202 - storage - INFO - Query for fan speed readings after 2022-02-12T17:24:17Z returns 5 results
+2022-02-12 17:24:24,120 - storage - INFO - Query for Temperature readings after 2022-02-12T17:24:22Z returns 74 results
+2022-02-12 17:24:26,201 - storage - INFO - Query for fan speed readings after 2022-02-12T17:24:22Z returns 5 results
+2022-02-12 17:24:29,119 - storage - INFO - Query for Temperature readings after 2022-02-12T17:24:27Z returns 74 results
+2022-02-12 17:24:31,197 - storage - INFO - Query for fan speed readings after 2022-02-12T17:24:27Z returns 5 results
+2022-02-12 17:24:34,113 - storage - INFO - Query for Temperature readings after 2022-02-12T17:24:32Z returns 74 results
+2022-02-12 17:24:36,189 - storage - INFO - Query for fan speed readings after 2022-02-12T17:24:32Z returns 5 results
+2022-02-12 17:24:39,126 - storage - INFO - Query for Temperature readings after 2022-02-12T17:24:37Z returns 74 results
+2022-02-12 17:24:41,201 - storage - INFO - Query for fan speed readings after 2022-02-12T17:24:37Z returns 5 results
+2022-02-12 17:24:44,123 - storage - INFO - Query for Temperature readings after 2022-02-12T17:24:42Z returns 74 results
+2022-02-12 17:24:46,200 - storage - INFO - Query for fan speed readings after 2022-02-12T17:24:42Z returns 5 results
+2022-02-12 17:24:49,127 - storage - INFO - Query for Temperature readings after 2022-02-12T17:24:47Z returns 74 results
+2022-02-12 17:24:51,206 - storage - INFO - Query for fan speed readings after 2022-02-12T17:24:47Z returns 5 results
+2022-02-12 17:26:39,742 - storage - INFO - Query for Temperature readings after 2022-02-12T17:26:37Z returns 0 results
+2022-02-12 17:26:41,797 - storage - INFO - Query for fan speed readings after 2022-02-12T17:26:37Z returns 0 results
+2022-02-12 17:26:44,744 - storage - INFO - Query for Temperature readings after 2022-02-12T17:26:42Z returns 0 results
+2022-02-12 17:26:46,776 - storage - INFO - Query for fan speed readings after 2022-02-12T17:26:42Z returns 0 results
+2022-02-12 17:26:49,738 - storage - INFO - Query for Temperature readings after 2022-02-12T17:26:47Z returns 0 results
+2022-02-12 17:26:51,770 - storage - INFO - Query for fan speed readings after 2022-02-12T17:26:47Z returns 0 results
+2022-02-12 17:26:54,733 - storage - INFO - Query for Temperature readings after 2022-02-12T17:26:52Z returns 0 results
+2022-02-12 17:26:56,771 - storage - INFO - Query for fan speed readings after 2022-02-12T17:26:52Z returns 0 results
+2022-02-12 17:26:59,738 - storage - INFO - Query for Temperature readings after 2022-02-12T17:26:57Z returns 0 results
+2022-02-12 17:27:01,768 - storage - INFO - Query for fan speed readings after 2022-02-12T17:26:57Z returns 0 results
+2022-02-12 17:27:04,733 - storage - INFO - Query for Temperature readings after 2022-02-12T17:27:02Z returns 0 results
+2022-02-12 17:27:06,769 - storage - INFO - Query for fan speed readings after 2022-02-12T17:27:02Z returns 0 results
+2022-02-12 17:27:09,734 - storage - INFO - Query for Temperature readings after 2022-02-12T17:27:07Z returns 0 results
+2022-02-12 17:27:11,769 - storage - INFO - Query for fan speed readings after 2022-02-12T17:27:07Z returns 0 results
+2022-02-12 17:27:14,756 - storage - INFO - Query for Temperature readings after 2022-02-12T17:27:12Z returns 0 results
+2022-02-12 17:27:16,797 - storage - INFO - Query for fan speed readings after 2022-02-12T17:27:12Z returns 0 results
+2022-02-12 17:27:19,738 - storage - INFO - Query for Temperature readings after 2022-02-12T17:27:17Z returns 0 results
+2022-02-12 17:27:21,773 - storage - INFO - Query for fan speed readings after 2022-02-12T17:27:17Z returns 0 results
+2022-02-12 17:27:24,741 - storage - INFO - Query for Temperature readings after 2022-02-12T17:27:22Z returns 0 results
+2022-02-12 17:27:26,776 - storage - INFO - Query for fan speed readings after 2022-02-12T17:27:22Z returns 0 results
+2022-02-12 17:27:29,742 - storage - INFO - Query for Temperature readings after 2022-02-12T17:27:27Z returns 0 results
+2022-02-12 17:27:31,776 - storage - INFO - Query for fan speed readings after 2022-02-12T17:27:27Z returns 0 results
+2022-02-12 17:27:34,749 - storage - INFO - Query for Temperature readings after 2022-02-12T17:27:32Z returns 0 results
+2022-02-12 17:27:36,788 - storage - INFO - Query for fan speed readings after 2022-02-12T17:27:32Z returns 0 results
+2022-02-12 17:27:39,739 - storage - INFO - Query for Temperature readings after 2022-02-12T17:27:37Z returns 0 results
+2022-02-12 17:27:41,772 - storage - INFO - Query for fan speed readings after 2022-02-12T17:27:37Z returns 0 results
+2022-02-12 17:27:44,733 - storage - INFO - Query for Temperature readings after 2022-02-12T17:27:42Z returns 0 results
+2022-02-12 17:27:46,763 - storage - INFO - Query for fan speed readings after 2022-02-12T17:27:42Z returns 0 results
+2022-02-12 17:27:49,747 - storage - INFO - Query for Temperature readings after 2022-02-12T17:27:47Z returns 0 results
+2022-02-12 17:27:51,785 - storage - INFO - Query for fan speed readings after 2022-02-12T17:27:47Z returns 0 results
+2022-02-12 17:27:54,744 - storage - INFO - Query for Temperature readings after 2022-02-12T17:27:52Z returns 0 results
+2022-02-12 17:27:56,784 - storage - INFO - Query for fan speed readings after 2022-02-12T17:27:52Z returns 0 results
+2022-02-12 17:27:59,736 - storage - INFO - Query for Temperature readings after 2022-02-12T17:27:57Z returns 0 results
+2022-02-12 17:28:01,766 - storage - INFO - Query for fan speed readings after 2022-02-12T17:27:57Z returns 0 results
+2022-02-12 17:28:04,735 - storage - INFO - Query for Temperature readings after 2022-02-12T17:28:02Z returns 0 results
+2022-02-12 17:28:06,770 - storage - INFO - Query for fan speed readings after 2022-02-12T17:28:02Z returns 0 results
+2022-02-12 17:28:09,731 - storage - INFO - Query for Temperature readings after 2022-02-12T17:28:07Z returns 0 results
+2022-02-12 17:28:11,765 - storage - INFO - Query for fan speed readings after 2022-02-12T17:28:07Z returns 0 results
+2022-02-12 17:28:14,744 - storage - INFO - Query for Temperature readings after 2022-02-12T17:28:12Z returns 0 results
+2022-02-12 17:28:16,777 - storage - INFO - Query for fan speed readings after 2022-02-12T17:28:12Z returns 0 results
+2022-02-12 17:28:19,742 - storage - INFO - Query for Temperature readings after 2022-02-12T17:28:17Z returns 0 results
+2022-02-12 17:28:21,774 - storage - INFO - Query for fan speed readings after 2022-02-12T17:28:17Z returns 0 results
+2022-02-12 17:28:24,740 - storage - INFO - Query for Temperature readings after 2022-02-12T17:28:22Z returns 0 results
+2022-02-12 17:28:26,773 - storage - INFO - Query for fan speed readings after 2022-02-12T17:28:22Z returns 0 results
+2022-02-12 17:28:29,736 - storage - INFO - Query for Temperature readings after 2022-02-12T17:28:27Z returns 0 results
+2022-02-12 17:28:31,769 - storage - INFO - Query for fan speed readings after 2022-02-12T17:28:27Z returns 0 results
+2022-02-12 17:28:34,733 - storage - INFO - Query for Temperature readings after 2022-02-12T17:28:32Z returns 0 results
+2022-02-12 17:28:36,766 - storage - INFO - Query for fan speed readings after 2022-02-12T17:28:32Z returns 0 results
+2022-02-12 17:28:39,744 - storage - INFO - Query for Temperature readings after 2022-02-12T17:28:37Z returns 0 results
+2022-02-12 17:28:41,776 - storage - INFO - Query for fan speed readings after 2022-02-12T17:28:37Z returns 0 results
+2022-02-12 17:28:44,735 - storage - INFO - Query for Temperature readings after 2022-02-12T17:28:42Z returns 0 results
+2022-02-12 17:28:46,766 - storage - INFO - Query for fan speed readings after 2022-02-12T17:28:42Z returns 0 results
+2022-02-12 17:28:49,743 - storage - INFO - Query for Temperature readings after 2022-02-12T17:28:47Z returns 0 results
+2022-02-12 17:28:51,777 - storage - INFO - Query for fan speed readings after 2022-02-12T17:28:47Z returns 0 results
+2022-02-12 17:28:54,742 - storage - INFO - Query for Temperature readings after 2022-02-12T17:28:52Z returns 0 results
+2022-02-12 17:28:56,774 - storage - INFO - Query for fan speed readings after 2022-02-12T17:28:52Z returns 0 results
+2022-02-12 17:28:59,735 - storage - INFO - Query for Temperature readings after 2022-02-12T17:28:57Z returns 0 results
+2022-02-12 17:29:01,769 - storage - INFO - Query for fan speed readings after 2022-02-12T17:28:57Z returns 0 results
+2022-02-12 17:29:04,731 - storage - INFO - Query for Temperature readings after 2022-02-12T17:29:02Z returns 0 results
+2022-02-12 17:29:06,761 - storage - INFO - Query for fan speed readings after 2022-02-12T17:29:02Z returns 0 results
+2022-02-12 17:29:09,743 - storage - INFO - Query for Temperature readings after 2022-02-12T17:29:07Z returns 0 results
+2022-02-12 17:29:11,777 - storage - INFO - Query for fan speed readings after 2022-02-12T17:29:07Z returns 0 results
+2022-02-12 17:29:14,741 - storage - INFO - Query for Temperature readings after 2022-02-12T17:29:12Z returns 0 results
+2022-02-12 17:29:16,773 - storage - INFO - Query for fan speed readings after 2022-02-12T17:29:12Z returns 0 results
+2022-02-12 17:29:19,740 - storage - INFO - Query for Temperature readings after 2022-02-12T17:29:17Z returns 0 results
+2022-02-12 17:29:21,772 - storage - INFO - Query for fan speed readings after 2022-02-12T17:29:17Z returns 0 results
+2022-02-12 17:29:24,739 - storage - INFO - Query for Temperature readings after 2022-02-12T17:29:22Z returns 0 results
+2022-02-12 17:29:26,777 - storage - INFO - Query for fan speed readings after 2022-02-12T17:29:22Z returns 0 results
+2022-02-12 17:29:29,743 - storage - INFO - Query for Temperature readings after 2022-02-12T17:29:27Z returns 0 results
+2022-02-12 17:29:31,787 - storage - INFO - Query for fan speed readings after 2022-02-12T17:29:27Z returns 0 results
+2022-02-12 17:29:34,743 - storage - INFO - Query for Temperature readings after 2022-02-12T17:29:32Z returns 0 results
+2022-02-12 17:29:35,646 - storage - DEBUG - Stored event temperature request with a trace id of 65ecbca0-8c6c-11ec-b888-3cf011f8a2c7
+2022-02-12 17:29:36,354 - storage - DEBUG - Stored event temperature request with a trace id of 66592603-8c6c-11ec-923a-3cf011f8a2c7
+2022-02-12 17:29:36,784 - storage - INFO - Query for fan speed readings after 2022-02-12T17:29:32Z returns 0 results
+2022-02-12 17:29:37,355 - storage - DEBUG - Stored event temperature request with a trace id of 66f1aaf4-8c6c-11ec-934c-3cf011f8a2c7
+2022-02-12 17:29:38,347 - storage - DEBUG - Stored event temperature request with a trace id of 6789959a-8c6c-11ec-9512-3cf011f8a2c7
+2022-02-12 17:29:39,349 - storage - DEBUG - Stored event temperature request with a trace id of 6821d56f-8c6c-11ec-866d-3cf011f8a2c7
+2022-02-12 17:29:39,736 - storage - DEBUG - Stored event temperature request with a trace id of 685dabac-8c6c-11ec-a03e-3cf011f8a2c7
+2022-02-12 17:29:39,749 - storage - INFO - Query for Temperature readings after 2022-02-12T17:29:37Z returns 6 results
+2022-02-12 17:29:40,353 - storage - DEBUG - Stored event temperature request with a trace id of 68ba992b-8c6c-11ec-8e96-3cf011f8a2c7
+2022-02-12 17:29:40,445 - storage - DEBUG - Stored event temperature request with a trace id of 68ca506d-8c6c-11ec-9d50-3cf011f8a2c7
+2022-02-12 17:29:41,336 - storage - DEBUG - Stored event temperature request with a trace id of 695308f8-8c6c-11ec-a777-3cf011f8a2c7
+2022-02-12 17:29:41,429 - storage - DEBUG - Stored event temperature request with a trace id of 6960fd88-8c6c-11ec-9a0a-3cf011f8a2c7
+2022-02-12 17:29:41,782 - storage - INFO - Query for fan speed readings after 2022-02-12T17:29:37Z returns 0 results
+2022-02-12 17:29:42,339 - storage - DEBUG - Stored event temperature request with a trace id of 69ebb1df-8c6c-11ec-b125-3cf011f8a2c7
+2022-02-12 17:29:42,417 - storage - DEBUG - Stored event temperature request with a trace id of 69f7a331-8c6c-11ec-8606-3cf011f8a2c7
+2022-02-12 17:29:43,346 - storage - DEBUG - Stored event temperature request with a trace id of 6a8452d5-8c6c-11ec-ab84-3cf011f8a2c7
+2022-02-12 17:29:43,424 - storage - DEBUG - Stored event temperature request with a trace id of 6a900ffa-8c6c-11ec-b333-3cf011f8a2c7
+2022-02-12 17:29:43,827 - storage - DEBUG - Stored event temperature request with a trace id of 6acd86e3-8c6c-11ec-ad84-3cf011f8a2c7
+2022-02-12 17:29:44,350 - storage - DEBUG - Stored event temperature request with a trace id of 6b1cb293-8c6c-11ec-83aa-3cf011f8a2c7
+2022-02-12 17:29:44,443 - storage - DEBUG - Stored event temperature request with a trace id of 6b2b7723-8c6c-11ec-98c6-3cf011f8a2c7
+2022-02-12 17:29:44,534 - storage - DEBUG - Stored event temperature request with a trace id of 6b39a553-8c6c-11ec-84e1-3cf011f8a2c7
+2022-02-12 17:29:44,748 - storage - INFO - Query for Temperature readings after 2022-02-12T17:29:42Z returns 18 results
+2022-02-12 17:29:45,427 - storage - DEBUG - Stored event temperature request with a trace id of 6bc2c4c2-8c6c-11ec-8614-3cf011f8a2c7
+2022-02-12 17:29:45,519 - storage - DEBUG - Stored event temperature request with a trace id of 6bd0f988-8c6c-11ec-9ec2-3cf011f8a2c7
+2022-02-12 17:29:46,412 - storage - DEBUG - Stored event temperature request with a trace id of 6c599940-8c6c-11ec-921f-3cf011f8a2c7
+2022-02-12 17:29:46,489 - storage - DEBUG - Stored event temperature request with a trace id of 6c6548b9-8c6c-11ec-b170-3cf011f8a2c7
+2022-02-12 17:29:46,778 - storage - INFO - Query for fan speed readings after 2022-02-12T17:29:42Z returns 0 results
+2022-02-12 17:29:47,414 - storage - DEBUG - Stored event temperature request with a trace id of 6cf2407f-8c6c-11ec-aa30-3cf011f8a2c7
+2022-02-12 17:29:47,507 - storage - DEBUG - Stored event temperature request with a trace id of 6cfdcc42-8c6c-11ec-b432-3cf011f8a2c7
+2022-02-12 17:29:47,910 - storage - DEBUG - Stored event temperature request with a trace id of 6d3d1c94-8c6c-11ec-849c-3cf011f8a2c7
+2022-02-12 17:29:48,436 - storage - DEBUG - Stored event temperature request with a trace id of 6d8d2c9e-8c6c-11ec-9c95-3cf011f8a2c7
+2022-02-12 17:29:48,529 - storage - DEBUG - Stored event temperature request with a trace id of 6d9b6193-8c6c-11ec-9c52-3cf011f8a2c7
+2022-02-12 17:29:48,622 - storage - DEBUG - Stored event temperature request with a trace id of 6da94bc5-8c6c-11ec-908c-3cf011f8a2c7
+2022-02-12 17:29:49,529 - storage - DEBUG - Stored event temperature request with a trace id of 6e31cf21-8c6c-11ec-bf12-3cf011f8a2c7
+2022-02-12 17:29:49,608 - storage - DEBUG - Stored event temperature request with a trace id of 6e3ffec1-8c6c-11ec-b9b1-3cf011f8a2c7
+2022-02-12 17:29:49,744 - storage - INFO - Query for Temperature readings after 2022-02-12T17:29:47Z returns 30 results
+2022-02-12 17:29:50,503 - storage - DEBUG - Stored event temperature request with a trace id of 6ec9162e-8c6c-11ec-b6d0-3cf011f8a2c7
+2022-02-12 17:29:50,580 - storage - DEBUG - Stored event temperature request with a trace id of 6ed4c76e-8c6c-11ec-9100-3cf011f8a2c7
+2022-02-12 17:29:51,506 - storage - DEBUG - Stored event temperature request with a trace id of 6f5fdf21-8c6c-11ec-bb02-3cf011f8a2c7
+2022-02-12 17:29:51,585 - storage - DEBUG - Stored event temperature request with a trace id of 6f6dac59-8c6c-11ec-9cc6-3cf011f8a2c7
+2022-02-12 17:29:51,796 - storage - INFO - Query for fan speed readings after 2022-02-12T17:29:47Z returns 0 results
+2022-02-12 17:29:51,983 - storage - DEBUG - Stored event temperature request with a trace id of 6faaa282-8c6c-11ec-b643-3cf011f8a2c7
+2022-02-12 17:29:52,523 - storage - DEBUG - Stored event temperature request with a trace id of 6ffd5195-8c6c-11ec-9554-3cf011f8a2c7
+2022-02-12 17:29:52,632 - storage - DEBUG - Stored event temperature request with a trace id of 700bab4b-8c6c-11ec-a63c-3cf011f8a2c7
+2022-02-12 17:29:52,709 - storage - DEBUG - Stored event temperature request with a trace id of 701973f4-8c6c-11ec-989a-3cf011f8a2c7
+2022-02-12 17:29:53,622 - storage - DEBUG - Stored event temperature request with a trace id of 70a4cd76-8c6c-11ec-80a9-3cf011f8a2c7
+2022-02-12 17:29:53,698 - storage - DEBUG - Stored event temperature request with a trace id of 70b0592f-8c6c-11ec-8d6b-3cf011f8a2c7
+2022-02-12 17:29:54,592 - storage - DEBUG - Stored event temperature request with a trace id of 71389f27-8c6c-11ec-83ea-3cf011f8a2c7
+2022-02-12 17:29:54,669 - storage - DEBUG - Stored event temperature request with a trace id of 7144acfa-8c6c-11ec-ba3d-3cf011f8a2c7
+2022-02-12 17:29:54,745 - storage - INFO - Query for Temperature readings after 2022-02-12T17:29:52Z returns 42 results
+2022-02-12 17:29:55,593 - storage - DEBUG - Stored event temperature request with a trace id of 71d24772-8c6c-11ec-9366-3cf011f8a2c7
+2022-02-12 17:29:55,671 - storage - DEBUG - Stored event temperature request with a trace id of 71de0902-8c6c-11ec-96c7-3cf011f8a2c7
+2022-02-12 17:29:56,069 - storage - DEBUG - Stored event temperature request with a trace id of 721b030e-8c6c-11ec-bce5-3cf011f8a2c7
+2022-02-12 17:29:56,592 - storage - DEBUG - Stored event temperature request with a trace id of 726ade79-8c6c-11ec-8066-3cf011f8a2c7
+2022-02-12 17:29:56,715 - storage - DEBUG - Stored event temperature request with a trace id of 727ba2de-8c6c-11ec-9588-3cf011f8a2c7
+2022-02-12 17:29:56,777 - storage - DEBUG - Stored event temperature request with a trace id of 7287423f-8c6c-11ec-b537-3cf011f8a2c7
+2022-02-12 17:29:56,790 - storage - INFO - Query for fan speed readings after 2022-02-12T17:29:52Z returns 0 results
+2022-02-12 17:29:57,716 - storage - DEBUG - Stored event temperature request with a trace id of 73144064-8c6c-11ec-b485-3cf011f8a2c7
+2022-02-12 17:29:57,793 - storage - DEBUG - Stored event temperature request with a trace id of 731ff17b-8c6c-11ec-96d5-3cf011f8a2c7
+2022-02-12 17:29:58,676 - storage - DEBUG - Stored event temperature request with a trace id of 73a7d7fa-8c6c-11ec-aaf9-3cf011f8a2c7
+2022-02-12 17:29:58,769 - storage - DEBUG - Stored event temperature request with a trace id of 73b3e5e1-8c6c-11ec-8755-3cf011f8a2c7
+2022-02-12 17:29:59,677 - storage - DEBUG - Stored event temperature request with a trace id of 7440895d-8c6c-11ec-a9e8-3cf011f8a2c7
+2022-02-12 17:29:59,738 - storage - INFO - Query for Temperature readings after 2022-02-12T17:29:57Z returns 53 results
+2022-02-12 17:29:59,754 - storage - DEBUG - Stored event temperature request with a trace id of 744c7051-8c6c-11ec-ac6d-3cf011f8a2c7
+2022-02-12 17:30:00,158 - storage - DEBUG - Stored event temperature request with a trace id of 7489b4b9-8c6c-11ec-bca4-3cf011f8a2c7
+2022-02-12 17:30:00,680 - storage - DEBUG - Stored event temperature request with a trace id of 74da21ed-8c6c-11ec-9155-3cf011f8a2c7
+2022-02-12 17:30:00,804 - storage - DEBUG - Stored event temperature request with a trace id of 74ed3a31-8c6c-11ec-882e-3cf011f8a2c7
+2022-02-12 17:30:00,866 - storage - DEBUG - Stored event temperature request with a trace id of 74f678bf-8c6c-11ec-bd04-3cf011f8a2c7
+2022-02-12 17:30:01,787 - storage - INFO - Query for fan speed readings after 2022-02-12T17:29:57Z returns 0 results
+2022-02-12 17:30:01,806 - storage - DEBUG - Stored event temperature request with a trace id of 7585c136-8c6c-11ec-8277-3cf011f8a2c7
+2022-02-12 17:30:01,867 - storage - DEBUG - Stored event temperature request with a trace id of 758f39b4-8c6c-11ec-85a0-3cf011f8a2c7
+2022-02-12 17:30:02,763 - storage - DEBUG - Stored event temperature request with a trace id of 7617c36d-8c6c-11ec-902c-3cf011f8a2c7
+2022-02-12 17:30:02,857 - storage - DEBUG - Stored event temperature request with a trace id of 76260714-8c6c-11ec-943b-3cf011f8a2c7
+2022-02-12 17:30:03,769 - storage - DEBUG - Stored event temperature request with a trace id of 76b06f05-8c6c-11ec-8498-3cf011f8a2c7
+2022-02-12 17:30:03,845 - storage - DEBUG - Stored event temperature request with a trace id of 76bc44fa-8c6c-11ec-b64c-3cf011f8a2c7
+2022-02-12 17:30:04,247 - storage - DEBUG - Stored event temperature request with a trace id of 76f95cc6-8c6c-11ec-b865-3cf011f8a2c7
+2022-02-12 17:30:04,739 - storage - INFO - Query for Temperature readings after 2022-02-12T17:30:02Z returns 65 results
+2022-02-12 17:30:04,771 - storage - DEBUG - Stored event temperature request with a trace id of 7749c296-8c6c-11ec-bcb6-3cf011f8a2c7
+2022-02-12 17:30:04,896 - storage - DEBUG - Stored event temperature request with a trace id of 775ce8f4-8c6c-11ec-9b9d-3cf011f8a2c7
+2022-02-12 17:30:04,956 - storage - DEBUG - Stored event temperature request with a trace id of 7766725f-8c6c-11ec-8aa2-3cf011f8a2c7
+2022-02-12 17:30:05,896 - storage - DEBUG - Stored event temperature request with a trace id of 77f6095a-8c6c-11ec-9c4e-3cf011f8a2c7
+2022-02-12 17:30:05,956 - storage - DEBUG - Stored event temperature request with a trace id of 77ff9464-8c6c-11ec-a3db-3cf011f8a2c7
+2022-02-12 17:30:06,784 - storage - INFO - Query for fan speed readings after 2022-02-12T17:30:02Z returns 0 results
+2022-02-12 17:30:06,832 - storage - DEBUG - Stored event temperature request with a trace id of 788585db-8c6c-11ec-861c-3cf011f8a2c7
+2022-02-12 17:30:06,943 - storage - DEBUG - Stored event temperature request with a trace id of 789406f5-8c6c-11ec-b6ae-3cf011f8a2c7
+2022-02-12 17:30:07,854 - storage - DEBUG - Stored event temperature request with a trace id of 79208940-8c6c-11ec-b112-3cf011f8a2c7
+2022-02-12 17:30:07,931 - storage - DEBUG - Stored event temperature request with a trace id of 792c4dfa-8c6c-11ec-9a7b-3cf011f8a2c7
+2022-02-12 17:30:08,334 - storage - DEBUG - Stored event temperature request with a trace id of 79694d35-8c6c-11ec-9b2a-3cf011f8a2c7
+2022-02-12 17:30:08,858 - storage - DEBUG - Stored event temperature request with a trace id of 79b929ed-8c6c-11ec-bc5f-3cf011f8a2c7
+2022-02-12 17:30:08,981 - storage - DEBUG - Stored event temperature request with a trace id of 79cc2216-8c6c-11ec-85af-3cf011f8a2c7
+2022-02-12 17:30:09,042 - storage - DEBUG - Stored event temperature request with a trace id of 79d58644-8c6c-11ec-9c21-3cf011f8a2c7
+2022-02-12 17:30:09,734 - storage - INFO - Query for Temperature readings after 2022-02-12T17:30:07Z returns 78 results
+2022-02-12 17:30:09,982 - storage - DEBUG - Stored event temperature request with a trace id of 7a655996-8c6c-11ec-86ac-3cf011f8a2c7
+2022-02-12 17:30:10,044 - storage - DEBUG - Stored event temperature request with a trace id of 7a6ece52-8c6c-11ec-931c-3cf011f8a2c7
+2022-02-12 17:30:10,906 - storage - DEBUG - Stored event temperature request with a trace id of 7af2bad2-8c6c-11ec-9055-3cf011f8a2c7
+2022-02-12 17:30:11,029 - storage - DEBUG - Stored event temperature request with a trace id of 7b057b0b-8c6c-11ec-b87e-3cf011f8a2c7
+2022-02-12 17:30:11,793 - storage - INFO - Query for fan speed readings after 2022-02-12T17:30:07Z returns 0 results
+2022-02-12 17:30:11,919 - storage - DEBUG - Stored event temperature request with a trace id of 7b8dd36f-8c6c-11ec-93d7-3cf011f8a2c7
+2022-02-12 17:30:11,995 - storage - DEBUG - Stored event temperature request with a trace id of 7b99b2ef-8c6c-11ec-90e5-3cf011f8a2c7
+2022-02-12 17:30:12,411 - storage - DEBUG - Stored event temperature request with a trace id of 7bd902ce-8c6c-11ec-980b-3cf011f8a2c7
+2022-02-12 17:30:12,937 - storage - DEBUG - Stored event temperature request with a trace id of 7c28afd5-8c6c-11ec-abe3-3cf011f8a2c7
+2022-02-12 17:30:13,061 - storage - DEBUG - Stored event temperature request with a trace id of 7c3b96e2-8c6c-11ec-9792-3cf011f8a2c7
+2022-02-12 17:30:13,137 - storage - DEBUG - Stored event temperature request with a trace id of 7c44db22-8c6c-11ec-ac7e-3cf011f8a2c7
+2022-02-12 17:30:14,067 - storage - DEBUG - Stored event temperature request with a trace id of 7cd3fb6d-8c6c-11ec-9ee2-3cf011f8a2c7
+2022-02-12 17:30:14,127 - storage - DEBUG - Stored event temperature request with a trace id of 7cdd65e4-8c6c-11ec-936f-3cf011f8a2c7
+2022-02-12 17:30:14,744 - storage - INFO - Query for Temperature readings after 2022-02-12T17:30:12Z returns 90 results
+2022-02-12 17:30:14,992 - storage - DEBUG - Stored event temperature request with a trace id of 7d614538-8c6c-11ec-b0d8-3cf011f8a2c7
+2022-02-12 17:30:15,115 - storage - DEBUG - Stored event temperature request with a trace id of 7d741d4a-8c6c-11ec-a1ed-3cf011f8a2c7
+2022-02-12 17:30:16,011 - storage - DEBUG - Stored event temperature request with a trace id of 7dfd1ca2-8c6c-11ec-ba1f-3cf011f8a2c7
+2022-02-12 17:30:16,088 - storage - DEBUG - Stored event temperature request with a trace id of 7e08a914-8c6c-11ec-b9c2-3cf011f8a2c7
+2022-02-12 17:30:16,810 - storage - INFO - Query for fan speed readings after 2022-02-12T17:30:12Z returns 0 results
+2022-02-12 17:30:17,012 - storage - DEBUG - Stored event temperature request with a trace id of 7e963227-8c6c-11ec-95b0-3cf011f8a2c7
+2022-02-12 17:30:17,135 - storage - DEBUG - Stored event temperature request with a trace id of 7ea8e782-8c6c-11ec-b921-3cf011f8a2c7
+2022-02-12 17:30:18,154 - storage - DEBUG - Stored event temperature request with a trace id of 7f44421a-8c6c-11ec-b5cd-3cf011f8a2c7
+2022-02-12 17:30:19,067 - storage - DEBUG - Stored event temperature request with a trace id of 7fcee6f5-8c6c-11ec-9950-3cf011f8a2c7
+2022-02-12 17:30:19,742 - storage - INFO - Query for Temperature readings after 2022-02-12T17:30:17Z returns 98 results
+2022-02-12 17:30:20,097 - storage - DEBUG - Stored event temperature request with a trace id of 806cc052-8c6c-11ec-a345-3cf011f8a2c7
+2022-02-12 17:30:21,110 - storage - DEBUG - Stored event temperature request with a trace id of 810644f2-8c6c-11ec-af67-3cf011f8a2c7
+2022-02-12 17:30:21,799 - storage - INFO - Query for fan speed readings after 2022-02-12T17:30:17Z returns 0 results
+2022-02-12 17:30:24,747 - storage - INFO - Query for Temperature readings after 2022-02-12T17:30:22Z returns 100 results
+2022-02-12 17:30:26,808 - storage - INFO - Query for fan speed readings after 2022-02-12T17:30:22Z returns 0 results
+2022-02-12 17:30:29,739 - storage - INFO - Query for Temperature readings after 2022-02-12T17:30:27Z returns 100 results
+2022-02-12 17:30:31,802 - storage - INFO - Query for fan speed readings after 2022-02-12T17:30:27Z returns 0 results
+2022-02-12 17:30:34,736 - storage - INFO - Query for Temperature readings after 2022-02-12T17:30:32Z returns 100 results
+2022-02-12 17:30:36,795 - storage - INFO - Query for fan speed readings after 2022-02-12T17:30:32Z returns 0 results
+2022-02-12 17:30:39,746 - storage - INFO - Query for Temperature readings after 2022-02-12T17:30:37Z returns 100 results
+2022-02-12 17:30:41,805 - storage - INFO - Query for fan speed readings after 2022-02-12T17:30:37Z returns 0 results
+2022-02-12 17:30:44,736 - storage - INFO - Query for Temperature readings after 2022-02-12T17:30:42Z returns 100 results
+2022-02-12 17:30:46,798 - storage - INFO - Query for fan speed readings after 2022-02-12T17:30:42Z returns 0 results
+2022-02-12 17:30:49,746 - storage - INFO - Query for Temperature readings after 2022-02-12T17:30:47Z returns 100 results
+2022-02-12 17:30:51,804 - storage - INFO - Query for fan speed readings after 2022-02-12T17:30:47Z returns 0 results
+2022-02-12 17:30:54,736 - storage - INFO - Query for Temperature readings after 2022-02-12T17:30:52Z returns 100 results
+2022-02-12 17:30:56,798 - storage - INFO - Query for fan speed readings after 2022-02-12T17:30:52Z returns 0 results
+2022-02-12 17:30:59,747 - storage - INFO - Query for Temperature readings after 2022-02-12T17:30:57Z returns 100 results
+2022-02-12 17:31:01,809 - storage - INFO - Query for fan speed readings after 2022-02-12T17:30:57Z returns 0 results
+2022-02-12 17:31:04,743 - storage - INFO - Query for Temperature readings after 2022-02-12T17:31:02Z returns 100 results
+2022-02-12 17:31:06,805 - storage - INFO - Query for fan speed readings after 2022-02-12T17:31:02Z returns 0 results
+2022-02-12 17:31:09,738 - storage - INFO - Query for Temperature readings after 2022-02-12T17:31:07Z returns 100 results
+2022-02-12 17:31:11,799 - storage - INFO - Query for fan speed readings after 2022-02-12T17:31:07Z returns 0 results
+2022-02-12 17:31:14,738 - storage - INFO - Query for Temperature readings after 2022-02-12T17:31:12Z returns 100 results
+2022-02-12 17:31:16,801 - storage - INFO - Query for fan speed readings after 2022-02-12T17:31:12Z returns 0 results
+2022-02-12 17:31:19,741 - storage - INFO - Query for Temperature readings after 2022-02-12T17:31:17Z returns 100 results
+2022-02-12 17:31:21,813 - storage - INFO - Query for fan speed readings after 2022-02-12T17:31:17Z returns 0 results
+2022-02-12 17:31:24,744 - storage - INFO - Query for Temperature readings after 2022-02-12T17:31:22Z returns 100 results
+2022-02-12 17:31:26,805 - storage - INFO - Query for fan speed readings after 2022-02-12T17:31:22Z returns 0 results
+2022-02-12 17:31:29,738 - storage - INFO - Query for Temperature readings after 2022-02-12T17:31:27Z returns 100 results
+2022-02-12 17:31:31,796 - storage - INFO - Query for fan speed readings after 2022-02-12T17:31:27Z returns 0 results
+2022-02-12 17:31:34,747 - storage - INFO - Query for Temperature readings after 2022-02-12T17:31:32Z returns 100 results
+2022-02-12 17:31:36,808 - storage - INFO - Query for fan speed readings after 2022-02-12T17:31:32Z returns 0 results
+2022-02-12 17:31:39,742 - storage - INFO - Query for Temperature readings after 2022-02-12T17:31:37Z returns 100 results
+2022-02-12 17:31:41,802 - storage - INFO - Query for fan speed readings after 2022-02-12T17:31:37Z returns 0 results
+2022-02-12 17:31:44,736 - storage - INFO - Query for Temperature readings after 2022-02-12T17:31:42Z returns 100 results
+2022-02-12 17:31:46,796 - storage - INFO - Query for fan speed readings after 2022-02-12T17:31:42Z returns 0 results
+2022-02-12 17:31:49,744 - storage - INFO - Query for Temperature readings after 2022-02-12T17:31:47Z returns 100 results
+2022-02-12 17:31:51,805 - storage - INFO - Query for fan speed readings after 2022-02-12T17:31:47Z returns 0 results
+2022-02-12 17:31:54,738 - storage - INFO - Query for Temperature readings after 2022-02-12T17:31:52Z returns 100 results
+2022-02-12 17:31:56,803 - storage - INFO - Query for fan speed readings after 2022-02-12T17:31:52Z returns 0 results
+2022-02-12 17:31:59,740 - storage - INFO - Query for Temperature readings after 2022-02-12T17:31:57Z returns 100 results
+2022-02-12 17:32:01,807 - storage - INFO - Query for fan speed readings after 2022-02-12T17:31:57Z returns 0 results
+2022-02-12 17:32:04,746 - storage - INFO - Query for Temperature readings after 2022-02-12T17:32:02Z returns 100 results
+2022-02-12 17:32:06,810 - storage - INFO - Query for fan speed readings after 2022-02-12T17:32:02Z returns 0 results
+2022-02-12 17:32:09,742 - storage - INFO - Query for Temperature readings after 2022-02-12T17:32:07Z returns 100 results
+2022-02-12 17:32:11,807 - storage - INFO - Query for fan speed readings after 2022-02-12T17:32:07Z returns 0 results
+2022-02-12 17:32:14,739 - storage - INFO - Query for Temperature readings after 2022-02-12T17:32:12Z returns 100 results
+2022-02-12 17:32:16,801 - storage - INFO - Query for fan speed readings after 2022-02-12T17:32:12Z returns 0 results
+2022-02-12 17:32:19,737 - storage - INFO - Query for Temperature readings after 2022-02-12T17:32:17Z returns 100 results
+2022-02-12 17:32:21,795 - storage - INFO - Query for fan speed readings after 2022-02-12T17:32:17Z returns 0 results
+2022-02-12 17:32:24,747 - storage - INFO - Query for Temperature readings after 2022-02-12T17:32:22Z returns 100 results
+2022-02-12 17:32:26,815 - storage - INFO - Query for fan speed readings after 2022-02-12T17:32:22Z returns 0 results
+2022-02-12 17:32:29,732 - storage - INFO - Query for Temperature readings after 2022-02-12T17:32:27Z returns 100 results
+2022-02-12 17:32:31,793 - storage - INFO - Query for fan speed readings after 2022-02-12T17:32:27Z returns 0 results
+2022-02-12 17:32:34,748 - storage - INFO - Query for Temperature readings after 2022-02-12T17:32:32Z returns 100 results
+2022-02-12 17:32:36,809 - storage - INFO - Query for fan speed readings after 2022-02-12T17:32:32Z returns 0 results
+2022-02-12 17:32:39,747 - storage - INFO - Query for Temperature readings after 2022-02-12T17:32:37Z returns 100 results
+2022-02-12 17:32:41,804 - storage - INFO - Query for fan speed readings after 2022-02-12T17:32:37Z returns 0 results
+2022-02-12 17:32:44,741 - storage - INFO - Query for Temperature readings after 2022-02-12T17:32:42Z returns 100 results
+2022-02-12 17:32:46,803 - storage - INFO - Query for fan speed readings after 2022-02-12T17:32:42Z returns 0 results
+2022-02-12 17:32:49,735 - storage - INFO - Query for Temperature readings after 2022-02-12T17:32:47Z returns 100 results
+2022-02-12 17:32:51,795 - storage - INFO - Query for fan speed readings after 2022-02-12T17:32:47Z returns 0 results
+2022-02-12 17:32:54,748 - storage - INFO - Query for Temperature readings after 2022-02-12T17:32:52Z returns 100 results
+2022-02-12 17:32:56,807 - storage - INFO - Query for fan speed readings after 2022-02-12T17:32:52Z returns 0 results
+2022-02-12 17:32:59,738 - storage - INFO - Query for Temperature readings after 2022-02-12T17:32:57Z returns 100 results
+2022-02-12 17:33:01,800 - storage - INFO - Query for fan speed readings after 2022-02-12T17:32:57Z returns 0 results
+2022-02-12 17:33:04,735 - storage - INFO - Query for Temperature readings after 2022-02-12T17:33:02Z returns 100 results
+2022-02-12 17:33:06,799 - storage - INFO - Query for fan speed readings after 2022-02-12T17:33:02Z returns 0 results
+2022-02-12 17:33:09,732 - storage - INFO - Query for Temperature readings after 2022-02-12T17:33:07Z returns 100 results
+2022-02-12 17:33:11,795 - storage - INFO - Query for fan speed readings after 2022-02-12T17:33:07Z returns 0 results
+2022-02-12 17:33:14,745 - storage - INFO - Query for Temperature readings after 2022-02-12T17:33:12Z returns 100 results
+2022-02-12 17:33:16,807 - storage - INFO - Query for fan speed readings after 2022-02-12T17:33:12Z returns 0 results
+2022-02-12 17:33:19,742 - storage - INFO - Query for Temperature readings after 2022-02-12T17:33:17Z returns 100 results
+2022-02-12 17:33:21,803 - storage - INFO - Query for fan speed readings after 2022-02-12T17:33:17Z returns 0 results
+2022-02-12 17:33:24,740 - storage - INFO - Query for Temperature readings after 2022-02-12T17:33:22Z returns 100 results
+2022-02-12 17:33:26,803 - storage - INFO - Query for fan speed readings after 2022-02-12T17:33:22Z returns 0 results
+2022-02-12 17:33:29,741 - storage - INFO - Query for Temperature readings after 2022-02-12T17:33:27Z returns 100 results
+2022-02-12 17:33:31,802 - storage - INFO - Query for fan speed readings after 2022-02-12T17:33:27Z returns 0 results
+2022-02-12 17:33:34,735 - storage - INFO - Query for Temperature readings after 2022-02-12T17:33:32Z returns 100 results
+2022-02-12 17:33:36,798 - storage - INFO - Query for fan speed readings after 2022-02-12T17:33:32Z returns 0 results
+2022-02-12 17:33:39,746 - storage - INFO - Query for Temperature readings after 2022-02-12T17:33:37Z returns 100 results
+2022-02-12 17:33:41,808 - storage - INFO - Query for fan speed readings after 2022-02-12T17:33:37Z returns 0 results
+2022-02-12 17:33:44,743 - storage - INFO - Query for Temperature readings after 2022-02-12T17:33:42Z returns 100 results
+2022-02-12 17:33:46,806 - storage - INFO - Query for fan speed readings after 2022-02-12T17:33:42Z returns 0 results
+2022-02-12 17:33:49,742 - storage - INFO - Query for Temperature readings after 2022-02-12T17:33:47Z returns 100 results
+2022-02-12 17:33:51,805 - storage - INFO - Query for fan speed readings after 2022-02-12T17:33:47Z returns 0 results
+2022-02-12 17:33:54,741 - storage - INFO - Query for Temperature readings after 2022-02-12T17:33:52Z returns 100 results
+2022-02-12 17:33:56,804 - storage - INFO - Query for fan speed readings after 2022-02-12T17:33:52Z returns 0 results
+2022-02-12 17:33:59,738 - storage - INFO - Query for Temperature readings after 2022-02-12T17:33:57Z returns 100 results
+2022-02-12 17:34:01,802 - storage - INFO - Query for fan speed readings after 2022-02-12T17:33:57Z returns 0 results
+2022-02-12 17:34:04,733 - storage - INFO - Query for Temperature readings after 2022-02-12T17:34:02Z returns 100 results
+2022-02-12 17:34:06,793 - storage - INFO - Query for fan speed readings after 2022-02-12T17:34:02Z returns 0 results
+2022-02-12 17:34:09,742 - storage - INFO - Query for Temperature readings after 2022-02-12T17:34:07Z returns 100 results
+2022-02-12 17:34:11,808 - storage - INFO - Query for fan speed readings after 2022-02-12T17:34:07Z returns 0 results
+2022-02-12 17:34:14,742 - storage - INFO - Query for Temperature readings after 2022-02-12T17:34:12Z returns 100 results
+2022-02-12 17:34:16,805 - storage - INFO - Query for fan speed readings after 2022-02-12T17:34:12Z returns 0 results
+2022-02-12 17:34:19,739 - storage - INFO - Query for Temperature readings after 2022-02-12T17:34:17Z returns 100 results
+2022-02-12 17:34:21,799 - storage - INFO - Query for fan speed readings after 2022-02-12T17:34:17Z returns 0 results
+2022-02-12 17:34:24,734 - storage - INFO - Query for Temperature readings after 2022-02-12T17:34:22Z returns 100 results
+2022-02-12 17:34:26,793 - storage - INFO - Query for fan speed readings after 2022-02-12T17:34:22Z returns 0 results
+2022-02-12 17:34:29,742 - storage - INFO - Query for Temperature readings after 2022-02-12T17:34:27Z returns 100 results
+2022-02-12 17:34:31,806 - storage - INFO - Query for fan speed readings after 2022-02-12T17:34:27Z returns 0 results
+2022-02-12 17:34:34,740 - storage - INFO - Query for Temperature readings after 2022-02-12T17:34:32Z returns 100 results
+2022-02-12 17:34:36,802 - storage - INFO - Query for fan speed readings after 2022-02-12T17:34:32Z returns 0 results
+2022-02-12 17:34:39,732 - storage - INFO - Query for Temperature readings after 2022-02-12T17:34:37Z returns 100 results
+2022-02-12 17:34:41,794 - storage - INFO - Query for fan speed readings after 2022-02-12T17:34:37Z returns 0 results
+2022-02-12 17:34:44,739 - storage - INFO - Query for Temperature readings after 2022-02-12T17:34:42Z returns 100 results
+2022-02-12 17:34:46,800 - storage - INFO - Query for fan speed readings after 2022-02-12T17:34:42Z returns 0 results
+2022-02-12 17:34:49,734 - storage - INFO - Query for Temperature readings after 2022-02-12T17:34:47Z returns 100 results
+2022-02-12 17:34:51,797 - storage - INFO - Query for fan speed readings after 2022-02-12T17:34:47Z returns 0 results
+2022-02-12 17:34:54,747 - storage - INFO - Query for Temperature readings after 2022-02-12T17:34:52Z returns 100 results
+2022-02-12 17:34:56,810 - storage - INFO - Query for fan speed readings after 2022-02-12T17:34:52Z returns 0 results
+2022-02-12 17:34:59,745 - storage - INFO - Query for Temperature readings after 2022-02-12T17:34:57Z returns 100 results
+2022-02-12 17:35:01,809 - storage - INFO - Query for fan speed readings after 2022-02-12T17:34:57Z returns 0 results
+2022-02-12 17:35:04,745 - storage - INFO - Query for Temperature readings after 2022-02-12T17:35:02Z returns 100 results
+2022-02-12 17:35:06,812 - storage - INFO - Query for fan speed readings after 2022-02-12T17:35:02Z returns 0 results
+2022-02-12 17:35:09,734 - storage - INFO - Query for Temperature readings after 2022-02-12T17:35:07Z returns 100 results
+2022-02-12 17:35:11,801 - storage - INFO - Query for fan speed readings after 2022-02-12T17:35:07Z returns 0 results
+2022-02-12 17:35:12,297 - storage - DEBUG - Stored event temperature request with a trace id of 2e9620d0-8c6d-11ec-984c-3cf011f8a2c7
+2022-02-12 17:35:13,283 - storage - DEBUG - Stored event temperature request with a trace id of 2f2d103c-8c6d-11ec-865e-3cf011f8a2c7
+2022-02-12 17:35:14,288 - storage - DEBUG - Stored event temperature request with a trace id of 2fc642bb-8c6d-11ec-9c4a-3cf011f8a2c7
+2022-02-12 17:35:14,735 - storage - INFO - Query for Temperature readings after 2022-02-12T17:35:12Z returns 103 results
+2022-02-12 17:35:15,274 - storage - DEBUG - Stored event temperature request with a trace id of 305c7419-8c6d-11ec-8923-3cf011f8a2c7
+2022-02-12 17:35:16,274 - storage - DEBUG - Stored event temperature request with a trace id of 30f5169a-8c6d-11ec-9953-3cf011f8a2c7
+2022-02-12 17:35:16,381 - storage - DEBUG - Stored event temperature request with a trace id of 3106f81f-8c6d-11ec-becd-3cf011f8a2c7
+2022-02-12 17:35:16,795 - storage - INFO - Query for fan speed readings after 2022-02-12T17:35:12Z returns 0 results
+2022-02-12 17:35:17,291 - storage - DEBUG - Stored event temperature request with a trace id of 3191356e-8c6d-11ec-82f8-3cf011f8a2c7
+2022-02-12 17:35:17,352 - storage - DEBUG - Stored event temperature request with a trace id of 319af469-8c6d-11ec-bf08-3cf011f8a2c7
+2022-02-12 17:35:18,295 - storage - DEBUG - Stored event temperature request with a trace id of 322979a2-8c6d-11ec-85a6-3cf011f8a2c7
+2022-02-12 17:35:18,372 - storage - DEBUG - Stored event temperature request with a trace id of 3235ad63-8c6d-11ec-a51e-3cf011f8a2c7
+2022-02-12 17:35:19,284 - storage - DEBUG - Stored event temperature request with a trace id of 32bf5a73-8c6d-11ec-aee8-3cf011f8a2c7
+2022-02-12 17:35:19,361 - storage - DEBUG - Stored event temperature request with a trace id of 32cc467c-8c6d-11ec-879b-3cf011f8a2c7
+2022-02-12 17:35:19,747 - storage - INFO - Query for Temperature readings after 2022-02-12T17:35:17Z returns 112 results
+2022-02-12 17:35:20,286 - storage - DEBUG - Stored event temperature request with a trace id of 335963ec-8c6d-11ec-8cbc-3cf011f8a2c7
+2022-02-12 17:35:20,363 - storage - DEBUG - Stored event temperature request with a trace id of 3365864f-8c6d-11ec-818a-3cf011f8a2c7
+2022-02-12 17:35:20,470 - storage - DEBUG - Stored event temperature request with a trace id of 33761491-8c6d-11ec-8f4f-3cf011f8a2c7
+2022-02-12 17:35:21,269 - storage - DEBUG - Stored event temperature request with a trace id of 33f00ef8-8c6d-11ec-bf50-3cf011f8a2c7
+2022-02-12 17:35:21,377 - storage - DEBUG - Stored event temperature request with a trace id of 3401247c-8c6d-11ec-ba14-3cf011f8a2c7
+2022-02-12 17:35:21,439 - storage - DEBUG - Stored event temperature request with a trace id of 340a8c11-8c6d-11ec-bf7e-3cf011f8a2c7
+2022-02-12 17:35:21,821 - storage - INFO - Query for fan speed readings after 2022-02-12T17:35:17Z returns 0 results
+2022-02-12 17:35:22,361 - storage - DEBUG - Stored event temperature request with a trace id of 3497862b-8c6d-11ec-a365-3cf011f8a2c7
+2022-02-12 17:35:22,438 - storage - DEBUG - Stored event temperature request with a trace id of 34a36228-8c6d-11ec-a24d-3cf011f8a2c7
+2022-02-12 17:35:23,363 - storage - DEBUG - Stored event temperature request with a trace id of 352fffdc-8c6d-11ec-ba96-3cf011f8a2c7
+2022-02-12 17:35:23,441 - storage - DEBUG - Stored event temperature request with a trace id of 353bd6cb-8c6d-11ec-a166-3cf011f8a2c7
+2022-02-12 17:35:24,368 - storage - DEBUG - Stored event temperature request with a trace id of 35c89b0b-8c6d-11ec-b156-3cf011f8a2c7
+2022-02-12 17:35:24,445 - storage - DEBUG - Stored event temperature request with a trace id of 35d42fc7-8c6d-11ec-a38f-3cf011f8a2c7
+2022-02-12 17:35:24,553 - storage - DEBUG - Stored event temperature request with a trace id of 35e4bc06-8c6d-11ec-8e01-3cf011f8a2c7
+2022-02-12 17:35:24,738 - storage - INFO - Query for Temperature readings after 2022-02-12T17:35:22Z returns 125 results
+2022-02-12 17:35:25,352 - storage - DEBUG - Stored event temperature request with a trace id of 365f0478-8c6d-11ec-9ae5-3cf011f8a2c7
+2022-02-12 17:35:25,461 - storage - DEBUG - Stored event temperature request with a trace id of 366f92d0-8c6d-11ec-a8d6-3cf011f8a2c7
+2022-02-12 17:35:25,523 - storage - DEBUG - Stored event temperature request with a trace id of 3678f53d-8c6d-11ec-baa4-3cf011f8a2c7
+2022-02-12 17:35:26,447 - storage - DEBUG - Stored event temperature request with a trace id of 37068250-8c6d-11ec-a6e4-3cf011f8a2c7
+2022-02-12 17:35:26,523 - storage - DEBUG - Stored event temperature request with a trace id of 37123de4-8c6d-11ec-a85b-3cf011f8a2c7
+2022-02-12 17:35:26,813 - storage - INFO - Query for fan speed readings after 2022-02-12T17:35:22Z returns 0 results
+2022-02-12 17:35:27,431 - storage - DEBUG - Stored event temperature request with a trace id of 379cb68b-8c6d-11ec-a987-3cf011f8a2c7
+2022-02-12 17:35:27,510 - storage - DEBUG - Stored event temperature request with a trace id of 37a87f2e-8c6d-11ec-88c2-3cf011f8a2c7
+2022-02-12 17:35:28,453 - storage - DEBUG - Stored event temperature request with a trace id of 3837dfd7-8c6d-11ec-8223-3cf011f8a2c7
+2022-02-12 17:35:28,531 - storage - DEBUG - Stored event temperature request with a trace id of 38439648-8c6d-11ec-b172-3cf011f8a2c7
+2022-02-12 17:35:28,639 - storage - DEBUG - Stored event temperature request with a trace id of 38541c87-8c6d-11ec-a1ca-3cf011f8a2c7
+2022-02-12 17:35:29,439 - storage - DEBUG - Stored event temperature request with a trace id of 38ce1e66-8c6d-11ec-b6a9-3cf011f8a2c7
+2022-02-12 17:35:29,549 - storage - DEBUG - Stored event temperature request with a trace id of 38deacbe-8c6d-11ec-ab6c-3cf011f8a2c7
+2022-02-12 17:35:29,609 - storage - DEBUG - Stored event temperature request with a trace id of 38e80df8-8c6d-11ec-980f-3cf011f8a2c7
+2022-02-12 17:35:29,747 - storage - INFO - Query for Temperature readings after 2022-02-12T17:35:27Z returns 138 results
+2022-02-12 17:35:30,535 - storage - DEBUG - Stored event temperature request with a trace id of 3975f6d4-8c6d-11ec-896f-3cf011f8a2c7
+2022-02-12 17:35:30,611 - storage - DEBUG - Stored event temperature request with a trace id of 3981c31e-8c6d-11ec-8475-3cf011f8a2c7
+2022-02-12 17:35:31,506 - storage - DEBUG - Stored event temperature request with a trace id of 3a0a00c1-8c6d-11ec-b59a-3cf011f8a2c7
+2022-02-12 17:35:31,599 - storage - DEBUG - Stored event temperature request with a trace id of 3a160ebd-8c6d-11ec-97ef-3cf011f8a2c7
+2022-02-12 17:35:31,827 - storage - INFO - Query for fan speed readings after 2022-02-12T17:35:27Z returns 0 results
+2022-02-12 17:35:32,538 - storage - DEBUG - Stored event temperature request with a trace id of 3aa7c3e3-8c6d-11ec-9090-3cf011f8a2c7
+2022-02-12 17:35:32,615 - storage - DEBUG - Stored event temperature request with a trace id of 3ab37ddd-8c6d-11ec-8a8c-3cf011f8a2c7
+2022-02-12 17:35:32,723 - storage - DEBUG - Stored event temperature request with a trace id of 3ac3edd3-8c6d-11ec-88f7-3cf011f8a2c7
+2022-02-12 17:35:33,528 - storage - DEBUG - Stored event temperature request with a trace id of 3b3e407f-8c6d-11ec-a084-3cf011f8a2c7
+2022-02-12 17:35:33,637 - storage - DEBUG - Stored event temperature request with a trace id of 3b4eea75-8c6d-11ec-a6af-3cf011f8a2c7
+2022-02-12 17:35:33,698 - storage - DEBUG - Stored event temperature request with a trace id of 3b581df0-8c6d-11ec-ac3e-3cf011f8a2c7
+2022-02-12 17:35:34,641 - storage - DEBUG - Stored event temperature request with a trace id of 3be68c04-8c6d-11ec-a806-3cf011f8a2c7
+2022-02-12 17:35:34,702 - storage - DEBUG - Stored event temperature request with a trace id of 3bf0e6a5-8c6d-11ec-b4a3-3cf011f8a2c7
+2022-02-12 17:35:34,749 - storage - INFO - Query for Temperature readings after 2022-02-12T17:35:32Z returns 150 results
+2022-02-12 17:35:35,598 - storage - DEBUG - Stored event temperature request with a trace id of 3c79eb16-8c6d-11ec-8ef9-3cf011f8a2c7
+2022-02-12 17:35:35,690 - storage - DEBUG - Stored event temperature request with a trace id of 3c882f65-8c6d-11ec-8670-3cf011f8a2c7
+2022-02-12 17:35:36,631 - storage - DEBUG - Stored event temperature request with a trace id of 3d17d10c-8c6d-11ec-a770-3cf011f8a2c7
+2022-02-12 17:35:36,693 - storage - DEBUG - Stored event temperature request with a trace id of 3d215ca3-8c6d-11ec-8aff-3cf011f8a2c7
+2022-02-12 17:35:36,800 - storage - DEBUG - Stored event temperature request with a trace id of 3d31d6bd-8c6d-11ec-b090-3cf011f8a2c7
+2022-02-12 17:35:36,844 - storage - INFO - Query for fan speed readings after 2022-02-12T17:35:32Z returns 0 results
+2022-02-12 17:35:37,600 - storage - DEBUG - Stored event temperature request with a trace id of 3dac2057-8c6d-11ec-a6cf-3cf011f8a2c7
+2022-02-12 17:35:37,724 - storage - DEBUG - Stored event temperature request with a trace id of 3dbf2228-8c6d-11ec-9e89-3cf011f8a2c7
+2022-02-12 17:35:37,770 - storage - DEBUG - Stored event temperature request with a trace id of 3dc61cc4-8c6d-11ec-bd43-3cf011f8a2c7
+2022-02-12 17:35:38,729 - storage - DEBUG - Stored event temperature request with a trace id of 3e583542-8c6d-11ec-bfb5-3cf011f8a2c7
+2022-02-12 17:35:38,775 - storage - DEBUG - Stored event temperature request with a trace id of 3e5ef54c-8c6d-11ec-a35b-3cf011f8a2c7
+2022-02-12 17:35:39,687 - storage - DEBUG - Stored event temperature request with a trace id of 3ee9884b-8c6d-11ec-b4cd-3cf011f8a2c7
+2022-02-12 17:35:39,749 - storage - INFO - Query for Temperature readings after 2022-02-12T17:35:37Z returns 161 results
+2022-02-12 17:35:39,779 - storage - DEBUG - Stored event temperature request with a trace id of 3ef7ab23-8c6d-11ec-8cee-3cf011f8a2c7
+2022-02-12 17:35:40,718 - storage - DEBUG - Stored event temperature request with a trace id of 3f879f60-8c6d-11ec-963e-3cf011f8a2c7
+2022-02-12 17:35:40,781 - storage - DEBUG - Stored event temperature request with a trace id of 3f911530-8c6d-11ec-8fda-3cf011f8a2c7
+2022-02-12 17:35:40,888 - storage - DEBUG - Stored event temperature request with a trace id of 3fa1b6db-8c6d-11ec-b82b-3cf011f8a2c7
+2022-02-12 17:35:41,687 - storage - DEBUG - Stored event temperature request with a trace id of 401c14b9-8c6d-11ec-92a1-3cf011f8a2c7
+2022-02-12 17:35:41,795 - storage - DEBUG - Stored event temperature request with a trace id of 402c9ee4-8c6d-11ec-9db5-3cf011f8a2c7
+2022-02-12 17:35:41,839 - storage - INFO - Query for fan speed readings after 2022-02-12T17:35:37Z returns 0 results
+2022-02-12 17:35:41,857 - storage - DEBUG - Stored event temperature request with a trace id of 4035f141-8c6d-11ec-b674-3cf011f8a2c7
+2022-02-12 17:35:42,798 - storage - DEBUG - Stored event temperature request with a trace id of 40c56ee4-8c6d-11ec-9508-3cf011f8a2c7
+2022-02-12 17:35:42,844 - storage - DEBUG - Stored event temperature request with a trace id of 40cc6685-8c6d-11ec-8b0d-3cf011f8a2c7
+2022-02-12 17:35:43,773 - storage - DEBUG - Stored event temperature request with a trace id of 415933d0-8c6d-11ec-9b63-3cf011f8a2c7
+2022-02-12 17:35:43,866 - storage - DEBUG - Stored event temperature request with a trace id of 41674b0d-8c6d-11ec-944b-3cf011f8a2c7
+2022-02-12 17:35:44,744 - storage - INFO - Query for Temperature readings after 2022-02-12T17:35:42Z returns 172 results
+2022-02-12 17:35:44,805 - storage - DEBUG - Stored event temperature request with a trace id of 41f6ca23-8c6d-11ec-a2b5-3cf011f8a2c7
+2022-02-12 17:35:44,866 - storage - DEBUG - Stored event temperature request with a trace id of 42003f01-8c6d-11ec-aaee-3cf011f8a2c7
+2022-02-12 17:35:44,975 - storage - DEBUG - Stored event temperature request with a trace id of 4210ce72-8c6d-11ec-b5b2-3cf011f8a2c7
+2022-02-12 17:35:45,775 - storage - DEBUG - Stored event temperature request with a trace id of 428bd43e-8c6d-11ec-8dd7-3cf011f8a2c7
+2022-02-12 17:35:45,883 - storage - DEBUG - Stored event temperature request with a trace id of 429c4010-8c6d-11ec-bbb9-3cf011f8a2c7
+2022-02-12 17:35:45,945 - storage - DEBUG - Stored event temperature request with a trace id of 42a5a799-8c6d-11ec-a728-3cf011f8a2c7
+2022-02-12 17:35:46,835 - storage - INFO - Query for fan speed readings after 2022-02-12T17:35:42Z returns 0 results
+2022-02-12 17:35:46,869 - storage - DEBUG - Stored event temperature request with a trace id of 4332a5d5-8c6d-11ec-8b6b-3cf011f8a2c7
+2022-02-12 17:35:46,916 - storage - DEBUG - Stored event temperature request with a trace id of 43399a75-8c6d-11ec-a60b-3cf011f8a2c7
+2022-02-12 17:35:47,856 - storage - DEBUG - Stored event temperature request with a trace id of 43c900d7-8c6d-11ec-a5c8-3cf011f8a2c7
+2022-02-12 17:35:47,949 - storage - DEBUG - Stored event temperature request with a trace id of 43d7181c-8c6d-11ec-a66a-3cf011f8a2c7
+2022-02-12 17:35:48,893 - storage - DEBUG - Stored event temperature request with a trace id of 44665bb8-8c6d-11ec-849f-3cf011f8a2c7
+2022-02-12 17:35:48,956 - storage - DEBUG - Stored event temperature request with a trace id of 4470182c-8c6d-11ec-8191-3cf011f8a2c7
+2022-02-12 17:35:49,063 - storage - DEBUG - Stored event temperature request with a trace id of 44803fe5-8c6d-11ec-b1ed-3cf011f8a2c7
+2022-02-12 17:35:49,740 - storage - INFO - Query for Temperature readings after 2022-02-12T17:35:47Z returns 185 results
+2022-02-12 17:35:49,863 - storage - DEBUG - Stored event temperature request with a trace id of 44faa8be-8c6d-11ec-a97d-3cf011f8a2c7
+2022-02-12 17:35:49,971 - storage - DEBUG - Stored event temperature request with a trace id of 450b4bbd-8c6d-11ec-b4b8-3cf011f8a2c7
+2022-02-12 17:35:50,033 - storage - DEBUG - Stored event temperature request with a trace id of 4514ade4-8c6d-11ec-a770-3cf011f8a2c7
+2022-02-12 17:35:50,956 - storage - DEBUG - Stored event temperature request with a trace id of 45a261d8-8c6d-11ec-bd96-3cf011f8a2c7
+2022-02-12 17:35:50,987 - storage - DEBUG - Stored event temperature request with a trace id of 45a72e2c-8c6d-11ec-b91c-3cf011f8a2c7
+2022-02-12 17:35:51,848 - storage - INFO - Query for fan speed readings after 2022-02-12T17:35:47Z returns 0 results
+2022-02-12 17:35:51,927 - storage - DEBUG - Stored event temperature request with a trace id of 46366bc5-8c6d-11ec-9e53-3cf011f8a2c7
+2022-02-12 17:35:52,020 - storage - DEBUG - Stored event temperature request with a trace id of 46449b3f-8c6d-11ec-bcb8-3cf011f8a2c7
+2022-02-12 17:35:52,974 - storage - DEBUG - Stored event temperature request with a trace id of 46d62c09-8c6d-11ec-8497-3cf011f8a2c7
+2022-02-12 17:35:53,037 - storage - DEBUG - Stored event temperature request with a trace id of 46dff5c6-8c6d-11ec-8f66-3cf011f8a2c7
+2022-02-12 17:35:53,950 - storage - DEBUG - Stored event temperature request with a trace id of 476a5379-8c6d-11ec-803a-3cf011f8a2c7
+2022-02-12 17:35:54,058 - storage - DEBUG - Stored event temperature request with a trace id of 477ad746-8c6d-11ec-8546-3cf011f8a2c7
+2022-02-12 17:35:54,740 - storage - INFO - Query for Temperature readings after 2022-02-12T17:35:52Z returns 196 results
+2022-02-12 17:35:55,046 - storage - DEBUG - Stored event temperature request with a trace id of 4811317d-8c6d-11ec-becf-3cf011f8a2c7
+2022-02-12 17:35:56,014 - storage - DEBUG - Stored event temperature request with a trace id of 48a5f14e-8c6d-11ec-a747-3cf011f8a2c7
+2022-02-12 17:35:56,844 - storage - INFO - Query for fan speed readings after 2022-02-12T17:35:52Z returns 0 results
+2022-02-12 17:35:57,046 - storage - DEBUG - Stored event temperature request with a trace id of 4943cdd3-8c6d-11ec-83c5-3cf011f8a2c7
+2022-02-12 17:35:58,019 - storage - DEBUG - Stored event temperature request with a trace id of 49d7c1e7-8c6d-11ec-8184-3cf011f8a2c7
+2022-02-12 17:35:59,751 - storage - INFO - Query for Temperature readings after 2022-02-12T17:35:57Z returns 200 results
+2022-02-12 17:36:01,857 - storage - INFO - Query for fan speed readings after 2022-02-12T17:35:57Z returns 0 results
+2022-02-12 17:36:04,748 - storage - INFO - Query for Temperature readings after 2022-02-12T17:36:02Z returns 200 results
+2022-02-12 17:36:06,852 - storage - INFO - Query for fan speed readings after 2022-02-12T17:36:02Z returns 0 results
+2022-02-12 17:36:09,745 - storage - INFO - Query for Temperature readings after 2022-02-12T17:36:07Z returns 200 results
+2022-02-12 17:36:11,850 - storage - INFO - Query for fan speed readings after 2022-02-12T17:36:07Z returns 0 results
+2022-02-12 17:36:14,740 - storage - INFO - Query for Temperature readings after 2022-02-12T17:36:12Z returns 200 results
+2022-02-12 17:36:16,844 - storage - INFO - Query for fan speed readings after 2022-02-12T17:36:12Z returns 0 results
+2022-02-12 17:36:19,750 - storage - INFO - Query for Temperature readings after 2022-02-12T17:36:17Z returns 200 results
+2022-02-12 17:36:21,854 - storage - INFO - Query for fan speed readings after 2022-02-12T17:36:17Z returns 0 results
+2022-02-12 17:36:24,746 - storage - INFO - Query for Temperature readings after 2022-02-12T17:36:22Z returns 200 results
+2022-02-12 17:36:26,850 - storage - INFO - Query for fan speed readings after 2022-02-12T17:36:22Z returns 0 results
+2022-02-12 17:36:29,742 - storage - INFO - Query for Temperature readings after 2022-02-12T17:36:27Z returns 200 results
+2022-02-12 17:36:31,845 - storage - INFO - Query for fan speed readings after 2022-02-12T17:36:27Z returns 0 results
+2022-02-12 17:36:34,737 - storage - INFO - Query for Temperature readings after 2022-02-12T17:36:32Z returns 200 results
+2022-02-12 17:36:36,844 - storage - INFO - Query for fan speed readings after 2022-02-12T17:36:32Z returns 0 results
+2022-02-12 17:36:39,735 - storage - INFO - Query for Temperature readings after 2022-02-12T17:36:37Z returns 200 results
+2022-02-12 17:36:41,845 - storage - INFO - Query for fan speed readings after 2022-02-12T17:36:37Z returns 0 results
+2022-02-12 17:36:44,751 - storage - INFO - Query for Temperature readings after 2022-02-12T17:36:42Z returns 200 results
+2022-02-12 17:36:46,857 - storage - INFO - Query for fan speed readings after 2022-02-12T17:36:42Z returns 0 results
+2022-02-12 17:36:49,763 - storage - INFO - Query for Temperature readings after 2022-02-12T17:36:47Z returns 200 results
+2022-02-12 17:36:51,871 - storage - INFO - Query for fan speed readings after 2022-02-12T17:36:47Z returns 0 results
+2022-02-12 17:36:54,746 - storage - INFO - Query for Temperature readings after 2022-02-12T17:36:52Z returns 200 results
+2022-02-12 17:36:56,854 - storage - INFO - Query for fan speed readings after 2022-02-12T17:36:52Z returns 0 results
+2022-02-12 17:36:59,745 - storage - INFO - Query for Temperature readings after 2022-02-12T17:36:57Z returns 200 results
+2022-02-12 17:37:01,850 - storage - INFO - Query for fan speed readings after 2022-02-12T17:36:57Z returns 0 results
+2022-02-12 17:37:04,743 - storage - INFO - Query for Temperature readings after 2022-02-12T17:37:02Z returns 200 results
+2022-02-12 17:37:06,853 - storage - INFO - Query for fan speed readings after 2022-02-12T17:37:02Z returns 0 results
+2022-02-12 17:37:09,750 - storage - INFO - Query for Temperature readings after 2022-02-12T17:37:07Z returns 200 results
+2022-02-12 17:37:11,860 - storage - INFO - Query for fan speed readings after 2022-02-12T17:37:07Z returns 0 results
+2022-02-12 17:37:14,749 - storage - INFO - Query for Temperature readings after 2022-02-12T17:37:12Z returns 200 results
+2022-02-12 17:37:16,855 - storage - INFO - Query for fan speed readings after 2022-02-12T17:37:12Z returns 0 results
+2022-02-12 17:37:19,751 - storage - INFO - Query for Temperature readings after 2022-02-12T17:37:17Z returns 200 results
+2022-02-12 17:37:21,860 - storage - INFO - Query for fan speed readings after 2022-02-12T17:37:17Z returns 0 results
+2022-02-12 17:37:24,754 - storage - INFO - Query for Temperature readings after 2022-02-12T17:37:22Z returns 200 results
+2022-02-12 17:37:26,858 - storage - INFO - Query for fan speed readings after 2022-02-12T17:37:22Z returns 0 results
+2022-02-12 17:37:29,750 - storage - INFO - Query for Temperature readings after 2022-02-12T17:37:27Z returns 200 results
+2022-02-12 17:37:31,857 - storage - INFO - Query for fan speed readings after 2022-02-12T17:37:27Z returns 0 results
+2022-02-12 17:47:21,462 - storage - DEBUG - Stored event temperature request with a trace id of e13419b5-8c6e-11ec-af3a-3cf011f8a2c7
+2022-02-12 17:51:24,270 - storage - DEBUG - Stored event temperature request with a trace id of 71ebd84a-8c6f-11ec-9a0e-3cf011f8a2c7
+2022-02-12 18:02:03,458 - storage - DEBUG - Stored event temperature request with a trace id of eee86022-8c70-11ec-b0f0-3cf011f8a2c7
+2022-02-12 18:06:20,706 - storage - DEBUG - Stored event temperature request with a trace id of 883cdf68-8c71-11ec-8a68-3cf011f8a2c7
+2022-02-12 18:11:56,421 - storage - DEBUG - Stored event temperature request with a trace id of 5058685d-8c72-11ec-942f-3cf011f8a2c7
+2022-02-12 18:12:34,335 - storage - DEBUG - Stored event temperature request with a trace id of 66f0f806-8c72-11ec-a60e-3cf011f8a2c7
+2022-02-12 18:18:33,840 - storage - DEBUG - Stored event temperature request with a trace id of 3d3814ca-8c73-11ec-b85a-3cf011f8a2c7
+2022-02-12 18:20:49,590 - storage - DEBUG - Stored event temperature request with a trace id of 8e20c228-8c73-11ec-b2c2-3cf011f8a2c7
+2022-02-12 18:26:11,062 - storage - DEBUG - Stored event fan speed request with a trace id of 4dbe249b-8c74-11ec-b213-3cf011f8a2c7
+2022-02-12 18:26:39,006 - storage - INFO - Query for Temperature readings after 2022-02-12T18:26:36Z returns 7 results
+2022-02-12 18:26:41,060 - storage - INFO - Query for fan speed readings after 2022-02-12T18:26:36Z returns 1 results
+2022-02-12 18:26:43,985 - storage - INFO - Query for Temperature readings after 2022-02-12T18:26:41Z returns 7 results
+2022-02-12 18:26:46,019 - storage - INFO - Query for fan speed readings after 2022-02-12T18:26:41Z returns 1 results
+2022-02-12 18:26:48,987 - storage - INFO - Query for Temperature readings after 2022-02-12T18:26:46Z returns 7 results
+2022-02-12 18:26:51,025 - storage - INFO - Query for fan speed readings after 2022-02-12T18:26:46Z returns 1 results
+2022-02-12 18:26:54,008 - storage - INFO - Query for Temperature readings after 2022-02-12T18:26:51Z returns 7 results
+2022-02-12 18:26:56,042 - storage - INFO - Query for fan speed readings after 2022-02-12T18:26:51Z returns 1 results
+2022-02-12 18:26:58,996 - storage - INFO - Query for Temperature readings after 2022-02-12T18:26:56Z returns 7 results
+2022-02-12 18:27:01,035 - storage - INFO - Query for fan speed readings after 2022-02-12T18:26:56Z returns 1 results
+2022-02-12 18:27:03,988 - storage - INFO - Query for Temperature readings after 2022-02-12T18:27:01Z returns 7 results
+2022-02-12 18:27:06,026 - storage - INFO - Query for fan speed readings after 2022-02-12T18:27:01Z returns 1 results
+2022-02-12 18:27:08,993 - storage - INFO - Query for Temperature readings after 2022-02-12T18:27:06Z returns 7 results
+2022-02-12 18:27:11,033 - storage - INFO - Query for fan speed readings after 2022-02-12T18:27:06Z returns 1 results
+2022-02-12 18:27:13,987 - storage - INFO - Query for Temperature readings after 2022-02-12T18:27:11Z returns 7 results
+2022-02-12 18:27:16,016 - storage - INFO - Query for fan speed readings after 2022-02-12T18:27:11Z returns 1 results
+2022-02-12 18:27:18,983 - storage - INFO - Query for Temperature readings after 2022-02-12T18:27:16Z returns 7 results
+2022-02-12 18:27:21,019 - storage - INFO - Query for fan speed readings after 2022-02-12T18:27:16Z returns 1 results
+2022-02-12 18:27:23,986 - storage - INFO - Query for Temperature readings after 2022-02-12T18:27:21Z returns 7 results
+2022-02-12 18:27:26,023 - storage - INFO - Query for fan speed readings after 2022-02-12T18:27:21Z returns 1 results
+2022-02-12 18:27:28,987 - storage - INFO - Query for Temperature readings after 2022-02-12T18:27:26Z returns 7 results
+2022-02-12 18:27:31,020 - storage - INFO - Query for fan speed readings after 2022-02-12T18:27:26Z returns 1 results
+2022-02-12 18:27:33,987 - storage - INFO - Query for Temperature readings after 2022-02-12T18:27:31Z returns 7 results
+2022-02-12 18:27:36,023 - storage - INFO - Query for fan speed readings after 2022-02-12T18:27:31Z returns 1 results
+2022-02-12 18:27:38,993 - storage - INFO - Query for Temperature readings after 2022-02-12T18:27:36Z returns 7 results
+2022-02-12 18:27:41,029 - storage - INFO - Query for fan speed readings after 2022-02-12T18:27:36Z returns 1 results
+2022-02-12 18:27:43,978 - storage - INFO - Query for Temperature readings after 2022-02-12T18:27:41Z returns 7 results
+2022-02-12 18:27:46,011 - storage - INFO - Query for fan speed readings after 2022-02-12T18:27:41Z returns 1 results
+2022-02-12 18:27:48,993 - storage - INFO - Query for Temperature readings after 2022-02-12T18:27:46Z returns 7 results
+2022-02-12 18:27:51,026 - storage - INFO - Query for fan speed readings after 2022-02-12T18:27:46Z returns 1 results
+2022-02-12 18:27:53,991 - storage - INFO - Query for Temperature readings after 2022-02-12T18:27:51Z returns 7 results
+2022-02-12 18:27:56,022 - storage - INFO - Query for fan speed readings after 2022-02-12T18:27:51Z returns 1 results
+2022-02-12 18:27:58,985 - storage - INFO - Query for Temperature readings after 2022-02-12T18:27:56Z returns 7 results
+2022-02-12 18:28:01,020 - storage - INFO - Query for fan speed readings after 2022-02-12T18:27:56Z returns 1 results
+2022-02-12 18:28:03,987 - storage - INFO - Query for Temperature readings after 2022-02-12T18:28:01Z returns 7 results
+2022-02-12 18:28:04,703 - storage - DEBUG - Stored event temperature request with a trace id of 917d3a75-8c74-11ec-a77b-3cf011f8a2c7
+2022-02-12 18:28:05,426 - storage - DEBUG - Stored event temperature request with a trace id of 91e99f40-8c74-11ec-85f4-3cf011f8a2c7
+2022-02-12 18:28:06,023 - storage - INFO - Query for fan speed readings after 2022-02-12T18:28:01Z returns 1 results
+2022-02-12 18:28:06,410 - storage - DEBUG - Stored event temperature request with a trace id of 92822d27-8c74-11ec-a9c4-3cf011f8a2c7
+2022-02-12 18:28:06,747 - storage - DEBUG - Stored event fan speed request with a trace id of 92b5b06e-8c74-11ec-9c0d-3cf011f8a2c7
+2022-02-12 18:28:07,407 - storage - DEBUG - Stored event temperature request with a trace id of 931b4951-8c74-11ec-88e2-3cf011f8a2c7
+2022-02-12 18:28:07,469 - storage - DEBUG - Stored event fan speed request with a trace id of 932339e0-8c74-11ec-a5d9-3cf011f8a2c7
+2022-02-12 18:28:08,414 - storage - DEBUG - Stored event temperature request with a trace id of 93b2c510-8c74-11ec-b184-3cf011f8a2c7
+2022-02-12 18:28:08,460 - storage - DEBUG - Stored event fan speed request with a trace id of 93b94a23-8c74-11ec-a558-3cf011f8a2c7
+2022-02-12 18:28:09,000 - storage - INFO - Query for Temperature readings after 2022-02-12T18:28:06Z returns 12 results
+2022-02-12 18:28:09,417 - storage - DEBUG - Stored event temperature request with a trace id of 944b3024-8c74-11ec-8ae2-3cf011f8a2c7
+2022-02-12 18:28:09,449 - storage - DEBUG - Stored event fan speed request with a trace id of 9451987a-8c74-11ec-a6a4-3cf011f8a2c7
+2022-02-12 18:28:10,418 - storage - DEBUG - Stored event temperature request with a trace id of 94e591bf-8c74-11ec-8a9d-3cf011f8a2c7
+2022-02-12 18:28:10,449 - storage - DEBUG - Stored event fan speed request with a trace id of 94eb238b-8c74-11ec-9163-3cf011f8a2c7
+2022-02-12 18:28:11,029 - storage - INFO - Query for fan speed readings after 2022-02-12T18:28:06Z returns 6 results
+2022-02-12 18:28:11,401 - storage - DEBUG - Stored event temperature request with a trace id of 957c5116-8c74-11ec-8f2a-3cf011f8a2c7
+2022-02-12 18:28:11,447 - storage - DEBUG - Stored event fan speed request with a trace id of 95841df9-8c74-11ec-8ccf-3cf011f8a2c7
+2022-02-12 18:28:12,401 - storage - DEBUG - Stored event temperature request with a trace id of 9614df08-8c74-11ec-bb74-3cf011f8a2c7
+2022-02-12 18:28:12,462 - storage - DEBUG - Stored event fan speed request with a trace id of 961ce8de-8c74-11ec-ae5f-3cf011f8a2c7
+2022-02-12 18:28:13,420 - storage - DEBUG - Stored event temperature request with a trace id of 96afd632-8c74-11ec-b448-3cf011f8a2c7
+2022-02-12 18:28:13,451 - storage - DEBUG - Stored event fan speed request with a trace id of 96b30d8d-8c74-11ec-abe0-3cf011f8a2c7
+2022-02-12 18:28:13,991 - storage - INFO - Query for Temperature readings after 2022-02-12T18:28:11Z returns 17 results
+2022-02-12 18:28:14,455 - storage - DEBUG - Stored event fan speed request with a trace id of 974b9988-8c74-11ec-a1ee-3cf011f8a2c7
+2022-02-12 18:28:15,454 - storage - DEBUG - Stored event fan speed request with a trace id of 97e71dcb-8c74-11ec-8e70-3cf011f8a2c7
+2022-02-12 18:28:16,023 - storage - INFO - Query for fan speed readings after 2022-02-12T18:28:11Z returns 11 results
+2022-02-12 18:28:18,989 - storage - INFO - Query for Temperature readings after 2022-02-12T18:28:16Z returns 17 results
+2022-02-12 18:28:21,025 - storage - INFO - Query for fan speed readings after 2022-02-12T18:28:16Z returns 11 results
+2022-02-12 18:28:23,994 - storage - INFO - Query for Temperature readings after 2022-02-12T18:28:21Z returns 17 results
+2022-02-12 18:28:26,029 - storage - INFO - Query for fan speed readings after 2022-02-12T18:28:21Z returns 11 results
+2022-02-12 18:28:28,996 - storage - INFO - Query for Temperature readings after 2022-02-12T18:28:26Z returns 17 results
+2022-02-12 18:28:31,032 - storage - INFO - Query for fan speed readings after 2022-02-12T18:28:26Z returns 11 results
+2022-02-12 18:28:33,979 - storage - INFO - Query for Temperature readings after 2022-02-12T18:28:31Z returns 17 results
+2022-02-12 18:28:36,012 - storage - INFO - Query for fan speed readings after 2022-02-12T18:28:31Z returns 11 results
+2022-02-12 18:28:38,992 - storage - INFO - Query for Temperature readings after 2022-02-12T18:28:36Z returns 17 results
+2022-02-12 18:28:41,026 - storage - INFO - Query for fan speed readings after 2022-02-12T18:28:36Z returns 11 results
+2022-02-12 18:28:43,990 - storage - INFO - Query for Temperature readings after 2022-02-12T18:28:41Z returns 17 results
+2022-02-12 18:28:46,031 - storage - INFO - Query for fan speed readings after 2022-02-12T18:28:41Z returns 11 results
+2022-02-12 18:28:48,986 - storage - INFO - Query for Temperature readings after 2022-02-12T18:28:46Z returns 17 results
+2022-02-12 18:28:51,024 - storage - INFO - Query for fan speed readings after 2022-02-12T18:28:46Z returns 11 results
+2022-02-12 18:28:54,006 - storage - INFO - Query for Temperature readings after 2022-02-12T18:28:51Z returns 17 results
+2022-02-12 18:28:56,043 - storage - INFO - Query for fan speed readings after 2022-02-12T18:28:51Z returns 11 results
+2022-02-12 18:28:58,991 - storage - INFO - Query for Temperature readings after 2022-02-12T18:28:56Z returns 17 results
+2022-02-12 18:29:01,022 - storage - INFO - Query for fan speed readings after 2022-02-12T18:28:56Z returns 11 results
+2022-02-12 18:29:03,984 - storage - INFO - Query for Temperature readings after 2022-02-12T18:29:01Z returns 17 results
+2022-02-12 18:29:06,028 - storage - INFO - Query for fan speed readings after 2022-02-12T18:29:01Z returns 11 results
+2022-02-12 18:29:08,991 - storage - INFO - Query for Temperature readings after 2022-02-12T18:29:06Z returns 17 results
+2022-02-12 18:29:11,022 - storage - INFO - Query for fan speed readings after 2022-02-12T18:29:06Z returns 11 results
+2022-02-12 18:29:13,984 - storage - INFO - Query for Temperature readings after 2022-02-12T18:29:11Z returns 17 results
+2022-02-12 18:29:16,019 - storage - INFO - Query for fan speed readings after 2022-02-12T18:29:11Z returns 11 results
+2022-02-12 18:29:18,990 - storage - INFO - Query for Temperature readings after 2022-02-12T18:29:16Z returns 17 results
+2022-02-12 18:29:21,025 - storage - INFO - Query for fan speed readings after 2022-02-12T18:29:16Z returns 11 results
+2022-02-12 18:29:23,989 - storage - INFO - Query for Temperature readings after 2022-02-12T18:29:21Z returns 17 results
+2022-02-12 18:29:26,041 - storage - INFO - Query for fan speed readings after 2022-02-12T18:29:21Z returns 11 results
+2022-02-12 18:29:29,000 - storage - INFO - Query for Temperature readings after 2022-02-12T18:29:26Z returns 17 results
+2022-02-12 18:29:31,040 - storage - INFO - Query for fan speed readings after 2022-02-12T18:29:26Z returns 11 results
+2022-02-12 18:29:33,993 - storage - INFO - Query for Temperature readings after 2022-02-12T18:29:31Z returns 17 results
+2022-02-12 18:29:36,039 - storage - INFO - Query for fan speed readings after 2022-02-12T18:29:31Z returns 11 results
+2022-02-12 18:29:38,992 - storage - INFO - Query for Temperature readings after 2022-02-12T18:29:36Z returns 17 results
+2022-02-12 18:29:41,022 - storage - INFO - Query for fan speed readings after 2022-02-12T18:29:36Z returns 11 results
+2022-02-12 18:29:43,988 - storage - INFO - Query for Temperature readings after 2022-02-12T18:29:41Z returns 17 results
+2022-02-12 18:29:46,033 - storage - INFO - Query for fan speed readings after 2022-02-12T18:29:41Z returns 11 results
+2022-02-12 18:29:48,982 - storage - INFO - Query for Temperature readings after 2022-02-12T18:29:46Z returns 17 results
+2022-02-12 18:29:51,017 - storage - INFO - Query for fan speed readings after 2022-02-12T18:29:46Z returns 11 results
+2022-02-12 18:29:53,982 - storage - INFO - Query for Temperature readings after 2022-02-12T18:29:51Z returns 17 results
+2022-02-12 18:29:56,018 - storage - INFO - Query for fan speed readings after 2022-02-12T18:29:51Z returns 11 results
+2022-02-12 18:29:58,996 - storage - INFO - Query for Temperature readings after 2022-02-12T18:29:56Z returns 17 results
+2022-02-12 18:30:01,033 - storage - INFO - Query for fan speed readings after 2022-02-12T18:29:56Z returns 11 results
+2022-02-12 18:30:03,997 - storage - INFO - Query for Temperature readings after 2022-02-12T18:30:01Z returns 17 results
+2022-02-12 18:30:06,030 - storage - INFO - Query for fan speed readings after 2022-02-12T18:30:01Z returns 11 results
+2022-02-12 18:30:08,977 - storage - INFO - Query for Temperature readings after 2022-02-12T18:30:06Z returns 17 results
+2022-02-12 18:30:11,010 - storage - INFO - Query for fan speed readings after 2022-02-12T18:30:06Z returns 11 results
+2022-02-12 18:30:16,140 - storage - INFO - Query for fan speed readings after 2022-02-12T18:30:11Z returns 0 results
+2022-02-12 18:30:18,982 - storage - INFO - Query for Temperature readings after 2022-02-12T18:30:16Z returns 0 results
+2022-02-12 18:30:21,020 - storage - INFO - Query for fan speed readings after 2022-02-12T18:30:16Z returns 0 results
+2022-02-12 18:30:23,987 - storage - INFO - Query for Temperature readings after 2022-02-12T18:30:21Z returns 0 results
+2022-02-12 18:30:26,021 - storage - INFO - Query for fan speed readings after 2022-02-12T18:30:21Z returns 0 results
+2022-02-12 18:30:28,990 - storage - INFO - Query for Temperature readings after 2022-02-12T18:30:26Z returns 0 results
+2022-02-12 18:30:31,026 - storage - INFO - Query for fan speed readings after 2022-02-12T18:30:26Z returns 0 results
+2022-02-12 18:30:33,978 - storage - INFO - Query for Temperature readings after 2022-02-12T18:30:31Z returns 0 results
+2022-02-12 18:30:36,011 - storage - INFO - Query for fan speed readings after 2022-02-12T18:30:31Z returns 0 results
+2022-02-12 18:30:37,637 - storage - DEBUG - Stored event temperature request with a trace id of eca3ad21-8c74-11ec-9198-3cf011f8a2c7
+2022-02-12 18:30:38,640 - storage - DEBUG - Stored event temperature request with a trace id of ed3d93a9-8c74-11ec-a967-3cf011f8a2c7
+2022-02-12 18:30:38,996 - storage - INFO - Query for Temperature readings after 2022-02-12T18:30:36Z returns 2 results
+2022-02-12 18:30:39,630 - storage - DEBUG - Stored event temperature request with a trace id of edd4f18d-8c74-11ec-bab2-3cf011f8a2c7
+2022-02-12 18:30:39,693 - storage - DEBUG - Stored event fan speed request with a trace id of eddcf557-8c74-11ec-93c3-3cf011f8a2c7
+2022-02-12 18:30:40,633 - storage - DEBUG - Stored event temperature request with a trace id of ee6d84f7-8c74-11ec-a187-3cf011f8a2c7
+2022-02-12 18:30:40,695 - storage - DEBUG - Stored event fan speed request with a trace id of ee75e4fc-8c74-11ec-8d2e-3cf011f8a2c7
+2022-02-12 18:30:41,031 - storage - INFO - Query for fan speed readings after 2022-02-12T18:30:36Z returns 2 results
+2022-02-12 18:30:41,633 - storage - DEBUG - Stored event temperature request with a trace id of ef063dd0-8c74-11ec-a5cd-3cf011f8a2c7
+2022-02-12 18:30:41,679 - storage - DEBUG - Stored event fan speed request with a trace id of ef0cf482-8c74-11ec-a4f9-3cf011f8a2c7
+2022-02-12 18:30:42,632 - storage - DEBUG - Stored event temperature request with a trace id of ef9ed4b9-8c74-11ec-99c9-3cf011f8a2c7
+2022-02-12 18:30:42,678 - storage - DEBUG - Stored event fan speed request with a trace id of efa5f366-8c74-11ec-8749-3cf011f8a2c7
+2022-02-12 18:30:43,638 - storage - DEBUG - Stored event temperature request with a trace id of f0373bdd-8c74-11ec-84aa-3cf011f8a2c7
+2022-02-12 18:30:43,685 - storage - DEBUG - Stored event fan speed request with a trace id of f03e71d6-8c74-11ec-8636-3cf011f8a2c7
+2022-02-12 18:30:43,993 - storage - INFO - Query for Temperature readings after 2022-02-12T18:30:41Z returns 7 results
+2022-02-12 18:30:44,626 - storage - DEBUG - Stored event temperature request with a trace id of f0cfe402-8c74-11ec-b72a-3cf011f8a2c7
+2022-02-12 18:30:44,687 - storage - DEBUG - Stored event fan speed request with a trace id of f0d707ac-8c74-11ec-89de-3cf011f8a2c7
+2022-02-12 18:30:45,626 - storage - DEBUG - Stored event temperature request with a trace id of f1689b4e-8c74-11ec-8cb0-3cf011f8a2c7
+2022-02-12 18:30:45,672 - storage - DEBUG - Stored event fan speed request with a trace id of f1707717-8c74-11ec-a116-3cf011f8a2c7
+2022-02-12 18:30:46,024 - storage - INFO - Query for fan speed readings after 2022-02-12T18:30:41Z returns 7 results
+2022-02-12 18:30:46,627 - storage - DEBUG - Stored event temperature request with a trace id of f201982c-8c74-11ec-a8ed-3cf011f8a2c7
+2022-02-12 18:30:46,673 - storage - DEBUG - Stored event fan speed request with a trace id of f20729fe-8c74-11ec-ba37-3cf011f8a2c7
+2022-02-12 18:30:47,674 - storage - DEBUG - Stored event fan speed request with a trace id of f29fc95b-8c74-11ec-be49-3cf011f8a2c7
+2022-02-12 18:30:48,681 - storage - DEBUG - Stored event fan speed request with a trace id of f3388c6b-8c74-11ec-ba77-3cf011f8a2c7
+2022-02-12 18:30:48,987 - storage - INFO - Query for Temperature readings after 2022-02-12T18:30:46Z returns 10 results
+2022-02-12 18:30:51,019 - storage - INFO - Query for fan speed readings after 2022-02-12T18:30:46Z returns 10 results
+2022-02-12 18:30:53,994 - storage - INFO - Query for Temperature readings after 2022-02-12T18:30:51Z returns 10 results
+2022-02-12 18:30:56,040 - storage - INFO - Query for fan speed readings after 2022-02-12T18:30:51Z returns 10 results
+2022-02-12 18:30:58,992 - storage - INFO - Query for Temperature readings after 2022-02-12T18:30:56Z returns 10 results
+2022-02-12 18:31:01,026 - storage - INFO - Query for fan speed readings after 2022-02-12T18:30:56Z returns 10 results
+2022-02-12 18:31:03,988 - storage - INFO - Query for Temperature readings after 2022-02-12T18:31:01Z returns 10 results
+2022-02-12 18:31:06,018 - storage - INFO - Query for fan speed readings after 2022-02-12T18:31:01Z returns 10 results
+2022-02-12 18:31:08,988 - storage - INFO - Query for Temperature readings after 2022-02-12T18:31:06Z returns 10 results
+2022-02-12 18:31:11,021 - storage - INFO - Query for fan speed readings after 2022-02-12T18:31:06Z returns 10 results
+2022-02-12 18:31:13,987 - storage - INFO - Query for Temperature readings after 2022-02-12T18:31:11Z returns 10 results
+2022-02-12 18:31:16,020 - storage - INFO - Query for fan speed readings after 2022-02-12T18:31:11Z returns 10 results
+2022-02-12 18:31:18,986 - storage - INFO - Query for Temperature readings after 2022-02-12T18:31:16Z returns 10 results

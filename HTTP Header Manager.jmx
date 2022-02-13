@@ -16,7 +16,7 @@
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <stringProp name="LoopController.loops">10</stringProp>
+          <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
         <stringProp name="ThreadGroup.num_threads">10</stringProp>
         <stringProp name="ThreadGroup.ramp_time">10</stringProp>
@@ -34,11 +34,10 @@
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
   &quot;ming_card_id&quot;: &quot;${__UUID()}&quot;,&#xd;
-  &quot;ming_rig_id&quot;: &quot;d290f1ee-6c54-4b01-90e6-d701748f0851&quot;,&#xd;
+  &quot;ming_rig_id&quot;: &quot;${__UUID()}&quot;,&#xd;
   &quot;temperature&quot;: {&#xd;
     &quot;core_temperature&quot;: ${random},&#xd;
-    &quot;ming_card_model&quot;: &quot;RTX2080&quot;,&#xd;
-    &quot;shell_temperature&quot;: 60&#xd;
+    &quot;shell_temperature&quot;: ${random}&#xd;
   },&#xd;
   &quot;timestamp&quot;: &quot;2016-08-29T09:12:33.001Z&quot;&#xd;
 }</stringProp>
@@ -78,13 +77,12 @@
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-  &quot;fan_speed&quot;: {&#xd;
-    &quot;fan_position&quot;: &quot;middle&quot;,&#xd;
-    &quot;fan_speed&quot;: 2000,&#xd;
-    &quot;ming_card_model&quot;: &quot;RTX2080&quot;&#xd;
+  &quot;ming_card_id&quot;: &quot;${__UUID()}&quot;,&#xd;
+  &quot;ming_rig_id&quot;: &quot;${__UUID()}&quot;,&#xd;
+   &quot;fan_speed&quot;: {&#xd;
+    &quot;fan_size&quot;: ${random},&#xd;
+    &quot;fan_speed&quot;: ${random}&#xd;
   },&#xd;
-  &quot;ming_card_id&quot;: &quot;rig1-01&quot;,&#xd;
-  &quot;ming_rig_id&quot;: &quot;d290f1ee-6c54-4b01-90e6-d701748f0851&quot;,&#xd;
   &quot;timestamp&quot;: &quot;2016-08-29T09:12:33.001Z&quot;&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
@@ -95,7 +93,7 @@
           <stringProp name="HTTPSampler.port">8080</stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/status/fanspeed</stringProp>
+          <stringProp name="HTTPSampler.path">status/fanspeed</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>

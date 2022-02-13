@@ -1,6 +1,5 @@
 from sqlalchemy import Column, Integer, String, DateTime
 from base import Base
-import datetime
 
 
 class Temperature(Base):
@@ -13,20 +12,18 @@ class Temperature(Base):
     ming_card_id = Column(String(250), nullable=False)
     timestamp = Column(String(100), nullable=False)
     date_created = Column(DateTime, nullable=False)
-    ming_card_model = Column(String(100), nullable=False)
     core_temperature = Column(Integer, nullable=False)
     shell_temperature = Column(Integer, nullable=False)
     trace_id = Column(String(100), nullable=False)
 
-
-    def __init__(self, trace_id, ming_rig_id, ming_card_id, timestamp, ming_card_model, core_temperature, shell_temperature):
+    def __init__(self, trace_id, date_created, ming_rig_id, ming_card_id, timestamp, core_temperature,
+                 shell_temperature):
         """ Initializes a temperature reading """
         self.trace_id = trace_id
         self.ming_rig_id = ming_rig_id
         self.ming_card_id = ming_card_id
         self.timestamp = timestamp
-        self.date_created = datetime.datetime.now()  # Sets the date/time record is created
-        self.ming_card_model = ming_card_model
+        self.date_created = date_created
         self.core_temperature = core_temperature
         self.shell_temperature = shell_temperature
 
@@ -39,8 +36,7 @@ class Temperature(Base):
         dict['timestamp'] = self.timestamp
         dict['date_created'] = self.date_created
         dict['temperature'] = {}
-        dict['temperature']['ming_card_model'] = self.ming_card_model
-        dict['temperature']['core_temperature'] = self.ming_card_model
-        dict['temperature']['shell_temperature'] = self.ming_card_model
+        dict['temperature']['core_temperature'] = self.core_temperature
+        dict['temperature']['shell_temperature'] = self.shell_temperature
 
         return dict

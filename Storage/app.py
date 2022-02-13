@@ -6,10 +6,8 @@ from base import Base
 from fan_speed import FanSpeed
 from temperature import Temperature
 import yaml
-import logging
 import logging.config
 import datetime
-from datetime import datetime
 
 with open('app_conf.yml', 'r') as f:
     app_config = yaml.safe_load(f.read())
@@ -25,8 +23,8 @@ password = app_config['datastore']['password']
 port = app_config['datastore']['port']
 hostname = app_config['datastore']['hostname']
 db = app_config['datastore']['db']
-
 DB_ENGINE = create_engine(f'mysql+pymysql://{user}:{password}@{hostname}:{port}/{db}')
+
 Base.metadata.bind = DB_ENGINE
 DB_SESSION = sessionmaker(bind=DB_ENGINE)
 
@@ -35,10 +33,10 @@ def report_temperature(body):
     """ Receives a hardware temperature """
     session = DB_SESSION()
     temp = Temperature(body['trace_id'],
+                       body['date_created'],
                        body['ming_rig_id'],
                        body['ming_card_id'],
                        body['timestamp'],
-                       body['temperature']['ming_card_model'],
                        body['temperature']['core_temperature'],
                        body['temperature']['shell_temperature'])
     session.add(temp)
@@ -53,12 +51,12 @@ def report_fan_speed(body):
     """ Receives a fan speed """
     session = DB_SESSION()
     fs = FanSpeed(body['trace_id'],
+                  body['date_created'],
                   body['ming_rig_id'],
                   body['ming_card_id'],
                   body['timestamp'],
-                  body['fan_speed']['fan_speed'],
-                  body['fan_speed']['fan_position'],
-                  body['fan_speed']['ming_card_model'])
+                  body['fan_speed']['fan_size'],
+                  body['fan_speed']['fan_speed'])
     session.add(fs)
     session.commit()
     session.close()
@@ -71,8 +69,7 @@ def get_temperature(timestamp):
     """ Gets new temperature after the timestamp """
     session = DB_SESSION()
     timestamp_datetime = datetime.datetime.strptime(timestamp, "%Y-%m-%dT%H:%M:%SZ")
-    readings = session.query(Temperature).filter(Temperature.date_created >=
-                                                 timestamp_datetime)
+    readings = session.query(Temperature).filter(Temperature.date_created >= timestamp_datetime)
     results_list = []
     for reading in readings:
         results_list.append(reading.to_dict())
@@ -86,8 +83,7 @@ def get_fan_speed(timestamp):
     """ Gets new fan speed after the timestamp """
     session = DB_SESSION()
     timestamp_datetime = datetime.datetime.strptime(timestamp, "%Y-%m-%dT%H:%M:%SZ")
-    readings = session.query(Temperature).filter(FanSpeed.date_created >=
-                                                 timestamp_datetime)
+    readings = session.query(FanSpeed).filter(FanSpeed.date_created >= timestamp_datetime)
     results_list = []
     for reading in readings:
         results_list.append(reading.to_dict())
