@@ -1,7 +1,7 @@
 version: 1
 datastore:
-  user: root
+  user: user
   password: password
-  hostname: localhost
+  hostname: digao3855.westus3.cloudapp.azure.com
   port: 3306
   db: events
