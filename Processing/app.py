@@ -34,10 +34,10 @@ def populate_stats(dictionary=None):
             "id": 0,
             "num_core_temp": 0,
             "num_shell_temp": 0,
-            "max_shell_temp": 0,
-            "max_core_temp": 0,
+            "avg_shell_temp": 0,
+            "avg_core_temp": 0,
             "num_fan_speed": 0,
-            "max_fan_speed": 0,
+            "avg_fan_speed": 0,
             "last_updated": datetime.datetime.now()
         }
 
@@ -47,10 +47,10 @@ def populate_stats(dictionary=None):
     new_stats = {
         "num_core_temp": 0,
         "num_shell_temp": 0,
-        "max_shell_temp": 0,
-        "max_core_temp": 0,
+        "avg_shell_temp": 0,
+        "avg_core_temp": 0,
         "num_fan_speed": 0,
-        "max_fan_speed": 0,
+        "avg_fan_speed": 0,
         "last_updated": datetime.datetime.now()
     }
 
@@ -68,18 +68,18 @@ def populate_stats(dictionary=None):
         logger.info(
             f"Total number of new temperatures is: {len(temperature_response_data)}")
 
-        new_stats['num_core_temp'] = stats['num_core_temp'] + len(temperature_response_data)
-        new_stats['num_shell_temp'] = stats['num_shell_temp'] + len(temperature_response_data)
+        new_stats['num_core_temp'] = len(temperature_response_data)
+        new_stats['num_shell_temp'] = len(temperature_response_data)
 
-        max_shell_temp = 0
-        max_core_temp = 0
+        total_shell_temp = 0
         for item in temperature_response_data:
-            max_shell_temp = max(max_shell_temp, item['temperature']['shell_temperature'])
-            max_core_temp = max(max_core_temp, item['temperature']['core_temperature'])
+            total_shell_temp = total_shell_temp + item['temperature']['shell_temperature']
+            total_core_temp = total_shell_temp + item['temperature']['shell_temperature']
             logger.debug(f'Temperature event {item["trace_id"]} processed')
-
-        new_stats['max_shell_temp'] = max_shell_temp
-        new_stats['max_core_temp'] = max_core_temp
+        avg_shell_temp = round(total_shell_temp / len(temperature_response_data), 2)
+        avg_core_temp = round(total_core_temp / len(temperature_response_data), 2)
+        new_stats['avg_shell_temp'] = avg_shell_temp
+        new_stats['avg_core_temp'] = avg_core_temp
 
     # fan speed
     get_fan_speed = f'{mysql_db_url}/status/fanspeed'  # ?timestamp={timestamp}
@@ -91,15 +91,16 @@ def populate_stats(dictionary=None):
         fan_speed_response_data = fan_speed_response.json()
         logger.info(
             f"Total number of new fan speed record is: {len(fan_speed_response_data)}")
-        new_stats['num_fan_speed'] = stats['num_fan_speed'] + len(fan_speed_response_data)
+        new_stats['num_fan_speed'] = len(fan_speed_response_data)
 
-        max_fan_speed = 0
+        total_fan_speed = 0
         for item in fan_speed_response_data:
-            max_fan_speed = max(max_fan_speed, item['fan_speed']['fan_speed'])
+            total_fan_speed = total_fan_speed + item['fan_speed']['fan_speed']
             logger.debug(f'Fan speed event {item["trace_id"]} processed')
-
-    add_stats = Stats(new_stats["num_core_temp"], new_stats["num_shell_temp"], new_stats["max_shell_temp"],
-                      new_stats["max_core_temp"], new_stats["num_fan_speed"], new_stats["max_fan_speed"],
+        avg_fan_speed = round(total_fan_speed / len(fan_speed_response_data), 2)
+        new_stats['avg_fan_speed'] = avg_fan_speed
+    add_stats = Stats(new_stats["num_core_temp"], new_stats["num_shell_temp"], new_stats["avg_shell_temp"],
+                      new_stats["avg_core_temp"], new_stats["num_fan_speed"], new_stats["avg_fan_speed"],
                       new_stats["last_updated"]
                       )
     session.add(add_stats)

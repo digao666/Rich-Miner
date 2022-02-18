@@ -56,8 +56,8 @@ def report_fan_speed(body):
                   body['ming_rig_id'],
                   body['ming_card_id'],
                   body['timestamp'],
-                  body['fan_speed']['fan_size'],
-                  body['fan_speed']['fan_speed'])
+                  body['fan_speed']['fan_speed'],
+                  body['fan_speed']['fan_size'])
     session.add(fs)
     session.commit()
     session.close()
