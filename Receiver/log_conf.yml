@@ -16,8 +16,8 @@ handlers:
 loggers:
   receiver:
     level: INFO
-    handlers: [console, file]
+    handlers: [ console, file ]
     propagate: no
 root:
   level: INFO
-  handlers: [console]
+  handlers: [ console ]

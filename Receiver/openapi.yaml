@@ -8,7 +8,7 @@ info:
 tags:
   - name: hardware status
     description: monitoring temperature and fan speed during mining
-    
+
 paths:
   /status/temperature:
     post:

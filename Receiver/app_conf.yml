@@ -3,3 +3,7 @@ eventstore1:
   url: http://localhost:8090/status/temperature
 eventstore2:
   url: http://localhost:8090/status/fanspeed
+events:
+  hostname: digao3855.westus3.cloudapp.azure.com
+  port: 9092
+  topic: events

@@ -1,0 +1,152 @@
+openapi: 3.0.0
+info:
+  description: This API provides audit info
+  version: "1.0.0"
+  title: Audit API
+  contact:
+    email: dgao12@my.bcit.ca
+paths:
+  /temperature:
+    get:
+      summary: gets a temperature reading from history
+      operationId: app.get_temperature_reading
+      description: Gets temperature readings from the event store
+      parameters:
+        - name: index
+          in: query
+          description: Gets the temp at the index in the event store
+          schema:
+            type: integer
+            example: 100
+      responses:
+        '200':
+          description: Successfully returned a temperature event
+          content:
+            application/json:
+              schema:
+                type: object
+                items:
+                  $ref: '#/components/schemas/TemperatureReading'
+        '400':
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+        '404':
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+  /fanspeed:
+    get:
+      summary: gets a fan speed reading from history
+      operationId: app.get_fan_speed_reading
+      description: Gets fan speed reading from the event store
+      parameters:
+        - name: index
+          in: query
+          description: Gets the fs at the index in the event store
+          schema:
+            type: integer
+            example: 1000
+      responses:
+        '200':
+          description: Successfully returned a fan speed event
+          content:
+            application/json:
+              schema:
+                type: object
+                items:
+                  $ref: '#/components/schemas/FanSpeedReading'
+        '400':
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+        '404':
+          description: Not Found
+
+components:
+  schemas:
+    TemperatureReading:
+      required:
+        - ming_rig_id
+        - ming_card_id
+        - temperature
+        - timestamp
+      properties:
+        ming_rig_id:
+          type: string
+          format: uuid
+          example: d290f1ee-6c54-4b01-90e6-d701748f0851
+        ming_card_id:
+          type: string
+          example: rig1-01
+        temperature:
+          $ref: '#/components/schemas/Temperature'
+        timestamp:
+          type: string
+          format: date-time
+          example: '2016-08-29T09:12:33.001Z'
+      type: object
+
+    FanSpeedReading:
+      required:
+        - ming_rig_id
+        - ming_card_id
+        - fan_speed
+        - timestamp
+      properties:
+        ming_rig_id:
+          type: string
+          format: uuid
+          example: d290f1ee-6c54-4b01-90e6-d701748f0851
+        ming_card_id:
+          type: string
+          format: uuid
+          example: d290f1ee-6c54-4b01-90e6-d701748f0851
+        fan_speed:
+          $ref: '#/components/schemas/FanSpeed'
+        timestamp:
+          type: string
+          format: date-time
+          example: '2016-08-29T09:12:33.001Z'
+      type: object
+
+    Temperature:
+      required:
+        - core_temperature
+        - shell_temperature
+      properties:
+        core_temperature:
+          type: integer
+          example: 70
+        shell_temperature:
+          type: integer
+          example: 60
+      type: object
+
+    FanSpeed:
+      required:
+        - fan_size
+        - fan_speed
+      properties:
+        fan_size:
+          type: integer
+          example: 7
+        fan_speed:
+          type: integer
+          example: 2000
+      type: object

@@ -1,14 +1,15 @@
-import logging.config
-import logging
-import yaml
-from stats import Stats
-from base import Base
 import connexion
+import datetime
+import logging
+import logging.config
+import requests
+import yaml
+from apscheduler.schedulers.background import BackgroundScheduler
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-import requests
-from apscheduler.schedulers.background import BackgroundScheduler
-import datetime
+
+from base import Base
+from stats import Stats
 
 DB_ENGINE = create_engine("sqlite:///stats.sqlite")
 Base.metadata.bind = DB_ENGINE
@@ -58,7 +59,7 @@ def populate_stats(dictionary=None):
 
     params = {'timestamp': timestamp}
     # Temperature
-    get_temperature = f'{mysql_db_url}/status/temperature'  # ?timestamp={timestamp}
+    get_temperature = f'{mysql_db_url}/status/temperature?timestamp={timestamp}'
     temperature_response = requests.get(get_temperature, params=params)
 
     if temperature_response.status_code != 200:
@@ -72,17 +73,18 @@ def populate_stats(dictionary=None):
         new_stats['num_shell_temp'] = len(temperature_response_data)
 
         total_shell_temp = 0
+        total_core_temp = 0
         for item in temperature_response_data:
             total_shell_temp = total_shell_temp + item['temperature']['shell_temperature']
             total_core_temp = total_shell_temp + item['temperature']['shell_temperature']
-            logger.debug(f'Temperature event {item["trace_id"]} processed')
+            # logger.debug(f'Temperature event {item["trace_id"]} processed')
         avg_shell_temp = round(total_shell_temp / len(temperature_response_data), 2)
         avg_core_temp = round(total_core_temp / len(temperature_response_data), 2)
         new_stats['avg_shell_temp'] = avg_shell_temp
         new_stats['avg_core_temp'] = avg_core_temp
 
     # fan speed
-    get_fan_speed = f'{mysql_db_url}/status/fanspeed'  # ?timestamp={timestamp}
+    get_fan_speed = f'{mysql_db_url}/status/fanspeed?timestamp={timestamp}'
     fan_speed_response = requests.get(get_fan_speed, params=params)
 
     if fan_speed_response.status_code != 200:
@@ -96,7 +98,7 @@ def populate_stats(dictionary=None):
         total_fan_speed = 0
         for item in fan_speed_response_data:
             total_fan_speed = total_fan_speed + item['fan_speed']['fan_speed']
-            logger.debug(f'Fan speed event {item["trace_id"]} processed')
+            # logger.debug(f'Fan speed event {item["trace_id"]} processed')
         avg_fan_speed = round(total_fan_speed / len(fan_speed_response_data), 2)
         new_stats['avg_fan_speed'] = avg_fan_speed
     add_stats = Stats(new_stats["num_core_temp"], new_stats["num_shell_temp"], new_stats["avg_shell_temp"],

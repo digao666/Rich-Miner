@@ -1,13 +1,17 @@
 import connexion
+import datetime
+import logging.config
+import yaml
+import json
 from connexion import NoContent
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
+from pykafka.common import OffsetType
+from pykafka import KafkaClient
+from threading import Thread
 from base import Base
 from fan_speed import FanSpeed
 from temperature import Temperature
-import yaml
-import logging.config
-import datetime
 
 with open('app_conf.yml', 'r') as f:
     app_config = yaml.safe_load(f.read())
@@ -17,7 +21,6 @@ with open('log_conf.yml', 'r') as f:
     logging.config.dictConfig(log_config)
 
 logger = logging.getLogger('storage')
-
 user = app_config['datastore']['user']
 password = app_config['datastore']['password']
 port = app_config['datastore']['port']
@@ -30,40 +33,40 @@ Base.metadata.bind = DB_ENGINE
 DB_SESSION = sessionmaker(bind=DB_ENGINE)
 
 
-def report_temperature(body):
-    """ Receives a hardware temperature """
-    session = DB_SESSION()
-    temp = Temperature(body['trace_id'],
-                       body['date_created'],
-                       body['ming_rig_id'],
-                       body['ming_card_id'],
-                       body['timestamp'],
-                       body['temperature']['core_temperature'],
-                       body['temperature']['shell_temperature'])
-    session.add(temp)
-    session.commit()
-    session.close()
-    trace_id = body['trace_id']
-    logger.debug(f'Stored event temperature request with a trace id of {trace_id}')
-    return NoContent, 201
+# def report_temperature(body):
+#     """ Receives a hardware temperature """
+#     session = DB_SESSION()
+#     temp = Temperature(body['trace_id'],
+#                        body['date_created'],
+#                        body['ming_rig_id'],
+#                        body['ming_card_id'],
+#                        body['timestamp'],
+#                        body['temperature']['core_temperature'],
+#                        body['temperature']['shell_temperature'])
+#     session.add(temp)
+#     session.commit()
+#     session.close()
+#     trace_id = body['trace_id']
+#     logger.debug(f'Stored event temperature request with a trace id of {trace_id}')
+#     return NoContent, 201
 
 
-def report_fan_speed(body):
-    """ Receives a fan speed """
-    session = DB_SESSION()
-    fs = FanSpeed(body['trace_id'],
-                  body['date_created'],
-                  body['ming_rig_id'],
-                  body['ming_card_id'],
-                  body['timestamp'],
-                  body['fan_speed']['fan_speed'],
-                  body['fan_speed']['fan_size'])
-    session.add(fs)
-    session.commit()
-    session.close()
-    trace_id = body['trace_id']
-    logger.debug(f'Stored event fan speed request with a trace id of {trace_id}')
-    return NoContent, 201
+# def report_fan_speed(body):
+#     """ Receives a fan speed """
+#     session = DB_SESSION()
+#     fs = FanSpeed(body['trace_id'],
+#                   body['date_created'],
+#                   body['ming_rig_id'],
+#                   body['ming_card_id'],
+#                   body['timestamp'],
+#                   body['fan_speed']['fan_speed'],
+#                   body['fan_speed']['fan_size'])
+#     session.add(fs)
+#     session.commit()
+#     session.close()
+#     trace_id = body['trace_id']
+#     logger.debug(f'Stored event fan speed request with a trace id of {trace_id}')
+#     return NoContent, 201
 
 
 def get_temperature(timestamp):
@@ -94,8 +97,50 @@ def get_fan_speed(timestamp):
     return results_list, 200
 
 
+def process_messages():
+    """ Process event messages """
+    host_name = "%s:%d" % (app_config["events"]["hostname"], app_config["events"]["port"])
+    client = KafkaClient(hosts=host_name)
+    topic = client.topics[str.encode(app_config["events"]["topic"])]
+    consumer = topic.get_simple_consumer(consumer_group=b'event_group', reset_offset_on_start=False,
+                                         auto_offset_reset=OffsetType.LATEST)
+    for msg in consumer:
+        msg_str = msg.value.decode('utf-8')
+        msg = json.loads(msg_str)
+        logger.info("Message: %s" % msg)
+        payload = msg["payload"]
+        session = DB_SESSION()
+        data = {}
+        if msg["type"] == "temperature":
+            data = Temperature(payload['trace_id'],
+                               payload['date_created'],
+                               payload['ming_rig_id'],
+                               payload['ming_card_id'],
+                               payload['timestamp'],
+                               payload['temperature']['core_temperature'],
+                               payload['temperature']['shell_temperature'])
+
+        elif msg["type"] == "fanspeed":
+            data = FanSpeed(payload['trace_id'],
+                            payload['date_created'],
+                            payload['ming_rig_id'],
+                            payload['ming_card_id'],
+                            payload['timestamp'],
+                            payload['fan_speed']['fan_speed'],
+                            payload['fan_speed']['fan_size'])
+        session.add(data)
+        session.commit()
+        session.close()
+        logger.debug(f'Stored event {msg["type"]} request with a trace id of {payload["trace_id"]}')
+        consumer.commit_offsets()
+
+
 app = connexion.FlaskApp(__name__, specification_dir='')
 app.add_api("openapi.yaml", strict_validation=True, validate_responses=True)
 
 if __name__ == "__main__":
+    t1 = Thread(target=process_messages)
+    t1.daemon = True
+    t1.start()
     app.run(port=8090, debug=True)
+

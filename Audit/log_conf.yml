@@ -14,7 +14,7 @@ handlers:
     formatter: simple
     filename: app.log
 loggers:
-  storage:
+  audit:
     level: DEBUG
     handlers: [ console, file ]
     propagate: no
