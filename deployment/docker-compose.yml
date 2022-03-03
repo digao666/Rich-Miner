@@ -64,7 +64,7 @@ services:
       - "8100:8100"
     depends_on:
       - storage
-    network_mode: "host"
+    network_mode: host
     volumes:
       - my-db:/var/lib/sqlite
   audit_log:
