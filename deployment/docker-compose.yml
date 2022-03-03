@@ -44,13 +44,13 @@ services:
     volumes:
       - my-db:/var/lib/mysql
   receiver:
-    build: ./receiver
+    build: ../receiver
     depends_on:
        - kafka
     ports:
       - "8080:8080"
   storage:
-    build: ./storage
+    build: ../storage
     ports:
       - "8090:8090"
     expose:
@@ -59,7 +59,7 @@ services:
         - db
         - kafka
   processing:
-    build: ./processing
+    build: ../processing
     ports:
       - "8100:8100"
     depends_on:
@@ -68,7 +68,7 @@ services:
     volumes:
       - my-db:/var/lib/sqlite
   audit_log:
-    build: ./audit_log
+    build: ../audit_log
     ports:
       - "8110:8110"
     depends_on:
