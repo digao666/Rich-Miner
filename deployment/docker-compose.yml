@@ -65,6 +65,8 @@ services:
     depends_on:
       - storage
     network_mode: "host"
+    volumes:
+      - my-db:/var/lib/sqlite
   audit_log:
     build: ./audit_log
     ports:
