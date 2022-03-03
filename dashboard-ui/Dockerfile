@@ -1,8 +1,14 @@
-FROM ubuntu:18.04
-LABEL maintainer="dgao12@my.bcit.ca"
-RUN apt-get update -y && \
-apt-get install -y python3 python3-pip
+FROM node:13.12.0-alpine
+# Set working directory
 WORKDIR /app
-COPY . /app
+# Add `/app/node_modules/.bin` to $PATH
+ENV PATH /app/node_modules/.bin:$PATH
+# Install app dependencies
+COPY package.json ./
+COPY package-lock.json ./
 RUN npm install
-RUN npm start
+RUN npm install react-scripts@3.4.1 -g
+# add app
+COPY . ./
+# Start app
+CMD ["npm", "start"]
