@@ -33,42 +33,6 @@ Base.metadata.bind = DB_ENGINE
 DB_SESSION = sessionmaker(bind=DB_ENGINE)
 
 
-# def report_temperature(body):
-#     """ Receives a hardware temperature """
-#     session = DB_SESSION()
-#     temp = Temperature(body['trace_id'],
-#                        body['date_created'],
-#                        body['ming_rig_id'],
-#                        body['ming_card_id'],
-#                        body['timestamp'],
-#                        body['temperature']['core_temperature'],
-#                        body['temperature']['shell_temperature'])
-#     session.add(temp)
-#     session.commit()
-#     session.close()
-#     trace_id = body['trace_id']
-#     logger.debug(f'Stored event temperature request with a trace id of {trace_id}')
-#     return NoContent, 201
-
-
-# def report_fan_speed(body):
-#     """ Receives a fan speed """
-#     session = DB_SESSION()
-#     fs = FanSpeed(body['trace_id'],
-#                   body['date_created'],
-#                   body['ming_rig_id'],
-#                   body['ming_card_id'],
-#                   body['timestamp'],
-#                   body['fan_speed']['fan_speed'],
-#                   body['fan_speed']['fan_size'])
-#     session.add(fs)
-#     session.commit()
-#     session.close()
-#     trace_id = body['trace_id']
-#     logger.debug(f'Stored event fan speed request with a trace id of {trace_id}')
-#     return NoContent, 201
-
-
 def get_temperature(timestamp):
     """ Gets new temperature after the timestamp """
     session = DB_SESSION()

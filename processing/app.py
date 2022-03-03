@@ -27,7 +27,7 @@ logger = logging.getLogger('processing')
 
 def populate_stats(dictionary=None):
     """ Periodically update stats """
-    logger.info("Start Periodic Processing")
+    logger.info("Start Periodic processing")
     session = DB_SESSION()
     stats = session.query(Stats).order_by(Stats.id.desc()).first()
     if not stats:
@@ -111,7 +111,7 @@ def populate_stats(dictionary=None):
 
     logger.debug(
         f'The new processed statistics is {new_stats}')
-    logger.info("Periodic Processing Ends")
+    logger.info("Periodic processing Ends")
     return
 
 

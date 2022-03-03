@@ -4,7 +4,7 @@ from base import Base
 
 
 class Stats(Base):
-    """ Processing Statistics """
+    """ processing Statistics """
     __tablename__ = "stats"
     id = Column(Integer, primary_key=True)
     num_core_temp = Column(Integer, nullable=False)

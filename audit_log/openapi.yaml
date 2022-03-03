@@ -2,7 +2,7 @@ openapi: 3.0.0
 info:
   description: This API provides audit info
   version: "1.0.0"
-  title: Audit API
+  title: audit_log API
   contact:
     email: dgao12@my.bcit.ca
 paths:
