@@ -7,9 +7,16 @@ import yaml
 from apscheduler.schedulers.background import BackgroundScheduler
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
+from flask_cors import CORS, cross_origin
 
 from base import Base
 from stats import Stats
+
+
+app = connexion.FlaskApp(__name__, specification_dir='') 
+CORS(app.app) 
+app.app.config['CORS_HEADERS'] = 'Content-Type'
+
 
 DB_ENGINE = create_engine("sqlite:///stats.sqlite")
 Base.metadata.bind = DB_ENGINE

@@ -39,9 +39,9 @@ export default function AppStats() {
 							<th>Fan Speed</th>
 						</tr>
 						<tr>
-							<td># CORETEMP: {stats['num_core_temp']}</td>
-                            <td># SHELLTEMP: {stats['num_shell_temp']}</td>
-							<td># FS: {stats['num_fan_speed']}</td>
+							<td># Core Temperature: {stats['num_core_temp']}</td>
+                            <td># Shell Temperature: {stats['num_shell_temp']}</td>
+							<td># Fan Speed: {stats['num_fan_speed']}</td>
 						</tr>
 						<tr>
 							<td colspan="2">Average Shell Temperature: {stats['avg_shell_temp']}</td>

@@ -1,4 +1,5 @@
 from pykafka import KafkaClient
+from flask_cors import CORS, cross_origin
 import logging.config
 import yaml
 import json
@@ -12,6 +13,9 @@ with open('log_conf.yml', 'r') as f:
     logging.config.dictConfig(log_config)
 logger = logging.getLogger('audit')
 
+app = connexion.FlaskApp(__name__, specification_dir='') 
+CORS(app.app) 
+app.app.config['CORS_HEADERS'] = 'Content-Type'
 
 def get_temperature_reading(index):
     """ Get TEMP Reading in History """
