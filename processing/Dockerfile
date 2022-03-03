@@ -6,7 +6,7 @@ apt-get install -y python3 python3-pip
 COPY ./requirements.txt /app/requirements.txt
 WORKDIR /app
 RUN pip3 install -r requirements.txt
+RUN python3 create_table.py
 COPY . /app
 ENTRYPOINT [ "python3" ]
-CMD ["create_table.py"]
 CMD [ "app.py" ]
