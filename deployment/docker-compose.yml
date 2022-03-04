@@ -59,10 +59,14 @@ services:
         - db
         - kafka
   processing:
-    build: ../processing
+    build:
+      context: ../processing
+      network: host
     depends_on:
       - storage
-    network_mode: host
+    ports: 
+      - "8100:8100"
+    
 
   audit_log:
     build: ../audit_log
