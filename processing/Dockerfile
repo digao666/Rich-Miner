@@ -8,5 +8,6 @@ WORKDIR /app
 RUN pip3 install -r requirements.txt
 
 COPY . /app
+RUN python3 create_table.py
 ENTRYPOINT [ "python3" ]
 CMD [ "app.py" ]
