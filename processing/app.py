@@ -104,6 +104,7 @@ def populate_stats(dictionary=None):
             # logger.debug(f'Fan speed event {item["trace_id"]} processed')
         avg_fan_speed = round(total_fan_speed / len(fan_speed_response_data), 2)
         new_stats['avg_fan_speed'] = avg_fan_speed
+    
     add_stats = Stats(new_stats["num_core_temp"], new_stats["num_shell_temp"], new_stats["avg_shell_temp"],
                       new_stats["avg_core_temp"], new_stats["num_fan_speed"], new_stats["avg_fan_speed"],
                       new_stats["last_updated"]
@@ -142,9 +143,10 @@ def init_scheduler():
 
 
 app = connexion.FlaskApp(__name__, specification_dir='')
-app.add_api('openapi.yaml', strict_validation=True, validate_responses=True)
-CORS(app.app) 
+CORS(app.app)
 app.app.config['CORS_HEADERS'] = 'Content-Type'
+app.add_api('openapi.yaml', strict_validation=True, validate_responses=True)
+
 
 if __name__ == "__main__":
     init_scheduler()
