@@ -28,7 +28,7 @@ with open('log_conf.yml', 'r') as f:
 logger = logging.getLogger('processing')
 
 
-def populate_stats(dictionary=None):
+def populate_stats():
     """ Periodically update stats """
     logger.info("Start Periodic processing")
     session = DB_SESSION()
@@ -133,10 +133,14 @@ def get_stats():
     logger.info("Get Stats request done")
     return stats, 200
 
+def wrapper(fn):
+    print("Inside wrapper")
+    fn()
+    print("After wrapper")
 
 def init_scheduler():
     sched = BackgroundScheduler(daemon=True)
-    sched.add_job(populate_stats,
+    sched.add_job(wrapper(populate_stats()),
                   'interval',
                   seconds=app_config['scheduler']['period_sec'])
     sched.start()
