@@ -12,8 +12,6 @@ from flask_cors import CORS, cross_origin
 from base import Base
 from stats import Stats
 
-
-
 DB_ENGINE = create_engine("sqlite:///stats.sqlite")
 Base.metadata.bind = DB_ENGINE
 DB_SESSION = sessionmaker(bind=DB_ENGINE)
@@ -114,7 +112,7 @@ def populate_stats():
         else:
             avg_fan_speed = 0
         new_stats['avg_fan_speed'] = avg_fan_speed
-    
+
     add_stats = Stats(new_stats["num_core_temp"], new_stats["num_shell_temp"], new_stats["avg_shell_temp"],
                       new_stats["avg_core_temp"], new_stats["num_fan_speed"], new_stats["avg_fan_speed"],
                       new_stats["last_updated"]
@@ -142,11 +140,10 @@ def get_stats():
     logger.info("Get Stats request done")
     return stats, 200
 
+
 def init_scheduler():
     sched = BackgroundScheduler(daemon=True)
-    sched.add_job(populate_stats(),
-                  'interval',
-                  seconds=app_config['scheduler']['period_sec'])
+    sched.add_job(populate_stats(), 'interval', seconds=app_config['scheduler']['period_sec'])
     sched.start()
 
 
@@ -154,7 +151,6 @@ app = connexion.FlaskApp(__name__, specification_dir='')
 CORS(app.app)
 app.app.config['CORS_HEADERS'] = 'Content-Type'
 app.add_api('openapi.yaml', strict_validation=True, validate_responses=True)
-
 
 if __name__ == "__main__":
     init_scheduler()

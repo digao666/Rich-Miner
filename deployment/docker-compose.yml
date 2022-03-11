@@ -63,7 +63,6 @@ services:
     network_mode: "host"
     depends_on:
       - storage
-
   audit_log:
     build: ../audit_log
     ports:
