@@ -140,7 +140,7 @@ def wrapper(fn):
 
 def init_scheduler():
     sched = BackgroundScheduler(daemon=True)
-    sched.add_job(wrapper(populate_stats()),
+    sched.add_job(wrapper(populate_stats),
                   'interval',
                   seconds=app_config['scheduler']['period_sec'])
     sched.start()
