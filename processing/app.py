@@ -55,8 +55,8 @@ def populate_stats():
     }
 
     timestamp = new_stats['last_updated'].strftime("%Y-%m-%dT%H:%M:%SZ")
-
     params = {'timestamp': timestamp}
+
     # Temperature
     get_temperature = f'{mysql_db_url}/status/temperature?timestamp={timestamp}'
     temperature_response = requests.get(get_temperature, params=params)
@@ -141,7 +141,7 @@ def get_stats():
 
 def init_scheduler():
     sched = BackgroundScheduler(daemon=True)
-    sched.add_job(populate_stats(), 'interval', seconds=app_config['scheduler']['period_sec'])
+    sched.add_job(populate_stats, 'interval', seconds=app_config['scheduler']['period_sec'])
     sched.start()
 
 
