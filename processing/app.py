@@ -81,8 +81,15 @@ def populate_stats():
             total_shell_temp = total_shell_temp + item['temperature']['shell_temperature']
             total_core_temp = total_shell_temp + item['temperature']['shell_temperature']
             # logger.debug(f'Temperature event {item["trace_id"]} processed')
-        avg_shell_temp = round(total_shell_temp / len(temperature_response_data), 2)
-        avg_core_temp = round(total_core_temp / len(temperature_response_data), 2)
+        if len(temperature_response_data) != 0:
+            avg_shell_temp = round(total_shell_temp / len(temperature_response_data), 2)
+        else:
+            avg_shell_temp = 0
+
+        if len(temperature_response_data) != 0:
+            avg_core_temp = round(total_shell_temp / len(temperature_response_data), 2)
+        else:
+            avg_core_temp = round(total_core_temp / len(temperature_response_data), 2)
         new_stats['avg_shell_temp'] = avg_shell_temp
         new_stats['avg_core_temp'] = avg_core_temp
 
