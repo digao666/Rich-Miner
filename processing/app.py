@@ -144,7 +144,7 @@ def get_stats():
 
 def init_scheduler():
     sched = BackgroundScheduler(daemon=True)
-    sched.add_job(populate_stat),
+    sched.add_job(populate_stats(),
                   'interval',
                   seconds=app_config['scheduler']['period_sec'])
     sched.start()
