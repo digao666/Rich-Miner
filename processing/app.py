@@ -79,7 +79,7 @@ def populate_stats():
         total_core_temp = 0
         for item in temperature_response_data:
             total_shell_temp = total_shell_temp + item['temperature']['shell_temperature']
-            total_core_temp = total_shell_temp + item['temperature']['shell_temperature']
+            total_core_temp = total_core_temp + item['temperature']['core_temperature']
             # logger.debug(f'Temperature event {item["trace_id"]} processed')
         if len(temperature_response_data) != 0:
             avg_shell_temp = round(total_shell_temp / len(temperature_response_data), 2)
@@ -89,7 +89,7 @@ def populate_stats():
         if len(temperature_response_data) != 0:
             avg_core_temp = round(total_shell_temp / len(temperature_response_data), 2)
         else:
-            avg_core_temp = round(total_core_temp / len(temperature_response_data), 2)
+            avg_core_temp = 0
         new_stats['avg_shell_temp'] = avg_shell_temp
         new_stats['avg_core_temp'] = avg_core_temp
 
@@ -109,7 +109,10 @@ def populate_stats():
         for item in fan_speed_response_data:
             total_fan_speed = total_fan_speed + item['fan_speed']['fan_speed']
             # logger.debug(f'Fan speed event {item["trace_id"]} processed')
-        avg_fan_speed = round(total_fan_speed / len(fan_speed_response_data), 2)
+        if len(fan_speed_response_data) != 0:
+            avg_fan_speed = round(total_fan_speed / len(fan_speed_response_data), 2)
+        else:
+            avg_fan_speed = 0
         new_stats['avg_fan_speed'] = avg_fan_speed
     
     add_stats = Stats(new_stats["num_core_temp"], new_stats["num_shell_temp"], new_stats["avg_shell_temp"],
