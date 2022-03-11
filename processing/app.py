@@ -1,14 +1,12 @@
 import connexion
 import datetime
-import logging
 import logging.config
 import requests
 import yaml
 from apscheduler.schedulers.background import BackgroundScheduler
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from flask_cors import CORS, cross_origin
-
+from flask_cors import CORS
 from base import Base
 from stats import Stats
 
