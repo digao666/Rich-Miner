@@ -142,14 +142,9 @@ def get_stats():
     logger.info("Get Stats request done")
     return stats, 200
 
-def wrapper(fn):
-    print("Inside wrapper")
-    fn()
-    print("After wrapper")
-
 def init_scheduler():
     sched = BackgroundScheduler(daemon=True)
-    sched.add_job(wrapper(populate_stats),
+    sched.add_job(populate_stat),
                   'interval',
                   seconds=app_config['scheduler']['period_sec'])
     sched.start()
