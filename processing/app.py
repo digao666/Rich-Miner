@@ -113,8 +113,7 @@ def populate_stats():
     session.commit()
     session.close()
 
-    logger.debug(
-        f'The new processed statistics is {new_stats}')
+    logger.debug(f'The new processed statistics is {new_stats}')
     logger.info("Periodic processing Ends")
     return
 
