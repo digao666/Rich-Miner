@@ -4,4 +4,5 @@ datastore:
 scheduler:
   period_sec: 5
 eventstore:
-  url: http://127.0.0.1:8090
+#  url: http://127.0.0.1:8090
+  url: https://digao3855.westus3.cloudapp.azure.com:8090

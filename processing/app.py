@@ -28,7 +28,7 @@ def populate_stats():
     """ Periodically update stats """
     logger.info("Start Periodic processing")
     session = DB_SESSION()
-    stats = session.query(Stats).order_by(Stats.id.desc()).first()
+    stats = session.query(Stats).order_by(Stats.last_updated.desc())
     if not stats:
         stats = {
             "id": 0,
@@ -40,9 +40,9 @@ def populate_stats():
             "avg_fan_speed": 0,
             "last_updated": datetime.datetime.now()
         }
-
-    if not isinstance(stats, dict):
-        stats = stats.to_dict()
+    #
+    # if not isinstance(stats, dict):
+    #     stats = stats.to_dict()
 
     new_stats = {
         "num_core_temp": 0,
@@ -128,12 +128,12 @@ def get_stats():
     """ Gets the temperature and fan speed events stats  """
     session = DB_SESSION()
     logger.info("Start Get Stats request")
-    stats = session.query(Stats).order_by(Stats.id.desc()).first()
+    stats = session.query(Stats).order_by(Stats.last_updated.desc())
+    session.close()
     if not stats:
         logger.debug(f'No latest statistics found')
         return "Statistics do not exist", 404
     stats = stats.to_dict()
-    session.close()
     logger.debug(f'The latest statistics is {stats}')
     logger.info("Get Stats request done")
     return stats, 200
