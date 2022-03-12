@@ -43,9 +43,11 @@ def populate_stats():
     """ Periodically update stats """
     logger.info("Start Periodic processing")
     session = DB_SESSION()
-    reading = session.query(Stats).order_by(Stats.last_updated.desc()).first()
-    if not reading:
-        result = {
+    readings = session.query(Stats).order_by(Stats.last_updated.desc()).all()
+    results = []
+    # if readings not exist
+    if not readings:
+        results = [{
             "num_core_temp": 0,
             "num_shell_temp": 0,
             "avg_shell_temp": 0,
@@ -53,9 +55,12 @@ def populate_stats():
             "num_fan_speed": 0,
             "avg_fan_speed": 0,
             "last_updated": datetime.datetime.now()
-        }
-    result = reading.to_dict()
-    timestamp = result['last_updated'].strftime("%Y-%m-%dT%H:%M:%SZ")
+        }]
+
+    for reading in readings:
+        results.append(reading.to_dict())
+
+    timestamp = results[0]['last_updated']
     params = {'timestamp': timestamp}
 
     # Temperature
@@ -69,8 +74,8 @@ def populate_stats():
         logger.info(
             f"Total number of new temperatures is: {len(temperature_response_data)}")
 
-        new_stats['num_core_temp'] = len(temperature_response_data)
-        new_stats['num_shell_temp'] = len(temperature_response_data)
+        results[0]['num_core_temp'] = len(temperature_response_data)
+        results[0]['num_shell_temp'] = len(temperature_response_data)
 
         total_shell_temp = 0
         total_core_temp = 0
@@ -87,8 +92,8 @@ def populate_stats():
             avg_core_temp = round(total_shell_temp / len(temperature_response_data), 2)
         else:
             avg_core_temp = 0
-        new_stats['avg_shell_temp'] = avg_shell_temp
-        new_stats['avg_core_temp'] = avg_core_temp
+        results[0]['avg_shell_temp'] = avg_shell_temp
+        results[0]['avg_core_temp'] = avg_core_temp
 
     # fan speed
     get_fan_speed = f'{mysql_db_url}/status/fanspeed?timestamp={timestamp}'
@@ -100,7 +105,7 @@ def populate_stats():
         fan_speed_response_data = fan_speed_response.json()
         logger.info(
             f"Total number of new fan speed record is: {len(fan_speed_response_data)}")
-        new_stats['num_fan_speed'] = len(fan_speed_response_data)
+        results[0]['num_fan_speed'] = len(fan_speed_response_data)
 
         total_fan_speed = 0
         for item in fan_speed_response_data:
@@ -110,17 +115,17 @@ def populate_stats():
             avg_fan_speed = round(total_fan_speed / len(fan_speed_response_data), 2)
         else:
             avg_fan_speed = 0
-        new_stats['avg_fan_speed'] = avg_fan_speed
+        results[0]['avg_fan_speed'] = avg_fan_speed
 
-    add_stats = Stats(new_stats["num_core_temp"], new_stats["num_shell_temp"], new_stats["avg_shell_temp"],
-                      new_stats["avg_core_temp"], new_stats["num_fan_speed"], new_stats["avg_fan_speed"],
-                      new_stats["last_updated"]
+    add_stats = Stats(results[0]["num_core_temp"], results[0]["num_shell_temp"], results[0]["avg_shell_temp"],
+                      results[0]["avg_core_temp"], results[0]["num_fan_speed"], results[0]["avg_fan_speed"],
+                      results[0]["last_updated"]
                       )
     session.add(add_stats)
     session.commit()
     session.close()
 
-    logger.debug(f'The new processed statistics is {new_stats}')
+    logger.debug(f'The new processed statistics is {results[0]}')
     logger.info("Periodic processing Ends")
     return
 
