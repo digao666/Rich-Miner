@@ -54,13 +54,13 @@ def populate_stats():
             "avg_core_temp": 0,
             "num_fan_speed": 0,
             "avg_fan_speed": 0,
-            "last_updated": datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
+            "last_updated": datetime.datetime.now()
         }]
 
     for reading in readings:
         results.append(reading.to_dict())
 
-    timestamp = results[0]['last_updated']
+    timestamp = results[0]['last_updated'].strftime("%Y-%m-%dT%H:%M:%S")
     logger.info(timestamp)
     logger.info(type(results[0]['last_updated']))
 
