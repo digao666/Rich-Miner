@@ -1,8 +1,8 @@
 import connexion
-from datetime import datetime
 import logging.config
 import requests
 import yaml
+import datetime
 from apscheduler.schedulers.background import BackgroundScheduler
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
