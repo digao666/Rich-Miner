@@ -99,7 +99,7 @@ def populate_stats():
         results[0]['avg_core_temp'] = avg_core_temp
 
     # fan speed
-    get_fan_speed = f'{mysql_db_url}/status/fanspeed?timestamp={timestamp}'
+    get_fan_speed = f'{mysql_db_url}/status/fanspeed'
     fan_speed_response = requests.get(get_fan_speed, params=params)
 
     if fan_speed_response.status_code != 200:
