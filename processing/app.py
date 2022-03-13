@@ -12,7 +12,6 @@ from stats import Stats
 
 with open('app_conf.yml', 'r') as f:
     app_config = yaml.safe_load(f.read())
-mysql_db_url = app_config['eventstore']['url']
 
 with open('log_conf.yml', 'r') as f:
     log_config = yaml.safe_load(f.read())
@@ -68,12 +67,14 @@ def populate_stats(dictionary=None):
         "last_updated": datetime.datetime.now()
     }
 
-    timestamp = new_stats['last_updated'].strftime("%Y-%m-%dT%H:%M:%SZ")
-    params = {'timestamp': timestamp}
+    last_updated = new_stats['last_updated'].strftime("%Y-%m-%dT%H:%M:%SZ")
+    current_timestamp = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
 
     # Temperature
-    get_temperature = f'{mysql_db_url}/status/temperature'
-    temperature_response = requests.get(get_temperature, params=params)
+    temperature_response = requests.get(app_config["eventstore"]["url"] +
+                                        "/status/temperature?start_timestamp=" +
+                                        f"{last_updated}" + "&end_timestamp=" +
+                                        f"{current_timestamp}")
 
     if temperature_response.status_code != 200:
         logger.error('get_temperature - Invalid request')
@@ -95,8 +96,10 @@ def populate_stats(dictionary=None):
         new_stats['max_core_temp'] = max_core_temp
 
     # fan speed
-    get_fan_speed = f'{mysql_db_url}/status/fanspeed'
-    fan_speed_response = requests.get(get_fan_speed, params=params)
+    fan_speed_response = requests.get(app_config["eventstore"]["url"] +
+                                      "/status/fanspeed?start_timestamp=" +
+                                      f"{last_updated}" + "&end_timestamp=" +
+                                      f"{current_timestamp}")
 
     if fan_speed_response.status_code != 200:
         logger.error('get_fan_speed - Invalid request')
@@ -113,14 +116,14 @@ def populate_stats(dictionary=None):
         new_stats['max_fan_speed'] = max_fan_speed
 
     add_stats = Stats(
-                    new_stats["num_shell_temp"],
-                    new_stats["num_core_temp"],
-                    new_stats["num_fan_speed"],
-                    new_stats["max_fan_speed"],
-                    new_stats["max_shell_temp"],
-                    new_stats["max_core_temp"],
-                    new_stats["last_updated"]
-                    )
+        new_stats["num_shell_temp"],
+        new_stats["num_core_temp"],
+        new_stats["num_fan_speed"],
+        new_stats["max_fan_speed"],
+        new_stats["max_shell_temp"],
+        new_stats["max_core_temp"],
+        new_stats["last_updated"]
+    )
     session.add(add_stats)
     session.commit()
     session.close()

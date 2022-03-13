@@ -3,7 +3,6 @@ import datetime
 import logging.config
 import yaml
 import json
-from connexion import NoContent
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from pykafka.common import OffsetType
@@ -12,6 +11,8 @@ from threading import Thread
 from base import Base
 from fan_speed import FanSpeed
 from temperature import Temperature
+from sqlalchemy import and_
+import time
 
 with open('app_conf.yml', 'r') as f:
     app_config = yaml.safe_load(f.read())
@@ -34,39 +35,56 @@ Base.metadata.bind = DB_ENGINE
 DB_SESSION = sessionmaker(bind=DB_ENGINE)
 
 
-def get_temperature(timestamp):
+def get_temperature(start_timestamp, end_timestamp):
     """ Gets new temperature after the timestamp """
     session = DB_SESSION()
-    timestamp_datetime = datetime.datetime.strptime(timestamp, "%Y-%m-%dT%H:%M:%SZ")
-    readings = session.query(Temperature).filter(Temperature.date_created >= timestamp_datetime)
+    start_timestamp_datetime = datetime.datetime.strptime(start_timestamp, "%Y-%m-%dT%H:%M:%S")
+    end_timestamp_datetime = datetime.datetime.strptime(end_timestamp, "%Y-%m-%dT%H:%M:%S")
+    readings = session.query(Temperature).filter(
+        and_(Temperature.date_created >= start_timestamp_datetime,
+             Temperature.date_created < end_timestamp_datetime))
     results_list = []
     for reading in readings:
         results_list.append(reading.to_dict())
     session.close()
-    logger.info("Query for Temperature readings after %s returns %d results" %
-                (timestamp, len(results_list)))
+    logger.info("Query for Temperature readings between %s and %s returns %d results" %
+                (start_timestamp, end_timestamp, len(results_list)))
     return results_list, 200
 
 
-def get_fan_speed(timestamp):
+def get_fan_speed(start_timestamp, end_timestamp):
     """ Gets new fan speed after the timestamp """
     session = DB_SESSION()
-    timestamp_datetime = datetime.datetime.strptime(timestamp, "%Y-%m-%dT%H:%M:%SZ")
-    readings = session.query(FanSpeed).filter(FanSpeed.date_created >= timestamp_datetime)
+    start_timestamp_datetime = datetime.datetime.strptime(start_timestamp, "%Y-%m-%dT%H:%M:%SZ")
+    end_timestamp_datetime = datetime.datetime.strptime(end_timestamp, "%Y-%m-%dT%H:%M:%SZ")
+    readings = session.query(FanSpeed).filter(
+        and_(FanSpeed.date_created >= start_timestamp_datetime,
+             FanSpeed.date_created < end_timestamp_datetime))
     results_list = []
     for reading in readings:
         results_list.append(reading.to_dict())
     session.close()
-    logger.info("Query for fan speed readings after %s returns %d results" %
-                (timestamp, len(results_list)))
+    logger.info("Query for fan speed readings between %s and %s returns %d results" %
+                (start_timestamp, end_timestamp, len(results_list)))
     return results_list, 200
 
 
 def process_messages():
     """ Process event messages """
     host_name = "%s:%d" % (app_config["events"]["hostname"], app_config["events"]["port"])
-    client = KafkaClient(hosts=host_name)
-    topic = client.topics[str.encode(app_config["events"]["topic"])]
+    max_retry = app_config["events"]["retry"]
+    retry = 0
+    while retry < max_retry:
+        logger.info(f"Try to connect Kafka Server, this is number {retry} try")
+        try:
+            client = KafkaClient(hosts=host_name)
+            topic = client.topics[str.encode(app_config["events"]["topic"])]
+
+        except:
+            logger.error(f"Failed to connect to Kafka, this is number {retry} try")
+            time.sleep(app_config["events"]["sleep"])
+            retry += 1
+
     consumer = topic.get_simple_consumer(consumer_group=b'event_group', reset_offset_on_start=False,
                                          auto_offset_reset=OffsetType.LATEST)
     for msg in consumer:
@@ -108,4 +126,3 @@ if __name__ == "__main__":
     t1.daemon = True
     t1.start()
     app.run(port=8090, debug=True)
-
