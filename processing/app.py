@@ -46,7 +46,6 @@ def populate_stats(dictionary=None):
     stats = session.query(Stats).order_by(Stats.last_updated.desc()).first()
     if not stats:
         stats = {
-            "id": 0,
             "num_shell_temp": 0,
             "num_core_temp": 0,
             "num_fan_speed": 0,
