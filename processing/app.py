@@ -122,7 +122,7 @@ def populate_stats():
 
     add_stats = Stats(results[0]["num_core_temp"], results[0]["num_shell_temp"], results[0]["avg_shell_temp"],
                       results[0]["avg_core_temp"], results[0]["num_fan_speed"], results[0]["avg_fan_speed"],
-                      datetime.datetime.strptime(results[0]["last_updated"], "%Y-%m-%dT%H:%M:%S"))
+                      datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ"))
     session.add(add_stats)
     session.commit()
     session.close()
