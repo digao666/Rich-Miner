@@ -54,13 +54,13 @@ def populate_stats():
             "avg_core_temp": 0,
             "num_fan_speed": 0,
             "avg_fan_speed": 0,
-            "last_updated": datetime.datetime.now()
+            "last_updated": datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
         }]
 
     for reading in readings:
         results.append(reading.to_dict())
 
-    timestamp = results[0]['last_updated'].strftime("%Y-%m-%dT%H:%M:%S")
+    timestamp = results[0]['last_updated']
     logger.info(timestamp)
     logger.info(type(results[0]['last_updated']))
 
@@ -122,8 +122,7 @@ def populate_stats():
 
     add_stats = Stats(results[0]["num_core_temp"], results[0]["num_shell_temp"], results[0]["avg_shell_temp"],
                       results[0]["avg_core_temp"], results[0]["num_fan_speed"], results[0]["avg_fan_speed"],
-                      results[0]["last_updated"]
-                      )
+                      datetime.datetime.strptime(results[0]["last_updated"], "%Y-%m-%dT%H:%M:%S"))
     session.add(add_stats)
     session.commit()
     session.close()
