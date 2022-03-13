@@ -94,7 +94,7 @@ def populate_stats(dictionary=None):
         for item in temperature_response_data:
             max_shell_temp = max(max_shell_temp, item['temperature']['shell_temperature'])
             max_core_temp = max(max_core_temp, item['temperature']['core_temperature'])
-            logger.debug(f'Temperature event {item["trace_id"]} processed')
+            # logger.debug(f'Temperature event {item["trace_id"]} processed')
         logger.debug(f'loop over')
 
         new_stats['max_shell_temp'] = max_shell_temp
@@ -118,7 +118,7 @@ def populate_stats(dictionary=None):
         max_fan_speed = 0
         for item in fan_speed_response_data:
             max_fan_speed = max(max_fan_speed, item['fan_speed']['fan_speed'])
-            logger.debug(f'Fan speed event {item["trace_id"]} processed')
+            # logger.debug(f'Fan speed event {item["trace_id"]} processed')
         new_stats['max_fan_speed'] = max_fan_speed
 
     add_stats = Stats(new_stats["num_core_temp"], new_stats["num_shell_temp"], new_stats["max_shell_temp"],
