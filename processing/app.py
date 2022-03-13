@@ -54,17 +54,20 @@ def populate_stats():
             "avg_core_temp": 0,
             "num_fan_speed": 0,
             "avg_fan_speed": 0,
-            "last_updated": datetime.datetime.now()
+            "last_updated": datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
         }]
 
     for reading in readings:
         results.append(reading.to_dict())
 
     timestamp = results[0]['last_updated']
+    logger.info(timestamp)
+    logger.info(type(results[0]['last_updated']))
+
     params = {'timestamp': timestamp}
 
     # Temperature
-    get_temperature = f'{mysql_db_url}/status/temperature?timestamp={timestamp}'
+    get_temperature = f'{mysql_db_url}/status/temperature'
     temperature_response = requests.get(get_temperature, params=params)
 
     if temperature_response.status_code != 200:

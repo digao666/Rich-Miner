@@ -36,7 +36,7 @@ DB_SESSION = sessionmaker(bind=DB_ENGINE)
 def get_temperature(timestamp):
     """ Gets new temperature after the timestamp """
     session = DB_SESSION()
-    timestamp_datetime = datetime.datetime.strptime(timestamp, "%Y-%m-%dT%H:%M:%SZ")
+    timestamp_datetime = datetime.datetime.strptime(timestamp, "%Y-%m-%dT%H:%M:%S")
     readings = session.query(Temperature).filter(Temperature.date_created >= timestamp_datetime)
     results_list = []
     for reading in readings:
@@ -50,7 +50,7 @@ def get_temperature(timestamp):
 def get_fan_speed(timestamp):
     """ Gets new fan speed after the timestamp """
     session = DB_SESSION()
-    timestamp_datetime = datetime.datetime.strptime(timestamp, "%Y-%m-%dT%H:%M:%SZ")
+    timestamp_datetime = datetime.datetime.strptime(timestamp, "%Y-%m-%dT%H:%M:%")
     readings = session.query(FanSpeed).filter(FanSpeed.date_created >= timestamp_datetime)
     results_list = []
     for reading in readings:
