@@ -7,6 +7,7 @@ services:
     hostname: zookeeper
     volumes:
       - /home/azureuser/zookeeper/data:/opt/zookeeper-3.4.13/data
+
   kafka:
     image: wurstmeister/kafka
     command: [start-kafka.sh]
@@ -28,6 +29,7 @@ services:
       - /home/azureuser/kafka:/kafka/kafka-logs
     depends_on:
       - "zookeeper"
+
   db:
     image: mysql:5.7
     restart: always
@@ -48,12 +50,14 @@ services:
       # Where our data will be persisted
     volumes:
       - my-db:/var/lib/mysql
+
   receiver:
     build: ../receiver
     depends_on:
        - kafka
     ports:
       - "8080:8080"
+
   storage:
     build: ../storage
     ports:
@@ -63,17 +67,20 @@ services:
     depends_on:
         - db
         - kafka
+
   processing:
     build: ../processing
     network_mode: "host"
     depends_on:
       - storage
+
   audit_log:
     build: ../audit_log
     ports:
       - "8110:8110"
     depends_on:
       - kafka
+
   dashboard:
     build: ../dashboard-ui
     ports:
@@ -81,5 +88,6 @@ services:
     depends_on:
     - "processing"
     - "audit_log"
+
 volumes:
   my-db:
