@@ -69,10 +69,12 @@ def populate_stats(dictionary=None):
         "last_updated": datetime.datetime.now()
     }
 
-    timestamp = stats['last_updated'].strftime("%Y-%m-%dT%H:%M:%SZ")
+    timestamp = new_stats['last_updated'].strftime("%Y-%m-%dT%H:%M:%SZ")
+    timestamp3 = new_stats['last_updated']
     timestamp2 = stats['last_updated']
     print(timestamp)
     print(timestamp2)
+    print(timestamp3)
     params = {'timestamp': timestamp}
 
     # Temperature
