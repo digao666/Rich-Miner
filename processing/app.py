@@ -72,8 +72,9 @@ def populate_stats(dictionary=None):
     timestamp = new_stats['last_updated'].strftime("%Y-%m-%dT%H:%M:%SZ")
 
     params = {'timestamp': timestamp}
+
     # Temperature
-    get_temperature = f'{mysql_db_url}/status/temperature'  # ?timestamp={timestamp}
+    get_temperature = f'{mysql_db_url}/status/temperature'
     temperature_response = requests.get(get_temperature, params=params)
 
     if temperature_response.status_code != 200:
@@ -82,22 +83,26 @@ def populate_stats(dictionary=None):
         temperature_response_data = temperature_response.json()
         logger.info(
             f"Total number of new temperatures is: {len(temperature_response_data)}")
-
         new_stats['num_core_temp'] = stats['num_core_temp'] + len(temperature_response_data)
+        logger.info(f"{new_stats['num_core_temp']}")
         new_stats['num_shell_temp'] = stats['num_shell_temp'] + len(temperature_response_data)
+        logger.info(f"{new_stats['num_shell_temp']}")
 
         max_shell_temp = 0
         max_core_temp = 0
+
+        logger.debug(f'loop start')
         for item in temperature_response_data:
             max_shell_temp = max(max_shell_temp, item['temperature']['shell_temperature'])
             max_core_temp = max(max_core_temp, item['temperature']['core_temperature'])
             logger.debug(f'Temperature event {item["trace_id"]} processed')
+        logger.debug(f'loop over')
 
         new_stats['max_shell_temp'] = max_shell_temp
         new_stats['max_core_temp'] = max_core_temp
 
     # fan speed
-    get_fan_speed = f'{mysql_db_url}/status/fanspeed'  # ?timestamp={timestamp}
+    get_fan_speed = f'{mysql_db_url}/status/fanspeed'
     fan_speed_response = requests.get(get_fan_speed, params=params)
 
     if fan_speed_response.status_code != 200:
@@ -110,9 +115,7 @@ def populate_stats(dictionary=None):
 
         max_fan_speed = 0
         for item in fan_speed_response_data:
-            print(item)
             max_fan_speed = max(max_fan_speed, item['fan_speed']['fan_speed'])
-            logger.info(max_fan_speed)
             logger.debug(f'Fan speed event {item["trace_id"]} processed')
         new_stats['max_fan_speed'] = max_fan_speed
     add_stats = Stats(new_stats["num_core_temp"], new_stats["num_shell_temp"], new_stats["max_shell_temp"],
