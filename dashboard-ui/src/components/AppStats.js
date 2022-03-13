@@ -34,23 +34,43 @@ export default function AppStats() {
                 <h1>Latest Stats</h1>
                 <table className={"StatsTable"}>
 					<tbody>
+					  <thead>
+                            <tr>
+                                <th>Temperature</th>
+                                <th>Value</th>
+                            </tr>
+						</thead>
 						<tr>
-							<th>Temperature</th>
-							<th>Fan Speed</th>
+							<td>Core Temperature count</td>
+                            <td>{stats['num_core_temp']}</td>
 						</tr>
 						<tr>
-							<td># Core Temperature: {stats['num_core_temp']}</td>
-                            <td># Shell Temperature: {stats['num_shell_temp']}</td>
-							<td># Fan Speed: {stats['num_fan_speed']}</td>
+							<td>Shell Temperature count</td>
+                            <td>{stats['num_shell_temp']}</td>
 						</tr>
 						<tr>
-							<td colspan="2">Average Shell Temperature: {stats['avg_shell_temp']}</td>
+							<td>Average Shell Temperature</td>
+							<td>{stats['avg_shell_temp']}</td>
 						</tr>
 						<tr>
-							<td colspan="2">Average Core Temperature: {stats['avg_core_temp']}</td>
+							<td>Average Core Temperature</td>
+							<td>{stats['avg_core_temp']}</td>
+						</tr>
+					</tbody>
+					<tbody>
+					  <thead>
+                            <tr>
+                                <th>Fan Speed</th>
+                                <th>Value</th>
+                            </tr>
+						</thead>
+						<tr>
+							<td>Fan Speed count</td>
+							<td>{stats['num_fan_speed']}</td>
 						</tr>
 						<tr>
-							<td colspan="2">Average Fan Speed: {stats['avg_fan_speed']}</td>
+							<td>Average Fan Speed</td>
+							<td>{stats['avg_fan_speed']}</td>
 						</tr>
 					</tbody>
                 </table>
