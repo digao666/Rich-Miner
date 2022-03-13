@@ -29,6 +29,28 @@ port = app_config['datastore']['port']
 hostname = app_config['datastore']['hostname']
 db = app_config['datastore']['db']
 
+# connect to kafka
+host_name = "%s:%d" % (app_config["events"]["hostname"], app_config["events"]["port"])
+max_retry = app_config["events"]["retry"]
+retry = 0
+while retry < max_retry:
+    logger.info(f"Try to connect Kafka Server, this is number {retry} try")
+    try:
+        client = KafkaClient(hosts=host_name)
+        logger.info(f" {client} ")
+
+        topic = client.topics[str.encode(app_config["events"]["topic"])]
+        logger.info(f" {topic} ")
+
+        consumer = topic.get_simple_consumer(consumer_group=b'event_group', reset_offset_on_start=False,
+                                             auto_offset_reset=OffsetType.LATEST)
+        logger.info(f" {consumer} ")
+
+    except:
+        logger.error(f"Failed to connect to Kafka, this is number {retry} try")
+        time.sleep(app_config["events"]["sleep"])
+        retry += 1
+
 DB_ENGINE = create_engine(f'mysql+pymysql://{user}:{password}@{hostname}:{port}/{db}')
 logger.info(f"Connecting to DB. Hostname:{hostname}, Port:{port}")
 Base.metadata.bind = DB_ENGINE
@@ -69,52 +91,53 @@ def get_fan_speed(start_timestamp, end_timestamp):
     return results_list, 200
 
 
-def process_messages():
+def process_messages(consumer):
     """ Process event messages """
-    host_name = "%s:%d" % (app_config["events"]["hostname"], app_config["events"]["port"])
-    max_retry = app_config["events"]["retry"]
-    retry = 0
-    while retry < max_retry:
-        logger.info(f"Try to connect Kafka Server, this is number {retry} try")
-        try:
-            client = KafkaClient(hosts=host_name)
-            topic = client.topics[str.encode(app_config["events"]["topic"])]
-            consumer = topic.get_simple_consumer(consumer_group=b'event_group', reset_offset_on_start=False,
-                                                 auto_offset_reset=OffsetType.LATEST)
-            for msg in consumer:
-                msg_str = msg.value.decode('utf-8')
-                msg = json.loads(msg_str)
-                logger.info("Message: %s" % msg)
-                payload = msg["payload"]
-                session = DB_SESSION()
-                data = {}
-                if msg["type"] == "temperature":
-                    data = Temperature(payload['trace_id'],
-                                       payload['date_created'],
-                                       payload['ming_rig_id'],
-                                       payload['ming_card_id'],
-                                       payload['timestamp'],
-                                       payload['temperature']['core_temperature'],
-                                       payload['temperature']['shell_temperature'])
+    # host_name = "%s:%d" % (app_config["events"]["hostname"], app_config["events"]["port"])
+    # max_retry = app_config["events"]["retry"]
+    # retry = 0
+    # while retry < max_retry:
+    #     logger.info(f"Try to connect Kafka Server, this is number {retry} try")
+    #     try:
+    #         client = KafkaClient(hosts=host_name)
+    #         topic = client.topics[str.encode(app_config["events"]["topic"])]
+    #         consumer = topic.get_simple_consumer(consumer_group=b'event_group', reset_offset_on_start=False,
+    #                                              auto_offset_reset=OffsetType.LATEST)
+    for msg in consumer:
+        msg_str = msg.value.decode('utf-8')
+        msg = json.loads(msg_str)
+        logger.info("Message: %s" % msg)
+        payload = msg["payload"]
 
-                elif msg["type"] == "fanspeed":
-                    data = FanSpeed(payload['trace_id'],
-                                    payload['date_created'],
-                                    payload['ming_rig_id'],
-                                    payload['ming_card_id'],
-                                    payload['timestamp'],
-                                    payload['fan_speed']['fan_speed'],
-                                    payload['fan_speed']['fan_size'])
-                session.add(data)
-                session.commit()
-                session.close()
-                logger.debug(f'Stored event {msg["type"]} request with a trace id of {payload["trace_id"]}')
-                consumer.commit_offsets()
+        session = DB_SESSION()
+        data = {}
+        if msg["type"] == "temperature":
+            data = Temperature(payload['trace_id'],
+                               payload['date_created'],
+                               payload['ming_rig_id'],
+                               payload['ming_card_id'],
+                               payload['timestamp'],
+                               payload['temperature']['core_temperature'],
+                               payload['temperature']['shell_temperature'])
 
-        except:
-            logger.error(f"Failed to connect to Kafka, this is number {retry} try")
-            time.sleep(app_config["events"]["sleep"])
-            retry += 1
+        elif msg["type"] == "fanspeed":
+            data = FanSpeed(payload['trace_id'],
+                            payload['date_created'],
+                            payload['ming_rig_id'],
+                            payload['ming_card_id'],
+                            payload['timestamp'],
+                            payload['fan_speed']['fan_speed'],
+                            payload['fan_speed']['fan_size'])
+        session.add(data)
+        session.commit()
+        session.close()
+        logger.debug(f'Stored event {msg["type"]} request with a trace id of {payload["trace_id"]}')
+        consumer.commit_offsets()
+
+        # except:
+        #     logger.error(f"Failed to connect to Kafka, this is number {retry} try")
+        #     time.sleep(app_config["events"]["sleep"])
+        #     retry += 1
 
 
 app = connexion.FlaskApp(__name__, specification_dir='')
