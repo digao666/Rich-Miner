@@ -43,7 +43,7 @@ def populate_stats(dictionary=None):
     """ Periodically update stats """
     logger.info("Start Periodic Processing")
     session = DB_SESSION()
-    stats = session.query(Stats).order_by(Stats.id.desc()).first()
+    stats = session.query(Stats).order_by(Stats.last_updated.desc()).first()
     if not stats:
         stats = {
             "id": 0,
