@@ -69,7 +69,7 @@ def populate_stats(dictionary=None):
         "last_updated": datetime.datetime.now()
     }
 
-    timestamp = new_stats['last_updated'].strftime("%Y-%m-%dT%H:%M:%SZ")
+    timestamp = stats['last_updated'].strftime("%Y-%m-%dT%H:%M:%SZ")
 
     params = {'timestamp': timestamp}
 
@@ -83,9 +83,9 @@ def populate_stats(dictionary=None):
         temperature_response_data = temperature_response.json()
         logger.info(
             f"Total number of new temperatures is: {len(temperature_response_data)}")
-        new_stats['num_core_temp'] = stats['num_core_temp'] + len(temperature_response_data)
+        new_stats['num_core_temp'] = new_stats['num_core_temp'] + len(temperature_response_data)
         logger.info(f"{new_stats['num_core_temp']}")
-        new_stats['num_shell_temp'] = stats['num_shell_temp'] + len(temperature_response_data)
+        new_stats['num_shell_temp'] = new_stats['num_shell_temp'] + len(temperature_response_data)
         logger.info(f"{new_stats['num_shell_temp']}")
 
         max_shell_temp = 0
