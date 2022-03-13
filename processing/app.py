@@ -112,12 +112,16 @@ def populate_stats(dictionary=None):
         logger.info(
             f"Total number of new fan speed record is: {len(fan_speed_response_data)}")
         new_stats['num_fan_speed'] = stats['num_fan_speed'] + len(fan_speed_response_data)
+        logger.info(f"{new_stats['num_fan_speed']}")
+        logger.info(f"{stats['num_fan_speed']}")
+        logger.info(f"{len(fan_speed_response_data)}")
 
         max_fan_speed = 0
         for item in fan_speed_response_data:
             max_fan_speed = max(max_fan_speed, item['fan_speed']['fan_speed'])
             logger.debug(f'Fan speed event {item["trace_id"]} processed')
         new_stats['max_fan_speed'] = max_fan_speed
+
     add_stats = Stats(new_stats["num_core_temp"], new_stats["num_shell_temp"], new_stats["max_shell_temp"],
                       new_stats["max_core_temp"], new_stats["num_fan_speed"], new_stats["max_fan_speed"],
                       new_stats["last_updated"]
