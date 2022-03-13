@@ -8,3 +8,4 @@ events:
   port: 9092
   topic: events
   retry: 100
+  sleep: 10
