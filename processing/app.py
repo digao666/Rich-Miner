@@ -54,7 +54,7 @@ def populate_stats():
             "avg_core_temp": 0,
             "num_fan_speed": 0,
             "avg_fan_speed": 0,
-            "last_updated": datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
+            "last_updated": datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
         }]
 
     for reading in readings:

@@ -39,7 +39,7 @@
     &quot;core_temperature&quot;: ${randomcore},&#xd;
     &quot;shell_temperature&quot;: ${randomshell}&#xd;
   },&#xd;
-  &quot;timestamp&quot;: &quot;2016-08-29T09:12:33.001Z&quot;&#xd;
+  &quot;timestamp&quot;: &quot;2022-08-29T09:12:33Z&quot;&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
@@ -101,7 +101,7 @@
     &quot;fan_size&quot;: ${randomsize},&#xd;
     &quot;fan_speed&quot;: ${randomspeed}&#xd;
   },&#xd;
-  &quot;timestamp&quot;: &quot;2016-08-29T09:12:33.001Z&quot;&#xd;
+  &quot;timestamp&quot;: &quot;2022-08-29T09:12:33.001Z&quot;&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
