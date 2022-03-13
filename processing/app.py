@@ -28,7 +28,7 @@ def get_stats():
     """ Gets the temperature and fan speed events stats  """
     session = DB_SESSION()
     logger.info("Start Get Stats request")
-    stats = session.query(Stats).order_by(Stats.id.desc()).first()
+    stats = session.query(Stats).order_by(Stats.last_updated.desc()).first()
     if not stats:
         logger.debug(f'No latest statistics found')
         return "Statistics do not exist", 404
@@ -69,8 +69,7 @@ def populate_stats(dictionary=None):
         "last_updated": datetime.datetime.now()
     }
 
-    timestamp = stats['last_updated'].strftime("%Y-%m-%dT%H:%M:%SZ")
-
+    timestamp = stats['last_updated']
     params = {'timestamp': timestamp}
 
     # Temperature
