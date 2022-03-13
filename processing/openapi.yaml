@@ -33,28 +33,25 @@ components:
   schemas:
     ReadingStats:
       required:
-        - avg_core_temp
-        - avg_shell_temp
+        - max_core_temp
+        - max_shell_temp
         - num_core_temp
         - num_shell_temp
         - num_fan_speed
-        - avg_fan_speed
+        - max_fan_speed
       properties:
-        avg_fan_speed:
-          type: number
-          example: 20.00
-          format: double
+        max_fan_speed:
+          type: integer
+          example: 2000
         num_fan_speed:
           type: integer
           example: 2000
-        avg_core_temp:
-          type: number
-          example: 20.00
-          format: double
-        avg_shell_temp:
-          type: number
-          example: 20.00
-          format: double
+        max_core_temp:
+          type: integer
+          example: 70
+        max_shell_temp:
+          type: integer
+          example: 60
         num_core_temp:
           type: integer
           example: 60

@@ -21,14 +21,15 @@ with open('log_conf.yml', 'r') as f:
     logging.config.dictConfig(log_config)
 
 logger = logging.getLogger('storage')
+
 user = app_config['datastore']['user']
 password = app_config['datastore']['password']
 port = app_config['datastore']['port']
 hostname = app_config['datastore']['hostname']
 db = app_config['datastore']['db']
+
 DB_ENGINE = create_engine(f'mysql+pymysql://{user}:{password}@{hostname}:{port}/{db}')
 logger.info(f"Connecting to DB. Hostname:{hostname}, Port:{port}")
-
 Base.metadata.bind = DB_ENGINE
 DB_SESSION = sessionmaker(bind=DB_ENGINE)
 
@@ -36,7 +37,7 @@ DB_SESSION = sessionmaker(bind=DB_ENGINE)
 def get_temperature(timestamp):
     """ Gets new temperature after the timestamp """
     session = DB_SESSION()
-    timestamp_datetime = datetime.datetime.strptime(timestamp, "%Y-%m-%dT%H:%M:%S")
+    timestamp_datetime = datetime.datetime.strptime(timestamp, "%Y-%m-%dT%H:%M:%SZ")
     readings = session.query(Temperature).filter(Temperature.date_created >= timestamp_datetime)
     results_list = []
     for reading in readings:
@@ -50,7 +51,7 @@ def get_temperature(timestamp):
 def get_fan_speed(timestamp):
     """ Gets new fan speed after the timestamp """
     session = DB_SESSION()
-    timestamp_datetime = datetime.datetime.strptime(timestamp, "%Y-%m-%dT%H:%M:%S")
+    timestamp_datetime = datetime.datetime.strptime(timestamp, "%Y-%m-%dT%H:%M:%SZ")
     readings = session.query(FanSpeed).filter(FanSpeed.date_created >= timestamp_datetime)
     results_list = []
     for reading in readings:

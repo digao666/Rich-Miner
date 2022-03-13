@@ -49,12 +49,12 @@ export default function AppStats() {
                             <td>{stats['num_shell_temp']}</td>
 						</tr>
 						<tr>
-							<td>Average Shell Temperature</td>
-							<td>{stats['avg_shell_temp']}</td>
+							<td>Max Shell Temperature</td>
+							<td>{stats['max_shell_temp']}</td>
 						</tr>
 						<tr>
-							<td>Average Core Temperature</td>
-							<td>{stats['avg_core_temp']}</td>
+							<td>Max Core Temperature</td>
+							<td>{stats['max_core_temp']}</td>
 						</tr>
 					</tbody>
 					<tbody>
@@ -69,8 +69,8 @@ export default function AppStats() {
 							<td>{stats['num_fan_speed']}</td>
 						</tr>
 						<tr>
-							<td>Average Fan Speed</td>
-							<td>{stats['avg_fan_speed']}</td>
+							<td>Max Fan Speed</td>
+							<td>{stats['max_fan_speed']}</td>
 						</tr>
 					</tbody>
                 </table>
