@@ -47,12 +47,12 @@ def populate_stats(dictionary=None):
     if not stats:
         stats = {
             "id": 0,
-            "num_core_temp": 0,
             "num_shell_temp": 0,
-            "max_shell_temp": 0,
-            "max_core_temp": 0,
+            "num_core_temp": 0,
             "num_fan_speed": 0,
             "max_fan_speed": 0,
+            "max_shell_temp": 0,
+            "max_core_temp": 0,
             "last_updated": datetime.datetime.now()
         }
 
@@ -60,12 +60,12 @@ def populate_stats(dictionary=None):
         stats = stats.to_dict()
 
     new_stats = {
-        "num_core_temp": 0,
         "num_shell_temp": 0,
-        "max_shell_temp": 0,
-        "max_core_temp": 0,
+        "num_core_temp": 0,
         "num_fan_speed": 0,
         "max_fan_speed": 0,
+        "max_shell_temp": 0,
+        "max_core_temp": 0,
         "last_updated": datetime.datetime.now()
     }
 
@@ -121,10 +121,15 @@ def populate_stats(dictionary=None):
             # logger.debug(f'Fan speed event {item["trace_id"]} processed')
         new_stats['max_fan_speed'] = max_fan_speed
 
-    add_stats = Stats(new_stats["num_core_temp"], new_stats["num_shell_temp"], new_stats["max_shell_temp"],
-                      new_stats["max_core_temp"], new_stats["num_fan_speed"], new_stats["max_fan_speed"],
-                      new_stats["last_updated"]
-                      )
+    add_stats = Stats(
+                    new_stats["num_shell_temp"],
+                    new_stats["num_core_temp"],
+                    new_stats["num_fan_speed"],
+                    new_stats["max_fan_speed"],
+                    new_stats["max_shell_temp"],
+                    new_stats["max_core_temp"],
+                    new_stats["last_updated"]
+                    )
     session.add(add_stats)
     session.commit()
     session.close()
