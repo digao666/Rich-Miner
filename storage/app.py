@@ -79,43 +79,42 @@ def process_messages():
         try:
             client = KafkaClient(hosts=host_name)
             topic = client.topics[str.encode(app_config["events"]["topic"])]
+            consumer = topic.get_simple_consumer(consumer_group=b'event_group', reset_offset_on_start=False,
+                                                 auto_offset_reset=OffsetType.LATEST)
+            for msg in consumer:
+                msg_str = msg.value.decode('utf-8')
+                msg = json.loads(msg_str)
+                logger.info("Message: %s" % msg)
+                payload = msg["payload"]
+                session = DB_SESSION()
+                data = {}
+                if msg["type"] == "temperature":
+                    data = Temperature(payload['trace_id'],
+                                       payload['date_created'],
+                                       payload['ming_rig_id'],
+                                       payload['ming_card_id'],
+                                       payload['timestamp'],
+                                       payload['temperature']['core_temperature'],
+                                       payload['temperature']['shell_temperature'])
+
+                elif msg["type"] == "fanspeed":
+                    data = FanSpeed(payload['trace_id'],
+                                    payload['date_created'],
+                                    payload['ming_rig_id'],
+                                    payload['ming_card_id'],
+                                    payload['timestamp'],
+                                    payload['fan_speed']['fan_speed'],
+                                    payload['fan_speed']['fan_size'])
+                session.add(data)
+                session.commit()
+                session.close()
+                logger.debug(f'Stored event {msg["type"]} request with a trace id of {payload["trace_id"]}')
+                consumer.commit_offsets()
 
         except:
             logger.error(f"Failed to connect to Kafka, this is number {retry} try")
             time.sleep(app_config["events"]["sleep"])
             retry += 1
-
-    consumer = topic.get_simple_consumer(consumer_group=b'event_group', reset_offset_on_start=False,
-                                         auto_offset_reset=OffsetType.LATEST)
-    for msg in consumer:
-        msg_str = msg.value.decode('utf-8')
-        msg = json.loads(msg_str)
-        logger.info("Message: %s" % msg)
-        payload = msg["payload"]
-        session = DB_SESSION()
-        data = {}
-        if msg["type"] == "temperature":
-            data = Temperature(payload['trace_id'],
-                               payload['date_created'],
-                               payload['ming_rig_id'],
-                               payload['ming_card_id'],
-                               payload['timestamp'],
-                               payload['temperature']['core_temperature'],
-                               payload['temperature']['shell_temperature'])
-
-        elif msg["type"] == "fanspeed":
-            data = FanSpeed(payload['trace_id'],
-                            payload['date_created'],
-                            payload['ming_rig_id'],
-                            payload['ming_card_id'],
-                            payload['timestamp'],
-                            payload['fan_speed']['fan_speed'],
-                            payload['fan_speed']['fan_size'])
-        session.add(data)
-        session.commit()
-        session.close()
-        logger.debug(f'Stored event {msg["type"]} request with a trace id of {payload["trace_id"]}')
-        consumer.commit_offsets()
 
 
 app = connexion.FlaskApp(__name__, specification_dir='')
