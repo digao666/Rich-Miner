@@ -7,3 +7,4 @@ events:
   hostname: digao3855.westus3.cloudapp.azure.com
   port: 9092
   topic: events
+  retry: 100

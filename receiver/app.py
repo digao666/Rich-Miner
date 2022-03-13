@@ -17,12 +17,27 @@ with open('log_conf.yml', 'r') as f:
 
 logger = logging.getLogger('receiver')
 
-kafka_server = app_config['events']['hostname']
-kafka_port = app_config['events']['port']
-kafka_topic = app_config['events']['topic']
+host_name = "%s:%d" % (app_config["events"]["hostname"], app_config["events"]["port"])
+max_retry = app_config["events"]["retry"]
+retry = 0
+while retry < max_retry:
+    logger.info(f"Try to connect Kafka Server, this is number {retry} try")
+    try:
+        client = KafkaClient(hosts=host_name)
+        logger.info(f" {client} ")
+        topic = client.topics[str.encode(app_config["events"]["topic"])]
+        logger.info(f" {topic} ")
+        producer = topic.get_sync_producer()
+        logger.info(f" {producer} ")
+
+    except:
+        logger.error(f"Failed to connect to Kafka, this is number {retry} try")
+        time.sleep(app_config["events"]["sleep"])
+        retry += 1
 
 
-def report_temperature(body):
+
+def report_temperature(body, producer):
     """ Receives a hardware temperature """
     trace_id = uuid.uuid1()
     body['trace_id'] = f'{trace_id}'
@@ -30,10 +45,6 @@ def report_temperature(body):
 
     event_receipt = f'Received event report temperature request with a trace id of {trace_id}'
     logger.info(event_receipt)
-
-    client = KafkaClient(hosts=f'{kafka_server}:{kafka_port}')
-    topic = client.topics[str.encode(f'{kafka_topic}')]
-    producer = topic.get_sync_producer()
     msg = {"type": "temperature",
            "datetime":
                datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ"),
@@ -43,34 +54,26 @@ def report_temperature(body):
 
     return_receipt = f'Returned event report temperature response (Id: {trace_id}) with status 201'
     logger.info(return_receipt)
-
     return NoContent, 201
 
 
-def report_fan_speed(body):
+def report_fan_speed(body, producer):
     """ Receives a fan speed """
     trace_id = uuid.uuid1()
     body['trace_id'] = f'{trace_id}'
     body['date_created'] = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
-    print(body['date_created'])
-
     event_receipt = f'Received event report fan speed request with a trace id of {trace_id}'
     logger.info(event_receipt)
-
-    client = KafkaClient(hosts=f'{kafka_server}:{kafka_port}')
-    topic = client.topics[str.encode(f'{kafka_topic}')]
-    producer = topic.get_sync_producer()
     msg = {"type": "fanspeed",
-           "datetime":
-               datetime.datetime.now().strftime(
-                   "%Y-%m-%dT%H:%M:%SZ"),
-           "payload": body}
+       "datetime":
+           datetime.datetime.now().strftime(
+               "%Y-%m-%dT%H:%M:%SZ"),
+       "payload": body}
     msg_str = json.dumps(msg)
     producer.produce(msg_str.encode('utf-8'))
 
     return_receipt = f'Returned event report fan speed response (Id: {trace_id}) with status 201'
     logger.info(return_receipt)
-
     return NoContent, 201
 
 
