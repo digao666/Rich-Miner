@@ -6,8 +6,7 @@ export default function AppStats() {
     const [stats, setStats] = useState({});
     const [error, setError] = useState(null)
 
-	const getStats = () => {
-	
+	const getStats = useCallback(() => {
         fetch(`http://digao3855.westus3.cloudapp.azure.com:8100/stats`)
             .then(res => res.json())
             .then((result)=>{
@@ -18,7 +17,8 @@ export default function AppStats() {
                 setError(error)
                 setIsLoaded(true);
             })
-    }
+    },[])
+
     useEffect(() => {
 		const interval = setInterval(() => getStats(), 2000); // Update every 2 seconds
 		return() => clearInterval(interval);

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useCallback } from 'react'
 import '../App.css';
 
 export default function EndpointAudit(props) {
@@ -6,9 +6,11 @@ export default function EndpointAudit(props) {
     const [log, setLog] = useState(null);
     const [error, setError] = useState(null)
 	const rand_val = Math.floor(Math.random() * 100); // Get a random event from the event store
+
     const [index, setIndex] = useState(null);
     setIndex(rand_val);
-    const getAudit = () => {
+
+    const getAudit = useCallback(() => {
         fetch(`http://digao3855.westus3.cloudapp.azure.com:8110/${props.endpoint}?index=${rand_val}`)
             .then(res => res.json())
             .then((result)=>{
@@ -19,7 +21,7 @@ export default function EndpointAudit(props) {
                 setError(error)
                 setIsLoaded(true);
             })
-    }
+    },[])
 	useEffect(() => {
 		const interval = setInterval(() => getAudit(), 4000); // Update every 4 seconds
 		return() => clearInterval(interval);

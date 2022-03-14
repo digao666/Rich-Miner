@@ -83,9 +83,7 @@ def populate_stats(dictionary=None):
         logger.info(
             f"Total number of new temperatures is: {len(temperature_response_data)}")
         new_stats['num_core_temp'] = new_stats['num_core_temp'] + len(temperature_response_data)
-        logger.info(f"{new_stats['num_core_temp']}")
         new_stats['num_shell_temp'] = new_stats['num_shell_temp'] + len(temperature_response_data)
-        logger.info(f"{new_stats['num_shell_temp']}")
         max_shell_temp = 0
         max_core_temp = 0
         for item in temperature_response_data:
