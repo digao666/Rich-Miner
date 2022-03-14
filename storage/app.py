@@ -37,15 +37,10 @@ while retry < max_retry:
     logger.info(f"Try to connect Kafka Server, this is number {retry} try")
     try:
         client = KafkaClient(hosts=host_name)
-        logger.info(f" {client} ")
-
         topic = client.topics[str.encode(app_config["events"]["topic"])]
-        logger.info(f" {topic} ")
-
         consumer = topic.get_simple_consumer(consumer_group=b'event_group', reset_offset_on_start=False,
                                              auto_offset_reset=OffsetType.LATEST)
-        logger.info(f" {consumer} ")
-
+        break
     except:
         logger.error(f"Failed to connect to Kafka, this is number {retry} try")
         time.sleep(app_config["events"]["sleep"])
