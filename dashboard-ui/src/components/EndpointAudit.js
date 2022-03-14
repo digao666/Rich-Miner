@@ -19,9 +19,10 @@ export default function EndpointAudit(props) {
                 setIsLoaded(true);
             },(error) =>{
                 setError(error)
-                setIsLoaded(true);
-            })
-    },[])
+                setIsLoaded(true);}
+            )
+        },[getAudit])
+
 	useEffect(() => {
 		const interval = setInterval(() => getAudit(), 4000); // Update every 4 seconds
 		return() => clearInterval(interval);
