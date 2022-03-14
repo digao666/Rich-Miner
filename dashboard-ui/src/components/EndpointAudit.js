@@ -10,7 +10,7 @@ export default function EndpointAudit(props) {
     const [index, setIndex] = useState(null);
     setIndex(rand_val);
 
-    const getAudit = useCallback(() => {
+    const getAudit = () => {
         fetch(`http://digao3855.westus3.cloudapp.azure.com:8110/${props.endpoint}?index=${rand_val}`)
             .then(res => res.json())
             .then((result)=>{
@@ -21,7 +21,7 @@ export default function EndpointAudit(props) {
                 setError(error)
                 setIsLoaded(true);}
             )
-        },[getAudit])
+        }
 
 	useEffect(() => {
 		const interval = setInterval(() => getAudit(), 4000); // Update every 4 seconds
