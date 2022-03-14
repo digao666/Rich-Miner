@@ -11,23 +11,6 @@ tags:
 
 paths:
   /status/temperature:
-#    post:
-#      tags:
-#        - temperature
-#      summary: reports a mining rig temperature
-#      operationId: app.report_temperature
-#      description: passing the current temperature to monitoring dashboard
-#      responses:
-#        '201':
-#          description: item recorded
-#        '400':
-#          description: 'invalid input, object invalid'
-#      requestBody:
-#        content:
-#          application/json:
-#            schema:
-#              $ref: '#/components/schemas/TemperatureReading'
-#        description: Temperature to add
     get:
       tags:
         - temperature
@@ -35,9 +18,16 @@ paths:
       operationId: app.get_temperature
       description: get the current temperature added after a timestamp
       parameters:
-        - name: timestamp
+        - name: start_timestamp
           in: query
-          description: Limits the number of items on a page
+          description: Limits the start time of the query
+          schema:
+            type: string
+            format: date-time
+            example: 2016-08-29T09:12:33.001Z
+        - name: end_timestamp
+          in: query
+          description: Limits the end time of the query
           schema:
             type: string
             format: date-time
@@ -61,23 +51,6 @@ paths:
 
 
   /status/fanspeed:
-#    post:
-#      tags:
-#        - fan speed
-#      summary: reports a fan speed
-#      operationId: app.report_fan_speed
-#      description: passing the current fan speed to monitoring dashboard
-#      responses:
-#        '201':
-#          description: item created
-#        '400':
-#          description: 'invalid input, object invalid'
-#      requestBody:
-#        content:
-#          application/json:
-#            schema:
-#              $ref: '#/components/schemas/FanSpeedReading'
-#        description: Fan speed to add
     get:
       tags:
         - fanspeed
@@ -85,9 +58,16 @@ paths:
       operationId: app.get_fan_speed
       description: get the current fan speed added after a timestamp
       parameters:
-        - name: timestamp
+        - name: start_timestamp
           in: query
-          description: Limits the number of items on a page
+          description: Limits the start time of the query
+          schema:
+            type: string
+            format: date-time
+            example: 2016-08-29T09:12:33.001Z
+        - name: end_timestamp
+          in: query
+          description: Limits the end time of the query
           schema:
             type: string
             format: date-time
