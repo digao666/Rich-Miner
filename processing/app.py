@@ -67,7 +67,7 @@ def populate_stats(dictionary=None):
         "last_updated": datetime.datetime.now()
     }
 
-    last_updated = new_stats['last_updated'].strftime("%Y-%m-%dT%H:%M:%SZ")
+    last_updated = stats['last_updated'].strftime("%Y-%m-%dT%H:%M:%SZ")
     current_timestamp = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
 
     # Temperature
