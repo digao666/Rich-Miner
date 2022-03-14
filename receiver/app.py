@@ -33,7 +33,7 @@ while retry < max_retry:
         retry += 1
 
 
-def report_temperature(body, producer):
+def report_temperature(body):
     """ Receives a hardware temperature """
     trace_id = uuid.uuid1()
     body['trace_id'] = f'{trace_id}'
@@ -53,7 +53,7 @@ def report_temperature(body, producer):
     return NoContent, 201
 
 
-def report_fan_speed(body, producer):
+def report_fan_speed(body):
     """ Receives a fan speed """
     trace_id = uuid.uuid1()
     body['trace_id'] = f'{trace_id}'
