@@ -56,8 +56,8 @@ DB_SESSION = sessionmaker(bind=DB_ENGINE)
 def get_temperature(start_timestamp, end_timestamp):
     """ Gets new temperature after the timestamp """
     session = DB_SESSION()
-    start_timestamp_datetime = datetime.datetime.strptime(start_timestamp, "%Y-%m-%dT%H:%M:%S")
-    end_timestamp_datetime = datetime.datetime.strptime(end_timestamp, "%Y-%m-%dT%H:%M:%S")
+    start_timestamp_datetime = datetime.datetime.strptime(start_timestamp, "%Y-%m-%dT%H:%M:%SZ")
+    end_timestamp_datetime = datetime.datetime.strptime(end_timestamp, "%Y-%m-%dT%H:%M:%SZ")
     readings = session.query(Temperature).filter(
         and_(Temperature.date_created >= start_timestamp_datetime,
              Temperature.date_created < end_timestamp_datetime))
