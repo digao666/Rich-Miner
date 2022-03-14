@@ -26,7 +26,7 @@ while retry < max_retry:
         client = KafkaClient(hosts=host_name)
         topic = client.topics[str.encode(app_config["events"]["topic"])]
         producer = topic.get_sync_producer()
-        logger.info(f"Successfully connected to Kafaka Server")
+        logger.info(f"Successfully connected to Kafka Server")
 
         break
     except:
