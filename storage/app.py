@@ -86,18 +86,7 @@ def get_fan_speed(start_timestamp, end_timestamp):
     return results_list, 200
 
 
-def process_messages(consumer):
-    """ Process event messages """
-    # host_name = "%s:%d" % (app_config["events"]["hostname"], app_config["events"]["port"])
-    # max_retry = app_config["events"]["retry"]
-    # retry = 0
-    # while retry < max_retry:
-    #     logger.info(f"Try to connect Kafka Server, this is number {retry} try")
-    #     try:
-    #         client = KafkaClient(hosts=host_name)
-    #         topic = client.topics[str.encode(app_config["events"]["topic"])]
-    #         consumer = topic.get_simple_consumer(consumer_group=b'event_group', reset_offset_on_start=False,
-    #                                              auto_offset_reset=OffsetType.LATEST)
+def process_messages():
     for msg in consumer:
         msg_str = msg.value.decode('utf-8')
         msg = json.loads(msg_str)
@@ -128,11 +117,6 @@ def process_messages(consumer):
         session.close()
         logger.debug(f'Stored event {msg["type"]} request with a trace id of {payload["trace_id"]}')
         consumer.commit_offsets()
-
-        # except:
-        #     logger.error(f"Failed to connect to Kafka, this is number {retry} try")
-        #     time.sleep(app_config["events"]["sleep"])
-        #     retry += 1
 
 
 app = connexion.FlaskApp(__name__, specification_dir='')
