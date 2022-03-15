@@ -24,14 +24,14 @@ paths:
           schema:
             type: string
             format: date-time
-            example: 2016-08-29T09:12:33.001Z
+            example: 2016-08-29T09:12:33
         - name: end_timestamp
           in: query
           description: Limits the end time of the query
           schema:
             type: string
             format: date-time
-            example: 2016-08-29T09:12:33.001Z
+            example: 2016-08-29T09:12:33
       responses:
         '200':
           description: Successfully returned a list of temperature events
@@ -64,14 +64,14 @@ paths:
           schema:
             type: string
             format: date-time
-            example: 2016-08-29T09:12:33.001Z
+            example: 2016-08-29T09:12:33
         - name: end_timestamp
           in: query
           description: Limits the end time of the query
           schema:
             type: string
             format: date-time
-            example: 2016-08-29T09:12:33.001Z
+            example: 2016-08-29T09:12:33
       responses:
         '200':
           description: Successfully returned a list of fan speed
