@@ -98,10 +98,14 @@ def populate_stats(dictionary=None):
 
 
     # fan speed
+    # fan_speed_response = requests.get(app_config["eventstore"]["url"] +
+    #                                   "/status/fanspeed?start_timestamp=" +
+    #                                   f"{start_timestamp}" + "&end_timestamp=" +
+    #                                   f"{current_timestamp}")
     fan_speed_response = requests.get(app_config["eventstore"]["url"] +
                                       "/status/fanspeed?start_timestamp=" +
-                                      f"{start_timestamp}" + "&end_timestamp=" +
-                                      f"{current_timestamp}")
+                                      "2022-03-15T06:12:59" + "&end_timestamp=" +
+                                      "2022-03-15T06:13:01")
 
     if fan_speed_response.status_code != 200:
         logger.error('get_fan_speed - Invalid request')
