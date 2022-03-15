@@ -96,6 +96,7 @@ def populate_stats(dictionary=None):
         new_stats['max_shell_temp'] = max_shell_temp
         new_stats['max_core_temp'] = max_core_temp
 
+
     # fan speed
     fan_speed_response = requests.get(app_config["eventstore"]["url"] +
                                       "/status/fanspeed?start_timestamp=" +
@@ -125,8 +126,7 @@ def populate_stats(dictionary=None):
         new_stats["max_core_temp"],
         new_stats["last_updated"]
     )
-    if (len(temperature_response_data) != 0) or (len(fan_speed_response_data) != 0):
-        session.add(add_stats)
+    session.add(add_stats)
     session.commit()
     session.close()
 
