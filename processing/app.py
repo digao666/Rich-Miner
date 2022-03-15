@@ -70,7 +70,7 @@ def populate_stats(dictionary=None):
 
     start_timestamp = stats['last_updated']
     logger.debug(start_timestamp)
-    current_timestamp = datetime.datetime.now()
+    current_timestamp = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
     logger.debug(current_timestamp)
 
     # Temperature
