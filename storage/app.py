@@ -85,7 +85,7 @@ def get_fan_speed(start_timestamp, end_timestamp):
     readings2 = session.query(FanSpeed).filter(FanSpeed.date_created >= start_timestamp_datetime)
 
     results_list = []
-    for reading in readings2:
+    for reading in readings:
         results_list.append(reading.to_dict())
     session.close()
     logger.info("Query for fan speed readings between %s and %s returns %d results" %
