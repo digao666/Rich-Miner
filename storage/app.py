@@ -86,8 +86,8 @@ def get_fan_speed(start_timestamp, end_timestamp):
 
     logger.info('start query')
     readings3 = session.query(FanSpeed).filter(FanSpeed.date_created < end_timestamp_datetime)
-    if readings3.first() is not None:
-        print('something')
+    if readings3.first() is None:
+        print('Nothing')
     logger.info('end query')
 
     results_list = []
