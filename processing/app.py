@@ -64,7 +64,6 @@ def populate_stats(dictionary=None):
         "max_fan_speed": 0,
         "max_shell_temp": 0,
         "max_core_temp": 0,
-        "last_updated": datetime.datetime.now()
     }
 
     last_updated = stats['last_updated']
@@ -120,7 +119,7 @@ def populate_stats(dictionary=None):
         new_stats["max_fan_speed"],
         new_stats["max_shell_temp"],
         new_stats["max_core_temp"],
-        new_stats["last_updated"]
+        current_timestamp
     )
     session.add(add_stats)
     session.commit()
