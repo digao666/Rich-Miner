@@ -39,7 +39,7 @@ def report_temperature(body):
     """ Receives a hardware temperature """
     trace_id = uuid.uuid1()
     body['trace_id'] = f'{trace_id}'
-    body['date_created'] = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
+    body['date_created'] = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
 
     event_receipt = f'Received event report temperature request with a trace id of {trace_id}'
     logger.info(event_receipt)
@@ -59,7 +59,7 @@ def report_fan_speed(body):
     """ Receives a fan speed """
     trace_id = uuid.uuid1()
     body['trace_id'] = f'{trace_id}'
-    body['date_created'] = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
+    body['date_created'] = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
     event_receipt = f'Received event report fan speed request with a trace id of {trace_id}'
     logger.info(event_receipt)
     msg = {"type": "fanspeed",
