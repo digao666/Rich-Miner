@@ -85,10 +85,10 @@ def populate_stats(dictionary=None):
         temperature_response_data = temperature_response.json()
         logger.info(
             f"Total number of new temperatures is: {len(temperature_response_data)}")
-        new_stats['num_core_temp'] = new_stats['num_core_temp'] + len(temperature_response_data)
-        new_stats['num_shell_temp'] = new_stats['num_shell_temp'] + len(temperature_response_data)
-        max_shell_temp = 0
-        max_core_temp = 0
+        new_stats['num_core_temp'] = stats['num_core_temp'] + len(temperature_response_data)
+        new_stats['num_shell_temp'] = stats['num_shell_temp'] + len(temperature_response_data)
+        max_shell_temp = stats['max_shell_temp']
+        max_core_temp = stats['max_core_temp']
         for item in temperature_response_data:
             max_shell_temp = max(max_shell_temp, item['temperature']['shell_temperature'])
             max_core_temp = max(max_core_temp, item['temperature']['core_temperature'])
@@ -108,9 +108,9 @@ def populate_stats(dictionary=None):
         fan_speed_response_data = fan_speed_response.json()
         logger.info(
             f"Total number of new fan speed record is: {len(fan_speed_response_data)}")
-        new_stats['num_fan_speed'] = new_stats['num_fan_speed'] + len(fan_speed_response_data)
+        new_stats['num_fan_speed'] = stats['num_fan_speed'] + len(fan_speed_response_data)
 
-        max_fan_speed = 0
+        max_fan_speed = stats['max_fan_speed']
         for item in fan_speed_response_data:
             max_fan_speed = max(max_fan_speed, item['fan_speed']['fan_speed'])
             # logger.debug(f'Fan speed event {item["trace_id"]} processed')
