@@ -54,6 +54,7 @@ def populate_stats(dictionary=None):
             "last_updated": datetime.datetime.now()
         }
 
+    logger.info(stats)
     if not isinstance(stats, dict):
         stats = stats.to_dict()
 
@@ -68,7 +69,9 @@ def populate_stats(dictionary=None):
     }
 
     start_timestamp = stats['last_updated']
+    logger.debug(start_timestamp)
     current_timestamp = datetime.datetime.now()
+    logger.debug(current_timestamp)
 
     # Temperature
     temperature_response = requests.get(app_config["eventstore"]["url"] +

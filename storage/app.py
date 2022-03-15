@@ -75,6 +75,9 @@ def get_fan_speed(start_timestamp, end_timestamp):
     session = DB_SESSION()
     start_timestamp_datetime = datetime.datetime.strptime(start_timestamp, "%Y-%m-%dT%H:%M:%S")
     end_timestamp_datetime = datetime.datetime.strptime(end_timestamp, "%Y-%m-%dT%H:%M:%S")
+    logger.debug(start_timestamp_datetime)
+    logger.debug(end_timestamp_datetime)
+
     readings = session.query(FanSpeed).filter(
         and_(FanSpeed.date_created >= start_timestamp_datetime,
              FanSpeed.date_created < end_timestamp_datetime))
