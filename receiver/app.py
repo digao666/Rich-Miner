@@ -25,14 +25,13 @@ while retry < max_retry:
     try:
         client = KafkaClient(hosts=host_name)
         topic = client.topics[str.encode(app_config["events"]["topic"])]
-        producer = topic.get_sync_producer()
         logger.info(f"Successfully connected to Kafka Server")
-
         break
     except:
         logger.error(f"Failed to connect to Kafka, this is number {retry} try")
         time.sleep(app_config["events"]["sleep"])
         retry += 1
+        logger.info("retry in 10 second")
 
 
 def report_temperature(body):
@@ -48,6 +47,7 @@ def report_temperature(body):
                datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ"),
            "payload": body}
     msg_str = json.dumps(msg)
+    producer = topic.get_sync_producer()
     producer.produce(msg_str.encode('utf-8'))
 
     return_receipt = f'Returned event report temperature response (Id: {trace_id}) with status 201'
@@ -68,6 +68,7 @@ def report_fan_speed(body):
                    "%Y-%m-%dT%H:%M:%SZ"),
            "payload": body}
     msg_str = json.dumps(msg)
+    producer = topic.get_sync_producer()
     producer.produce(msg_str.encode('utf-8'))
 
     return_receipt = f'Returned event report fan speed response (Id: {trace_id}) with status 201'
