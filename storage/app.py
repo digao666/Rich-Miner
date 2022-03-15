@@ -89,9 +89,9 @@ def get_fan_speed(start_timestamp, end_timestamp):
     for reading in readings:
         results_list.append(reading.to_dict())
     for reading in readings2:
-        print("<= start_timestamp_datetime" + reading.to_dict()['last_updated'])
+        print("<= start_timestamp_datetime" + reading.to_dict()['date_created'])
     for reading in readings3:
-        print("> end_timestamp_datetime" + reading.to_dict()['last_updated'])
+        print("> end_timestamp_datetime" + reading.to_dict()['date_created'])
 
     session.close()
     logger.info("Query for fan speed readings between %s and %s returns %d results" %
