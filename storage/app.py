@@ -95,9 +95,9 @@ def get_fan_speed(start_timestamp, end_timestamp):
     #     print("Query >= 2022-03-15T06:12:59    result:" + reading.to_dict()['date_created'])
 
     logger.info('start result')
-    print(len(readings3))
-    for reading in readings3:
-        print("Query < current     result:" + reading.to_dict()['date_created'])
+    for reading2 in readings3:
+        print(len(reading2))
+        print("Query < current     result:" + reading2.to_dict()['date_created'])
     logger.info('end result')
 
     session.close()
