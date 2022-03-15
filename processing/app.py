@@ -64,15 +64,16 @@ def populate_stats(dictionary=None):
         "max_fan_speed": 0,
         "max_shell_temp": 0,
         "max_core_temp": 0,
+        "last_updated": datetime.datetime.now()
     }
 
-    last_updated = stats['last_updated']
-    current_timestamp = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
+    start_timestamp = stats['last_updated']
+    current_timestamp = datetime.datetime.now()
 
     # Temperature
     temperature_response = requests.get(app_config["eventstore"]["url"] +
                                         "/status/temperature?start_timestamp=" +
-                                        f"{last_updated}" + "&end_timestamp=" +
+                                        f"{start_timestamp}" + "&end_timestamp=" +
                                         f"{current_timestamp}")
 
     if temperature_response.status_code != 200:
@@ -119,7 +120,7 @@ def populate_stats(dictionary=None):
         new_stats["max_fan_speed"],
         new_stats["max_shell_temp"],
         new_stats["max_core_temp"],
-        datetime.datetime.now()
+        new_stats["last_updated"]
     )
     session.add(add_stats)
     session.commit()
