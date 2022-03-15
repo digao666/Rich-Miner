@@ -82,10 +82,8 @@ def get_fan_speed(start_timestamp, end_timestamp):
         and_(FanSpeed.date_created >= start_timestamp_datetime,
              FanSpeed.date_created < end_timestamp_datetime))
 
-    content = readings.fetchall()
-    for row in content:
-        print(row[0])
-    logger.info("raw query result" + type(readings))
+    for reading in readings:
+        logger.info("raw query result" + type(reading))
 
     results_list = []
     for reading in readings:
