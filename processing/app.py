@@ -96,7 +96,7 @@ def populate_stats(dictionary=None):
     # fan speed
     fan_speed_response = requests.get(app_config["eventstore"]["url"] +
                                       "/status/fanspeed?start_timestamp=" +
-                                      f"{last_updated}" + "&end_timestamp=" +
+                                      f"{start_timestamp}" + "&end_timestamp=" +
                                       f"{current_timestamp}")
 
     if fan_speed_response.status_code != 200:
