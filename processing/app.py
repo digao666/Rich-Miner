@@ -119,7 +119,7 @@ def populate_stats(dictionary=None):
         new_stats["max_fan_speed"],
         new_stats["max_shell_temp"],
         new_stats["max_core_temp"],
-        current_timestamp
+        datetime.datetime.now()
     )
     session.add(add_stats)
     session.commit()
