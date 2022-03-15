@@ -35,5 +35,5 @@ class Stats(Base):
         dict['max_fan_speed'] = self.max_fan_speed
         dict['max_shell_temp'] = self.max_shell_temp
         dict['max_core_temp'] = self.max_core_temp
-        dict['last_updated'] = self.last_updated.strftime("%Y-%m-%dT%H:%M:%SZ")
+        dict['last_updated'] = self.last_updated.strftime("%Y-%m-%dT%H:%M:%S")
         return dict
