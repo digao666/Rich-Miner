@@ -56,11 +56,9 @@ DB_SESSION = sessionmaker(bind=DB_ENGINE)
 def get_temperature(start_timestamp, end_timestamp):
     """ Gets new temperature after the timestamp """
     session = DB_SESSION()
-    start_timestamp_datetime = datetime.datetime.strptime(start_timestamp, "%Y-%m-%dT%H:%M:%S")
-    end_timestamp_datetime = datetime.datetime.strptime(end_timestamp, "%Y-%m-%dT%H:%M:%S")
     readings = session.query(Temperature).filter(
-        and_(Temperature.date_created >= start_timestamp_datetime,
-             Temperature.date_created < end_timestamp_datetime))
+        and_(Temperature.date_created >= start_timestamp,
+             Temperature.date_created < end_timestamp))
     results_list = []
     for reading in readings:
         results_list.append(reading.to_dict())
@@ -73,49 +71,13 @@ def get_temperature(start_timestamp, end_timestamp):
 def get_fan_speed(start_timestamp, end_timestamp):
     """ Gets new fan speed after the timestamp """
     session = DB_SESSION()
-    start_timestamp_datetime = datetime.datetime.strptime(start_timestamp, "%Y-%m-%dT%H:%M:%S")
-    end_timestamp_datetime = datetime.datetime.strptime(end_timestamp, "%Y-%m-%dT%H:%M:%S")
-    logger.debug(start_timestamp_datetime)
-    logger.debug(end_timestamp_datetime)
-
     readings = session.query(FanSpeed).filter(
         and_(FanSpeed.date_created >= start_timestamp,
              FanSpeed.date_created < end_timestamp))
 
-    logger.info('start query2')
-    readings2 = session.query(FanSpeed).filter(FanSpeed.date_created > start_timestamp_datetime)
-    if readings2.first() is None:
-        print(FanSpeed.date_created)
-        print(start_timestamp_datetime)
-        print('Nothing')
-    else:
-        print(FanSpeed.date_created)
-        print(start_timestamp_datetime)
-        print(f'{readings2.first()}')
-    logger.info('end query2')
-
-    logger.info('start query3')
-    readings3 = session.query(FanSpeed).filter(FanSpeed.date_created < end_timestamp_datetime)
-    if readings3.first() is None:
-        print(FanSpeed.date_created)
-        print(end_timestamp_datetime)
-        print('Nothing')
-    else:
-        print(end_timestamp_datetime)
-        print(f'{readings3.first()}')
-    logger.info('end query3')
-
     results_list = []
     for reading in readings:
         results_list.append(reading.to_dict())
-    for reading in readings2:
-        print("Query >= 2022-03-15T20:20:00   result:" + reading.to_dict()['date_created'])
-
-    logger.info('start result')
-    for reading2 in readings3:
-        print(len(reading2))
-        print("Query < current     result:" + reading2.to_dict()['date_created'])
-    logger.info('end result')
 
     session.close()
     logger.info("Query for fan speed readings between %s and %s returns %d results" %

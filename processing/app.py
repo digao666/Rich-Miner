@@ -96,15 +96,10 @@ def populate_stats(dictionary=None):
         new_stats['max_shell_temp'] = max_shell_temp
         new_stats['max_core_temp'] = max_core_temp
 
-
     # fan speed
-    # fan_speed_response = requests.get(app_config["eventstore"]["url"] +
-    #                                   "/status/fanspeed?start_timestamp=" +
-    #                                   f"{start_timestamp}" + "&end_timestamp=" +
-    #                                   f"{current_timestamp}")
     fan_speed_response = requests.get(app_config["eventstore"]["url"] +
                                       "/status/fanspeed?start_timestamp=" +
-                                      "2022-03-15T20:20:00" + "&end_timestamp=" +
+                                      f"{start_timestamp}" + "&end_timestamp=" +
                                       f"{current_timestamp}")
 
     if fan_speed_response.status_code != 200:
