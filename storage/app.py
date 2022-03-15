@@ -79,11 +79,11 @@ def get_fan_speed(start_timestamp, end_timestamp):
     logger.debug(end_timestamp_datetime)
 
     readings = session.query(FanSpeed).filter(
-        and_(FanSpeed.date_created.to_dict() >= start_timestamp_datetime,
-             FanSpeed.date_created.to_dict() < end_timestamp_datetime))
+        and_(FanSpeed.date_created >= start_timestamp,
+             FanSpeed.date_created < end_timestamp))
 
     logger.info('start query2')
-    readings2 = session.query(FanSpeed).filter(FanSpeed.date_created.to_dict() > start_timestamp_datetime)
+    readings2 = session.query(FanSpeed).filter(FanSpeed.date_created > start_timestamp_datetime)
     if readings2.first() is None:
         print(FanSpeed.date_created)
         print(start_timestamp_datetime)
@@ -95,7 +95,7 @@ def get_fan_speed(start_timestamp, end_timestamp):
     logger.info('end query2')
 
     logger.info('start query3')
-    readings3 = session.query(FanSpeed).filter(FanSpeed.date_created.to_dict() < end_timestamp_datetime)
+    readings3 = session.query(FanSpeed).filter(FanSpeed.date_created < end_timestamp_datetime)
     if readings3.first() is None:
         print(FanSpeed.date_created)
         print(end_timestamp_datetime)
@@ -109,7 +109,7 @@ def get_fan_speed(start_timestamp, end_timestamp):
     for reading in readings:
         results_list.append(reading.to_dict())
     for reading in readings2:
-        print("Query >= 2022-03-15T20:20:00    result:" + reading.to_dict()['date_created'])
+        print("Query >= 2022-03-15T20:20:00   result:" + reading.to_dict()['date_created'])
 
     logger.info('start result')
     for reading2 in readings3:
