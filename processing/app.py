@@ -125,7 +125,8 @@ def populate_stats(dictionary=None):
         new_stats["max_core_temp"],
         new_stats["last_updated"]
     )
-    session.add(add_stats)
+    if (len(temperature_response_data) != 0) or (len(fan_speed_response_data) != 0):
+        session.add(add_stats)
     session.commit()
     session.close()
 
