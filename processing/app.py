@@ -36,7 +36,9 @@ def check_data():
     if path.exists(app_config["datastore"]["filename"]):
         logger.info("data.sqlite is exist")
     else:
+        logger.info("data.sqlite is not exist")
         create_database()
+        logger.info("create data.sqlite")
 
 DB_ENGINE = create_engine("sqlite:///%s" % app_config["datastore"]["filename"])
 Base.metadata.bind = DB_ENGINE
