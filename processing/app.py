@@ -33,7 +33,7 @@ logger.info("App Conf File: %s" % app_conf_file)
 logger.info("Log Conf File: %s" % log_conf_file)
 
 def check_data():
-    if path.exists(app_config["datastore"]["filename"]):
+    if path.exists(f'{app_config["datastore"]["filename"]}'):
         logger.info("data.sqlite is exist")
     else:
         logger.info("data.sqlite is not exist")
