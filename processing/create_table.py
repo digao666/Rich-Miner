@@ -15,4 +15,5 @@ def create_database():
         last_updated VARCHAR(100) NOT NULL)
     ''')
     conn.commit()
-    conn.close() 
+    conn.close()
+    print("table is created")
