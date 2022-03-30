@@ -9,7 +9,7 @@ export default function EndpointAudit(props) {
     const [index, setIndex] = useState(null);
 
     const getAudit = () => {
-        fetch(`http://digao3855.westus3.cloudapp.azure.com:8110/${props.endpoint}?index=${rand_val}`)
+        fetch(`http://digao3855.westus3.cloudapp.azure.com/audit_log/${props.endpoint}?index=${rand_val}`)
             .then(res => res.json())
             .then((result)=>{
 				setIndex(rand_val);

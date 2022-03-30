@@ -6,7 +6,7 @@ export default function AppStats() {
     const [stats, setStats] = useState({});
     const [error, setError] = useState(null)
 	const getStats = () => {
-        fetch(`http://digao3855.westus3.cloudapp.azure.com:8100/stats`)
+        fetch(`http://digao3855.westus3.cloudapp.azure.com/processing/stats`)
             .then(res => res.json())
             .then((result)=>{
 				console.log("Received Stats")
