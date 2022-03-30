@@ -97,8 +97,17 @@ def get_fan_speed(start_timestamp, end_timestamp):
 
 
 def process_messages():
-    consumer = topic.get_simple_consumer(consumer_group=b'event_group', reset_offset_on_start=False,
-                                         auto_offset_reset=OffsetType.LATEST)
+    retry = 0
+    while retry < max_retry:
+        try:
+            consumer = topic.get_simple_consumer(consumer_group=b'event_group', reset_offset_on_start=False,
+                                            auto_offset_reset=OffsetType.LATEST)
+            break
+        except:
+            time.sleep(app_config["events"]["sleep"])
+            retry += 1
+            logger.info("retry in 10 second")
+    
     for msg in consumer:
         msg_str = msg.value.decode('utf-8')
         msg = json.loads(msg_str)
@@ -109,12 +118,12 @@ def process_messages():
         data = {}
         if msg["type"] == "temperature":
             data = Temperature(payload['trace_id'],
-                               payload['date_created'],
-                               payload['ming_rig_id'],
-                               payload['ming_card_id'],
-                               payload['timestamp'],
-                               payload['temperature']['core_temperature'],
-                               payload['temperature']['shell_temperature'])
+                            payload['date_created'],
+                            payload['ming_rig_id'],
+                            payload['ming_card_id'],
+                            payload['timestamp'],
+                            payload['temperature']['core_temperature'],
+                            payload['temperature']['shell_temperature'])
 
         elif msg["type"] == "fanspeed":
             data = FanSpeed(payload['trace_id'],
@@ -124,6 +133,8 @@ def process_messages():
                             payload['timestamp'],
                             payload['fan_speed']['fan_speed'],
                             payload['fan_speed']['fan_size'])
+
+
         session.add(data)
         session.commit()
         session.close()

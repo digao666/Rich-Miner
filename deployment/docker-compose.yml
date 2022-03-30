@@ -35,19 +35,13 @@ services:
     restart: always
     environment:
       MYSQL_DATABASE: 'events'
-      # So you don't have to use root, but you can if you like
       MYSQL_USER: 'user'
-      # You can use whatever password you like
       MYSQL_PASSWORD: 'password'
-      # Password for root access
       MYSQL_ROOT_PASSWORD: 'password'
     ports:
-      # <Port exposed> : < MySQL Port running inside container>
       - '3306:3306'
     expose:
-      # Opens port 3306 on the container
       - '3306'
-      # Where our data will be persisted
     volumes:
       - my-db:/var/lib/mysql
 
@@ -76,8 +70,6 @@ services:
       - "8090"
     networks:
       - "api.network"
-    # expose:
-    #   - 8090
     depends_on:
         - db
         - kafka
@@ -123,17 +115,14 @@ services:
 
   nginx:
     image: nginx:latest
-    # Connects the conf file of the container to the conf file in our folder
     volumes:
     - /home/azureuser/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
-    # It will start up the nginx only when all api containers have started
     depends_on:
     - "receiver"
     - "storage"
     - "processing"
     - "audit_log"
     - "dashboard-ui"
-    # Connects the port 80 of the nginx container to localhost:80 or localhost
     ports:
     - "80:80"
     networks:
