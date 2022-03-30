@@ -50,6 +50,8 @@ while retry < max_retry:
         client = KafkaClient(hosts=host_name)
         topic = client.topics[str.encode(app_config["events"]["topic"])]
         logger.info("Successfully connect to Kafka")
+        consumer = topic.get_simple_consumer(consumer_group=b'event_group', reset_offset_on_start=False,
+                                            auto_offset_reset=OffsetType.LATEST)
         break
     except:
         logger.error(f"Failed to connect to Kafka, this is number {retry} try")
@@ -97,16 +99,16 @@ def get_fan_speed(start_timestamp, end_timestamp):
 
 
 def process_messages():
-    retry = 0
-    while retry < max_retry:
-        try:
-            consumer = topic.get_simple_consumer(consumer_group=b'event_group', reset_offset_on_start=False,
-                                            auto_offset_reset=OffsetType.LATEST)
-            break
-        except:
-            time.sleep(app_config["events"]["sleep"])
-            retry += 1
-            logger.info("retry in 10 second")
+    # retry = 0
+    # while retry < max_retry:
+    #     try:
+    #         consumer = topic.get_simple_consumer(consumer_group=b'event_group', reset_offset_on_start=False,
+    #                                         auto_offset_reset=OffsetType.LATEST)
+    #         break
+    #     except:
+    #         time.sleep(app_config["events"]["sleep"])
+    #         retry += 1
+    #         logger.info("retry in 10 second")
     
     for msg in consumer:
         msg_str = msg.value.decode('utf-8')
