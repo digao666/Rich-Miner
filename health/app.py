@@ -51,7 +51,7 @@ Base.metadata.bind = DB_ENGINE
 DB_SESSION = sessionmaker(bind=DB_ENGINE)
 
 
-def health():
+def get_health():
     """ Gets service health """
     session = DB_SESSION()
     logger.info("Start Get health request")
