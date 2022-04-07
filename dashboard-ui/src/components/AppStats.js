@@ -33,7 +33,7 @@ export default function AppStats() {
                 <h1>Latest Stats</h1>
                 <table className={"StatsTable"}>
 					<tbody>
-					  <thead>
+					    <thead>
                             <tr>
                                 <th>Temperature</th>
                                 <th>Value</th>
@@ -56,8 +56,9 @@ export default function AppStats() {
 							<td>{stats['max_core_temp']}</td>
 						</tr>
 					</tbody>
+
 					<tbody>
-					  <thead>
+					    <thead>
                             <tr>
                                 <th>Fan Speed</th>
                                 <th>Value</th>
@@ -74,7 +75,6 @@ export default function AppStats() {
 					</tbody>
                 </table>
                 <h3>Last Updated: {stats['last_updated']}</h3>
-
             </div>
         )
     }

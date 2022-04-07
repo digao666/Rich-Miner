@@ -1,5 +1,5 @@
 from tokenize import String
-from sqlalchemy import Column, Integer, DateTime
+from sqlalchemy import Column, Integer, DateTime, String
 from base import Base
 
 
