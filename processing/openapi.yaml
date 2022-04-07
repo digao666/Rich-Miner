@@ -29,6 +29,18 @@ paths:
                 properties:
                   message:
                     type: string
+
+  /health:
+    get:
+      summary: gets service health status
+      operationId: app.get_health
+      description: gets service health status
+      responses:
+        '200':
+          description: Successfully returned service status
+        '404':
+          description: service down
+
 components:
   schemas:
     ReadingStats:

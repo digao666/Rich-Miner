@@ -32,6 +32,11 @@ logger = logging.getLogger('processing')
 logger.info("App Conf File: %s" % app_conf_file) 
 logger.info("Log Conf File: %s" % log_conf_file)
 
+
+def get_health():
+    return 200
+
+
 def check_data():
     file_exists = os.path.exists(f'{app_config["datastore"]["filename"]}')
     if file_exists:

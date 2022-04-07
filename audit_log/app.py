@@ -73,7 +73,7 @@ def get_fan_speed_reading(index):
 
 
 def get_health():
-    return {"message": "Not Found"}, 200
+    return 200
 
 
 app = connexion.FlaskApp(__name__, specification_dir='')
@@ -83,4 +83,6 @@ if "TARGET_ENV" not in os.environ or os.environ["TARGET_ENV"] != "test":
 app.add_api("openapi.yaml", base_path="/audit_log", strict_validation=True, validate_responses=True)
 
 if __name__ == "__main__":
+    get_health()
+
     app.run(port=8110)

@@ -47,6 +47,10 @@ while retry < max_retry:
         logger.info("retry in 10 second")
 
 
+def get_health():
+    return 200
+    
+
 def report_temperature(body):
     """ Receives a hardware temperature """
     trace_id = uuid.uuid1()

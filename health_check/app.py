@@ -8,11 +8,12 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from flask_cors import CORS
 from base import Base
-from stats import Stats
+from stats import Health
 import os
 import os.path
 from os import path
 from create_table import create_database
+import time
 
 if "TARGET_ENV" in os.environ and os.environ["TARGET_ENV"] == "test":
     print("In Test Environment")
@@ -22,6 +23,7 @@ else:
     print("In Dev Environment")
     app_conf_file = "app_conf.yml"
     log_conf_file = "log_conf.yml"
+
 with open(app_conf_file, 'r') as f:
     app_config = yaml.safe_load(f.read())
 # External Logging Configuration
@@ -32,32 +34,35 @@ logger = logging.getLogger('processing')
 logger.info("App Conf File: %s" % app_conf_file) 
 logger.info("Log Conf File: %s" % log_conf_file)
 
+
 def check_data():
     file_exists = os.path.exists(f'{app_config["datastore"]["filename"]}')
     if file_exists:
         logger.info(f'log path is {app_config["datastore"]["filename"]}')
-        logger.info("data.sqlite is exist")
+        logger.info("health.sqlite is exist")
     else:
-        logger.info("data.sqlite is not exist")
+        logger.info("health.sqlite is not exist")
         create_database()
-        logger.info("create data.sqlite")
+        logger.info("create health.sqlite")
+
 
 DB_ENGINE = create_engine("sqlite:///%s" % app_config["datastore"]["filename"])
 Base.metadata.bind = DB_ENGINE
 DB_SESSION = sessionmaker(bind=DB_ENGINE)
 
+
 def get_stats():
-    """ Gets the temperature and fan speed events stats  """
+    """ Gets service health stats  """
     session = DB_SESSION()
     logger.info("Start Get Stats request")
-    stats = session.query(Stats).order_by(Stats.last_updated.desc()).first()
+    stats = session.query(Health).order_by(Health.last_updated.desc()).first()
     if not stats:
         logger.debug(f'No latest statistics found')
         return "Statistics do not exist", 404
     stats = stats.to_dict()
     session.close()
     logger.debug(f'The latest statistics is {stats}')
-    logger.info("Get Stats request done")
+    logger.info("Get Health request done")
     return stats, 200
 
 
@@ -65,15 +70,13 @@ def populate_stats(dictionary=None):
     """ Periodically update stats """
     logger.info("Start Periodic Processing")
     session = DB_SESSION()
-    stats = session.query(Stats).order_by(Stats.last_updated.desc()).first()
+    stats = session.query(Health).order_by(Health.last_updated.desc()).first()
     if not stats:
         stats = {
-            "num_shell_temp": 0,
-            "num_core_temp": 0,
-            "num_fan_speed": 0,
-            "max_fan_speed": 0,
-            "max_shell_temp": 0,
-            "max_core_temp": 0,
+            "receiver": "Down",
+            "storage": "Down",
+            "processing": "Down",
+            "audit_log": "Down",
             "last_updated": datetime.datetime.now()
         }
 
@@ -158,6 +161,31 @@ def populate_stats(dictionary=None):
     return
 
 
+def health(service):
+    maxtime = app_config["response"]['period_sec']
+    health = requests.get(app_config["eventurl"][f"{service}"] +
+                                        "/health", timeout=maxtime)
+    if health.status_code != 200:
+        logger.error(f'{service} down')
+        return("Running")
+    else:
+        logger.info(f'{service} Running')
+        return("Down")
+
+
+def check_health():
+    result_dict = {}
+    for service in app_config["eventurl"]:
+        status = health(service)
+        result_dict[service] = status
+    result_dict['last_update'] = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
+    
+    session = DB_SESSION()
+    session.add(add_stats)
+    session.commit()
+    session.close()
+
+
 def init_scheduler():
     sched = BackgroundScheduler(daemon=True)
     sched.add_job(check_data, 'interval', seconds=app_config['scheduler']['period_sec'])
@@ -169,9 +197,8 @@ app = connexion.FlaskApp(__name__, specification_dir='')
 if "TARGET_ENV" not in os.environ or os.environ["TARGET_ENV"] != "test":
     CORS(app.app)
     app.app.config['CORS_HEADERS'] = 'Content-Type'
-app.add_api('openapi.yaml', base_path="/processing", strict_validation=True, validate_responses=True)
+app.add_api('openapi.yaml', base_path="/health", strict_validation=True, validate_responses=True)
 
 if __name__ == "__main__":
-    check_data()
     init_scheduler()
-    app.run(port=8100, use_reloader=False)
+    app.run(port=8120, use_reloader=False)

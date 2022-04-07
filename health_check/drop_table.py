@@ -1,9 +1,9 @@
 import sqlite3
 
-conn = sqlite3.connect('stats.sqlite')
+conn = sqlite3.connect('/data/health.sqlite')
 c = conn.cursor()
 c.execute('''
-    DROP TABLE stats
+    DROP TABLE health
 ''')
 conn.commit()
 conn.close()

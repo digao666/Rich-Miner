@@ -86,23 +86,9 @@ paths:
       responses:
         '200':
           description: Successfully returned service status
-          content:
-            application/json:
-              schema:
-                type: object
-                items:
-                  $ref: '#/components/schemas/FanSpeedReading'
-        '400':
-          description: Invalid request
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  message:
-                    type: string
         '404':
-          description: Not Found
+          description: service down
+
 components:
   schemas:
     TemperatureReading:

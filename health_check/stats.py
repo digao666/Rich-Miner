@@ -1,39 +1,34 @@
+from tokenize import String
 from sqlalchemy import Column, Integer, DateTime
 from base import Base
 
 
-class Stats(Base):
+class Health(Base):
     """ Processing Statistics """
-    __tablename__ = "stats"
+    __tablename__ = "health"
     id = Column(Integer, primary_key=True)
-    num_shell_temp = Column(Integer, nullable=False)
-    num_core_temp = Column(Integer, nullable=False)
-    num_fan_speed = Column(Integer, nullable=False)
-    max_fan_speed = Column(Integer, nullable=True)
-    max_shell_temp = Column(Integer, nullable=True)
-    max_core_temp = Column(Integer, nullable=True)
+    receiver = Column(String(250), nullable=False)
+    storage = Column(String(250), nullable=False)
+    processing = Column(String(250), nullable=False)
+    audit_log = Column(String(250), nullable=True)
     last_updated = Column(DateTime, nullable=False)
 
-    def __init__(self, num_shell_temp, num_core_temp,
-                 num_fan_speed, max_fan_speed, max_shell_temp, max_core_temp,
+    def __init__(self, receiver, storage,
+                 processing, audit_log,
                  last_updated):
         """ Initializes a processing statistics objet """
-        self.num_shell_temp = num_core_temp
-        self.num_core_temp = num_shell_temp
-        self.num_fan_speed = num_fan_speed
-        self.max_fan_speed = max_fan_speed
-        self.max_shell_temp = max_shell_temp
-        self.max_core_temp = max_core_temp
+        self.receiver = receiver
+        self.storage = storage
+        self.processing = processing
+        self.audit_log = audit_log
         self.last_updated = last_updated
 
     def to_dict(self):
         """ Dictionary Representation of a statistics """
         dict = {}
-        dict['num_shell_temp'] = self.num_shell_temp
-        dict['num_core_temp'] = self.num_core_temp
-        dict['num_fan_speed'] = self.num_fan_speed
-        dict['max_fan_speed'] = self.max_fan_speed
-        dict['max_shell_temp'] = self.max_shell_temp
-        dict['max_core_temp'] = self.max_core_temp
+        dict['receiver'] = self.receiver
+        dict['storage'] = self.storage
+        dict['processing'] = self.processing
+        dict['audit_log'] = self.audit_log
         dict['last_updated'] = self.last_updated.strftime("%Y-%m-%dT%H:%M:%S")
         return dict

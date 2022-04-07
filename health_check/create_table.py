@@ -1,17 +1,15 @@
 import sqlite3
 
 def create_database():
-    conn = sqlite3.connect('/data/data.sqlite')
+    conn = sqlite3.connect('/data/health.sqlite')
     c = conn.cursor()
     c.execute('''
-        CREATE TABLE stats
+        CREATE TABLE health
         (id INTEGER PRIMARY KEY ASC,
-        num_shell_temp INTEGER NOT NULL,
-        num_core_temp INTEGER NOT NULL,
-        num_fan_speed INTEGER NOT NULL,
-        max_fan_speed INTEGER,
-        max_shell_temp INTEGER,
-        max_core_temp INTEGER,
+        receiver VARCHAR(100) NOT NULL,
+        storage VARCHAR(100) NOT NULL,
+        processing VARCHAR(100) NOT NULL,
+        audit_log VARCHAR(100) NOT NULL,
         last_updated VARCHAR(100) NOT NULL)
     ''')
     conn.commit()

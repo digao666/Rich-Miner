@@ -40,6 +40,11 @@ port = app_config['datastore']['port']
 hostname = app_config['datastore']['hostname']
 db = app_config['datastore']['db']
 
+
+def get_health():
+    return 200
+
+
 # connect to kafka
 host_name = "%s:%d" % (app_config["events"]["hostname"], app_config["events"]["port"])
 max_retry = app_config["events"]["retry"]

@@ -12,9 +12,9 @@ handlers:
     class: logging.FileHandler
     level: DEBUG
     formatter: simple
-    filename: /logs/app_processing.log
+    filename: /logs/app_health.log
 loggers:
-  processing:
+  health:
     level: DEBUG
     handlers: [ console, file ]
     propagate: no
