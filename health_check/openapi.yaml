@@ -1,0 +1,61 @@
+openapi: 3.0.0
+info:
+  description: This API receives hardware status reading from Crypto mining rig
+  version: "1.0.0"
+  title: Mining rig API
+  contact:
+    email: dgao12@my.bcit.ca
+paths:
+  /stats:
+    get:
+      summary: Gets the event stats
+      operationId: app.get_stats
+      description: Gets fan speed and temperature processsed statistics
+      responses:
+        '200':
+          description: Successfully returned a list of events
+          content:
+            application/json:
+              schema:
+                type: object
+                items:
+                  $ref: '#/components/schemas/ReadingStats'
+        '400':
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+components:
+  schemas:
+    ReadingStats:
+      required:
+        - max_core_temp
+        - max_shell_temp
+        - num_core_temp
+        - num_shell_temp
+        - num_fan_speed
+        - max_fan_speed
+      properties:
+        max_fan_speed:
+          type: integer
+          example: 2000
+        num_fan_speed:
+          type: integer
+          example: 2000
+        max_core_temp:
+          type: integer
+          example: 70
+        max_shell_temp:
+          type: integer
+          example: 60
+        num_core_temp:
+          type: integer
+          example: 60
+        num_shell_temp:
+          type: integer
+          example: 60
+      type: object
