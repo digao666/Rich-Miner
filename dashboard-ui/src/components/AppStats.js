@@ -36,8 +36,8 @@ export default function AppStats() {
             <table class="container">
                 <thead>
                     <tr>
-                        <th><h1>Service</h1></th>
-                        <th><h1>Status</h1></th>
+                        <th><h1>Temperature</h1></th>
+                        <th><h1>data</h1></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -61,8 +61,8 @@ export default function AppStats() {
                 
                 <thead>
                     <tr>
-                        <th><h1>Service</h1></th>
-                        <th><h1>Status</h1></th>
+                        <th><h1>Fan Speed</h1></th>
+                        <th><h1>data</h1></th>
                     </tr>
                 </thead>
                 <tbody>
