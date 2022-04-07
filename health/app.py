@@ -1,3 +1,4 @@
+from email.policy import default
 import connexion
 import logging.config
 import requests
@@ -13,6 +14,7 @@ import os
 import os.path
 from create_table import create_database
 
+
 if "TARGET_ENV" in os.environ and os.environ["TARGET_ENV"] == "test":
     print("In Test Environment")
     app_conf_file = "/config/app_conf.yml"
@@ -22,12 +24,14 @@ else:
     app_conf_file = "app_conf.yml"
     log_conf_file = "log_conf.yml"
 
+
 with open(app_conf_file, 'r') as f:
     app_config = yaml.safe_load(f.read())
-# External Logging Configuration
 with open(log_conf_file, 'r') as f:
     log_config = yaml.safe_load(f.read())
     logging.config.dictConfig(log_config)
+
+
 logger = logging.getLogger('health')
 logger.info("App Conf File: %s" % app_conf_file) 
 logger.info("Log Conf File: %s" % log_conf_file)
@@ -69,22 +73,23 @@ def populate_health():
     logger.info("Start Periodic Health")
     session = DB_SESSION()
     health = session.query(Health).order_by(Health.last_updated.desc()).first()
+    default= "Sorry, I am dead (>.<)!"
     if not health:
         health = {
-            "receiver": "Sorry, I am dead (>.<)! ",
-            "storage": "Sorry, I am dead (>.<)! ",
-            "processing": "Sorry, I am dead (>.<)! ",
-            "audit_log": "Sorry, I am dead (>.<)! ",
+            "receiver": default,
+            "storage": default,
+            "processing": default,
+            "audit_log": default,
             "last_updated": datetime.datetime.now()
         }
     if not isinstance(health, dict):
         health = health.to_dict()
 
     new_health = {
-        "receiver": "Sorry, I am dead (>.<)! ",
-        "storage": "Sorry, I am dead (>.<)! ",
-        "processing": "Sorry, I am dead (>.<)! ",
-        "audit_log": "Sorry, I am dead (>.<)! ",
+        "receiver": default,
+        "storage": default,
+        "processing": default,
+        "audit_log": default,
         "last_updated": datetime.datetime.now()
     }
 
@@ -113,7 +118,6 @@ def populate_health():
     logger.debug(
         f'The new processed statistics is {new_health}')
     logger.info("Periodic Health Ends")
-    return
 
 
 def init_scheduler():
@@ -128,6 +132,7 @@ if "TARGET_ENV" not in os.environ or os.environ["TARGET_ENV"] != "test":
     CORS(app.app)
     app.app.config['CORS_HEADERS'] = 'Content-Type'
 app.add_api('openapi.yaml', base_path="/health", strict_validation=True, validate_responses=True)
+
 
 if __name__ == "__main__":
     init_scheduler()
