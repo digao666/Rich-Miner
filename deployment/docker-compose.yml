@@ -102,7 +102,16 @@ services:
       - "api.network"
     depends_on:
       - kafka
-
+  
+  health:
+    build: ../health
+    environment:
+      - TARGET_ENV=test
+    ports:
+      - "8120"
+    networks:
+      - "api.network"
+      
   dashboard-ui:
     build: ../dashboard-ui
     ports:
