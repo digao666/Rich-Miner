@@ -31,7 +31,7 @@ export default function AppStats() {
         return(
         <div>
             <h1><span class="yellow">Latest Stats</span></h1>
-            <h2>Created with love by <a href="https://github.com/digao666/Rich-Miner.git" target="_blank">Di Gao</a></h2>
+            <h2>last updated: {stats['last_updated']}</h2>
             <h2><span class="blue">Update every 5 seconds</span></h2>
             <table class="container">
                 <thead>
