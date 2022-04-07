@@ -29,49 +29,55 @@ export default function AppStats() {
         return(<div>Loading...</div>)
     } else if (isLoaded === true){
         return(
-            <div>
-                <h1>Latest Stats</h1>
-                <table className={"StatsTable"}>
-					<tbody>
-					    <thead>
-                            <th>Temperature</th>
-                            <th>Value</th>
-						</thead>
-						<tr>
-							<td>Core Temperature count:</td>
-                            <td>{stats['num_core_temp']}</td>
-						</tr>
-						<tr>
-							<td>Shell Temperature count:</td>
-                            <td>{stats['num_shell_temp']}</td>
-						</tr>
-						<tr>
-							<td>Max Shell Temperature:</td>
-							<td>{stats['max_shell_temp']}</td>
-						</tr>
-						<tr>
-							<td>Max Core Temperature:</td>
-							<td>{stats['max_core_temp']}</td>
-						</tr>
-					</tbody>
+        <div>
+            <h1><span class="yellow">Latest Stats</span></h1>
+            <h2>Created with love by <a href="https://github.com/digao666/Rich-Miner.git" target="_blank">Di Gao</a></h2>
+            <h2><span class="blue">Update every 5 seconds</span></h2>
+            <table class="container">
+                <thead>
+                    <tr>
+                        <th><h1>Service</h1></th>
+                        <th><h1>Status</h1></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>Core Temperature count:</td>
+                    <td>{stats['num_core_temp']}</td>
+                    </tr>
+                    <tr>
+                        <td>Shell Temperature count:</td>
+                        <td>{stats['num_shell_temp']}</td>
+                    </tr>
+                    <tr>
+                        <td>Max Shell Temperature:</td>
+                        <td>{stats['max_shell_temp']}</td>
+                    </tr>
+                    <tr>
+                        <td>Max Core Temperature:</td>
+                        <td>{stats['max_core_temp']}</td>
+                    </tr>
+                </tbody>
+                
+                <thead>
+                    <tr>
+                        <th><h1>Service</h1></th>
+                        <th><h1>Status</h1></th>
+                    </tr>
+                </thead>
+                <tbody>
 
-					<tbody>
-					    <thead>
-                            <th>Fan Speed</th>
-                            <th>Value</th>
-						</thead>
-						<tr>
-							<td>Fan Speed count:</td>
-							<td>{stats['num_fan_speed']}</td>
-						</tr>
-						<tr>
-							<td>Max Fan Speed:</td>
-							<td>{stats['max_fan_speed']}</td>
-						</tr>
-					</tbody>
-                </table>
-                <h3>Last Updated: {stats['last_updated']}</h3>
-            </div>
+                    <tr>
+                    <td>Fan Speed count:</td>
+                    <td>{stats['num_fan_speed']}</td>
+                    </tr>
+                    <tr>
+                        <td>Max Fan Speed:</td>
+                        <td>{stats['max_fan_speed']}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         )
     }
 }
