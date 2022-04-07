@@ -43,7 +43,7 @@ def check_data():
         create_database()
         logger.info("create health.sqlite")
 
-
+ 
 DB_ENGINE = create_engine("sqlite:///%s" % app_config["datastore"]["filename"])
 Base.metadata.bind = DB_ENGINE
 DB_SESSION = sessionmaker(bind=DB_ENGINE)
@@ -77,8 +77,6 @@ def populate_health():
             "audit_log": "Down",
             "last_updated": datetime.datetime.now()
         }
-
-    logger.info(health)
     if not isinstance(health, dict):
         health = health.to_dict()
 

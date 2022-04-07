@@ -6,7 +6,7 @@ export default function HealthStatus() {
     const [stats, setStats] = useState({});
     const [error, setError] = useState(null)
 	const getHealth = () => {
-        fetch(`http://digao3855.westus3.cloudapp.azure.com/health`)
+        fetch(`http://digao3855.westus3.cloudapp.azure.com/health/status`)
             .then(res => res.json())
             .then((result)=>{
 				console.log("Received Health")
@@ -34,7 +34,7 @@ export default function HealthStatus() {
                     <tbody>
 					    <thead>
                             <tr>
-                                <th>Service</th>s
+                                <th>Service</th>
                                 <th>Status</th>
                             </tr>
 						</thead>

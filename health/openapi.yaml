@@ -6,9 +6,9 @@ info:
   contact:
     email: dgao12@my.bcit.ca
 paths:
-  /health:
+  /status:
     get:
-      summary: Gets health stats
+      summary: Gets health status
       operationId: app.get_health
       description: Gets all service status
       responses:
