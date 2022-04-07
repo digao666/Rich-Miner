@@ -71,20 +71,20 @@ def populate_health():
     health = session.query(Health).order_by(Health.last_updated.desc()).first()
     if not health:
         health = {
-            "receiver": "Down",
-            "storage": "Down",
-            "processing": "Down",
-            "audit_log": "Down",
+            "receiver": "Sorry, I am dead &#128532 ",
+            "storage": "Sorry, I am dead &#128532 ",
+            "processing": "Sorry, I am dead &#128532 ",
+            "audit_log": "Sorry, I am dead &#128532 ",
             "last_updated": datetime.datetime.now()
         }
     if not isinstance(health, dict):
         health = health.to_dict()
 
     new_health = {
-        "receiver": "Down",
-        "storage": "Down",
-        "processing": "Down",
-        "audit_log": "Down",
+        "receiver": "Sorry, I am dead &#128532 ",
+        "storage": "Sorry, I am dead &#128532 ",
+        "processing": "Sorry, I am dead &#128532 ",
+        "audit_log": "Sorry, I am dead &#128532 ",
         "last_updated": datetime.datetime.now()
     }
 
@@ -93,10 +93,10 @@ def populate_health():
         health = requests.get(app_config["eventurl"][f"{service}"] +
                                             "/health", timeout=maxtime)
         if health.status_code != 200:
-            logger.error(f'{service} down')
+            logger.error(f'{service} down ')
         else:
-            logger.info(f'{service} Running')
-            new_health[f"{service}"] = 'Running'
+            logger.info(f'{service} running ')
+            new_health[f"{service}"] = 'I feel so good &#128525'
 
 
     add_health = Health(
