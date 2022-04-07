@@ -33,25 +33,23 @@ export default function HealthStatus() {
                 <table className={"StatusTable"}>
                     <tbody>
 					    <thead>
-                            <tr>
-                                <th>Service</th>
-                                <th>Status</th>
-                            </tr>
+                            <th>Service</th>
+                            <th>Status</th>
 						</thead>
 						<tr>
-							<td>Receiver</td>
+							<td>Receiver:</td>
 							<td>{stats['receiver']}</td>
 						</tr>
 						<tr>
-							<td>storage</td>
+							<td>storage:</td>
 							<td>{stats['storage']}</td>
 						</tr>
                         <tr>
-							<td>Receiver</td>
+							<td>Processing:</td>
 							<td>{stats['processing']}</td>
 						</tr>
                         <tr>
-							<td>Receiver</td>
+							<td>Audit_log:</td>
 							<td>{stats['audit_log']}</td>
 						</tr>
 					</tbody>

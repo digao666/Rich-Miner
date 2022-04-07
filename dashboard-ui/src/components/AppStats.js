@@ -34,42 +34,38 @@ export default function AppStats() {
                 <table className={"StatsTable"}>
 					<tbody>
 					    <thead>
-                            <tr>
-                                <th>Temperature</th>
-                                <th>Value</th>
-                            </tr>
+                            <th>Temperature</th>
+                            <th>Value</th>
 						</thead>
 						<tr>
-							<td>Core Temperature count</td>
+							<td>Core Temperature count:</td>
                             <td>{stats['num_core_temp']}</td>
 						</tr>
 						<tr>
-							<td>Shell Temperature count</td>
+							<td>Shell Temperature count:</td>
                             <td>{stats['num_shell_temp']}</td>
 						</tr>
 						<tr>
-							<td>Max Shell Temperature</td>
+							<td>Max Shell Temperature:</td>
 							<td>{stats['max_shell_temp']}</td>
 						</tr>
 						<tr>
-							<td>Max Core Temperature</td>
+							<td>Max Core Temperature:</td>
 							<td>{stats['max_core_temp']}</td>
 						</tr>
 					</tbody>
 
 					<tbody>
 					    <thead>
-                            <tr>
-                                <th>Fan Speed</th>
-                                <th>Value</th>
-                            </tr>
+                            <th>Fan Speed</th>
+                            <th>Value</th>
 						</thead>
 						<tr>
-							<td>Fan Speed count</td>
+							<td>Fan Speed count:</td>
 							<td>{stats['num_fan_speed']}</td>
 						</tr>
 						<tr>
-							<td>Max Fan Speed</td>
+							<td>Max Fan Speed:</td>
 							<td>{stats['max_fan_speed']}</td>
 						</tr>
 					</tbody>
