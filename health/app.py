@@ -71,20 +71,20 @@ def populate_health():
     health = session.query(Health).order_by(Health.last_updated.desc()).first()
     if not health:
         health = {
-            "receiver": "Sorry, I am dead &#128532 ",
-            "storage": "Sorry, I am dead &#128532 ",
-            "processing": "Sorry, I am dead &#128532 ",
-            "audit_log": "Sorry, I am dead &#128532 ",
+            "receiver": "Sorry, I am dead (>.<)! ",
+            "storage": "Sorry, I am dead (>.<)! ",
+            "processing": "Sorry, I am dead (>.<)! ",
+            "audit_log": "Sorry, I am dead (>.<)! ",
             "last_updated": datetime.datetime.now()
         }
     if not isinstance(health, dict):
         health = health.to_dict()
 
     new_health = {
-        "receiver": "Sorry, I am dead &#128532 ",
-        "storage": "Sorry, I am dead &#128532 ",
-        "processing": "Sorry, I am dead &#128532 ",
-        "audit_log": "Sorry, I am dead &#128532 ",
+        "receiver": "Sorry, I am dead (>.<)! ",
+        "storage": "Sorry, I am dead (>.<)! ",
+        "processing": "Sorry, I am dead (>.<)! ",
+        "audit_log": "Sorry, I am dead (>.<)! ",
         "last_updated": datetime.datetime.now()
     }
 
@@ -96,7 +96,7 @@ def populate_health():
             logger.error(f'{service} down ')
         else:
             logger.info(f'{service} running ')
-            new_health[f"{service}"] = 'I feel so good &#128525'
+            new_health[f"{service}"] = 'I feel so good (^.^)!'
 
 
     add_health = Health(
