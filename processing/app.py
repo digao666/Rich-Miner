@@ -160,7 +160,6 @@ def populate_stats(dictionary=None):
     logger.debug(
         f'The new processed statistics is {new_stats}')
     logger.info("Periodic Processing Ends")
-    return
 
 
 def init_scheduler():
